@@ -1,0 +1,35 @@
+{
+  "correlation_id": "corr_dd09f3f7b4364134",
+  "message_id": "msg_6f37f658dcc14e21",
+  "channel": "web",
+  "repository_id": "pending:retina-and-vitreous",
+  "user_query": "What are the primary anatomical and physiological functions of the retina and vitreous body?",
+  "agent": "retina_answer_agent",
+  "scope": {
+    "in_scope": true,
+    "retina_terms": [
+      "retina",
+      "vitreous",
+      "retina",
+      "vitreous"
+    ],
+    "molecules": [],
+    "unsupported_molecules": [],
+    "safety_flags": [],
+    "reason": ""
+  },
+  "draft_answer": "",
+  "claims": [],
+  "chunks": [],
+  "retrieval": {
+    "user_query": "What are the primary anatomical and physiological functions of the retina and vitreous body?",
+    "agent": "query_agent",
+    "chunks": [],
+    "created_at": "2026-11-09T11:22:19.896479+00:00",
+    "search_mode": "",
+    "elapsed_ms": 0
+  },
+  "generation_error": "no_approved_source",
+  "created_at": "2026-11-09T11:22:19.896479+00:00",
+  "validation": null
+}

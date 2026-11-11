@@ -1,0 +1,181 @@
+{
+  "correlation_id": "corr_4d6cfebc3ee3469f",
+  "message_id": "msg_48ae9e75b2f64e8e",
+  "channel": "web",
+  "repository_id": "5d13d75d-972c-448d-bf72-efa185bc2b15",
+  "user_query": "Should I prescribe gene therapy this week for my patient with retinal degeneration?",
+  "agent": "retina_answer_agent",
+  "scope": {
+    "in_scope": true,
+    "retina_terms": [
+      "retinal"
+    ],
+    "molecules": [],
+    "unsupported_molecules": [],
+    "safety_flags": [
+      "\\bmy patient\\b",
+      "\\bshould i (prescribe|give|inject|treat|switch|stop)\\b"
+    ],
+    "reason": ""
+  },
+  "draft_answer": "The library does not contain that result.",
+  "claims": [],
+  "chunks": [
+    {
+      "chunk_id": "4a72f817-6171-4cf2-99ab-8dc32daf376b",
+      "document_id": "60ac2f58-480d-440a-a59c-21c6bc8d8f2e",
+      "document_name": "clinicaltrials_NCT04611152_A Trial to Evaluate the Efficacy_ Durability_ and Safety of.docx",
+      "document_content": "Item 1 id: D012162 term: Retinal Degeneration",
+      "page_no": 141,
+      "page_end": 141,
+      "paragraph": "Paragraph 2770 | Lines 2769-2769",
+      "section": "",
+      "line_start": 2769,
+      "line_end": 2769,
+      "retrieval_score": 0.5036,
+      "repository_id": "5d13d75d-972c-448d-bf72-efa185bc2b15",
+      "original_text": "Item 1 id: D012162 term: Retinal Degeneration"
+    },
+    {
+      "chunk_id": "08245d95-f8e6-4b57-80bd-8d2944ea3814",
+      "document_id": "8d2ff682-94c8-4c8a-80f1-e15e2b3c9ea0",
+      "document_name": "clinicaltrials_NCT01771081_Evaluation of Changes in Visual Acuity in Patients With Diab.docx",
+      "document_content": "Item 1 id: D012162 term: Retinal Degeneration",
+      "page_no": 7,
+      "page_end": 7,
+      "paragraph": "Paragraph 99 | Lines 99-99",
+      "section": "",
+      "line_start": 99,
+      "line_end": 99,
+      "retrieval_score": 0.5036,
+      "repository_id": "5d13d75d-972c-448d-bf72-efa185bc2b15",
+      "original_text": "Item 1 id: D012162 term: Retinal Degeneration"
+    },
+    {
+      "chunk_id": "48dd0e48-b521-451a-92a3-efdb5ba28777",
+      "document_id": "de951e0c-deca-422e-a806-0ff8f53af641",
+      "document_name": "clinicaltrials_NCT04603937_A Study to Evaluate the Efficacy_ Durability_ and Safety of.docx",
+      "document_content": "Item 1 id: D012162 term: Retinal Degeneration",
+      "page_no": 141,
+      "page_end": 141,
+      "paragraph": "Paragraph 2791 | Lines 2790-2790",
+      "section": "",
+      "line_start": 2790,
+      "line_end": 2790,
+      "retrieval_score": 0.5036,
+      "repository_id": "5d13d75d-972c-448d-bf72-efa185bc2b15",
+      "original_text": "Item 1 id: D012162 term: Retinal Degeneration"
+    },
+    {
+      "chunk_id": "52923671-8b4c-4070-9bec-7c757e9565e2",
+      "document_id": "5948ca91-60ef-4075-a6ff-c9aecd0db0ca",
+      "document_name": "clinicaltrials_NCT02818998_Efficacy and Safety of Three Different Aflibercept Regimens.docx",
+      "document_content": "Item 2 id: D012162 term: Retinal Degeneration",
+      "page_no": 189,
+      "page_end": 189,
+      "paragraph": "Paragraph 3869 | Lines 3868-3868",
+      "section": "",
+      "line_start": 3868,
+      "line_end": 3868,
+      "retrieval_score": 0.5028,
+      "repository_id": "5d13d75d-972c-448d-bf72-efa185bc2b15",
+      "original_text": "Item 2 id: D012162 term: Retinal Degeneration"
+    },
+    {
+      "chunk_id": "9e52308c-ffad-4adf-be6c-47e265fab9f6",
+      "document_id": "00b8b01c-a69d-42a5-97e5-0e751a18c23a",
+      "document_name": "clinicaltrials_NCT05698329_Effect of AIV007 by Periocular Administration in Subjects wi.docx",
+      "document_content": "Item 2 id: D012162 term: Retinal Degeneration",
+      "page_no": 10,
+      "page_end": 10,
+      "paragraph": "Paragraph 140 | Lines 139-139",
+      "section": "",
+      "line_start": 139,
+      "line_end": 139,
+      "retrieval_score": 0.5028,
+      "repository_id": "5d13d75d-972c-448d-bf72-efa185bc2b15",
+      "original_text": "Item 2 id: D012162 term: Retinal Degeneration"
+    },
+    {
+      "chunk_id": "1615c029-2a71-415c-8992-ce4acfaccaab",
+      "document_id": "24cd31c3-2172-42d4-bcff-7bb45d7def2e",
+      "document_name": "clinicaltrials_NCT01331005_NSAID Phase II for Non-central Involved Diabetic Macular Ede.docx",
+      "document_content": "Item 2 id: D012162 term: Retinal Degeneration",
+      "page_no": 66,
+      "page_end": 66,
+      "paragraph": "Paragraph 1226 | Lines 1225-1225",
+      "section": "",
+      "line_start": 1225,
+      "line_end": 1225,
+      "retrieval_score": 0.5028,
+      "repository_id": "5d13d75d-972c-448d-bf72-efa185bc2b15",
+      "original_text": "Item 2 id: D012162 term: Retinal Degeneration"
+    }
+  ],
+  "retrieval": {
+    "user_query": "Should I prescribe gene therapy this week for my patient with retinal degeneration?",
+    "agent": "query_agent",
+    "chunks": [
+      {
+        "chunk_id": "4a72f817-6171-4cf2-99ab-8dc32daf376b",
+        "document_id": "60ac2f58-480d-440a-a59c-21c6bc8d8f2e",
+        "document_name": "clinicaltrials_NCT04611152_A Trial to Evaluate the Efficacy_ Durability_ and Safety of.docx",
+        "document_content": "Item 1 id: D012162 term: Retinal Degeneration",
+        "page_no": 141,
+        "paragraph": "Paragraph 2770 | Lines 2769-2769",
+        "original_text": "Item 1 id: D012162 term: Retinal Degeneration"
+      },
+      {
+        "chunk_id": "08245d95-f8e6-4b57-80bd-8d2944ea3814",
+        "document_id": "8d2ff682-94c8-4c8a-80f1-e15e2b3c9ea0",
+        "document_name": "clinicaltrials_NCT01771081_Evaluation of Changes in Visual Acuity in Patients With Diab.docx",
+        "document_content": "Item 1 id: D012162 term: Retinal Degeneration",
+        "page_no": 7,
+        "paragraph": "Paragraph 99 | Lines 99-99",
+        "original_text": "Item 1 id: D012162 term: Retinal Degeneration"
+      },
+      {
+        "chunk_id": "48dd0e48-b521-451a-92a3-efdb5ba28777",
+        "document_id": "de951e0c-deca-422e-a806-0ff8f53af641",
+        "document_name": "clinicaltrials_NCT04603937_A Study to Evaluate the Efficacy_ Durability_ and Safety of.docx",
+        "document_content": "Item 1 id: D012162 term: Retinal Degeneration",
+        "page_no": 141,
+        "paragraph": "Paragraph 2791 | Lines 2790-2790",
+        "original_text": "Item 1 id: D012162 term: Retinal Degeneration"
+      },
+      {
+        "chunk_id": "52923671-8b4c-4070-9bec-7c757e9565e2",
+        "document_id": "5948ca91-60ef-4075-a6ff-c9aecd0db0ca",
+        "document_name": "clinicaltrials_NCT02818998_Efficacy and Safety of Three Different Aflibercept Regimens.docx",
+        "document_content": "Item 2 id: D012162 term: Retinal Degeneration",
+        "page_no": 189,
+        "paragraph": "Paragraph 3869 | Lines 3868-3868",
+        "original_text": "Item 2 id: D012162 term: Retinal Degeneration"
+      },
+      {
+        "chunk_id": "9e52308c-ffad-4adf-be6c-47e265fab9f6",
+        "document_id": "00b8b01c-a69d-42a5-97e5-0e751a18c23a",
+        "document_name": "clinicaltrials_NCT05698329_Effect of AIV007 by Periocular Administration in Subjects wi.docx",
+        "document_content": "Item 2 id: D012162 term: Retinal Degeneration",
+        "page_no": 10,
+        "paragraph": "Paragraph 140 | Lines 139-139",
+        "original_text": "Item 2 id: D012162 term: Retinal Degeneration"
+      },
+      {
+        "chunk_id": "1615c029-2a71-415c-8992-ce4acfaccaab",
+        "document_id": "24cd31c3-2172-42d4-bcff-7bb45d7def2e",
+        "document_name": "clinicaltrials_NCT01331005_NSAID Phase II for Non-central Involved Diabetic Macular Ede.docx",
+        "document_content": "Item 2 id: D012162 term: Retinal Degeneration",
+        "page_no": 66,
+        "paragraph": "Paragraph 1226 | Lines 1225-1225",
+        "original_text": "Item 2 id: D012162 term: Retinal Degeneration"
+      }
+    ],
+    "created_at": "2026-10-28T08:26:29.510598+00:00",
+    "search_mode": "hybrid",
+    "elapsed_ms": 47216
+  },
+  "generation_error": "",
+  "created_at": "2026-10-28T08:26:29.510598+00:00",
+  "validation": null
+}

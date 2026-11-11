@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Digital MSL UI kit | Sciagen</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="ui-reference.css">
+<style>.sec{padding:20px;display:flex;flex-direction:column;gap:14px}.row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}.wrap{max-width:1200px;margin:0 auto;padding:24px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}@media(max-width:900px){.wrap{grid-template-columns:1fr}}h2{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 8v5"/><path d="M12 16.5h.01"/></symbol>
+<symbol id="doc" viewBox="0 0 24 24"><path d="M4 5a2 2 0 0 1 2-2h9l5 5v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M14 3v6h6"/></symbol>
+<symbol id="user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M5 20a7 7 0 0 1 14 0"/></symbol>
+<symbol id="shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></symbol>
+<symbol id="steth" viewBox="0 0 24 24"><path d="M6 3v6a4 4 0 0 0 8 0V3"/><path d="M10 13v2a5 5 0 0 0 10 0v-2"/><circle cx="20" cy="11" r="2"/></symbol>
+<symbol id="retry" viewBox="0 0 24 24"><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 4v5h-5"/></symbol>
+</svg>
+<div class="wrap">
+ <section class="card sec"><h2>Buttons</h2><div class="row"><button class="btn primary">Primary</button><button class="btn secondary">Secondary</button><button class="btn ghost">Ghost</button><button class="btn danger">Destructive</button><button class="btn primary" disabled>Disabled</button></div><div class="row"><button class="btn primary sm">Small</button><button class="btn primary lg">Large</button></div><div style="background:var(--sb);padding:14px;border-radius:10px"><button class="btn on-navy">On navy (Sign out)</button></div></section>
+ <section class="card sec"><h2>Inputs</h2><div class="field"><label for="a">Work email</label><input id="a" class="input" placeholder="name@company.com"></div><div class="field"><label for="b">Password</label><input id="b" class="input err" value="abc" aria-invalid="true"><div class="errtext"><svg class="i" style="width:16px;height:16px"><use href="#info"/></svg>Password must be at least 12 characters.</div></div></section>
+ <section class="card sec"><h2>Role cards</h2><div class="grid"><button class="role" aria-pressed="true"><span class="t"><svg class="i"><use href="#steth"/></svg></span><span><b>Doctor</b><span>Ask clinical questions and get cited answers.</span></span></button><button class="role" aria-pressed="false"><span class="t"><svg class="i"><use href="#user"/></svg></span><span><b>Physical MSL</b><span>Review questions escalated by the AI.</span></span></button><button class="role" aria-pressed="false"><span class="t"><svg class="i"><use href="#shield"/></svg></span><span><b>Administrator</b><span>Manage users, sources and settings.</span></span></button></div></section>
+ <section class="card sec"><h2>Badges (status)</h2><div class="row"><span class="badge ok">Verified</span><span class="badge warn">Pending verification</span><span class="badge err">Rejected</span><span class="badge">Open</span><span class="badge accent">Default</span><span class="badge ok">WhatsApp consent</span><span class="badge warn">Review due</span></div></section>
+ <section class="card sec"><h2>Alerts and toasts</h2><div class="alert info"><svg class="i"><use href="#info"/></svg>Your question will be reviewed by a Physical MSL.</div><div class="alert warn"><svg class="i"><use href="#info"/></svg>Verification pending. You can sign in, but answers are limited until you are verified.</div><div class="toast err" role="alert"><svg class="i"><use href="#info"/></svg><div>We can't load your knowledge sources right now. Please try again.</div></div></section>
+ <section class="card sec"><h2>Empty and error states</h2><div class="empty"><div class="ic"><svg class="i"><use href="#info"/></svg></div><h3>We can't reach Digital MSL right now</h3><p>Check your connection and try again. Request id: 7F3A91.</p><button class="btn secondary"><svg class="i"><use href="#retry"/></svg>Retry</button></div></section>
+ <section class="card sec" style="grid-column:1/-1"><h2>Table (Registered Doctors pattern)</h2><div style="overflow:auto"><table class="table"><thead><tr><th>Name</th><th>Registration no.</th><th>Council</th><th>Areas</th><th>Status</th><th>Consent</th></tr></thead><tbody><tr><td>Demo Doctor A</td><td>DEMO-0001</td><td>State Medical Council</td><td>Retina and Vitreous <span class="badge accent">Default</span></td><td><span class="badge ok">Verified</span></td><td><span class="badge ok">WhatsApp</span> <span class="badge ok">Email</span></td></tr><tr><td>Demo Doctor B</td><td>DEMO-0002</td><td>State Medical Council</td><td>Glaucoma</td><td><span class="badge warn">Pending</span></td><td><span class="badge ok">Email</span> <span class="badge err">WhatsApp withdrawn</span></td></tr></tbody></table></div></section>
+ <section class="card sec"><h2>Loading</h2><div class="skel" style="width:70%"></div><div class="skel" style="width:90%"></div><div class="skel" style="width:55%"></div></section>
+ <section class="card sec"><h2>Theme</h2><button class="btn secondary" id="t">Toggle light and dark</button></section>
+</div>
+<script>
+const r=document.documentElement,p=new URLSearchParams(location.search).get('theme');if(p)r.dataset.theme=p;
+document.getElementById('t').onclick=()=>{const d=(r.dataset.theme||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'))==='dark';r.dataset.theme=d?'light':'dark'};
+</script>
+</body></html>

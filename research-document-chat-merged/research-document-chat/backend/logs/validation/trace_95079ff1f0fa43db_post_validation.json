@@ -1,0 +1,48 @@
+{
+  "correlation_id": "corr_75919222ca5f4d5a",
+  "message_id": "msg_5a279ba770d54fb1",
+  "channel": "web",
+  "repository_id": "5d13d75d-972c-448d-bf72-efa185bc2b15",
+  "user_query": "Should I prescribe aflibercept for my patient with DME?",
+  "agent": "retina_answer_agent",
+  "scope": {
+    "in_scope": true,
+    "retina_terms": [
+      "dme"
+    ],
+    "molecules": [
+      "aflibercept"
+    ],
+    "unsupported_molecules": [],
+    "safety_flags": [
+      "\\bmy patient\\b",
+      "\\bshould i (prescribe|give|inject|treat|switch|stop)\\b"
+    ],
+    "reason": ""
+  },
+  "draft_answer": "",
+  "claims": [],
+  "chunks": [],
+  "retrieval": {
+    "user_query": "Should I prescribe aflibercept for my patient with DME?",
+    "agent": "query_agent",
+    "chunks": [],
+    "created_at": "2026-10-28T06:18:42.610343+00:00",
+    "search_mode": "vector",
+    "elapsed_ms": 8019
+  },
+  "generation_error": "no_evidence",
+  "created_at": "2026-10-28T06:18:42.610343+00:00",
+  "validation": {
+    "overall_score": 0.0,
+    "threshold": 0.9,
+    "claim_min_score": 0.7,
+    "decision": "escalate_to_msl",
+    "reason_codes": [
+      "SAFETY_INDIVIDUAL_ADVICE",
+      "INSUFFICIENT_EVIDENCE"
+    ],
+    "judge": "deterministic",
+    "validated_at": "2026-10-28T06:18:42.615028+00:00"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "correlation_id": "corr_984c2964e90f402d",
+  "message_id": "msg_4bee8dde16be4874",
+  "channel": "web",
+  "repository_id": "5d13d75d-972c-448d-bf72-efa185bc2b15",
+  "user_query": "hi. hihow are",
+  "agent": "retina_answer_agent",
+  "scope": {
+    "in_scope": false,
+    "retina_terms": [],
+    "molecules": [],
+    "unsupported_molecules": [],
+    "safety_flags": [],
+    "reason": "The question is not about retina / eye-care or the configured molecules."
+  },
+  "draft_answer": "",
+  "claims": [],
+  "chunks": [],
+  "retrieval": {
+    "user_query": "hi. hihow are",
+    "agent": "query_agent",
+    "chunks": [],
+    "created_at": "2026-10-28T08:46:58.719703+00:00",
+    "search_mode": "",
+    "elapsed_ms": 0
+  },
+  "generation_error": "",
+  "created_at": "2026-10-28T08:46:58.719703+00:00",
+  "validation": {
+    "overall_score": 0.0,
+    "threshold": 0.9,
+    "claim_min_score": 0.7,
+    "decision": "refuse",
+    "reason_codes": [
+      "OUT_OF_SCOPE"
+    ],
+    "judge": "deterministic",
+    "validated_at": "2026-10-28T08:46:58.719703+00:00"
+  }
+}

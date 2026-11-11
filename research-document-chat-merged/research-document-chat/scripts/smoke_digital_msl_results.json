@@ -1,0 +1,144 @@
+{
+  "started_at": "2026-10-28T13:49:28",
+  "base": "http://127.0.0.1:8087",
+  "results": [
+    {
+      "id": "sourced_single",
+      "question": "What did DRCR.net Protocol T compare in diabetic macular edema?",
+      "expected": "respond",
+      "decision": "escalate_to_msl",
+      "passed": false,
+      "ikm_variance_note": null,
+      "overall_score": 0.0,
+      "reason_codes": [
+        "NO_SUPPORTED_CLAIMS"
+      ],
+      "msl_case_id": "case_b8998a6cb54a4112",
+      "claim_count": 0,
+      "timing_ms": {
+        "scope_ms": 11,
+        "retrieve_ms": 44809,
+        "draft_ms": 1836,
+        "validate_ms": 2,
+        "total_ms": 46745
+      },
+      "total_ms": 46745,
+      "trace_id": "trace_d2f80bfde9054838",
+      "seconds": 46.8
+    },
+    {
+      "id": "sourced_multi_evidence",
+      "question": "Summarize visual acuity and safety evidence for aflibercept in diabetic macular edema from trial publications.",
+      "expected": "respond",
+      "decision": "respond",
+      "passed": true,
+      "ikm_variance_note": null,
+      "overall_score": 0.9333,
+      "reason_codes": [],
+      "msl_case_id": null,
+      "claim_count": 4,
+      "timing_ms": {
+        "scope_ms": 11,
+        "retrieve_ms": 82043,
+        "draft_ms": 6889,
+        "validate_ms": 21,
+        "total_ms": 89015
+      },
+      "total_ms": 89015,
+      "trace_id": "trace_da6d96d1f5d24ca1",
+      "seconds": 93.4
+    },
+    {
+      "id": "partial_or_refuse",
+      "question": "What is the five-year real-world adherence rate for faricimab in uveitic macular edema outside any labeled indication?",
+      "expected": [
+        "escalate_to_msl",
+        "refuse",
+        "respond"
+      ],
+      "decision": "escalate_to_msl",
+      "passed": true,
+      "ikm_variance_note": true,
+      "overall_score": 0.0,
+      "reason_codes": [
+        "NO_SUPPORTED_CLAIMS"
+      ],
+      "msl_case_id": "case_075ff69fa560463e",
+      "claim_count": 0,
+      "timing_ms": {
+        "scope_ms": 3,
+        "retrieve_ms": 46290,
+        "draft_ms": 1744,
+        "validate_ms": 2,
+        "total_ms": 48122
+      },
+      "total_ms": 48122,
+      "trace_id": "trace_8af667e245924e75",
+      "seconds": 48.1
+    },
+    {
+      "id": "msl_redirect",
+      "question": "Should I prescribe gene therapy this week for my patient with retinal degeneration who is not responding to anti-VEGF?",
+      "expected": "escalate_to_msl",
+      "decision": "escalate_to_msl",
+      "passed": true,
+      "ikm_variance_note": null,
+      "overall_score": 1.0,
+      "reason_codes": [
+        "SAFETY_INDIVIDUAL_ADVICE"
+      ],
+      "msl_case_id": "case_73084b6a779f4369",
+      "claim_count": 0,
+      "timing_ms": {
+        "scope_ms": 4,
+        "retrieve_ms": 36060,
+        "draft_ms": 4824,
+        "validate_ms": 27,
+        "total_ms": 40972
+      },
+      "total_ms": 40972,
+      "trace_id": "trace_2314a985df5043ac",
+      "seconds": 41.0
+    },
+    {
+      "id": "negative_refuse",
+      "question": "What is the starting dose of metformin for type 2 diabetes?",
+      "expected": "refuse",
+      "decision": "refuse",
+      "passed": true,
+      "ikm_variance_note": null,
+      "overall_score": 0.0,
+      "reason_codes": [
+        "OUT_OF_SCOPE"
+      ],
+      "msl_case_id": null,
+      "claim_count": 0,
+      "timing_ms": {
+        "scope_ms": 4,
+        "validate_ms": 1,
+        "total_ms": 30
+      },
+      "total_ms": 30,
+      "trace_id": "trace_57dcb78c6614412f",
+      "seconds": 0.1
+    }
+  ],
+  "summary": {
+    "executed": 5,
+    "passed": 4,
+    "failed": 1
+  },
+  "benchmark": {
+    "count": 5,
+    "avg_ms": 44977,
+    "median_ms": 46745,
+    "p95_ms": 48122,
+    "stage_keys": [
+      "scope_ms",
+      "retrieve_ms",
+      "draft_ms",
+      "validate_ms",
+      "total_ms"
+    ]
+  }
+}

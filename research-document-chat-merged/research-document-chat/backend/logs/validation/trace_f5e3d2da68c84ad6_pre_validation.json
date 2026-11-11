@@ -1,0 +1,32 @@
+{
+  "correlation_id": "corr_92b0283250024b71",
+  "message_id": "msg_7b21a39c58574f36",
+  "channel": "web",
+  "repository_id": "5d13d75d-972c-448d-bf72-efa185bc2b15",
+  "user_query": "What did DRCR.net Protocol T compare in diabetic retinopathy / DME research?",
+  "agent": "retina_answer_agent",
+  "scope": {
+    "in_scope": true,
+    "retina_terms": [
+      "retinopathy",
+      "dme",
+      "diabetic retinopathy"
+    ],
+    "molecules": [],
+    "unsupported_molecules": [],
+    "safety_flags": [],
+    "reason": ""
+  },
+  "draft_answer": "",
+  "claims": [],
+  "chunks": [],
+  "retrieval": {
+    "user_query": "What did DRCR.net Protocol T compare in diabetic retinopathy / DME research?",
+    "agent": "query_agent",
+    "chunks": [],
+    "created_at": "2026-10-27T07:12:36.188984+00:00"
+  },
+  "generation_error": "retrieval_failed: DMS request failed: HTTPConnectionPool(host='16.113.145.53', port=80): Read timed out. (read timeout=30)",
+  "created_at": "2026-10-27T07:12:36.188984+00:00",
+  "validation": null
+}

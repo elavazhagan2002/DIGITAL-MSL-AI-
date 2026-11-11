@@ -1,0 +1,63 @@
+{
+  "user_query": "What were the main eligibility criteria in the three aflibercept regimens trial?",
+  "agent": "query_agent",
+  "chunks": [
+    {
+      "chunk_id": "29eb7176-d83e-4975-803b-16ddc2f39eec",
+      "document_id": "56fd093d-a847-4de2-a89f-87c4c8f75d5f",
+      "document_name": "clinicaltrials_NCT07425522_A Study to Evaluate the Safety_ Tolerability_ Pharmacodynami.docx",
+      "document_content": "eligibilityModule eligibilityCriteria: Inclusion Criteria Diagnosis of diabetes mellitus (type 1 or type 2), as defined by the World Health Organization (WHO) and/or American Diabetes Association Glycated hemoglobin (HbA1c) \\<= 12% For study eye: Macular thickening secondary to DME involving the center of the fovea with central subfield thickness (CST) \\>= 325 micrometers (μm) as measured by SD-OCT and BCVA of 65 to 35 letters Exclusion Criteria: Currently untreated diabetes mellitus or previously untreated participants who initiated oral anti-diabetic medication or insulin within 90 days prior to Day 1 Pregnant or breastfeeding, or intending to become pregnant during the study or within the timeframe in which contraception is required Uncontrolled blood pressure For Parts 1 and 2: Any history of ocular injection/implant therapy (e.g., anti-vascular endothelial growth factor agents (anti-VEGF), anti-VEGF/antiangiopoietin-2 (Ang-2 agents), corticosteroids, device implant. For Part 3: History of treatment with any of the following: Aflibercept 2 mg, ranibizumab, bevacizumab, or anti-VEGF biosimilars within 90 days prior to Day 1; Aflibercept 8 mg, brolucizumab, or faricimab within 120 days prior to Day 1; Triamcinolone acetonide (IVT, suprachoroidal, or periocular) within 120 days prior to Day 1; Dexamethasone intravitreal implant within 180 days prior to Day 1; Fluocinolone acetonide (FA) intravitreal implant within 3 years prior to Day 1; Device implant History of uveitis, vitritis (grade trace or above), and/or scleritis in either eye Active intraocular inflammation in either eye Any previously documented or current proliferative diabetic retinopathy (PDR) in the study eye eligibilityModule eligibilityCriteria: Inclusion Criteria healthyVolunteers: False sex: ALL minimumAge: 18 Years",
+      "page_no": 5,
+      "paragraph": "Section: eligibilityModule eligibilityCriteria: Inclusion Criteria | Paragraph 70 | Lines 69-71",
+      "original_text": "eligibilityModule eligibilityCriteria: Inclusion Criteria Diagnosis of diabetes mellitus (type 1 or type 2), as defined by the World Health Organization (WHO) and/or American Diabetes Association Glycated hemoglobin (HbA1c) \\<= 12% For study eye: Macular thickening secondary to DME involving the center of the fovea with central subfield thickness (CST) \\>= 325 micrometers (μm) as measured by SD-OC"
+    },
+    {
+      "chunk_id": "eeffd2d1-17d2-47a2-8c30-3768d9570da0",
+      "document_id": "5a35854c-6425-40fb-a284-e2a8290031c2",
+      "document_name": "clinicaltrials_NCT03610646_Comparative Study to Evaluate the Efficacy and Safety of MYL.docx",
+      "document_content": "eligibilityModule eligibilityCriteria: Inclusion Criteria Subjects with known hypersensitivity to aflibercept or any of the excipients Subjects with current or planned use of systemic medications known to be toxic to the lens, retina or optic nerve, including deferoxamine, chloroquine/hydroxychloroquine, tamoxifen, phenothiazines and ethambutol Subjects with uncontrolled hypertension defined as systolic blood pressure \\>160mm Hg or diastolic blood pressure \\> 95 mm of Hg. Subjects with a history of cerebrovascular accident or myocardial infarction within 6 months of randomization. Subjects with history of use of intraocular corticosteroids anytime in the past or periocular (subconjunctival, intra-scleral, sub-tenon or retrobulbar) corticosteroids within 4 months of randomization Subjects who have only one functional eye, even if the eye met all other study requirements, or who have an ocular condition on the fellow eye with a poorer prognosis than the study eye. healthyVolunteers: False sex: ALL minimumAge: 18 Years",
+      "page_no": 8,
+      "paragraph": "Section: eligibilityModule eligibilityCriteria: Inclusion Criteria | Paragraph 98 | Lines 97-99",
+      "original_text": "eligibilityModule eligibilityCriteria: Inclusion Criteria Subjects with known hypersensitivity to aflibercept or any of the excipients Subjects with current or planned use of systemic medications known to be toxic to the lens, retina or optic nerve, including deferoxamine, chloroquine/hydroxychloroquine, tamoxifen, phenothiazines and ethambutol Subjects with uncontrolled hypertension defined as sy"
+    },
+    {
+      "chunk_id": "fb3e94de-5389-41e9-b798-079fdacf820a",
+      "document_id": "5948ca91-60ef-4075-a6ff-c9aecd0db0ca",
+      "document_name": "clinicaltrials_NCT02818998_Efficacy and Safety of Three Different Aflibercept Regimens.docx",
+      "document_content": "eligibilityModule eligibilityCriteria: Inclusion Criteria Total prior treatment duration with aflibercept (i.e. from first aflibercept treatment ever to enrollment into this study) was 1 year or longer. To be met at initiation of pre-study aflibercept treatment: Type 1 or 2 diabetes mellitus (DM) Diagnosis of diabetic macular edema (DME) secondary to DM involving the center of the macula (defined as the area of the center subfield on optical coherence tomography \\[OCT\\]) in the study eye Decrease in vision determined to be primarily the result of DME in the study eye Best corrected visual acuity (BCVA) in the study eye of Early Treatment Diabetic Retinopathy Study (ETDRS) letter score 73 to 24 Exclusion Criteria: At initiation of pre-study aflibercept treatment: \\- Previous treatment with anti-angiogenic drugs in study eye (e.g., pegaptanib sodium, bevacizumab, ranibizumab, or aflibercept) within the last 12 weeks before initiation of aflibercept pre-study treatment At initiation of pre-study aflibercept treatment, screening for this study, and baseline for this study: Prior treatment of the study eye with long acting steroids, either periocular or intraocular, in the preceding 120 days or Iluvien intravitreal implant at any time Active proliferative diabetic retinopathy, current iris neovascularization, vitreous hemorrhage, or tractional retinal detachment in the study eye Cataract surgery or any other intraocular surgery within 90 days of aflibercept treatment in the study eye Ocular inflammation (including trace or above) or history of uveitis in the study eye Structural damage to the center of the macula in the study eye that was likely to preclude improvement in BCVA following the resolution of macular edema including atrophy of the retinal pigment epithelium, subretinal fibrosis or scar, significant macular ischemia or organized hard exudates Concurrent disease in the study eye, other than DME, that could compromise visual acuity, require medical or surgical intervention during the study period, or could confound interpretation of the results (including advanced glaucoma, retinal vascular occlusion, retinal detachment, macular hole, or choroidal neovascularization of any cause) Uncontrolled DM as defined by hemoglobin (Hb) A1c \\> 12.0% at screening and baseline for this study Any ocular or periocular infection in the preceding 4 weeks in either eye History of either cerebral vascular accident and/or myocardial infarction within 180 days before aflibercept treatment eligibilityModule eligibilityCriteria: Inclusion Criteria healthyVolunteers: False sex: ALL minimumAge: 18 Years",
+      "page_no": 7,
+      "paragraph": "Section: eligibilityModule eligibilityCriteria: Inclusion Criteria | Paragraph 91 | Lines 90-97",
+      "original_text": "eligibilityModule eligibilityCriteria: Inclusion Criteria Total prior treatment duration with aflibercept (i.e. from first aflibercept treatment ever to enrollment into this study) was 1 year or longer."
+    },
+    {
+      "chunk_id": "e637e022-aa8b-43fc-a378-965ecc4c2d7b",
+      "document_id": "5948ca91-60ef-4075-a6ff-c9aecd0db0ca",
+      "document_name": "clinicaltrials_NCT02818998_Efficacy and Safety of Three Different Aflibercept Regimens.docx",
+      "document_content": "organization fullName: Bayer class: INDUSTRY briefTitle: Efficacy and Safety of Three Different Aflibercept Regimens in Subjects With Diabetic Macular Edema (DME) officialTitle: An Open-label, Randomized, Active-controlled, Parallel-group, Phase-3b Study of the Efficacy, Safety, and Tolerability of Three Different Treatment Regimens of 2 mg Aflibercept Administered by Intravitreal Injections to Subjects With Diabetic Macular Edema (DME) acronym: VIOLET",
+      "page_no": 1,
+      "paragraph": "Section: organization fullName: Bayer | Paragraph 13 | Lines 12-15",
+      "original_text": "organization fullName: Bayer class: INDUSTRY briefTitle: Efficacy and Safety of Three Different Aflibercept Regimens in Subjects With Diabetic Macular Edema (DME) officialTitle: An Open-label, Randomized, Active-controlled, Parallel-group, Phase-3b Study of the Efficacy, Safety, and Tolerability of Three Different Treatment Regimens of 2 mg Aflibercept Administered by Intravitreal Injections to Su"
+    },
+    {
+      "chunk_id": "02d8793a-63f1-4986-8e09-cba161a0fe6d",
+      "document_id": "ac7ef210-1380-433b-bed2-422be3c34b8b",
+      "document_name": "clinicaltrials_NCT07841899_Phase 3 Study of Intravitreal OLN324 in Adults With Diabetic.docx",
+      "document_content": "eligibilityModule eligibilityCriteria: Inclusion Criteria Be pregnant or breastfeeding History of cataract surgery in the study eye within 90 days of Screening Has uncontrolled glaucoma in the study eye Has uncontrolled hypertension Has had a stroke or myocardial infarction within 180 days If in the cohort of previously treated for DME participants, prior treatment with intravitreal bevacizumab, aflibercept, faricimab, ranibizumab, conbercept, or other approved anti-VEGF or Anti-VEGF/Anti-Ang-2 therapies within 90 days of randomization. Additional exclusion criteria apply healthyVolunteers: False sex: ALL minimumAge: 18 Years",
+      "page_no": 6,
+      "paragraph": "Section: eligibilityModule eligibilityCriteria: Inclusion Criteria | Paragraph 77 | Lines 76-78",
+      "original_text": "eligibilityModule eligibilityCriteria: Inclusion Criteria Be pregnant or breastfeeding History of cataract surgery in the study eye within 90 days of Screening Has uncontrolled glaucoma in the study eye Has uncontrolled hypertension Has had a stroke or myocardial infarction within 180 days If in the cohort of previously treated for DME participants, prior treatment with intravitreal bevacizumab, a"
+    },
+    {
+      "chunk_id": "d8b734e0-b369-420d-9340-50111802030a",
+      "document_id": "5948ca91-60ef-4075-a6ff-c9aecd0db0ca",
+      "document_name": "clinicaltrials_NCT02818998_Efficacy and Safety of Three Different Aflibercept Regimens.docx",
+      "document_content": "eligibilityModule eligibilityCriteria: Inclusion Criteria The subject's history of aflibercept treatment met all of the following: Treatment in the study eye was initiated with five monthly (-1 week /+2 weeks) doses of 2 mg aflibercept and improvements of visual and anatomic outcomes were observed and documented. Following the above initiation phase, the intervals between treatments were between 6 weeks and 12 weeks (one exception was allowed). The interval between the last 2 pre-study injections was ≥ 8 weeks, and visual and anatomic outcomes had been stable over this interval. The subject received the last intravitreal (IVT) injection of aflibercept in the study eye 8 weeks (±10 days) before the first planned treatment /randomization in this study.",
+      "page_no": 6,
+      "paragraph": "Section: eligibilityModule eligibilityCriteria: Inclusion Criteria | Paragraph 89 | Lines 88-89",
+      "original_text": "eligibilityModule eligibilityCriteria: Inclusion Criteria The subject's history of aflibercept treatment met all of the following: Treatment in the study eye was initiated with five monthly (-1 week /+2 weeks) doses of 2 mg aflibercept and improvements of visual and anatomic outcomes were observed and documented."
+    }
+  ],
+  "created_at": "2026-10-30T04:44:40.560812+00:00",
+  "search_mode": "hybrid",
+  "elapsed_ms": 188712
+}

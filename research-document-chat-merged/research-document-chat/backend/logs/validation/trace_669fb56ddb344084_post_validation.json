@@ -1,0 +1,40 @@
+{
+  "correlation_id": "corr_941ce04f73e44722",
+  "message_id": "msg_ff0e91d51c174901",
+  "channel": "whatsapp",
+  "repository_id": "91192bcc-0e9d-46c9-89f9-f76fac8790c3",
+  "user_query": "Should I prescribe ranibizumab for my patient with wet AMD?",
+  "agent": "retina_answer_agent",
+  "scope": {
+    "in_scope": true,
+    "retina_terms": [
+      "amd",
+      "wet amd"
+    ],
+    "molecules": [
+      "ranibizumab"
+    ],
+    "unsupported_molecules": [],
+    "safety_flags": [
+      "\\bmy patient\\b",
+      "\\bshould i (prescribe|give|inject|treat|switch|stop)\\b"
+    ],
+    "reason": ""
+  },
+  "draft_answer": "",
+  "claims": [],
+  "chunks": [],
+  "generation_error": "",
+  "created_at": "2026-10-23T07:16:06.141526+00:00",
+  "validation": {
+    "overall_score": 0.0,
+    "threshold": 0.9,
+    "claim_min_score": 0.7,
+    "decision": "escalate_to_msl",
+    "reason_codes": [
+      "SAFETY_INDIVIDUAL_ADVICE"
+    ],
+    "judge": "deterministic",
+    "validated_at": "2026-10-23T07:16:06.141526+00:00"
+  }
+}

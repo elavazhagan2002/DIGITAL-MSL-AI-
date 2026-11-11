@@ -1,0 +1,247 @@
+{
+  "repository_id": "91192bcc-0e9d-46c9-89f9-f76fac8790c3",
+  "started": "2026-11-09T06:05:59.982036+00:00",
+  "uploads": {
+    "APPROVED": {
+      "document_id": "a89e51ea-23fd-4599-88ee-af6f4ff7e6a2",
+      "response_keys": [
+        "batch_id",
+        "documents",
+        "rejected",
+        "rejected_count",
+        "uploaded_count"
+      ]
+    },
+    "DRAFT": {
+      "document_id": "b8c1ca8a-da5f-42f9-8583-d56fa6c71f1d",
+      "response_keys": [
+        "batch_id",
+        "documents",
+        "rejected",
+        "rejected_count",
+        "uploaded_count"
+      ]
+    },
+    "EXPIRED": {
+      "document_id": "3d1e8270-6b25-407b-865b-9aab3fad01e6",
+      "response_keys": [
+        "batch_id",
+        "documents",
+        "rejected",
+        "rejected_count",
+        "uploaded_count"
+      ]
+    },
+    "SUPERSEDED": {
+      "document_id": "be095a85-2659-4b96-b40f-196d3215a7ee",
+      "response_keys": [
+        "batch_id",
+        "documents",
+        "rejected",
+        "rejected_count",
+        "uploaded_count"
+      ]
+    }
+  },
+  "listing": {
+    "APPROVED": {
+      "status": "completed",
+      "approval_fields_returned": {},
+      "all_metadata_keys": [
+        "batch_id",
+        "content_hash",
+        "content_text_hash",
+        "document_info",
+        "document_type_id",
+        "document_type_name",
+        "effective_settings",
+        "enabled_processor_types",
+        "file_size_bytes",
+        "job_id",
+        "original_file_name",
+        "processor_results",
+        "repository_id",
+        "security_scan",
+        "upload_finalize"
+      ],
+      "top_level_keys": [
+        "batch_id",
+        "collection_name",
+        "document_id",
+        "document_name",
+        "document_type",
+        "document_type_id",
+        "document_type_name",
+        "error_details",
+        "job_id",
+        "metadata",
+        "metadata_updated_at",
+        "original_file_name",
+        "processing",
+        "processing_completion_timestamp",
+        "queue_submission_timestamp",
+        "repository_id",
+        "repository_path",
+        "repository_type",
+        "status",
+        "tenant_id",
+        "upload_timestamp",
+        "validation_status"
+      ]
+    },
+    "DRAFT": {
+      "status": "completed",
+      "approval_fields_returned": {},
+      "all_metadata_keys": [
+        "batch_id",
+        "content_hash",
+        "content_text_hash",
+        "document_info",
+        "document_type_id",
+        "document_type_name",
+        "effective_settings",
+        "enabled_processor_types",
+        "file_size_bytes",
+        "job_id",
+        "original_file_name",
+        "processor_results",
+        "repository_id",
+        "security_scan",
+        "upload_finalize"
+      ],
+      "top_level_keys": [
+        "batch_id",
+        "collection_name",
+        "document_id",
+        "document_name",
+        "document_type",
+        "document_type_id",
+        "document_type_name",
+        "error_details",
+        "job_id",
+        "metadata",
+        "metadata_updated_at",
+        "original_file_name",
+        "processing",
+        "processing_completion_timestamp",
+        "queue_submission_timestamp",
+        "repository_id",
+        "repository_path",
+        "repository_type",
+        "status",
+        "tenant_id",
+        "upload_timestamp",
+        "validation_status"
+      ]
+    },
+    "EXPIRED": {
+      "status": "completed",
+      "approval_fields_returned": {},
+      "all_metadata_keys": [
+        "batch_id",
+        "content_hash",
+        "content_text_hash",
+        "document_info",
+        "document_type_id",
+        "document_type_name",
+        "effective_settings",
+        "enabled_processor_types",
+        "file_size_bytes",
+        "job_id",
+        "original_file_name",
+        "processor_results",
+        "repository_id",
+        "security_scan",
+        "upload_finalize"
+      ],
+      "top_level_keys": [
+        "batch_id",
+        "collection_name",
+        "document_id",
+        "document_name",
+        "document_type",
+        "document_type_id",
+        "document_type_name",
+        "error_details",
+        "job_id",
+        "metadata",
+        "metadata_updated_at",
+        "original_file_name",
+        "processing",
+        "processing_completion_timestamp",
+        "queue_submission_timestamp",
+        "repository_id",
+        "repository_path",
+        "repository_type",
+        "status",
+        "tenant_id",
+        "upload_timestamp",
+        "validation_status"
+      ]
+    },
+    "SUPERSEDED": {
+      "status": "completed",
+      "approval_fields_returned": {},
+      "all_metadata_keys": [
+        "batch_id",
+        "content_hash",
+        "content_text_hash",
+        "document_info",
+        "document_type_id",
+        "document_type_name",
+        "effective_settings",
+        "enabled_processor_types",
+        "file_size_bytes",
+        "job_id",
+        "original_file_name",
+        "processor_results",
+        "repository_id",
+        "security_scan",
+        "upload_finalize"
+      ],
+      "top_level_keys": [
+        "batch_id",
+        "collection_name",
+        "document_id",
+        "document_name",
+        "document_type",
+        "document_type_id",
+        "document_type_name",
+        "error_details",
+        "job_id",
+        "metadata",
+        "metadata_updated_at",
+        "original_file_name",
+        "processing",
+        "processing_completion_timestamp",
+        "queue_submission_timestamp",
+        "repository_id",
+        "repository_path",
+        "repository_type",
+        "status",
+        "tenant_id",
+        "upload_timestamp",
+        "validation_status"
+      ]
+    }
+  },
+  "retrieve": {},
+  "filter": {
+    "survived_filter": [
+      "APPROVED"
+    ],
+    "excluded_with_reason": {
+      "EXPIRED": "expired",
+      "SUPERSEDED": "not_approved:superseded",
+      "DRAFT": "not_approved:draft"
+    }
+  },
+  "cleanup": {
+    "APPROVED": "deleted",
+    "DRAFT": "deleted",
+    "EXPIRED": "deleted",
+    "SUPERSEDED": "deleted"
+  },
+  "unprocessed_after_wait": [],
+  "planted_documents_left_in_repository": 0
+}

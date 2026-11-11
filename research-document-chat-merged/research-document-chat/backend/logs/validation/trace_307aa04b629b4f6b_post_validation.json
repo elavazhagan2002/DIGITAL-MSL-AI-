@@ -1,0 +1,41 @@
+{
+  "correlation_id": "corr_c5036b42cff44d99",
+  "message_id": "msg_99c7bd927732439e",
+  "channel": "web",
+  "repository_id": "pending:retina-and-vitreous",
+  "user_query": "gm",
+  "agent": "retina_answer_agent",
+  "scope": {
+    "in_scope": false,
+    "retina_terms": [],
+    "molecules": [],
+    "unsupported_molecules": [],
+    "safety_flags": [],
+    "reason": "The question is not about retina / eye-care or the configured molecules."
+  },
+  "draft_answer": "",
+  "claims": [],
+  "chunks": [],
+  "retrieval": {
+    "user_query": "gm",
+    "agent": "query_agent",
+    "chunks": [],
+    "created_at": "2026-11-07T15:23:37.507648+00:00",
+    "search_mode": "",
+    "elapsed_ms": 0
+  },
+  "generation_error": "",
+  "created_at": "2026-11-07T15:23:37.507648+00:00",
+  "validation": {
+    "overall_score": 0.0,
+    "threshold": 0.9,
+    "claim_min_score": 0.7,
+    "decision": "refuse",
+    "reason_codes": [
+      "OUT_OF_SCOPE"
+    ],
+    "judge": "deterministic",
+    "validated_at": "2026-11-07T15:23:37.511669+00:00",
+    "confidence_parts": {}
+  }
+}

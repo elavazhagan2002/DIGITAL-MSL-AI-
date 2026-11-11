@@ -1,0 +1,197 @@
+{
+  "correlation_id": "corr_b50c6816fa634430",
+  "message_id": "msg_38dc61dad8a048e6",
+  "channel": "web",
+  "repository_id": "91192bcc-0e9d-46c9-89f9-f76fac8790c3",
+  "user_query": "What did the study on screening for diabetic retinopathy with retinal imaging evaluate?",
+  "agent": "retina_answer_agent",
+  "scope": {
+    "in_scope": true,
+    "retina_terms": [
+      "retinal",
+      "retinopathy",
+      "diabetic retinopathy"
+    ],
+    "molecules": [],
+    "unsupported_molecules": [],
+    "safety_flags": [],
+    "reason": ""
+  },
+  "draft_answer": "The study evaluated whether appropriately trained family physicians could identify diabetic retinopathy from retinal-camera images accurately compared with a retinal specialist. It also assessed whether retinal imaging increased screening rates versus traditional dilated eye examinations and evaluated patient satisfaction, convenience, and willingness to pay.",
+  "claims": [
+    {
+      "claim_id": "C1",
+      "claim_text": "The study evaluated the ability of appropriately trained family physicians to screen for and identify diabetic retinopathy using a retinal camera.",
+      "evidence": [
+        {
+          "chunk_id": "b6a9ab18-fa49-4632-9629-147380d39594",
+          "document_id": "64513862-da28-4a47-9c58-beab34499f87",
+          "document_name": "clinicaltrials_NCT03828890_Assess Screening for Diabetic Retinopathy Using Retinal Came.docx",
+          "document_content": "isFdaRegulatedDrug: False isFdaRegulatedDevice: False descriptionModule briefSummary: The long-term goal for this study is to improve compliance of screening for diabetic retinopathy among subjects with diabetes. Researchers are also doing this research to determine the ability of appropriately trained family physicians to screen for and identify Diabetic Retinopathy using a retinal camera in addition to determining an overall patient perspective of the convenience and cost-effectiveness of retinal imaging within a primary care setting. interventionModel: SINGLE_GROUP primaryPurpose: SCREENING maskingInfo masking: NONE",
+          "page_no": 2,
+          "paragraph": "Section: oversightModule oversightHasDmc: False | Paragraph 28 | Lines 27-28",
+          "original_text": "Researchers are also doing this research to determine the ability of appropriately trained family physicians to screen for and identify Diabetic Retinopathy using a retinal camera in addition to determining an overall patient perspective of the convenience and cost-effectiveness of retinal imaging within a primary care setting."
+        }
+      ],
+      "validation": null
+    },
+    {
+      "claim_id": "C2",
+      "claim_text": "It evaluated the accuracy of family physicians’ interpretations of retinal images compared with a retinal specialist.",
+      "evidence": [
+        {
+          "chunk_id": "1c325f86-900d-4119-99a7-11c13c421115",
+          "document_id": "64513862-da28-4a47-9c58-beab34499f87",
+          "document_name": "clinicaltrials_NCT03828890_Assess Screening for Diabetic Retinopathy Using Retinal Came.docx",
+          "document_content": "description: Number of photographs that are interpreted accurately by the family physicians when compared to the retinal specialist. These photographs are obtained using retinal imaging and after the initial read by the family physicians trained to interpret the images, the images will be reviewed by the retinal specialist to determine if the interpreted results are accurate. timeFrame: 6 months. secondaryOutcomes Item 1 measure: Screening Impact - Percentage increase in the screening rates for Diabetic Retinopathy using retinal imaging.",
+          "page_no": 4,
+          "paragraph": "Section: Item 1 type: OTHER | Paragraph 51 | Lines 50-53",
+          "original_text": "Number of photographs that are interpreted accurately by the family physicians when compared to the retinal specialist."
+        }
+      ],
+      "validation": null
+    },
+    {
+      "claim_id": "C3",
+      "claim_text": "It evaluated the increase in diabetic retinopathy screening rates using retinal imaging with OPTOS compared with the traditional dilated eye examination, as well as patient satisfaction and willingness to pay.",
+      "evidence": [
+        {
+          "chunk_id": "000466ef-f2b2-4c9a-8a35-d3d3561b3fde",
+          "document_id": "64513862-da28-4a47-9c58-beab34499f87",
+          "document_name": "clinicaltrials_NCT03828890_Assess Screening for Diabetic Retinopathy Using Retinal Came.docx",
+          "document_content": "description: Percentage increase in the screening rates for Diabetic Retinopathy using retinal imaging using OPTOS when compared with the traditional dilated eye exam.The current screening rate is around 55%. timeFrame: 6 months otherOutcomes Item 1 measure: Patient Satisfaction description: Percentage change in patient satisfaction and how much are patients willing to pay out of pocket to screen for Diabetic Retinopathy using retinal imaging. Each patient will be surveyed and these questions will help determine patient satisfaction and their willingness to pay for this versus usual care. We will ask the following questions:",
+          "page_no": 4,
+          "paragraph": "Section: Item 1 type: OTHER | Paragraph 54 | Lines 53-56",
+          "original_text": "Percentage increase in the screening rates for Diabetic Retinopathy using retinal imaging using OPTOS when compared with the traditional dilated eye exam."
+        },
+        {
+          "chunk_id": "000466ef-f2b2-4c9a-8a35-d3d3561b3fde",
+          "document_id": "64513862-da28-4a47-9c58-beab34499f87",
+          "document_name": "clinicaltrials_NCT03828890_Assess Screening for Diabetic Retinopathy Using Retinal Came.docx",
+          "document_content": "description: Percentage increase in the screening rates for Diabetic Retinopathy using retinal imaging using OPTOS when compared with the traditional dilated eye exam.The current screening rate is around 55%. timeFrame: 6 months otherOutcomes Item 1 measure: Patient Satisfaction description: Percentage change in patient satisfaction and how much are patients willing to pay out of pocket to screen for Diabetic Retinopathy using retinal imaging. Each patient will be surveyed and these questions will help determine patient satisfaction and their willingness to pay for this versus usual care. We will ask the following questions:",
+          "page_no": 4,
+          "paragraph": "Section: Item 1 type: OTHER | Paragraph 54 | Lines 53-56",
+          "original_text": "Percentage change in patient satisfaction and how much are patients willing to pay out of pocket to screen for Diabetic Retinopathy using retinal imaging."
+        }
+      ],
+      "validation": null
+    }
+  ],
+  "chunks": [
+    {
+      "chunk_id": "b6a9ab18-fa49-4632-9629-147380d39594",
+      "document_id": "64513862-da28-4a47-9c58-beab34499f87",
+      "document_name": "clinicaltrials_NCT03828890_Assess Screening for Diabetic Retinopathy Using Retinal Came.docx",
+      "document_content": "isFdaRegulatedDrug: False isFdaRegulatedDevice: False descriptionModule briefSummary: The long-term goal for this study is to improve compliance of screening for diabetic retinopathy among subjects with diabetes. Researchers are also doing this research to determine the ability of appropriately trained family physicians to screen for and identify Diabetic Retinopathy using a retinal camera in addition to determining an overall patient perspective of the convenience and cost-effectiveness of retinal imaging within a primary care setting. interventionModel: SINGLE_GROUP primaryPurpose: SCREENING maskingInfo masking: NONE",
+      "page_no": 2,
+      "page_end": 2,
+      "paragraph": "Section: oversightModule oversightHasDmc: False | Paragraph 28 | Lines 27-28",
+      "section": "oversightModule oversightHasDmc: False",
+      "line_start": 27,
+      "line_end": 28,
+      "retrieval_score": 0.7296,
+      "repository_id": "91192bcc-0e9d-46c9-89f9-f76fac8790c3"
+    },
+    {
+      "chunk_id": "1c325f86-900d-4119-99a7-11c13c421115",
+      "document_id": "64513862-da28-4a47-9c58-beab34499f87",
+      "document_name": "clinicaltrials_NCT03828890_Assess Screening for Diabetic Retinopathy Using Retinal Came.docx",
+      "document_content": "description: Number of photographs that are interpreted accurately by the family physicians when compared to the retinal specialist. These photographs are obtained using retinal imaging and after the initial read by the family physicians trained to interpret the images, the images will be reviewed by the retinal specialist to determine if the interpreted results are accurate. timeFrame: 6 months. secondaryOutcomes Item 1 measure: Screening Impact - Percentage increase in the screening rates for Diabetic Retinopathy using retinal imaging.",
+      "page_no": 4,
+      "page_end": 4,
+      "paragraph": "Section: Item 1 type: OTHER | Paragraph 51 | Lines 50-53",
+      "section": "Item 1 type: OTHER",
+      "line_start": 50,
+      "line_end": 53,
+      "retrieval_score": 0.7203,
+      "repository_id": "91192bcc-0e9d-46c9-89f9-f76fac8790c3"
+    },
+    {
+      "chunk_id": "2e4467a1-5875-43bc-8208-e7f8d6585f6b",
+      "document_id": "64513862-da28-4a47-9c58-beab34499f87",
+      "document_name": "clinicaltrials_NCT03828890_Assess Screening for Diabetic Retinopathy Using Retinal Came.docx",
+      "document_content": "name: Screening eye exam using Optos technology description: Retinal imaging using Optos technology to identify Diabetic Retinopathy Item 1 measure: Family Physicians Screening for Diabetic Retinopathy - Number of photographs that are interpreted accurately by the family physicians when compared to the retinal specialist",
+      "page_no": 3,
+      "page_end": 3,
+      "paragraph": "Section: Item 1 type: OTHER | Paragraph 45 | Lines 44-45",
+      "section": "Item 1 type: OTHER",
+      "line_start": 44,
+      "line_end": 45,
+      "retrieval_score": 0.6925,
+      "repository_id": "91192bcc-0e9d-46c9-89f9-f76fac8790c3"
+    },
+    {
+      "chunk_id": "000466ef-f2b2-4c9a-8a35-d3d3561b3fde",
+      "document_id": "64513862-da28-4a47-9c58-beab34499f87",
+      "document_name": "clinicaltrials_NCT03828890_Assess Screening for Diabetic Retinopathy Using Retinal Came.docx",
+      "document_content": "description: Percentage increase in the screening rates for Diabetic Retinopathy using retinal imaging using OPTOS when compared with the traditional dilated eye exam.The current screening rate is around 55%. timeFrame: 6 months otherOutcomes Item 1 measure: Patient Satisfaction description: Percentage change in patient satisfaction and how much are patients willing to pay out of pocket to screen for Diabetic Retinopathy using retinal imaging. Each patient will be surveyed and these questions will help determine patient satisfaction and their willingness to pay for this versus usual care. We will ask the following questions:",
+      "page_no": 4,
+      "page_end": 4,
+      "paragraph": "Section: Item 1 type: OTHER | Paragraph 54 | Lines 53-56",
+      "section": "Item 1 type: OTHER",
+      "line_start": 53,
+      "line_end": 56,
+      "retrieval_score": 0.6906,
+      "repository_id": "91192bcc-0e9d-46c9-89f9-f76fac8790c3"
+    },
+    {
+      "chunk_id": "bd03fec7-c7c1-4fe4-8e17-e9501751901d",
+      "document_id": "64513862-da28-4a47-9c58-beab34499f87",
+      "document_name": "clinicaltrials_NCT03828890_Assess Screening for Diabetic Retinopathy Using Retinal Came.docx",
+      "document_content": "officialTitle: A Pilot Study to Assess Screening for Diabetic Retinopathy Using Retinal Camera in Family Medicine Clinic statusModule statusVerifiedDate: 2020-11 overallStatus: COMPLETED",
+      "page_no": 1,
+      "page_end": 1,
+      "paragraph": "Section: statusModule statusVerifiedDate: 2020-11 | Paragraph 11 | Lines 10-10",
+      "section": "statusModule statusVerifiedDate: 2020-11",
+      "line_start": 10,
+      "line_end": 10,
+      "retrieval_score": 0.6862,
+      "repository_id": "91192bcc-0e9d-46c9-89f9-f76fac8790c3"
+    },
+    {
+      "chunk_id": "2bfa85d5-e498-4671-a232-a4c89c64d060",
+      "document_id": "af7de36a-1ad5-4d59-a5b9-52ff37efac09",
+      "document_name": "clinicaltrials_NCT06470061_RQC for the Prevention of Alzheimer_s Disease and Retinal Am.docx",
+      "document_content": "officialTitle: A Randomized Phase II Study to Evaluate Oral RQC for the Prevention of Alzheimer's Disease and Retinal Amyloid-β statusModule statusVerifiedDate: 2024-06 overallStatus: NOT_YET_RECRUITING",
+      "page_no": 1,
+      "page_end": 1,
+      "paragraph": "Section: organization fullName: Zaparackas and Knepper LTD | Paragraph 9 | Lines 8-8",
+      "section": "organization fullName: Zaparackas and Knepper LTD",
+      "line_start": 8,
+      "line_end": 8,
+      "retrieval_score": 0.6035,
+      "repository_id": "91192bcc-0e9d-46c9-89f9-f76fac8790c3"
+    },
+    {
+      "chunk_id": "6b430d9e-55db-4232-856d-67c9f00e78e8",
+      "document_id": "468c1c23-3d69-4044-b494-dcb6bb5497ca",
+      "document_name": "clinicaltrials_NCT03662386_Prospective Analysis of _Genotype-phenotype_ Correlations Ob.docx",
+      "document_content": "description: Phenotypic diagnosis of the type of retinal dystrophy based on all the examinations performed as part of the usual care and examinations added by the research (OCT-Angiography - Optical coherence tomography, and visual acuity with ETDRS scale: Early Treatment Diabetic Retinal Study, ETDRS). timeFrame: Baseline Item 2 measure: Description of the genotypic characteristics of patients with hereditary retinal dystrophies.",
+      "page_no": 4,
+      "page_end": 4,
+      "paragraph": "Section: Item 2 type: PROCEDURE | Paragraph 52 | Lines 51-54",
+      "section": "Item 2 type: PROCEDURE",
+      "line_start": 51,
+      "line_end": 54,
+      "retrieval_score": 0.5644,
+      "repository_id": "91192bcc-0e9d-46c9-89f9-f76fac8790c3"
+    },
+    {
+      "chunk_id": "5c45444e-0c72-4c8f-9803-c2366789e21b",
+      "document_id": "5ec2679e-6e0a-4c34-83ee-75b5d5038253",
+      "document_name": "clinicaltrials_NCT02849405_Evaluation of the Capacity of a Camera to Identify Signs of.docx",
+      "document_content": "detailedDescription: In this pilot study, the main goal is to evaluate the capacity of the Metabolic Hyperspectral Retinal Camera (MHRC) - the experimental instrument - to identify the presence of a specific hyperspectral signature in the retinal arterioles of subjects suffering from arteriosclerosis while this signature should not be present in the retinal arterioles of control subjects considered healthy and without arteriosclerosis risk factors. The study is open, non-controlled and without randomization or placebo. 30 subjects of each group will be enrolled in the study for a total of 60 subjects. Recruitment will take place at the Montreal Heart Institute (Montreal, Quebec, Canada) and will be led by the research team of the Principal Investigator. Specific inclusion/exclusion criteria will differentiate subjects in each group. Once subjects fitting the inclusion/exclusion criteria will be identified, they will be enrolled and asked to sign the informed consent form approved by the Research Ethics and New Technology Development Committee (Montreal Heart Institute). Following this step, an ophthalmic examination will be performed. During this examination, both eyes will be evaluated in order to detect the presence of eye pathologies (advanced cataracts, venous occlusion, age-related macular degeneration or glaucoma) that could interfere with the analysis of the MHRC optical imaging results. The ophthalmic examination consists first of a slit-lamp evaluation and secondly of an optic coherence tomography (OCT) plus a color image of the fundus (standard instruments commonly used in ophthalmology clinics) following the instillation of eye drops to dilate the pupils. The whole examination should last 45 minutes (it takes 15 to 20 minutes for the pupil to be sufficiently dilated to carry out the examinations). If the ophthalmic examination does not reveal any of the exclusion criteria, in the next minutes, the subject will be asked to undergo the baseline MHRC examination. This baseline imaging session will last a maximum of 15 minutes.",
+      "page_no": 3,
+      "page_end": 4,
+      "paragraph": "Section: oversightModule oversightHasDmc: False | Paragraph 34 | Lines 33-35",
+      "section": "oversightModule oversightHasDmc: False",
+      "line_start": 33,
+      "line_end": 35,
+      "retrieval_score": 0.5395,
+      "repository_id": "91192bcc-0e9d-46c9-89f9-f76fac8790c3"
+    }
+  ],
+  "generation_error": "",
+  "created_at": "2026-10-23T08:59:27.512996+00:00",
+  "validation": null
+}

@@ -1,0 +1,69 @@
+{
+  "correlation_id": "corr_3571055d42d94620",
+  "message_id": "msg_5fdc8c6cc96049b7",
+  "channel": "web",
+  "repository_id": "5d13d75d-972c-448d-bf72-efa185bc2b15",
+  "user_query": "How often was aflibercept administered in the VIVID trial?",
+  "agent": "retina_answer_agent",
+  "scope": {
+    "in_scope": true,
+    "retina_terms": [],
+    "molecules": [
+      "aflibercept"
+    ],
+    "unsupported_molecules": [],
+    "safety_flags": [],
+    "reason": ""
+  },
+  "draft_answer": "The library does not contain information on the administration frequency of aflibercept in the VIVID trial.",
+  "claims": [],
+  "chunks": [
+    {
+      "chunk_id": "e637e022-aa8b-43fc-a378-965ecc4c2d7b",
+      "document_id": "5948ca91-60ef-4075-a6ff-c9aecd0db0ca",
+      "document_name": "clinicaltrials_NCT02818998_Efficacy and Safety of Three Different Aflibercept Regimens.docx",
+      "document_content": "organization fullName: Bayer class: INDUSTRY briefTitle: Efficacy and Safety of Three Different Aflibercept Regimens in Subjects With Diabetic Macular Edema (DME) officialTitle: An Open-label, Randomized, Active-controlled, Parallel-group, Phase-3b Study of the Efficacy, Safety, and Tolerability of Three Different Treatment Regimens of 2 mg Aflibercept Administered by Intravitreal Injections to Subjects With Diabetic Macular Edema (DME) acronym: VIOLET",
+      "page_no": 1,
+      "page_end": 1,
+      "paragraph": "Section: organization fullName: Bayer | Paragraph 13 | Lines 12-15",
+      "section": "organization fullName: Bayer",
+      "line_start": 12,
+      "line_end": 15,
+      "retrieval_score": 0.509,
+      "repository_id": "5d13d75d-972c-448d-bf72-efa185bc2b15",
+      "original_text": "organization fullName: Bayer class: INDUSTRY briefTitle: Efficacy and Safety of Three Different Aflibercept Regimens in Subjects With Diabetic Macular Edema (DME) officialTitle: An Open-label, Randomized, Active-controlled, Parallel-group, Phase-3b Study of the Efficacy, Safety, and Tolerability of Three Different Treatment Regimens of 2 mg Aflibercept Administered by Intravitreal Injections to Su"
+    }
+  ],
+  "retrieval": {
+    "user_query": "How often was aflibercept administered in the VIVID trial?",
+    "agent": "query_agent",
+    "chunks": [
+      {
+        "chunk_id": "e637e022-aa8b-43fc-a378-965ecc4c2d7b",
+        "document_id": "5948ca91-60ef-4075-a6ff-c9aecd0db0ca",
+        "document_name": "clinicaltrials_NCT02818998_Efficacy and Safety of Three Different Aflibercept Regimens.docx",
+        "document_content": "organization fullName: Bayer class: INDUSTRY briefTitle: Efficacy and Safety of Three Different Aflibercept Regimens in Subjects With Diabetic Macular Edema (DME) officialTitle: An Open-label, Randomized, Active-controlled, Parallel-group, Phase-3b Study of the Efficacy, Safety, and Tolerability of Three Different Treatment Regimens of 2 mg Aflibercept Administered by Intravitreal Injections to Subjects With Diabetic Macular Edema (DME) acronym: VIOLET",
+        "page_no": 1,
+        "paragraph": "Section: organization fullName: Bayer | Paragraph 13 | Lines 12-15",
+        "original_text": "organization fullName: Bayer class: INDUSTRY briefTitle: Efficacy and Safety of Three Different Aflibercept Regimens in Subjects With Diabetic Macular Edema (DME) officialTitle: An Open-label, Randomized, Active-controlled, Parallel-group, Phase-3b Study of the Efficacy, Safety, and Tolerability of Three Different Treatment Regimens of 2 mg Aflibercept Administered by Intravitreal Injections to Su"
+      }
+    ],
+    "created_at": "2026-10-30T03:51:31.581316+00:00",
+    "search_mode": "vector",
+    "elapsed_ms": 22124
+  },
+  "generation_error": "claims_contradict_draft",
+  "created_at": "2026-10-30T03:51:31.582242+00:00",
+  "validation": {
+    "overall_score": 0.0,
+    "threshold": 0.9,
+    "claim_min_score": 0.7,
+    "decision": "escalate_to_msl",
+    "reason_codes": [
+      "NO_SUPPORTED_CLAIMS",
+      "INSUFFICIENT_EVIDENCE"
+    ],
+    "judge": "deterministic",
+    "validated_at": "2026-10-30T03:51:33.098960+00:00"
+  }
+}

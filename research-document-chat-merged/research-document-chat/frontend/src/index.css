@@ -1,0 +1,212 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ------------------------------------------------------------------------------------------------
+   Sciagen design tokens. The ONLY place colours are defined (plus tailwind.config.js, which maps them).
+   Components use token classes (bg-card, text-fg, border-line, ...), never hex or palette colours.
+   ------------------------------------------------------------------------------------------------ */
+:root {
+  --page: #f2f6fa;
+  --card: #ffffff;
+  --fg: #1b2440;
+  --muted: #4a5873;
+  --border: #dce4ee;
+  --accent: #030460;
+  --accentfg: #ffffff;
+  --link: #0078b5;
+  --selbg: #e6f5fb;
+  --selb: #0078b5;
+  --err-bg: #fef3f2;
+  --err-fg: #b42318;
+  --err-border: #fda29b;
+  --ok-bg: #e6f5fb;
+  --ok-fg: #03507a;
+  --warn-bg: #fff6e5;
+  --warn-fg: #8a4b00;
+  --warn-border: #f2c879;
+  --soft: #eaf0f7;
+  --field: #ffffff;
+  --fieldb: #8a9bb5;
+  --err: #b42318;
+  --shadow-card: 0 1px 2px rgba(3, 4, 96, 0.06), 0 6px 18px rgba(3, 4, 96, 0.07);
+
+  /* Brand constants (identical in both modes) */
+  --brand-navy: #030460;
+  --brand-cyan: #02b4d8;
+  --brand-blue: #0078b5;
+
+  /* Sidebar (solid navy in both modes) */
+  --navy: #030460;
+  --navy-line: transparent;
+  --on-navy: #ffffff;
+  --on-navy-text: #d5e4f5;
+  --on-navy-muted: #b9ddf0;
+  --nav-hover: rgba(255, 255, 255, 0.08);
+  --nav-active: rgba(2, 180, 216, 0.18);
+  --nav-outline: rgba(255, 255, 255, 0.5);
+  --scrim: rgba(3, 4, 96, 0.45);
+}
+
+.dark {
+  --page: #050716;
+  --card: #0b0f2e;
+  --fg: #e8ecf8;
+  --muted: #a9b4d0;
+  --border: #232a55;
+  --accent: #02b4d8;
+  --accentfg: #03123a;
+  --link: #5cd6ee;
+  --selbg: #0e2a4a;
+  --selb: #02b4d8;
+  --err-bg: #2a1215;
+  --err-fg: #fda29b;
+  --err-border: #7a271a;
+  --ok-bg: #0e2a4a;
+  --ok-fg: #8fe3f5;
+  --warn-bg: #2b2110;
+  --warn-fg: #f2c879;
+  --warn-border: #6b4a12;
+  --soft: #121842;
+  --field: #060822;
+  --fieldb: #5a6794;
+  --err: #fda29b;
+  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.4), 0 6px 18px rgba(0, 0, 0, 0.35);
+
+  --navy: #050716;
+  --navy-line: #232a55;
+}
+
+html {
+  background: var(--page);
+  color: var(--fg);
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.2s ease-out;
+}
+
+/* Custom Scrollbar Styles */
+/* For Webkit browsers (Chrome, Safari, Edge) */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+*:hover {
+  scrollbar-color: rgba(156, 163, 175, 0.5) transparent;
+}
+
+.dark *:hover {
+  scrollbar-color: rgba(75, 85, 99, 0.8) transparent;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+*:hover::-webkit-scrollbar-thumb {
+  background: rgba(156, 163, 175, 0.5);
+}
+
+.dark *:hover::-webkit-scrollbar-thumb {
+  background: rgba(75, 85, 99, 0.8);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(107, 114, 128, 0.8);
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: rgba(55, 65, 81, 1);
+}
+
+/* Remove arrows */
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+
+
+body {
+  font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.sciagen-hero {
+  color: var(--on-navy);
+  background:
+    radial-gradient(60% 50% at 80% 10%, rgba(2, 180, 216, 0.22), transparent 70%),
+    linear-gradient(150deg, var(--brand-navy) 0%, #05206e 55%, var(--brand-blue) 100%);
+}
+
+.sciagen-grid {
+  background-image: radial-gradient(rgba(56, 203, 234, 0.18) 1px, transparent 1px);
+  background-size: 26px 26px;
+}
+
+.sciagen-glass {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(14px);
+}
+
+/* Focus ring everywhere (WCAG 2.2 AA: visible focus). */
+button:focus-visible,
+a:focus-visible,
+[role='button']:focus-visible,
+summary:focus-visible {
+  outline: 3px solid var(--selb);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+.login-hero {
+  background: linear-gradient(150deg, var(--brand-navy) 0%, #05206e 55%, var(--brand-blue) 100%);
+}
+
+
+/* Settings page layout (layout only; colours come from the token classes on the elements).
+   Sizes follow the container, not the viewport, because the app sidebar takes 264px of it. No centred block:
+   the page uses the whole main column. */
+.settings-root { container-type: inline-size; container-name: settings; width: 100%; }
+.settings-grid { display: grid; gap: 24px; grid-template-columns: minmax(0, 1fr); align-items: start; }
+.settings-nav { display: flex; gap: 4px; overflow-x: auto; padding-bottom: 4px; }
+.settings-content { min-width: 0; max-width: 880px; }
+.settings-content.wide { max-width: none; }
+.settings-fields { display: grid; gap: 16px; grid-template-columns: minmax(0, 1fr); }
+@container settings (min-width: 960px) {
+  .settings-grid { grid-template-columns: 240px minmax(0, 1fr); }
+  .settings-nav { position: sticky; top: 0; flex-direction: column; overflow: visible; padding-bottom: 0; }
+}
+@container settings (min-width: 1200px) {
+  .settings-fields { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}

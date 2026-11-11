@@ -1,0 +1,45 @@
+{
+  "correlation_id": "corr_31a3d23638844f90",
+  "message_id": "msg_1ed3ab695062480a",
+  "channel": "web",
+  "repository_id": "pending:retina-and-vitreous",
+  "user_query": "What are the major pathophysiological mechanisms responsible for the development of diabetic retinopathy?",
+  "agent": "retina_answer_agent",
+  "scope": {
+    "in_scope": true,
+    "retina_terms": [
+      "retinopathy",
+      "diabetic retinopathy",
+      "diabetic retinopathy"
+    ],
+    "molecules": [],
+    "unsupported_molecules": [],
+    "safety_flags": [],
+    "reason": ""
+  },
+  "draft_answer": "",
+  "claims": [],
+  "chunks": [],
+  "retrieval": {
+    "user_query": "What are the major pathophysiological mechanisms responsible for the development of diabetic retinopathy?",
+    "agent": "query_agent",
+    "chunks": [],
+    "created_at": "2026-11-09T11:22:38.963000+00:00",
+    "search_mode": "",
+    "elapsed_ms": 0
+  },
+  "generation_error": "no_approved_source",
+  "created_at": "2026-11-09T11:22:38.963000+00:00",
+  "validation": {
+    "overall_score": 0.0,
+    "threshold": 0.9,
+    "claim_min_score": 0.7,
+    "decision": "escalate_to_msl",
+    "reason_codes": [
+      "NO_APPROVED_SOURCE"
+    ],
+    "judge": "deterministic",
+    "validated_at": "2026-11-09T11:22:38.976053+00:00",
+    "confidence_parts": {}
+  }
+}

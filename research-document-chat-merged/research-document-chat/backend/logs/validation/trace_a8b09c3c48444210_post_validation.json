@@ -1,0 +1,148 @@
+{
+  "correlation_id": "corr_b1eebda87f824bc7",
+  "message_id": "msg_98fad0d3087f4d3c",
+  "channel": "web",
+  "repository_id": "91192bcc-0e9d-46c9-89f9-f76fac8790c3",
+  "user_query": "How does macular edema affect visual acuity in preterm infants?",
+  "agent": "retina_answer_agent",
+  "scope": {
+    "in_scope": true,
+    "retina_terms": [
+      "macular",
+      "visual acuity"
+    ],
+    "molecules": [],
+    "unsupported_molecules": [],
+    "safety_flags": [],
+    "reason": ""
+  },
+  "draft_answer": "",
+  "claims": [],
+  "chunks": [
+    {
+      "chunk_id": "ed4a3fec-1372-4a86-a560-4ada15220f57",
+      "document_id": "db120133-77ca-4c8a-b74d-51e075a3e467",
+      "document_name": "pubmed_42820799_PMC13648560_Effect of Prematurity on Foveal Development During Infancy_.pdf",
+      "document_content": "Our study demonstrates that the effect of prematurity on foveal development seen during the preterm period persists through infancy, with the most profound effects in the more premature infants. Additionally, our findings suggest that a history of macular edema also has an impact on foveal devel-opment. Long-term follow up of these infants will provide more information on how these structural changes evolve later in childhood. The relationship between these foveal structural changes in prematurity and visual function has yielded mixed results. Balasubramanian et al.40 found that adults with history of IOVS | October 2026 | Vol. 67 | No. 12 | Article 4 | 9",
+      "page_no": 8,
+      "page_end": 9,
+      "paragraph": "Section: CONCLUSIONS | Paragraph 206 | Lines 206-207",
+      "section": "CONCLUSIONS",
+      "line_start": 206,
+      "line_end": 207,
+      "retrieval_score": 0.7253,
+      "repository_id": "91192bcc-0e9d-46c9-89f9-f76fac8790c3"
+    },
+    {
+      "chunk_id": "1ba312c7-f76c-4334-8d33-48ec5cfb4a80",
+      "document_id": "db120133-77ca-4c8a-b74d-51e075a3e467",
+      "document_name": "pubmed_42820799_PMC13648560_Effect of Prematurity on Foveal Development During Infancy_.pdf",
+      "document_content": "icant difference in ORL thickness or growth rate between the two groups.30 They note that because anti-VEGF has been associated with a more rapid outer retinal thickening, studies that included treated infants may interfere with the thickness measurements.30,35 Although we found an asso-ciation between ROP treatment and P/F ratio in univariate analysis, the significance was lost in multivariate analysis (Table 2). prematurity with increased central IRL thickness had worse visual acuity. In contrast, Lee et al.28 found that a thicker ORL and thicker central macular thickness was correlated with better visual acuity in preschool age children with a history of prematurity compared to full-term born chil-dren. In BabySTEPS, we evaluated visual acuity in prema-ture infants at nine months' corrected age and found that retinal nerve fiber layer thinning across the papillomacular bundle and prior ROP treatment are associated with poorer grating visual acuity.41 Increased foveal total retinal thick-ness, but not inner retinal thickness or inner nuclear layer thickness, was associated with poorer nine-month visual acuity, but the association was only significant in univari-able analysis, although outer retinal layer thickness was not assessed.41 In addition, macular edema is a common and often self-resolving finding in preterm infants, found in up to approximately 60% of preterm infants, yet its func-tional significance is not well understood.6,9,21,23,41-43 Prior studies have reported mixed results regarding its impact, with some studies showing reduced visual acuity, poorer neurodevelopmental outcomes and others showing no asso-ciation with visual acuity.40,41,44-46 In our study, we found that infants with a history of macular edema had signifi-cantly thicker ORL compared to infants without a history of macular edema. These findings may suggest that there is likely a complex interplay between prematurity, foveal morphology, macular edema and functional outcomes, high-lighting the need for further research to elucidate these findings.",
+      "page_no": 8,
+      "page_end": 8,
+      "paragraph": "Section: DISCUSSION | Paragraph 199 | Lines 199-199",
+      "section": "DISCUSSION",
+      "line_start": 199,
+      "line_end": 199,
+      "retrieval_score": 0.7241,
+      "repository_id": "91192bcc-0e9d-46c9-89f9-f76fac8790c3"
+    },
+    {
+      "chunk_id": "22c0255d-7461-4f4f-bea1-d807f7f039da",
+      "document_id": "db120133-77ca-4c8a-b74d-51e075a3e467",
+      "document_name": "pubmed_42820799_PMC13648560_Effect of Prematurity on Foveal Development During Infancy_.pdf",
+      "document_content": "CONCLUSIONS. Development of both inner and outer retina is altered in prematurity, and manifests from the time of preterm birth through infancy. During the first year of life, the most premature infants had shallower foveal pits and thicker IRL and ORL. Infants with a history of macular edema had thicker ORL. Keywords: optical coherence tomography, preterm birth, prematurity, retinopathy of prematurity, macular edema, gestational age oveal development is a complex process with the major-ity of changes in the inner retina occurring before term birth, followed by outer retinal development following birth. Our knowledge of human foveal development largely relies on information gained from histopathological studies.1-3 F continues to increase until reaching adult ranges in adoles-cence.2,5",
+      "page_no": 1,
+      "page_end": 1,
+      "paragraph": "Section: Received: December 7, 2025 Accepted: June 22, 2026 Published: October 1, 2026 | Paragraph 10 | Lines 9-12",
+      "section": "Received: December 7, 2025 Accepted: June 22, 2026 Published: October 1, 2026",
+      "line_start": 9,
+      "line_end": 12,
+      "retrieval_score": 0.7055,
+      "repository_id": "91192bcc-0e9d-46c9-89f9-f76fac8790c3"
+    },
+    {
+      "chunk_id": "e2fd3dc4-c65a-4c4b-91df-e68c00e66f5e",
+      "document_id": "db120133-77ca-4c8a-b74d-51e075a3e467",
+      "document_name": "pubmed_42820799_PMC13648560_Effect of Prematurity on Foveal Development During Infancy_.pdf",
+      "document_content": "IOVS | October 2026 | Vol. 67 | No. 12 | Article 4 | 10 Yanni SE, Wang J, Chan M, et al. Foveal avascular zone and foveal pit formation after preterm birth. Br J Ophthalmol. 2021;17(5):e1009497. Balasubramanian S, Beckmann J, Mehta H, et al. Relation-ship between retinal thickness profiles and visual outcomes in young adults born extremely preterm: the EPICure@19 Study. Ophthalmology. 2019;126:107-112. Seely KR, Mangalesh S, Shen LL, et al. Association between retinal microanatomy in preterm infants and nine month visual acuity. JAMA Ophthalmol. 2022;140:699- Maldonado RS, O'Connell R, Ascher SB, et al. Spectral-domain optical coherence tomographic assessment of sever-ity of cystoid macular edema in retinopathy of prematurity. Arch Ophthalmol. 2012;130:569-578. Erol MK, Ozdemir O, Turgut Coban D, et al. Macular findings obtained by spectral domain optical coherence tomography in retinopathy of prematurity. J Ophthalmol. 2014;2014:468653. Mangalesh S, Wong BM, Chen X, et al. Morphological char-acteristics of early- versus late-onset macular edema in preterm infants. J AAPOS. 2020;24:303-306. Rothman AL, Tran-Viet D, Gustafson KE, et al. Poorer neurodevelopmental outcomes associated with cystoid macular edema identified in preterm infants in the intensive care nursery. Ophthalmology. 2015;122:610- Rothman AL, Tran-Viet D, Vajzovic L, et al. Functional outcomes of young infants with and without macular edema. Retina. 2015;35:2018-2027. 2012;96:961-966. Park KA, Oh SY. Analysis of spectral-domain optical coher-ence tomography in preterm children: retinal layer thick-ness and choroidal thickness profiles. Invest Ophthalmol Vis Sci. 2012;53:7201-7207. Hammer DX, Iftimia NV, Ferguson RD, et al. Foveal fine structure in retinopathy of prematurity: an adaptive optics Fourier domain optical coherence tomography study. Invest Ophthalmol Vis Sci. 2008;49:2061-2070. Vogel RN, Strampe M, Fagbemi OE, et al. Foveal develop-ment in infants treated with bevacizumab or laser photo-coagulation for retinopathy of prematurity. Ophthalmology. 2018;125:444-452. Wagner-Schuman M, Dubis AM, Nordgren RN, et al. Race-and sex-related differences in retinal thickness and foveal pit morphology. Invest Ophthalmol Vis Sci. 2011;52:625-634. Kashani AH, Zimmer-Galler IE, Shah SM, et al. Retinal thick-ness analysis by race, gender, and age using Stratus OCT. Am J Ophthalmol. 2010;149:496-502. Ayala GD, Linderman RE, Valenzuela RK, et al. Assessing foveal structure in individuals with TYR R402Q and S192Y hypomorphic alleles. Ophthalmol Sci. 2021;1(4):100077. Currant H, Hysi P, Fitzgerald TW, et al. Genetic variation affects morphological retinal phenotypes extracted from UK Biobank optical coherence tomography images. PLoS Genet.",
+      "page_no": 2,
+      "page_end": 2,
+      "paragraph": "Section: Received: December 7, 2025 Accepted: June 22, 2026 Published: October 1, 2026 | Paragraph 18 | Lines 17-18",
+      "section": "Received: December 7, 2025 Accepted: June 22, 2026 Published: October 1, 2026",
+      "line_start": 17,
+      "line_end": 18,
+      "retrieval_score": 0.6935,
+      "repository_id": "91192bcc-0e9d-46c9-89f9-f76fac8790c3"
+    },
+    {
+      "chunk_id": "248a38ff-076d-4eae-9d03-7c3b735a5eaa",
+      "document_id": "db120133-77ca-4c8a-b74d-51e075a3e467",
+      "document_name": "pubmed_42820799_PMC13648560_Effect of Prematurity on Foveal Development During Infancy_.pdf",
+      "document_content": "Macular edema is frequently observed in premature infants before term-equivalent age.21-23 A trained grader manually evaluated for the presence of macular edema based on the presence of cystoid changes, typically in the inner nuclear layer (INL), and determined severity of edema based on deformation of the inner retinal contour at the foveal center. O'Sullivan et al. used a cut-off INL thickness of 71.25 μm (averaged over central 2000 μm) as an objective measure of macular edema.8 In this manuscript, we also used this value as a threshold to evaluate the presence of macular edema. Because macular edema in premature infants is tran-sient, an eye was classified as having a history of macular edema if edema was identified at any prior gradable imag-ing visit based on grader assessment and/or INL thickness of ≥71.25 μm). This study was conducted in preterm infants undergoing ROP screening as a part of the prospective, observational STudy of Eye imaging in Preterm infantS (BabySTEPS1; Clin-icalTrials.gov, NCT02887157). The study was approved by Duke University Health System Institutional Review Board and adhered to the tenets of the Declaration of Helsinki and the guidelines of Health Insurance Portability and Accountability Act. Informed consent was obtained from the parent/legal guardian for study participation after expla-nation of the nature and possible consequences of the study. Imaging analysis and grading were performed as previously described.8 Briefly, for each imaging session, a single hori-zontal B-scan that best captured the fovea from the best foveal volume was manually selected by a senior OCT image grader masked to clinical history except age at time of imag-ing. The foveal center was identified based on the presence of an inner retinal divot or the point of minimal inner retinal thickness. Retinal layer segmentation was performed using a semi-automated, infant-specific segmentation algorithm with manual correction as needed using proprietary infant-specific software he Duke OCT Retinal Analysis Program Marking Code Baby version 1.2 or 2.0 (MATLAB; MathWorks, Natick, MA, USA). Total retinal thickness was measured from the internal limiting membrane to the inner border of the retinal pigment epithelium. Inner retinal layer (IRL) was measured from the internal limiting membrane to the inner border of INL. ORL was measured from the outer border of INL to the inner border of retinal pigment epithelium. The INL was excluded from the IRL measurement to avoid poten-tial effects of macular edema. Parafoveal thickness was calcu-lated as the average retinal thickness measured at a nominal distance of 1000 μm nasal and temporal to the foveal center, consistent with prior BabySTEPS studies, as this eccentricity",
+      "page_no": 2,
+      "page_end": 2,
+      "paragraph": "Section: METHODS | Paragraph 28 | Lines 27-27",
+      "section": "METHODS",
+      "line_start": 27,
+      "line_end": 27,
+      "retrieval_score": 0.6767,
+      "repository_id": "91192bcc-0e9d-46c9-89f9-f76fac8790c3"
+    },
+    {
+      "chunk_id": "2a3c08ba-4602-4069-8518-c232d04000de",
+      "document_id": "db120133-77ca-4c8a-b74d-51e075a3e467",
+      "document_name": "pubmed_42820799_PMC13648560_Effect of Prematurity on Foveal Development During Infancy_.pdf",
+      "document_content": "METHODS. Infants enrolled in the STudy of Eye imaging in Preterm infantS (BabySTEPS1; NCT02887157) were imaged at four and nine months' corrected age. For infants with grad-able imaging, foveal and parafoveal inner (IRL) and outer (ORL) retinal layer thicknesses were measured, with parafoveal/foveal thickness (P/F) ratios calculated. Univariate and multivariate regression analyses were performed to determine associations of birth and perinatal factors with foveation, and the effect of gestational age (GA) and history of macular edema on foveal thickness measurements. Citation: Zhou XY, Ying GS, Tai V, Mangalesh S, Toth CA, Chen X. Effect of prematurity on foveal development during infancy: Increased foveal inner and outer retina layer thicknesses in extremely premature infants. Invest Ophthalmol Vis Sci. 2026;67(12):4. https://doi.org/10.1167/iovs.67.12.4 RESULTS. In multivariate analysis of 99 eyes (56 infants) at four months and 70 eyes (44 infants, 34 infants overlapped with the four-months group) at nine months' corrected age, decreased P/F ratio was associated with lower GA (per week decrease) (four months: β (SE) = -0.109 (0.010, P < 0.0001; nine months: β (SE) = -0.063(0.011), P = 0.0005). Lower GA was associated with thicker foveal IRL (four months: β (SE) = 5.91 (0.76) μm, P < 0.0001; nine months: β (SE) = 3.95 (0.99) μm, P = 0.004) and ORL (four months: β (SE) = 4.86 (1.10) μm, P = 0.003; nine months: β (SE) = 4.46 (1.13) μm, P = 0.002). History of macular edema was associated with higher P/F ratios and thicker foveal ORL but not foveal IRL.",
+      "page_no": 1,
+      "page_end": 1,
+      "paragraph": "Section: Received: December 7, 2025 Accepted: June 22, 2026 Published: October 1, 2026 | Paragraph 8 | Lines 7-8",
+      "section": "Received: December 7, 2025 Accepted: June 22, 2026 Published: October 1, 2026",
+      "line_start": 7,
+      "line_end": 8,
+      "retrieval_score": 0.6646,
+      "repository_id": "91192bcc-0e9d-46c9-89f9-f76fac8790c3"
+    },
+    {
+      "chunk_id": "52759464-5126-4393-bd6d-a7cc0f82351c",
+      "document_id": "db120133-77ca-4c8a-b74d-51e075a3e467",
+      "document_name": "pubmed_42820799_PMC13648560_Effect of Prematurity on Foveal Development During Infancy_.pdf",
+      "document_content": "142.6 (2.80) Bold values indicate statistical significance (P < 0.05). From the multivariable model with GA and macular edema presence as predictors in the model. that prematurity continues to impact foveation through the first year of life, with persistent alterations in both inner and outer retinal layers. have previously found progressive thickening of the foveal ORL in extremely preterm infants up to term equivalent age with many of the extremely premature infants devel-oping a peaked appearance of the foveal ORL, whereas the ORL thickness remained more uniform in the less preterm infants (Fig.).8 Anwar et al.18 found that from 33 to 39 weeks PMA, foveal outer retina was consistently thicker in infants with ROP at all gestational ages, though the study excluded infants with macular edema. Like Anwar et al.,18 although later in life of preterm infants, we found that the foveal ORL remains thickest in the most premature infants. In school age and older preterm born patients, the transient phenomenon of INL edema in the preterm period had not been recorded. This study demonstrates the persisting impact of that event on outer retinal morphology in the first year of life. Several studies comparing preterm to full-term children or adults have also found that the foveal ORL was thicker in indi-viduals with history of prematurity.8,29,32-34 One possible mechanism for this thickening was suggested by Sjostrand et al.,29 who proposed that the arrested outward migration of IRL results in a weakened outward pull on the synaptically connected cone pedicles and photoreceptor cell bodies. As a consequence, their axons adopt a more vertical orientation centrally, increasing the thickness of the ORL. Other expla-nations include increased cone packing at the foveal center, although this is less likely as cone density does not appear to be increased in prematurity.7 In contrast to our findings, He et al. compared extremely premature infants (<28 weeks GA) with non-extremely premature infants (28 to 39 weeks GA) in treatment-naïve patients and did not find a signif-",
+      "page_no": 7,
+      "page_end": 7,
+      "paragraph": "Section: DISCUSSION | Paragraph 193 | Lines 193-194",
+      "section": "DISCUSSION",
+      "line_start": 193,
+      "line_end": 194,
+      "retrieval_score": 0.646,
+      "repository_id": "91192bcc-0e9d-46c9-89f9-f76fac8790c3"
+    },
+    {
+      "chunk_id": "dabb5467-f3e3-46ec-8890-252468461b4a",
+      "document_id": "a61a253a-5200-4818-a125-99b18e16dd15",
+      "document_name": "clinicaltrials_NCT00732927_Parnaparin vs Aspirin in the Treatment of Retinal Vein Occlu.docx",
+      "document_content": "Age between 18 and 85 years A body weight of greater than 50 Kg A requirement that no more than 15 days had passed between symptomatic presentation, confirmation of RVO and entry into the study. Exclusion Criteria: Modification of the optic media transparency that could compromise the evaluation of fluorescein angiography, such as cataract or corneal degeneration History of major ocular surgery (with the exclusion of cataract extraction) Previous RVO Other ocular conditions that, in the opinion of the investigator, could have affected macular edema or altered visual acuity during the course of the study - Contraindications to the study drugs (e.g. major bleeding or neurosurgical procedures in the previous 3 months, serum creatinine levels of greater than 2.0 mg/dL, severe liver insufficiency, platelet count \\< 100,000 mm3, known active peptic gastric ulcer)",
+      "page_no": 5,
+      "page_end": 6,
+      "paragraph": "Section: eligibilityModule eligibilityCriteria: Inclusion Criteria | Paragraph 59 | Lines 58-60",
+      "section": "eligibilityModule eligibilityCriteria: Inclusion Criteria",
+      "line_start": 58,
+      "line_end": 60,
+      "retrieval_score": 0.5999,
+      "repository_id": "91192bcc-0e9d-46c9-89f9-f76fac8790c3"
+    }
+  ],
+  "generation_error": "llm_not_configured",
+  "created_at": "2026-10-23T07:04:15.463155+00:00",
+  "validation": {
+    "overall_score": 0.0,
+    "threshold": 0.9,
+    "claim_min_score": 0.7,
+    "decision": "escalate_to_msl",
+    "reason_codes": [
+      "LLM_UNAVAILABLE"
+    ],
+    "judge": "deterministic",
+    "validated_at": "2026-10-23T07:04:15.463155+00:00"
+  }
+}

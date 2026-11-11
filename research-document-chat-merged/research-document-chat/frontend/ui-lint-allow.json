@@ -1,0 +1,14 @@
+{
+  "_doc": "Allow-list for scripts/ui-lint.mjs. Keep it minimal and give a reason for every entry. 'tokenBlocks' = CSS selectors whose whole block may define colours (the design tokens). 'files' = whole files that may contain colour literals (glob, relative to frontend/). 'lines' = a regex allowed on lines of a given file (and optionally one rule).",
+  "tokenBlocks": {
+    "src/index.css": [":root", ".dark"]
+  },
+  "files": [
+    { "path": "src/theme/**", "reason": "token files and theme helpers" },
+    { "path": "src/portal/BrandMark.tsx", "reason": "logo assets are images; no colour literals expected, listed so a future inline SVG logo is allowed" }
+  ],
+  "lines": [
+    { "file": "src/portal/LoginPage.tsx", "rule": "hex", "pattern": "linear-gradient\\(150deg", "reason": "login hero gradient literal given in the brief" },
+    { "file": "src/portal/LoginPage.tsx", "rule": "fn", "pattern": "linear-gradient\\(150deg", "reason": "login hero gradient literal given in the brief" }
+  ]
+}

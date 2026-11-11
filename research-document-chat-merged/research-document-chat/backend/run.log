@@ -1,0 +1,1136 @@
+INFO:     Will watch for changes in these directories: ['C:\\Users\\Santhosh Kumar S\\Downloads\\research-document-chat-merged\\research-document-chat\\backend']
+INFO:     Uvicorn running on http://0.0.0.0:8087 (Press CTRL+C to quit)
+INFO:     Started reloader process [22572] using StatReload
+INFO:     Started server process [27216]
+INFO:     Waiting for application startup.
+2026-10-26 10:20:24,784 [INFO] research_chat: Initializing SQLite/PostgreSQL Database...
+2026-10-26 10:20:24,993 [INFO] research_chat: Database initialized successfully.
+INFO:     Application startup complete.
+2026-10-26 10:20:47,592 [INFO] services.llm_service: Switched to OpenAI provider with model: gpt-5.6-luna
+INFO:     127.0.0.1:51347 - "GET /api/v1/digital-msl/ops/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56524 - "OPTIONS /api/v1/digital-msl/portal/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56524 - "POST /api/v1/digital-msl/portal/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56524 - "GET /api/v1/digital-msl/traces?limit=10 HTTP/1.1" 200 OK
+2026-10-26 10:32:02,747 [INFO] services.llm_service: Switched to OpenAI provider with model: gpt-5.6-luna
+INFO:     127.0.0.1:53163 - "GET /api/v1/digital-msl/ops/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56524 - "GET /api/v1/digital-msl/traces?limit=10 HTTP/1.1" 200 OK
+2026-10-26 10:32:02,965 [INFO] services.llm_service: Switched to OpenAI provider with model: gpt-5.6-luna
+INFO:     127.0.0.1:53163 - "GET /api/v1/digital-msl/ops/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61286 - "GET /api/v1/digital-msl/cases HTTP/1.1" 200 OK
+2026-10-26 10:32:02,984 [INFO] services.llm_service: Switched to OpenAI provider with model: gpt-5.6-luna
+INFO:     127.0.0.1:56750 - "GET /api/v1/digital-msl/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61286 - "GET /api/v1/digital-msl/cases HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60013 - "GET /api/v1/repositories HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60113 - "GET /api/v1/repositories/c01147bf-637b-4baa-976b-8b2a99806fbd/documents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60113 - "GET /api/v1/repositories/c01147bf-637b-4baa-976b-8b2a99806fbd/documents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60113 - "OPTIONS /api/v1/digital-msl/channels/web/messages HTTP/1.1" 200 OK
+2026-10-26 10:32:20,019 [INFO] services.llm_service: Switched to OpenAI provider with model: gpt-5.6-luna
+INFO:     127.0.0.1:55043 - "POST /api/v1/digital-msl/channels/web/messages HTTP/1.1" 200 OK
+2026-10-26 10:32:20,080 [INFO] digital_msl.store: [corr_89cccd0c84814b9f] PRE-VALIDATION JSON (trace_d02071965991441b)
+{
+  "correlation_id": "corr_89cccd0c84814b9f",
+  "message_id": "msg_cdabbbf83dcf4589",
+  "channel": "web",
+  "repository_id": "c01147bf-637b-4baa-976b-8b2a99806fbd",
+  "user_query": "hi",
+  "agent": "retina_answer_agent",
+  "scope": {
+    "in_scope": false,
+    "retina_terms": [],
+    "molecules": [],
+    "unsupported_molecules": [],
+    "safety_flags": [],
+    "reason": "The question is not about retina / eye-care or the configured molecules."
+  },
+  "draft_answer": "",
+  "claims": [],
+  "chunks": [],
+  "retrieval": {
+    "user_query": "hi",
+    "agent": "query_agent",
+    "chunks": [],
+    "created_at": "2026-10-26T05:02:20.059061+00:00"
+  },
+  "generation_error": "",
+  "created_at": "2026-10-26T05:02:20.059061+00:00",
+  "validation": null
+}
+2026-10-26 10:32:20,080 [INFO] digital_msl.store: [corr_89cccd0c84814b9f] POST-VALIDATION JSON (trace_d02071965991441b)
+{
+  "correlation_id": "corr_89cccd0c84814b9f",
+  "message_id": "msg_cdabbbf83dcf4589",
+  "channel": "web",
+  "repository_id": "c01147bf-637b-4baa-976b-8b2a99806fbd",
+  "user_query": "hi",
+  "agent": "retina_answer_agent",
+  "scope": {
+    "in_scope": false,
+    "retina_terms": [],
+    "molecules": [],
+    "unsupported_molecules": [],
+    "safety_flags": [],
+    "reason": "The question is not about retina / eye-care or the configured molecules."
+  },
+  "draft_answer": "",
+  "claims": [],
+  "chunks": [],
+  "retrieval": {
+    "user_query": "hi",
+    "agent": "query_agent",
+    "chunks": [],
+    "created_at": "2026-10-26T05:02:20.059061+00:00"
+  },
+  "generation_error": "",
+  "created_at": "2026-10-26T05:02:20.059061+00:00",
+  "validation": {
+    "overall_score": 0.0,
+    "threshold": 0.9,
+    "claim_min_score": 0.7,
+    "decision": "escalate_to_msl",
+    "reason_codes": [
+      "OUT_OF_SCOPE"
+    ],
+    "judge": "deterministic",
+    "validated_at": "2026-10-26T05:02:20.059061+00:00"
+  }
+}
+2026-10-26 10:32:20,099 [INFO] digital_msl.agents.query_agent: [corr_89cccd0c84814b9f] Escalated to Physical MSL: case case_fb9f5b1029a94b2c (['OUT_OF_SCOPE'])
+2026-10-26 10:32:30,429 [INFO] services.llm_service: Switched to OpenAI provider with model: gpt-5.6-luna
+INFO:     127.0.0.1:61677 - "POST /api/v1/digital-msl/channels/web/messages HTTP/1.1" 200 OK
+2026-10-26 10:32:30,516 [INFO] digital_msl.store: [corr_f8123560b9554e61] PRE-VALIDATION JSON (trace_711822c39b3f4b8f)
+{
+  "correlation_id": "corr_f8123560b9554e61",
+  "message_id": "msg_92c3bc80d6a94c50",
+  "channel": "web",
+  "repository_id": "c01147bf-637b-4baa-976b-8b2a99806fbd",
+  "user_query": "How are you",
+  "agent": "retina_answer_agent",
+  "scope": {
+    "in_scope": false,
+    "retina_terms": [],
+    "molecules": [],
+    "unsupported_molecules": [],
+    "safety_flags": [],
+    "reason": "The question is not about retina / eye-care or the configured molecules."
+  },
+  "draft_answer": "",
+  "claims": [],
+  "chunks": [],
+  "retrieval": {
+    "user_query": "How are you",
+    "agent": "query_agent",
+    "chunks": [],
+    "created_at": "2026-10-26T05:02:30.458814+00:00"
+  },
+  "generation_error": "",
+  "created_at": "2026-10-26T05:02:30.458814+00:00",
+  "validation": null
+}
+2026-10-26 10:32:30,516 [INFO] digital_msl.store: [corr_f8123560b9554e61] POST-VALIDATION JSON (trace_711822c39b3f4b8f)
+{
+  "correlation_id": "corr_f8123560b9554e61",
+  "message_id": "msg_92c3bc80d6a94c50",
+  "channel": "web",
+  "repository_id": "c01147bf-637b-4baa-976b-8b2a99806fbd",
+  "user_query": "How are you",
+  "agent": "retina_answer_agent",
+  "scope": {
+    "in_scope": false,
+    "retina_terms": [],
+    "molecules": [],
+    "unsupported_molecules": [],
+    "safety_flags": [],
+    "reason": "The question is not about retina / eye-care or the configured molecules."
+  },
+  "draft_answer": "",
+  "claims": [],
+  "chunks": [],
+  "retrieval": {
+    "user_query": "How are you",
+    "agent": "query_agent",
+    "chunks": [],
+    "created_at": "2026-10-26T05:02:30.458814+00:00"
+  },
+  "generation_error": "",
+  "created_at": "2026-10-26T05:02:30.458814+00:00",
+  "validation": {
+    "overall_score": 0.0,
+    "threshold": 0.9,
+    "claim_min_score": 0.7,
+    "decision": "escalate_to_msl",
+    "reason_codes": [
+      "OUT_OF_SCOPE"
+    ],
+    "judge": "deterministic",
+    "validated_at": "2026-10-26T05:02:30.458814+00:00"
+  }
+}
+2026-10-26 10:32:30,541 [INFO] digital_msl.agents.query_agent: [corr_f8123560b9554e61] Escalated to Physical MSL: case case_da2da0a0907f4c6d (['OUT_OF_SCOPE'])
+2026-10-26 10:32:37,842 [INFO] services.llm_service: Switched to OpenAI provider with model: gpt-5.6-luna
+INFO:     127.0.0.1:62531 - "POST /api/v1/digital-msl/channels/web/messages HTTP/1.1" 200 OK
+2026-10-26 10:32:51,366 [INFO] httpx2: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-26 10:32:53,046 [INFO] httpx2: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-26 10:32:53,081 [INFO] digital_msl.store: [corr_4887e4c754194296] PRE-VALIDATION JSON (trace_f08854da892348ee)
+{
+  "correlation_id": "corr_4887e4c754194296",
+  "message_id": "msg_9646837512724d68",
+  "channel": "web",
+  "repository_id": "c01147bf-637b-4baa-976b-8b2a99806fbd",
+  "user_query": "what is retina?",
+  "agent": "retina_answer_agent",
+  "scope": {
+    "in_scope": true,
+    "retina_terms": [
+      "retina"
+    ],
+    "molecules": [],
+    "unsupported_molecules": [],
+    "safety_flags": [],
+    "reason": ""
+  },
+  "draft_answer": "The supplied source describes the retina as a peripheral receptor involved in responding to light and dark signals.",
+  "claims": [
+    {
+      "claim_id": "C1",
+      "claim_text": "The retina is described as a peripheral receptor involved in responding to light and dark signals.",
+      "evidence": [
+        {
+          "chunk_id": "00b18710-4fa3-4b3b-8579-1ec7f66fa8ad",
+          "document_id": "c626ba2c-08f8-4f1f-8438-3dfd9b367f4b",
+          "document_name": "pubmed_42897642_PMC13682045_Circadian clock and its potential as a therapy for ischemic.pdf",
+          "document_content": "Circadian clock and its potential as a therapy for ischemic heart disease Yiran Wang1, He Wang1, Ning Liu1, Jiayi Zhang2 and Bin Liu1* Abstract According to an epidemiological survey, myocardial infarction, ischemia-reperfusion injury, and aortic rupture usually occur in the morning and summer and are characterized by more severe symptoms and poorer prognosis. The occurrence, development, treatment difficulties, and poor prognosis of ischemic heart disease are closely related to circadian rhythm disorders and the abnormal transcription of circadian clock genes. Normal circadian rhythms regulate neurohumoral regulation and energy metabolism, thereby playing a protective or modulatory role in ischemic heart disease (IHD). HIF1\u03b1 links the IHD and circadian signaling pathways through the hypoxia response element (HRE) and Per-Arnt-Sim (PAS) domains in gene promoters and enhancers. \u200bIntroduction The effects of circadian rhythms are profound at both cellular and animal levels. Studies have shown that in mammals, 80% of genes show periodic expression lev­ els in at least one tissue or organ. Furthermore, 82.2% of genes exhibit rhythmic transcription and are concur­ rently identified by the U.S. Food and Drug Administra­ tion (FDA) as druggable targets. Consequently, circadian rhythm management may have significant implications for human health [1]. In accordance with their adaptation to Earth's 24-h rotation cycle, human organs with auton­ omous circadian clocks are divided into two categories: central and peripheral circadian organs. Following exter­ nal environmental changes, primarily based on light and dark signals, to peripheral receptors (such as the retina), the clock's central gene sequence transcription-trans­ lation feedback loop (TTFL), located in the suprachias­ matic nucleus (SCN) of the hypothalamus, undergoes continuous transcription, translation, modification, accumulation, and degradation of gene products over a 24-h period [2]. This causes circadian rhythm oscillations in the body. This rhythm information is gradually trans­ mitted to peripheral clock tissues and organs, regulat­ ing several important physiological processes, including hormone secretion, energy metabolism, inflammation, immune response, and aging [3-7]. Full list of author information is available at the end of the article As a peripheral rhythm-regulating organ, the cardio­ vascular system is influenced by neurohumoral factors, electrophysiological characteristics, and energy metab­ olism. These factors are subject to regulation by both rhythm control center, autonomous circadian rhythms and peripheral oscillation-affected factors, including environmental light, temperature, feeding, oxygen lev­ els, sensory stimulation, wakefulness/sleep (includ­ ing sleep deprivation, sleep restriction, and shift work), and exercise [8-12]. A substantial body of research has demonstrated the pivotal role of the biological clock in the pathogenesis of a wide range of diseases, including metabolic syndromes, neoplasms, neurological disor­ ders, respiratory illnesses, cardiovascular conditions, and immune-inflammatory responses [13-15]. Nevertheless, the precise means of attaining a 24-h circadian rhythm within an organism, optimizing the efficacy of treatment • The Author(s) 2026. Open Access This article is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License, which permits any non-commercial use, sharing, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if you modified the licensed material.",
+          "page_no": 1,
+          "paragraph": "Paragraph 8 | Lines 7-14",
+          "original_text": "Following exter­nal environmental changes, primarily based on light and dark signals, to peripheral receptors (such as the retina), the clock's central gene sequence transcription-trans­lation feedback loop (TTFL), located in the suprachias­matic nucleus (SCN) of the hypothalamus, undergoes continuous transcription, translation, modification, accumulation, and degradation of gene products over a 24-h period [2]."
+        }
+      ],
+      "validation": null
+    }
+  ],
+  "chunks": [
+    {
+      "chunk_id": "00b18710-4fa3-4b3b-8579-1ec7f66fa8ad",
+      "document_id": "c626ba2c-08f8-4f1f-8438-3dfd9b367f4b",
+      "document_name": "pubmed_42897642_PMC13682045_Circadian clock and its potential as a therapy for ischemic.pdf",
+      "document_content": "Circadian clock and its potential as a therapy for ischemic heart disease Yiran Wang1, He Wang1, Ning Liu1, Jiayi Zhang2 and Bin Liu1* Abstract According to an epidemiological survey, myocardial infarction, ischemia-reperfusion injury, and aortic rupture usually occur in the morning and summer and are characterized by more severe symptoms and poorer prognosis. The occurrence, development, treatment difficulties, and poor prognosis of ischemic heart disease are closely related to circadian rhythm disorders and the abnormal transcription of circadian clock genes. Normal circadian rhythms regulate neurohumoral regulation and energy metabolism, thereby playing a protective or modulatory role in ischemic heart disease (IHD). HIF1\u03b1 links the IHD and circadian signaling pathways through the hypoxia response element (HRE) and Per-Arnt-Sim (PAS) domains in gene promoters and enhancers. \u200bIntroduction The effects of circadian rhythms are profound at both cellular and animal levels. Studies have shown that in mammals, 80% of genes show periodic expression lev­ els in at least one tissue or organ. Furthermore, 82.2% of genes exhibit rhythmic transcription and are concur­ rently identified by the U.S. Food and Drug Administra­ tion (FDA) as druggable targets. Consequently, circadian rhythm management may have significant implications for human health [1]. In accordance with their adaptation to Earth's 24-h rotation cycle, human organs with auton­ omous circadian clocks are divided into two categories: central and peripheral circadian organs. Following exter­ nal environmental changes, primarily based on light and dark signals, to peripheral receptors (such as the retina), the clock's central gene sequence transcription-trans­ lation feedback loop (TTFL), located in the suprachias­ matic nucleus (SCN) of the hypothalamus, undergoes continuous transcription, translation, modification, accumulation, and degradation of gene products over a 24-h period [2]. This causes circadian rhythm oscillations in the body. This rhythm information is gradually trans­ mitted to peripheral clock tissues and organs, regulat­ ing several important physiological processes, including hormone secretion, energy metabolism, inflammation, immune response, and aging [3-7]. Full list of author information is available at the end of the article As a peripheral rhythm-regulating organ, the cardio­ vascular system is influenced by neurohumoral factors, electrophysiological characteristics, and energy metab­ olism. These factors are subject to regulation by both rhythm control center, autonomous circadian rhythms and peripheral oscillation-affected factors, including environmental light, temperature, feeding, oxygen lev­ els, sensory stimulation, wakefulness/sleep (includ­ ing sleep deprivation, sleep restriction, and shift work), and exercise [8-12]. A substantial body of research has demonstrated the pivotal role of the biological clock in the pathogenesis of a wide range of diseases, including metabolic syndromes, neoplasms, neurological disor­ ders, respiratory illnesses, cardiovascular conditions, and immune-inflammatory responses [13-15]. Nevertheless, the precise means of attaining a 24-h circadian rhythm within an organism, optimizing the efficacy of treatment • The Author(s) 2026. Open Access This article is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License, which permits any non-commercial use, sharing, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if you modified the licensed material.",
+      "page_no": 1,
+      "page_end": 1,
+      "paragraph": "Paragraph 8 | Lines 7-14",
+      "section": "",
+      "line_start": 7,
+      "line_end": 14,
+      "retrieval_score": 0.5319,
+      "repository_id": "c01147bf-637b-4baa-976b-8b2a99806fbd",
+      "original_text": "Circadian clock and its potential as a therapy for ischemic heart disease Yiran Wang1, He Wang1, Ning Liu1, Jiayi Zhang2 and Bin Liu1* Abstract According to an epidemiological survey, myocardial infarction, ischemia-reperfusion injury, and aortic rupture usually occur in the morning and summer and are characterized by more severe symptoms and poorer prognosis."
+    },
+    {
+      "chunk_id": "f1b6c682-ee33-4b23-9912-ce3972771315",
+      "document_id": "038bf6ad-d4bb-4c47-9a01-4a5102d88806",
+      "document_name": "pubmed_42902164_PMC13685291_The CML_esRAGE ratio as a potential biomarker of early diast.pdf",
+      "document_content": "P Disease duration P \u03b2 (95% CI) -CML/esRAGE 0.700(0.020,1.381) 0.044 - -0.004(-0.008,-0.001) 0.027 - (P < 0.05). AGEs are formed via non-enzymatic glyca­ tion (Maillard reaction) between reducing sugars and proteins, CML being the most abundant and well-char­ acterized species [22]. The observed higher serum CML in the T1D group is consistent with the effects of chronic hyperglycemia and the metabolic memory phenomenon, whereby AGEs may continue to accumulate even after glycemic control is achieved [23]. Methylglyoxal (MG) is a highly reactive dicarbonyl metabolite of glycolysis that reacts with protein arginine residues to form MG-H1 [24]. In our study, MG-H1 lev­ els did not differ significantly between groups, which is inconsistent with some previous reports. Kilhovd et al. reported increased serum MG-H1 in patients with type 2 diabetes [25], and Karachalias et al. demonstrated increased MG-H1 adducts in the retina of streptozoto­ cin-induced diabetic rats [24]. In the present study, the mean MG-H1 level in the diabetic group was numerically higher than that in the control group, though the differ­ ence was not statistically significant, which may be attrib­ uted to the limited sample size of this pilot study. conditions. Reduced e(lat) may suggest impaired relax­ ation in diabetic patients. No significant change was observed in e(sep), which may be explained by differ­ ences in myocardial fiber architecture: longitudinal and circular fibers abundant in the lateral wall are sparsely distributed in the interventricular septum [31].",
+      "page_no": 6,
+      "page_end": 6,
+      "paragraph": "Section: P Disease duration P \u03b2 (95% CI) | Paragraph 99 | Lines 118-123",
+      "section": "P Disease duration P \u03b2 (95% CI)",
+      "line_start": 118,
+      "line_end": 123,
+      "retrieval_score": 0.5005,
+      "repository_id": "c01147bf-637b-4baa-976b-8b2a99806fbd",
+      "original_text": "P Disease duration P \u03b2 (95% CI) -CML/esRAGE 0.700(0.020,1.381) 0.044 - -0.004(-0.008,-0.001) 0.027 - (P < 0.05)."
+    },
+    {
+      "chunk_id": "0e5101bc-ffff-40f5-86c1-5091adc6ebc3",
+      "document_id": "038bf6ad-d4bb-4c47-9a01-4a5102d88806",
+      "document_name": "pubmed_42902164_PMC13685291_The CML_esRAGE ratio as a potential biomarker of early diast.pdf",
+      "document_content": "Acknowledgements Not applicable. Declarations Soulis T, Thallas V, Youssef S, Gilbert RE, McWilliam BG, Murray-McIntosh RP, et al. Advanced glycation end products and their receptors co-localise in rat organs susceptible to diabetic microvascular injury. Diabetologia. 1997;40(6 -28. Ramasamy R, Schmidt AM. Receptor for advanced glycation end products (RAGE) and implications for the pathophysiology of heart failure. Curr Heart Fail Rep. 2012;9(2 -16. Russo I, Frangogiannis NG. Diabetes-associated cardiac fibrosis: Cellular effectors, molecular mechanisms and therapeutic opportunities. J Mol Cell Cardiol. 2016;90:84-93. Zhao J, Randive R, Stewart JA. Molecular mechanisms of AGE/RAGE-mediated fibrosis in the diabetic heart. World J Diabetes. 2014;5(6 -7. Hudson BI, Carter AM, Harja E, Kalea AZ, Arriero M, Yang H, et al. Identifica­ tion, classification, and expression of RAGE gene splice variants. FASEB J. 2008;22(5 -80. Raucci A, Cugusi S, Antonelli A, Barabino SM, Monti L, Bierhaus A, et al. A soluble form of the receptor for advanced glycation endproducts (RAGE) is produced by proteolytic cleavage of the membrane-bound form by the sheddase a disintegrin and metalloprotease 10 (ADAM10). FASEB J. 2008;22(10 -27. Prasad K. Is there any evidence that AGE/sRAGE is a universal biomarker/risk marker for diseases? Mol Cell Biochem. 2019;451(1-2 -44. Heier M, Margeirsdottir HD, Gaarder M, Stensæth KH, Brunborg C, Torjesen PA, et al. Soluble RAGE and atherosclerosis in youth with type 1 diabetes: a 5-year follow-up study. Cardiovasc Diabetol. 2015;14:126. Nagueh SF, Smiseth OA, Appleton CP, Byrd BF 3rd, Dokainish H, Edvardsen T, et al. Recommendations for the evaluation of left ventricular diastolic function by echocardiography: an update from the American Society of Echocardiography and the European Association of Cardiovascular Imaging. J Am Soc Echocardiogr. 2016;29(4 -314. Schmidt AM, Yan SD, Wautier JL, Stern D. Activation of receptor for advanced glycation end products: a mechanism for chronic vascular dysfunction in diabetic vasculopathy and atherosclerosis. Circ Res. 1999;84(5 -97. Monnier VM, Bautista O, Kenny D, Sell DR, Fogarty J, Dahms W, et al. Skin collagen glycation, glycoxidation, and crosslinking are lower in subjects with long-term intensive versus conventional therapy of type 1 diabetes: relevance of glycated collagen products versus HbA1c as markers of diabetic complications. DCCT Skin Collagen Ancillary Study Group. Diabetes Control and Complications Trial. Diabetes. 1999;48(4 -80. Karachalias N, Babaei-Jadidi R, Ahmed N, Thornalley PJ. Accumulation of fructosyl-lysine and advanced glycation end products in the kidney, retina and peripheral nerve of streptozotocin-induced diabetic rats. Biochem Soc Trans. 2003;31(Pt 6 -5. Kilhovd BK, Giardino I, Torjesen PA, Birkeland KI, Berg TJ, Thornalley PJ, et al. Increased serum levels of the specific AGE-compound methylglyoxal-derived hydroimidazolone in patients with type 2 diabetes. Metabolism. 2003;52(2 -7. Challier M, Jacqueminet S, Benabdesselam O, Grimaldi A, Beaudeux JL. Increased serum concentrations of soluble receptor for advanced glycation endproducts in patients with type 1 diabetes. Clin Chem. 2005;51(9 -50. Neviere R, Yu Y, Wang L, Tessier F, Boulanger E. Implication of advanced glyca­ tion end products (AGEs) and their receptor (RAGE) on myocardial contractile and mitochondrial functions. Glycoconj J. 2016;33(4 -17. Prasad K. Low levels of serum soluble receptors for advanced glycation end products, biomarkers for disease state: myth or reality. Int J Angiol.",
+      "page_no": 9,
+      "page_end": 9,
+      "paragraph": "Section: Acknowledgements Not applicable. | Paragraph 125 | Lines 145-145",
+      "section": "Acknowledgements Not applicable.",
+      "line_start": 145,
+      "line_end": 145,
+      "retrieval_score": 0.5001,
+      "repository_id": "c01147bf-637b-4baa-976b-8b2a99806fbd",
+      "original_text": "Acknowledgements Not applicable."
+    }
+  ],
+  "retrieval": {
+    "user_query": "what is retina?",
+    "agent": "query_agent",
+    "chunks": [
+      {
+        "chunk_id": "00b18710-4fa3-4b3b-8579-1ec7f66fa8ad",
+        "document_id": "c626ba2c-08f8-4f1f-8438-3dfd9b367f4b",
+        "document_name": "pubmed_42897642_PMC13682045_Circadian clock and its potential as a therapy for ischemic.pdf",
+        "document_content": "Circadian clock and its potential as a therapy for ischemic heart disease Yiran Wang1, He Wang1, Ning Liu1, Jiayi Zhang2 and Bin Liu1* Abstract According to an epidemiological survey, myocardial infarction, ischemia-reperfusion injury, and aortic rupture usually occur in the morning and summer and are characterized by more severe symptoms and poorer prognosis. The occurrence, development, treatment difficulties, and poor prognosis of ischemic heart disease are closely related to circadian rhythm disorders and the abnormal transcription of circadian clock genes. Normal circadian rhythms regulate neurohumoral regulation and energy metabolism, thereby playing a protective or modulatory role in ischemic heart disease (IHD). HIF1\u03b1 links the IHD and circadian signaling pathways through the hypoxia response element (HRE) and Per-Arnt-Sim (PAS) domains in gene promoters and enhancers. \u200bIntroduction The effects of circadian rhythms are profound at both cellular and animal levels. Studies have shown that in mammals, 80% of genes show periodic expression lev­ els in at least one tissue or organ. Furthermore, 82.2% of genes exhibit rhythmic transcription and are concur­ rently identified by the U.S. Food and Drug Administra­ tion (FDA) as druggable targets. Consequently, circadian rhythm management may have significant implications for human health [1]. In accordance with their adaptation to Earth's 24-h rotation cycle, human organs with auton­ omous circadian clocks are divided into two categories: central and peripheral circadian organs. Following exter­ nal environmental changes, primarily based on light and dark signals, to peripheral receptors (such as the retina), the clock's central gene sequence transcription-trans­ lation feedback loop (TTFL), located in the suprachias­ matic nucleus (SCN) of the hypothalamus, undergoes continuous transcription, translation, modification, accumulation, and degradation of gene products over a 24-h period [2]. This causes circadian rhythm oscillations in the body. This rhythm information is gradually trans­ mitted to peripheral clock tissues and organs, regulat­ ing several important physiological processes, including hormone secretion, energy metabolism, inflammation, immune response, and aging [3-7]. Full list of author information is available at the end of the article As a peripheral rhythm-regulating organ, the cardio­ vascular system is influenced by neurohumoral factors, electrophysiological characteristics, and energy metab­ olism. These factors are subject to regulation by both rhythm control center, autonomous circadian rhythms and peripheral oscillation-affected factors, including environmental light, temperature, feeding, oxygen lev­ els, sensory stimulation, wakefulness/sleep (includ­ ing sleep deprivation, sleep restriction, and shift work), and exercise [8-12]. A substantial body of research has demonstrated the pivotal role of the biological clock in the pathogenesis of a wide range of diseases, including metabolic syndromes, neoplasms, neurological disor­ ders, respiratory illnesses, cardiovascular conditions, and immune-inflammatory responses [13-15]. Nevertheless, the precise means of attaining a 24-h circadian rhythm within an organism, optimizing the efficacy of treatment • The Author(s) 2026. Open Access This article is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License, which permits any non-commercial use, sharing, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if you modified the licensed material.",
+        "page_no": 1,
+        "paragraph": "Paragraph 8 | Lines 7-14",
+        "original_text": "Circadian clock and its potential as a therapy for ischemic heart disease Yiran Wang1, He Wang1, Ning Liu1, Jiayi Zhang2 and Bin Liu1* Abstract According to an epidemiological survey, myocardial infarction, ischemia-reperfusion injury, and aortic rupture usually occur in the morning and summer and are characterized by more severe symptoms and poorer prognosis."
+      },
+      {
+        "chunk_id": "f1b6c682-ee33-4b23-9912-ce3972771315",
+        "document_id": "038bf6ad-d4bb-4c47-9a01-4a5102d88806",
+        "document_name": "pubmed_42902164_PMC13685291_The CML_esRAGE ratio as a potential biomarker of early diast.pdf",
+        "document_content": "P Disease duration P \u03b2 (95% CI) -CML/esRAGE 0.700(0.020,1.381) 0.044 - -0.004(-0.008,-0.001) 0.027 - (P < 0.05). AGEs are formed via non-enzymatic glyca­ tion (Maillard reaction) between reducing sugars and proteins, CML being the most abundant and well-char­ acterized species [22]. The observed higher serum CML in the T1D group is consistent with the effects of chronic hyperglycemia and the metabolic memory phenomenon, whereby AGEs may continue to accumulate even after glycemic control is achieved [23]. Methylglyoxal (MG) is a highly reactive dicarbonyl metabolite of glycolysis that reacts with protein arginine residues to form MG-H1 [24]. In our study, MG-H1 lev­ els did not differ significantly between groups, which is inconsistent with some previous reports. Kilhovd et al. reported increased serum MG-H1 in patients with type 2 diabetes [25], and Karachalias et al. demonstrated increased MG-H1 adducts in the retina of streptozoto­ cin-induced diabetic rats [24]. In the present study, the mean MG-H1 level in the diabetic group was numerically higher than that in the control group, though the differ­ ence was not statistically significant, which may be attrib­ uted to the limited sample size of this pilot study. conditions. Reduced e(lat) may suggest impaired relax­ ation in diabetic patients. No significant change was observed in e(sep), which may be explained by differ­ ences in myocardial fiber architecture: longitudinal and circular fibers abundant in the lateral wall are sparsely distributed in the interventricular septum [31].",
+        "page_no": 6,
+        "paragraph": "Section: P Disease duration P \u03b2 (95% CI) | Paragraph 99 | Lines 118-123",
+        "original_text": "P Disease duration P \u03b2 (95% CI) -CML/esRAGE 0.700(0.020,1.381) 0.044 - -0.004(-0.008,-0.001) 0.027 - (P < 0.05)."
+      },
+      {
+        "chunk_id": "0e5101bc-ffff-40f5-86c1-5091adc6ebc3",
+        "document_id": "038bf6ad-d4bb-4c47-9a01-4a5102d88806",
+        "document_name": "pubmed_42902164_PMC13685291_The CML_esRAGE ratio as a potential biomarker of early diast.pdf",
+        "document_content": "Acknowledgements Not applicable. Declarations Soulis T, Thallas V, Youssef S, Gilbert RE, McWilliam BG, Murray-McIntosh RP, et al. Advanced glycation end products and their receptors co-localise in rat organs susceptible to diabetic microvascular injury. Diabetologia. 1997;40(6 -28. Ramasamy R, Schmidt AM. Receptor for advanced glycation end products (RAGE) and implications for the pathophysiology of heart failure. Curr Heart Fail Rep. 2012;9(2 -16. Russo I, Frangogiannis NG. Diabetes-associated cardiac fibrosis: Cellular effectors, molecular mechanisms and therapeutic opportunities. J Mol Cell Cardiol. 2016;90:84-93. Zhao J, Randive R, Stewart JA. Molecular mechanisms of AGE/RAGE-mediated fibrosis in the diabetic heart. World J Diabetes. 2014;5(6 -7. Hudson BI, Carter AM, Harja E, Kalea AZ, Arriero M, Yang H, et al. Identifica­ tion, classification, and expression of RAGE gene splice variants. FASEB J. 2008;22(5 -80. Raucci A, Cugusi S, Antonelli A, Barabino SM, Monti L, Bierhaus A, et al. A soluble form of the receptor for advanced glycation endproducts (RAGE) is produced by proteolytic cleavage of the membrane-bound form by the sheddase a disintegrin and metalloprotease 10 (ADAM10). FASEB J. 2008;22(10 -27. Prasad K. Is there any evidence that AGE/sRAGE is a universal biomarker/risk marker for diseases? Mol Cell Biochem. 2019;451(1-2 -44. Heier M, Margeirsdottir HD, Gaarder M, Stensæth KH, Brunborg C, Torjesen PA, et al. Soluble RAGE and atherosclerosis in youth with type 1 diabetes: a 5-year follow-up study. Cardiovasc Diabetol. 2015;14:126. Nagueh SF, Smiseth OA, Appleton CP, Byrd BF 3rd, Dokainish H, Edvardsen T, et al. Recommendations for the evaluation of left ventricular diastolic function by echocardiography: an update from the American Society of Echocardiography and the European Association of Cardiovascular Imaging. J Am Soc Echocardiogr. 2016;29(4 -314. Schmidt AM, Yan SD, Wautier JL, Stern D. Activation of receptor for advanced glycation end products: a mechanism for chronic vascular dysfunction in diabetic vasculopathy and atherosclerosis. Circ Res. 1999;84(5 -97. Monnier VM, Bautista O, Kenny D, Sell DR, Fogarty J, Dahms W, et al. Skin collagen glycation, glycoxidation, and crosslinking are lower in subjects with long-term intensive versus conventional therapy of type 1 diabetes: relevance of glycated collagen products versus HbA1c as markers of diabetic complications. DCCT Skin Collagen Ancillary Study Group. Diabetes Control and Complications Trial. Diabetes. 1999;48(4 -80. Karachalias N, Babaei-Jadidi R, Ahmed N, Thornalley PJ. Accumulation of fructosyl-lysine and advanced glycation end products in the kidney, retina and peripheral nerve of streptozotocin-induced diabetic rats. Biochem Soc Trans. 2003;31(Pt 6 -5. Kilhovd BK, Giardino I, Torjesen PA, Birkeland KI, Berg TJ, Thornalley PJ, et al. Increased serum levels of the specific AGE-compound methylglyoxal-derived hydroimidazolone in patients with type 2 diabetes. Metabolism. 2003;52(2 -7. Challier M, Jacqueminet S, Benabdesselam O, Grimaldi A, Beaudeux JL. Increased serum concentrations of soluble receptor for advanced glycation endproducts in patients with type 1 diabetes. Clin Chem. 2005;51(9 -50. Neviere R, Yu Y, Wang L, Tessier F, Boulanger E. Implication of advanced glyca­ tion end products (AGEs) and their receptor (RAGE) on myocardial contractile and mitochondrial functions. Glycoconj J. 2016;33(4 -17. Prasad K. Low levels of serum soluble receptors for advanced glycation end products, biomarkers for disease state: myth or reality. Int J Angiol.",
+        "page_no": 9,
+        "paragraph": "Section: Acknowledgements Not applicable. | Paragraph 125 | Lines 145-145",
+        "original_text": "Acknowledgements Not applicable."
+      }
+    ],
+    "created_at": "2026-10-26T05:02:44.949400+00:00"
+  },
+  "generation_error": "",
+  "created_at": "2026-10-26T05:02:44.949400+00:00",
+  "validation": null
+}
+2026-10-26 10:32:53,082 [INFO] digital_msl.store: [corr_4887e4c754194296] POST-VALIDATION JSON (trace_f08854da892348ee)
+{
+  "correlation_id": "corr_4887e4c754194296",
+  "message_id": "msg_9646837512724d68",
+  "channel": "web",
+  "repository_id": "c01147bf-637b-4baa-976b-8b2a99806fbd",
+  "user_query": "what is retina?",
+  "agent": "retina_answer_agent",
+  "scope": {
+    "in_scope": true,
+    "retina_terms": [
+      "retina"
+    ],
+    "molecules": [],
+    "unsupported_molecules": [],
+    "safety_flags": [],
+    "reason": ""
+  },
+  "draft_answer": "The supplied source describes the retina as a peripheral receptor involved in responding to light and dark signals.",
+  "claims": [
+    {
+      "claim_id": "C1",
+      "claim_text": "The retina is described as a peripheral receptor involved in responding to light and dark signals.",
+      "evidence": [
+        {
+          "chunk_id": "00b18710-4fa3-4b3b-8579-1ec7f66fa8ad",
+          "document_id": "c626ba2c-08f8-4f1f-8438-3dfd9b367f4b",
+          "document_name": "pubmed_42897642_PMC13682045_Circadian clock and its potential as a therapy for ischemic.pdf",
+          "document_content": "Circadian clock and its potential as a therapy for ischemic heart disease Yiran Wang1, He Wang1, Ning Liu1, Jiayi Zhang2 and Bin Liu1* Abstract According to an epidemiological survey, myocardial infarction, ischemia-reperfusion injury, and aortic rupture usually occur in the morning and summer and are characterized by more severe symptoms and poorer prognosis. The occurrence, development, treatment difficulties, and poor prognosis of ischemic heart disease are closely related to circadian rhythm disorders and the abnormal transcription of circadian clock genes. Normal circadian rhythms regulate neurohumoral regulation and energy metabolism, thereby playing a protective or modulatory role in ischemic heart disease (IHD). HIF1\u03b1 links the IHD and circadian signaling pathways through the hypoxia response element (HRE) and Per-Arnt-Sim (PAS) domains in gene promoters and enhancers. \u200bIntroduction The effects of circadian rhythms are profound at both cellular and animal levels. Studies have shown that in mammals, 80% of genes show periodic expression lev­ els in at least one tissue or organ. Furthermore, 82.2% of genes exhibit rhythmic transcription and are concur­ rently identified by the U.S. Food and Drug Administra­ tion (FDA) as druggable targets. Consequently, circadian rhythm management may have significant implications for human health [1]. In accordance with their adaptation to Earth's 24-h rotation cycle, human organs with auton­ omous circadian clocks are divided into two categories: central and peripheral circadian organs. Following exter­ nal environmental changes, primarily based on light and dark signals, to peripheral receptors (such as the retina), the clock's central gene sequence transcription-trans­ lation feedback loop (TTFL), located in the suprachias­ matic nucleus (SCN) of the hypothalamus, undergoes continuous transcription, translation, modification, accumulation, and degradation of gene products over a 24-h period [2]. This causes circadian rhythm oscillations in the body. This rhythm information is gradually trans­ mitted to peripheral clock tissues and organs, regulat­ ing several important physiological processes, including hormone secretion, energy metabolism, inflammation, immune response, and aging [3-7]. Full list of author information is available at the end of the article As a peripheral rhythm-regulating organ, the cardio­ vascular system is influenced by neurohumoral factors, electrophysiological characteristics, and energy metab­ olism. These factors are subject to regulation by both rhythm control center, autonomous circadian rhythms and peripheral oscillation-affected factors, including environmental light, temperature, feeding, oxygen lev­ els, sensory stimulation, wakefulness/sleep (includ­ ing sleep deprivation, sleep restriction, and shift work), and exercise [8-12]. A substantial body of research has demonstrated the pivotal role of the biological clock in the pathogenesis of a wide range of diseases, including metabolic syndromes, neoplasms, neurological disor­ ders, respiratory illnesses, cardiovascular conditions, and immune-inflammatory responses [13-15]. Nevertheless, the precise means of attaining a 24-h circadian rhythm within an organism, optimizing the efficacy of treatment • The Author(s) 2026. Open Access This article is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License, which permits any non-commercial use, sharing, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if you modified the licensed material.",
+          "page_no": 1,
+          "paragraph": "Paragraph 8 | Lines 7-14",
+          "original_text": "Following exter­nal environmental changes, primarily based on light and dark signals, to peripheral receptors (such as the retina), the clock's central gene sequence transcription-trans­lation feedback loop (TTFL), located in the suprachias­matic nucleus (SCN) of the hypothalamus, undergoes continuous transcription, translation, modification, accumulation, and degradation of gene products over a 24-h period [2]."
+        }
+      ],
+      "validation": {
+        "score": 0.9333,
+        "verdict": "supported",
+        "signals": {
+          "citation_integrity": true,
+          "quote_match": 1.0,
+          "lexical_support": 0.6667,
+          "numeric_consistency": true,
+          "missing_numbers": [],
+          "llm_entailment": "supported",
+          "llm_rationale": "The evidence explicitly identifies the retina as a peripheral receptor receiving/responding to light and dark signals."
+        },
+        "reasons": []
+      }
+    }
+  ],
+  "chunks": [
+    {
+      "chunk_id": "00b18710-4fa3-4b3b-8579-1ec7f66fa8ad",
+      "document_id": "c626ba2c-08f8-4f1f-8438-3dfd9b367f4b",
+      "document_name": "pubmed_42897642_PMC13682045_Circadian clock and its potential as a therapy for ischemic.pdf",
+      "document_content": "Circadian clock and its potential as a therapy for ischemic heart disease Yiran Wang1, He Wang1, Ning Liu1, Jiayi Zhang2 and Bin Liu1* Abstract According to an epidemiological survey, myocardial infarction, ischemia-reperfusion injury, and aortic rupture usually occur in the morning and summer and are characterized by more severe symptoms and poorer prognosis. The occurrence, development, treatment difficulties, and poor prognosis of ischemic heart disease are closely related to circadian rhythm disorders and the abnormal transcription of circadian clock genes. Normal circadian rhythms regulate neurohumoral regulation and energy metabolism, thereby playing a protective or modulatory role in ischemic heart disease (IHD). HIF1\u03b1 links the IHD and circadian signaling pathways through the hypoxia response element (HRE) and Per-Arnt-Sim (PAS) domains in gene promoters and enhancers. \u200bIntroduction The effects of circadian rhythms are profound at both cellular and animal levels. Studies have shown that in mammals, 80% of genes show periodic expression lev­ els in at least one tissue or organ. Furthermore, 82.2% of genes exhibit rhythmic transcription and are concur­ rently identified by the U.S. Food and Drug Administra­ tion (FDA) as druggable targets. Consequently, circadian rhythm management may have significant implications for human health [1]. In accordance with their adaptation to Earth's 24-h rotation cycle, human organs with auton­ omous circadian clocks are divided into two categories: central and peripheral circadian organs. Following exter­ nal environmental changes, primarily based on light and dark signals, to peripheral receptors (such as the retina), the clock's central gene sequence transcription-trans­ lation feedback loop (TTFL), located in the suprachias­ matic nucleus (SCN) of the hypothalamus, undergoes continuous transcription, translation, modification, accumulation, and degradation of gene products over a 24-h period [2]. This causes circadian rhythm oscillations in the body. This rhythm information is gradually trans­ mitted to peripheral clock tissues and organs, regulat­ ing several important physiological processes, including hormone secretion, energy metabolism, inflammation, immune response, and aging [3-7]. Full list of author information is available at the end of the article As a peripheral rhythm-regulating organ, the cardio­ vascular system is influenced by neurohumoral factors, electrophysiological characteristics, and energy metab­ olism. These factors are subject to regulation by both rhythm control center, autonomous circadian rhythms and peripheral oscillation-affected factors, including environmental light, temperature, feeding, oxygen lev­ els, sensory stimulation, wakefulness/sleep (includ­ ing sleep deprivation, sleep restriction, and shift work), and exercise [8-12]. A substantial body of research has demonstrated the pivotal role of the biological clock in the pathogenesis of a wide range of diseases, including metabolic syndromes, neoplasms, neurological disor­ ders, respiratory illnesses, cardiovascular conditions, and immune-inflammatory responses [13-15]. Nevertheless, the precise means of attaining a 24-h circadian rhythm within an organism, optimizing the efficacy of treatment • The Author(s) 2026. Open Access This article is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License, which permits any non-commercial use, sharing, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if you modified the licensed material.",
+      "page_no": 1,
+      "page_end": 1,
+      "paragraph": "Paragraph 8 | Lines 7-14",
+      "section": "",
+      "line_start": 7,
+      "line_end": 14,
+      "retrieval_score": 0.5319,
+      "repository_id": "c01147bf-637b-4baa-976b-8b2a99806fbd",
+      "original_text": "Circadian clock and its potential as a therapy for ischemic heart disease Yiran Wang1, He Wang1, Ning Liu1, Jiayi Zhang2 and Bin Liu1* Abstract According to an epidemiological survey, myocardial infarction, ischemia-reperfusion injury, and aortic rupture usually occur in the morning and summer and are characterized by more severe symptoms and poorer prognosis."
+    },
+    {
+      "chunk_id": "f1b6c682-ee33-4b23-9912-ce3972771315",
+      "document_id": "038bf6ad-d4bb-4c47-9a01-4a5102d88806",
+      "document_name": "pubmed_42902164_PMC13685291_The CML_esRAGE ratio as a potential biomarker of early diast.pdf",
+      "document_content": "P Disease duration P \u03b2 (95% CI) -CML/esRAGE 0.700(0.020,1.381) 0.044 - -0.004(-0.008,-0.001) 0.027 - (P < 0.05). AGEs are formed via non-enzymatic glyca­ tion (Maillard reaction) between reducing sugars and proteins, CML being the most abundant and well-char­ acterized species [22]. The observed higher serum CML in the T1D group is consistent with the effects of chronic hyperglycemia and the metabolic memory phenomenon, whereby AGEs may continue to accumulate even after glycemic control is achieved [23]. Methylglyoxal (MG) is a highly reactive dicarbonyl metabolite of glycolysis that reacts with protein arginine residues to form MG-H1 [24]. In our study, MG-H1 lev­ els did not differ significantly between groups, which is inconsistent with some previous reports. Kilhovd et al. reported increased serum MG-H1 in patients with type 2 diabetes [25], and Karachalias et al. demonstrated increased MG-H1 adducts in the retina of streptozoto­ cin-induced diabetic rats [24]. In the present study, the mean MG-H1 level in the diabetic group was numerically higher than that in the control group, though the differ­ ence was not statistically significant, which may be attrib­ uted to the limited sample size of this pilot study. conditions. Reduced e(lat) may suggest impaired relax­ ation in diabetic patients. No significant change was observed in e(sep), which may be explained by differ­ ences in myocardial fiber architecture: longitudinal and circular fibers abundant in the lateral wall are sparsely distributed in the interventricular septum [31].",
+      "page_no": 6,
+      "page_end": 6,
+      "paragraph": "Section: P Disease duration P \u03b2 (95% CI) | Paragraph 99 | Lines 118-123",
+      "section": "P Disease duration P \u03b2 (95% CI)",
+      "line_start": 118,
+      "line_end": 123,
+      "retrieval_score": 0.5005,
+      "repository_id": "c01147bf-637b-4baa-976b-8b2a99806fbd",
+      "original_text": "P Disease duration P \u03b2 (95% CI) -CML/esRAGE 0.700(0.020,1.381) 0.044 - -0.004(-0.008,-0.001) 0.027 - (P < 0.05)."
+    },
+    {
+      "chunk_id": "0e5101bc-ffff-40f5-86c1-5091adc6ebc3",
+      "document_id": "038bf6ad-d4bb-4c47-9a01-4a5102d88806",
+      "document_name": "pubmed_42902164_PMC13685291_The CML_esRAGE ratio as a potential biomarker of early diast.pdf",
+      "document_content": "Acknowledgements Not applicable. Declarations Soulis T, Thallas V, Youssef S, Gilbert RE, McWilliam BG, Murray-McIntosh RP, et al. Advanced glycation end products and their receptors co-localise in rat organs susceptible to diabetic microvascular injury. Diabetologia. 1997;40(6 -28. Ramasamy R, Schmidt AM. Receptor for advanced glycation end products (RAGE) and implications for the pathophysiology of heart failure. Curr Heart Fail Rep. 2012;9(2 -16. Russo I, Frangogiannis NG. Diabetes-associated cardiac fibrosis: Cellular effectors, molecular mechanisms and therapeutic opportunities. J Mol Cell Cardiol. 2016;90:84-93. Zhao J, Randive R, Stewart JA. Molecular mechanisms of AGE/RAGE-mediated fibrosis in the diabetic heart. World J Diabetes. 2014;5(6 -7. Hudson BI, Carter AM, Harja E, Kalea AZ, Arriero M, Yang H, et al. Identifica­ tion, classification, and expression of RAGE gene splice variants. FASEB J. 2008;22(5 -80. Raucci A, Cugusi S, Antonelli A, Barabino SM, Monti L, Bierhaus A, et al. A soluble form of the receptor for advanced glycation endproducts (RAGE) is produced by proteolytic cleavage of the membrane-bound form by the sheddase a disintegrin and metalloprotease 10 (ADAM10). FASEB J. 2008;22(10 -27. Prasad K. Is there any evidence that AGE/sRAGE is a universal biomarker/risk marker for diseases? Mol Cell Biochem. 2019;451(1-2 -44. Heier M, Margeirsdottir HD, Gaarder M, Stensæth KH, Brunborg C, Torjesen PA, et al. Soluble RAGE and atherosclerosis in youth with type 1 diabetes: a 5-year follow-up study. Cardiovasc Diabetol. 2015;14:126. Nagueh SF, Smiseth OA, Appleton CP, Byrd BF 3rd, Dokainish H, Edvardsen T, et al. Recommendations for the evaluation of left ventricular diastolic function by echocardiography: an update from the American Society of Echocardiography and the European Association of Cardiovascular Imaging. J Am Soc Echocardiogr. 2016;29(4 -314. Schmidt AM, Yan SD, Wautier JL, Stern D. Activation of receptor for advanced glycation end products: a mechanism for chronic vascular dysfunction in diabetic vasculopathy and atherosclerosis. Circ Res. 1999;84(5 -97. Monnier VM, Bautista O, Kenny D, Sell DR, Fogarty J, Dahms W, et al. Skin collagen glycation, glycoxidation, and crosslinking are lower in subjects with long-term intensive versus conventional therapy of type 1 diabetes: relevance of glycated collagen products versus HbA1c as markers of diabetic complications. DCCT Skin Collagen Ancillary Study Group. Diabetes Control and Complications Trial. Diabetes. 1999;48(4 -80. Karachalias N, Babaei-Jadidi R, Ahmed N, Thornalley PJ. Accumulation of fructosyl-lysine and advanced glycation end products in the kidney, retina and peripheral nerve of streptozotocin-induced diabetic rats. Biochem Soc Trans. 2003;31(Pt 6 -5. Kilhovd BK, Giardino I, Torjesen PA, Birkeland KI, Berg TJ, Thornalley PJ, et al. Increased serum levels of the specific AGE-compound methylglyoxal-derived hydroimidazolone in patients with type 2 diabetes. Metabolism. 2003;52(2 -7. Challier M, Jacqueminet S, Benabdesselam O, Grimaldi A, Beaudeux JL. Increased serum concentrations of soluble receptor for advanced glycation endproducts in patients with type 1 diabetes. Clin Chem. 2005;51(9 -50. Neviere R, Yu Y, Wang L, Tessier F, Boulanger E. Implication of advanced glyca­ tion end products (AGEs) and their receptor (RAGE) on myocardial contractile and mitochondrial functions. Glycoconj J. 2016;33(4 -17. Prasad K. Low levels of serum soluble receptors for advanced glycation end products, biomarkers for disease state: myth or reality. Int J Angiol.",
+      "page_no": 9,
+      "page_end": 9,
+      "paragraph": "Section: Acknowledgements Not applicable. | Paragraph 125 | Lines 145-145",
+      "section": "Acknowledgements Not applicable.",
+      "line_start": 145,
+      "line_end": 145,
+      "retrieval_score": 0.5001,
+      "repository_id": "c01147bf-637b-4baa-976b-8b2a99806fbd",
+      "original_text": "Acknowledgements Not applicable."
+    }
+  ],
+  "retrieval": {
+    "user_query": "what is retina?",
+    "agent": "query_agent",
+    "chunks": [
+      {
+        "chunk_id": "00b18710-4fa3-4b3b-8579-1ec7f66fa8ad",
+        "document_id": "c626ba2c-08f8-4f1f-8438-3dfd9b367f4b",
+        "document_name": "pubmed_42897642_PMC13682045_Circadian clock and its potential as a therapy for ischemic.pdf",
+        "document_content": "Circadian clock and its potential as a therapy for ischemic heart disease Yiran Wang1, He Wang1, Ning Liu1, Jiayi Zhang2 and Bin Liu1* Abstract According to an epidemiological survey, myocardial infarction, ischemia-reperfusion injury, and aortic rupture usually occur in the morning and summer and are characterized by more severe symptoms and poorer prognosis. The occurrence, development, treatment difficulties, and poor prognosis of ischemic heart disease are closely related to circadian rhythm disorders and the abnormal transcription of circadian clock genes. Normal circadian rhythms regulate neurohumoral regulation and energy metabolism, thereby playing a protective or modulatory role in ischemic heart disease (IHD). HIF1\u03b1 links the IHD and circadian signaling pathways through the hypoxia response element (HRE) and Per-Arnt-Sim (PAS) domains in gene promoters and enhancers. \u200bIntroduction The effects of circadian rhythms are profound at both cellular and animal levels. Studies have shown that in mammals, 80% of genes show periodic expression lev­ els in at least one tissue or organ. Furthermore, 82.2% of genes exhibit rhythmic transcription and are concur­ rently identified by the U.S. Food and Drug Administra­ tion (FDA) as druggable targets. Consequently, circadian rhythm management may have significant implications for human health [1]. In accordance with their adaptation to Earth's 24-h rotation cycle, human organs with auton­ omous circadian clocks are divided into two categories: central and peripheral circadian organs. Following exter­ nal environmental changes, primarily based on light and dark signals, to peripheral receptors (such as the retina), the clock's central gene sequence transcription-trans­ lation feedback loop (TTFL), located in the suprachias­ matic nucleus (SCN) of the hypothalamus, undergoes continuous transcription, translation, modification, accumulation, and degradation of gene products over a 24-h period [2]. This causes circadian rhythm oscillations in the body. This rhythm information is gradually trans­ mitted to peripheral clock tissues and organs, regulat­ ing several important physiological processes, including hormone secretion, energy metabolism, inflammation, immune response, and aging [3-7]. Full list of author information is available at the end of the article As a peripheral rhythm-regulating organ, the cardio­ vascular system is influenced by neurohumoral factors, electrophysiological characteristics, and energy metab­ olism. These factors are subject to regulation by both rhythm control center, autonomous circadian rhythms and peripheral oscillation-affected factors, including environmental light, temperature, feeding, oxygen lev­ els, sensory stimulation, wakefulness/sleep (includ­ ing sleep deprivation, sleep restriction, and shift work), and exercise [8-12]. A substantial body of research has demonstrated the pivotal role of the biological clock in the pathogenesis of a wide range of diseases, including metabolic syndromes, neoplasms, neurological disor­ ders, respiratory illnesses, cardiovascular conditions, and immune-inflammatory responses [13-15]. Nevertheless, the precise means of attaining a 24-h circadian rhythm within an organism, optimizing the efficacy of treatment • The Author(s) 2026. Open Access This article is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License, which permits any non-commercial use, sharing, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if you modified the licensed material.",
+        "page_no": 1,
+        "paragraph": "Paragraph 8 | Lines 7-14",
+        "original_text": "Circadian clock and its potential as a therapy for ischemic heart disease Yiran Wang1, He Wang1, Ning Liu1, Jiayi Zhang2 and Bin Liu1* Abstract According to an epidemiological survey, myocardial infarction, ischemia-reperfusion injury, and aortic rupture usually occur in the morning and summer and are characterized by more severe symptoms and poorer prognosis."
+      },
+      {
+        "chunk_id": "f1b6c682-ee33-4b23-9912-ce3972771315",
+        "document_id": "038bf6ad-d4bb-4c47-9a01-4a5102d88806",
+        "document_name": "pubmed_42902164_PMC13685291_The CML_esRAGE ratio as a potential biomarker of early diast.pdf",
+        "document_content": "P Disease duration P \u03b2 (95% CI) -CML/esRAGE 0.700(0.020,1.381) 0.044 - -0.004(-0.008,-0.001) 0.027 - (P < 0.05). AGEs are formed via non-enzymatic glyca­ tion (Maillard reaction) between reducing sugars and proteins, CML being the most abundant and well-char­ acterized species [22]. The observed higher serum CML in the T1D group is consistent with the effects of chronic hyperglycemia and the metabolic memory phenomenon, whereby AGEs may continue to accumulate even after glycemic control is achieved [23]. Methylglyoxal (MG) is a highly reactive dicarbonyl metabolite of glycolysis that reacts with protein arginine residues to form MG-H1 [24]. In our study, MG-H1 lev­ els did not differ significantly between groups, which is inconsistent with some previous reports. Kilhovd et al. reported increased serum MG-H1 in patients with type 2 diabetes [25], and Karachalias et al. demonstrated increased MG-H1 adducts in the retina of streptozoto­ cin-induced diabetic rats [24]. In the present study, the mean MG-H1 level in the diabetic group was numerically higher than that in the control group, though the differ­ ence was not statistically significant, which may be attrib­ uted to the limited sample size of this pilot study. conditions. Reduced e(lat) may suggest impaired relax­ ation in diabetic patients. No significant change was observed in e(sep), which may be explained by differ­ ences in myocardial fiber architecture: longitudinal and circular fibers abundant in the lateral wall are sparsely distributed in the interventricular septum [31].",
+        "page_no": 6,
+        "paragraph": "Section: P Disease duration P \u03b2 (95% CI) | Paragraph 99 | Lines 118-123",
+        "original_text": "P Disease duration P \u03b2 (95% CI) -CML/esRAGE 0.700(0.020,1.381) 0.044 - -0.004(-0.008,-0.001) 0.027 - (P < 0.05)."
+      },
+      {
+        "chunk_id": "0e5101bc-ffff-40f5-86c1-5091adc6ebc3",
+        "document_id": "038bf6ad-d4bb-4c47-9a01-4a5102d88806",
+        "document_name": "pubmed_42902164_PMC13685291_The CML_esRAGE ratio as a potential biomarker of early diast.pdf",
+        "document_content": "Acknowledgements Not applicable. Declarations Soulis T, Thallas V, Youssef S, Gilbert RE, McWilliam BG, Murray-McIntosh RP, et al. Advanced glycation end products and their receptors co-localise in rat organs susceptible to diabetic microvascular injury. Diabetologia. 1997;40(6 -28. Ramasamy R, Schmidt AM. Receptor for advanced glycation end products (RAGE) and implications for the pathophysiology of heart failure. Curr Heart Fail Rep. 2012;9(2 -16. Russo I, Frangogiannis NG. Diabetes-associated cardiac fibrosis: Cellular effectors, molecular mechanisms and therapeutic opportunities. J Mol Cell Cardiol. 2016;90:84-93. Zhao J, Randive R, Stewart JA. Molecular mechanisms of AGE/RAGE-mediated fibrosis in the diabetic heart. World J Diabetes. 2014;5(6 -7. Hudson BI, Carter AM, Harja E, Kalea AZ, Arriero M, Yang H, et al. Identifica­ tion, classification, and expression of RAGE gene splice variants. FASEB J. 2008;22(5 -80. Raucci A, Cugusi S, Antonelli A, Barabino SM, Monti L, Bierhaus A, et al. A soluble form of the receptor for advanced glycation endproducts (RAGE) is produced by proteolytic cleavage of the membrane-bound form by the sheddase a disintegrin and metalloprotease 10 (ADAM10). FASEB J. 2008;22(10 -27. Prasad K. Is there any evidence that AGE/sRAGE is a universal biomarker/risk marker for diseases? Mol Cell Biochem. 2019;451(1-2 -44. Heier M, Margeirsdottir HD, Gaarder M, Stensæth KH, Brunborg C, Torjesen PA, et al. Soluble RAGE and atherosclerosis in youth with type 1 diabetes: a 5-year follow-up study. Cardiovasc Diabetol. 2015;14:126. Nagueh SF, Smiseth OA, Appleton CP, Byrd BF 3rd, Dokainish H, Edvardsen T, et al. Recommendations for the evaluation of left ventricular diastolic function by echocardiography: an update from the American Society of Echocardiography and the European Association of Cardiovascular Imaging. J Am Soc Echocardiogr. 2016;29(4 -314. Schmidt AM, Yan SD, Wautier JL, Stern D. Activation of receptor for advanced glycation end products: a mechanism for chronic vascular dysfunction in diabetic vasculopathy and atherosclerosis. Circ Res. 1999;84(5 -97. Monnier VM, Bautista O, Kenny D, Sell DR, Fogarty J, Dahms W, et al. Skin collagen glycation, glycoxidation, and crosslinking are lower in subjects with long-term intensive versus conventional therapy of type 1 diabetes: relevance of glycated collagen products versus HbA1c as markers of diabetic complications. DCCT Skin Collagen Ancillary Study Group. Diabetes Control and Complications Trial. Diabetes. 1999;48(4 -80. Karachalias N, Babaei-Jadidi R, Ahmed N, Thornalley PJ. Accumulation of fructosyl-lysine and advanced glycation end products in the kidney, retina and peripheral nerve of streptozotocin-induced diabetic rats. Biochem Soc Trans. 2003;31(Pt 6 -5. Kilhovd BK, Giardino I, Torjesen PA, Birkeland KI, Berg TJ, Thornalley PJ, et al. Increased serum levels of the specific AGE-compound methylglyoxal-derived hydroimidazolone in patients with type 2 diabetes. Metabolism. 2003;52(2 -7. Challier M, Jacqueminet S, Benabdesselam O, Grimaldi A, Beaudeux JL. Increased serum concentrations of soluble receptor for advanced glycation endproducts in patients with type 1 diabetes. Clin Chem. 2005;51(9 -50. Neviere R, Yu Y, Wang L, Tessier F, Boulanger E. Implication of advanced glyca­ tion end products (AGEs) and their receptor (RAGE) on myocardial contractile and mitochondrial functions. Glycoconj J. 2016;33(4 -17. Prasad K. Low levels of serum soluble receptors for advanced glycation end products, biomarkers for disease state: myth or reality. Int J Angiol.",
+        "page_no": 9,
+        "paragraph": "Section: Acknowledgements Not applicable. | Paragraph 125 | Lines 145-145",
+        "original_text": "Acknowledgements Not applicable."
+      }
+    ],
+    "created_at": "2026-10-26T05:02:44.949400+00:00"
+  },
+  "generation_error": "",
+  "created_at": "2026-10-26T05:02:44.949400+00:00",
+  "validation": {
+    "overall_score": 0.9333,
+    "threshold": 0.9,
+    "claim_min_score": 0.7,
+    "decision": "respond",
+    "reason_codes": [],
+    "judge": "llm+deterministic",
+    "validated_at": "2026-10-26T05:02:53.065285+00:00"
+  }
+}
+INFO:     127.0.0.1:56978 - "GET /api/v1/digital-msl/traces/trace_f08854da892348ee HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55723 - "GET /api/v1/digital-msl/traces?limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63490 - "GET /api/v1/digital-msl/cases HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55723 - "GET /api/v1/digital-msl/traces?limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63490 - "GET /api/v1/digital-msl/cases HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57443 - "GET /api/v1/digital-msl/traces/trace_d02071965991441b HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57443 - "GET /api/v1/digital-msl/traces/trace_711822c39b3f4b8f HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57443 - "GET /api/v1/digital-msl/portal/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57443 - "GET /api/v1/digital-msl/portal/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57443 - "GET /api/v1/repositories/c01147bf-637b-4baa-976b-8b2a99806fbd/documents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51350 - "GET /api/v1/repositories/c01147bf-637b-4baa-976b-8b2a99806fbd/documents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51350 - "GET /api/v1/documents/ae8a5c76-b501-4f97-89f5-f0f3bc2f8dff/chunks HTTP/1.1" 200 OK
+2026-10-26 10:35:32,605 [INFO] services.llm_service: Switched to OpenAI provider with model: gpt-5.6-luna
+INFO:     127.0.0.1:55217 - "GET /api/v1/digital-msl/ops/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51342 - "GET /api/v1/digital-msl/cases HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54389 - "GET /api/v1/digital-msl/traces?limit=10 HTTP/1.1" 200 OK
+2026-10-26 10:35:32,876 [INFO] services.llm_service: Switched to OpenAI provider with model: gpt-5.6-luna
+INFO:     127.0.0.1:55217 - "GET /api/v1/digital-msl/ops/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51342 - "GET /api/v1/digital-msl/cases HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54389 - "GET /api/v1/digital-msl/traces?limit=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58644 - "POST /api/v1/digital-msl/portal/login HTTP/1.1" 200 OK
+2026-10-26 10:35:38,397 [INFO] services.llm_service: Switched to OpenAI provider with model: gpt-5.6-luna
+INFO:     127.0.0.1:58644 - "GET /api/v1/digital-msl/ops/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52816 - "GET /api/v1/digital-msl/cases HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51162 - "GET /api/v1/digital-msl/traces?limit=10 HTTP/1.1" 200 OK
+2026-10-26 10:35:38,539 [INFO] services.llm_service: Switched to OpenAI provider with model: gpt-5.6-luna
+INFO:     127.0.0.1:58644 - "GET /api/v1/digital-msl/ops/status HTTP/1.1" 200 OK
+2026-10-26 10:35:38,552 [INFO] services.llm_service: Switched to OpenAI provider with model: gpt-5.6-luna
+INFO:     127.0.0.1:50505 - "GET /api/v1/digital-msl/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52816 - "GET /api/v1/digital-msl/cases HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51162 - "GET /api/v1/digital-msl/traces?limit=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57588 - "GET /api/v1/repositories HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57588 - "GET /api/v1/digital-msl/cases?doctor_id=usr_doctor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57588 - "GET /api/v1/digital-msl/cases?doctor_id=usr_doctor HTTP/1.1" 200 OK
+2026-10-26 10:35:46,661 [INFO] services.llm_service: Switched to OpenAI provider with model: gpt-5.6-luna
+INFO:     127.0.0.1:57588 - "GET /api/v1/digital-msl/ops/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56572 - "GET /api/v1/digital-msl/cases HTTP/1.1" 200 OK
+2026-10-26 10:35:46,825 [INFO] services.llm_service: Switched to OpenAI provider with model: gpt-5.6-luna
+INFO:     127.0.0.1:57588 - "GET /api/v1/digital-msl/ops/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56572 - "GET /api/v1/digital-msl/cases HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54902 - "GET /api/v1/digital-msl/traces?limit=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54902 - "GET /api/v1/digital-msl/traces?limit=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54902 - "POST /api/v1/digital-msl/portal/login HTTP/1.1" 200 OK
+2026-10-26 10:35:51,109 [INFO] services.llm_service: Switched to OpenAI provider with model: gpt-5.6-luna
+INFO:     127.0.0.1:54902 - "GET /api/v1/digital-msl/ops/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57588 - "GET /api/v1/digital-msl/traces?limit=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56572 - "GET /api/v1/digital-msl/cases HTTP/1.1" 200 OK
+2026-10-26 10:35:51,267 [INFO] services.llm_service: Switched to OpenAI provider with model: gpt-5.6-luna
+INFO:     127.0.0.1:54902 - "GET /api/v1/digital-msl/ops/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57588 - "GET /api/v1/digital-msl/traces?limit=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56572 - "GET /api/v1/digital-msl/cases HTTP/1.1" 200 OK
+2026-10-26 10:35:51,292 [INFO] services.llm_service: Switched to OpenAI provider with model: gpt-5.6-luna
+INFO:     127.0.0.1:63486 - "GET /api/v1/digital-msl/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63475 - "GET /api/v1/repositories HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63475 - "GET /api/v1/digital-msl/cases?assigned_msl_id=usr_doctor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63486 - "GET /api/v1/digital-msl/traces?limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63475 - "GET /api/v1/digital-msl/cases?assigned_msl_id=usr_doctor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63486 - "GET /api/v1/digital-msl/traces?limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63486 - "GET /api/v1/repositories/c01147bf-637b-4baa-976b-8b2a99806fbd/documents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63486 - "GET /api/v1/repositories/c01147bf-637b-4baa-976b-8b2a99806fbd/documents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63486 - "GET /api/v1/digital-msl/cases?assigned_msl_id=usr_doctor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50060 - "GET /api/v1/digital-msl/traces?limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63486 - "GET /api/v1/digital-msl/cases?assigned_msl_id=usr_doctor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50060 - "GET /api/v1/digital-msl/traces?limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50060 - "GET /api/v1/digital-msl/traces/trace_f08854da892348ee HTTP/1.1" 200 OK
+2026-10-26 10:36:13,160 [INFO] services.llm_service: Switched to OpenAI provider with model: gpt-5.6-luna
+INFO:     127.0.0.1:57933 - "GET /api/v1/digital-msl/ops/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54220 - "GET /api/v1/digital-msl/cases HTTP/1.1" 200 OK
+2026-10-26 10:36:13,303 [INFO] services.llm_service: Switched to OpenAI provider with model: gpt-5.6-luna
+INFO:     127.0.0.1:57933 - "GET /api/v1/digital-msl/ops/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64360 - "GET /api/v1/digital-msl/traces?limit=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54220 - "GET /api/v1/digital-msl/cases HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64360 - "GET /api/v1/digital-msl/traces?limit=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64360 - "GET /api/v1/digital-msl/cases?assigned_msl_id=usr_doctor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54220 - "GET /api/v1/digital-msl/traces?limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64360 - "GET /api/v1/digital-msl/cases?assigned_msl_id=usr_doctor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54220 - "GET /api/v1/digital-msl/traces?limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54220 - "GET /api/v1/repositories/c01147bf-637b-4baa-976b-8b2a99806fbd/documents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57933 - "GET /api/v1/digital-msl/cases HTTP/1.1" 200 OK
+2026-10-26 10:36:19,143 [INFO] services.llm_service: Switched to OpenAI provider with model: gpt-5.6-luna
+INFO:     127.0.0.1:64360 - "GET /api/v1/digital-msl/ops/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55872 - "GET /api/v1/digital-msl/traces?limit=10 HTTP/1.1" 200 OK
+2026-10-26 10:36:19,258 [INFO] services.llm_service: Switched to OpenAI provider with model: gpt-5.6-luna
+INFO:     127.0.0.1:64360 - "GET /api/v1/digital-msl/ops/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64170 - "GET /api/v1/digital-msl/cases HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55872 - "GET /api/v1/digital-msl/traces?limit=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54220 - "GET /api/v1/repositories/c01147bf-637b-4baa-976b-8b2a99806fbd/documents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54220 - "GET /api/v1/digital-msl/cases?assigned_msl_id=usr_doctor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55872 - "GET /api/v1/digital-msl/traces?limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54220 - "GET /api/v1/digital-msl/cases?assigned_msl_id=usr_doctor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55872 - "GET /api/v1/digital-msl/traces?limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55872 - "GET /api/v1/repositories/c01147bf-637b-4baa-976b-8b2a99806fbd/documents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54220 - "GET /api/v1/repositories/c01147bf-637b-4baa-976b-8b2a99806fbd/documents HTTP/1.1" 200 OK
+2026-10-26 10:36:26,367 [INFO] services.llm_service: Switched to OpenAI provider with model: gpt-5.6-luna
+INFO:     127.0.0.1:54220 - "GET /api/v1/digital-msl/ops/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55872 - "GET /api/v1/digital-msl/cases HTTP/1.1" 200 OK
+2026-10-26 10:36:26,611 [INFO] services.llm_service: Switched to OpenAI provider with model: gpt-5.6-luna
+INFO:     127.0.0.1:54220 - "GET /api/v1/digital-msl/ops/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55872 - "GET /api/v1/digital-msl/cases HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57814 - "GET /api/v1/digital-msl/traces?limit=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57814 - "GET /api/v1/digital-msl/traces?limit=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54732 - "POST /api/v1/digital-msl/portal/login HTTP/1.1" 200 OK
+2026-10-26 10:38:43,711 [INFO] services.llm_service: Switched to OpenAI provider with model: gpt-5.6-luna
+INFO:     127.0.0.1:54732 - "GET /api/v1/digital-msl/ops/status HTTP/1.1" 200 OK
+2026-10-26 10:38:43,829 [INFO] services.llm_service: Switched to OpenAI provider with model: gpt-5.6-luna
+INFO:     127.0.0.1:54732 - "GET /api/v1/digital-msl/ops/status HTTP/1.1" 200 OK
+2026-10-26 10:38:43,845 [INFO] services.llm_service: Switched to OpenAI provider with model: gpt-5.6-luna
+INFO:     127.0.0.1:61133 - "GET /api/v1/digital-msl/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62812 - "GET /api/v1/digital-msl/cases HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57445 - "GET /api/v1/digital-msl/traces?limit=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62812 - "GET /api/v1/digital-msl/cases HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57445 - "GET /api/v1/digital-msl/traces?limit=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64796 - "GET /api/v1/repositories HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58248 - "GET /api/v1/digital-msl/portal/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58248 - "GET /api/v1/digital-msl/portal/users HTTP/1.1" 200 OK
+2026-10-26 10:38:52,979 [INFO] services.llm_service: Switched to OpenAI provider with model: gpt-5.6-luna
+INFO:     127.0.0.1:58248 - "GET /api/v1/digital-msl/ops/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63754 - "GET /api/v1/digital-msl/cases HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64510 - "GET /api/v1/digital-msl/traces?limit=10 HTTP/1.1" 200 OK
+2026-10-26 10:38:53,122 [INFO] services.llm_service: Switched to OpenAI provider with model: gpt-5.6-luna
+INFO:     127.0.0.1:58248 - "GET /api/v1/digital-msl/ops/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63754 - "GET /api/v1/digital-msl/cases HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64510 - "GET /api/v1/digital-msl/traces?limit=10 HTTP/1.1" 200 OK
+2026-10-26 10:39:14,315 [INFO] services.llm_service: Switched to OpenAI provider with model: gpt-5.6-luna
+INFO:     127.0.0.1:52522 - "GET /api/v1/digital-msl/ops/status HTTP/1.1" 200 OK
+2026-10-26 10:39:14,427 [INFO] services.llm_service: Switched to OpenAI provider with model: gpt-5.6-luna
+INFO:     127.0.0.1:52522 - "GET /api/v1/digital-msl/ops/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60278 - "GET /api/v1/digital-msl/cases HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52994 - "GET /api/v1/digital-msl/traces?limit=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60278 - "GET /api/v1/digital-msl/cases HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52994 - "GET /api/v1/digital-msl/traces?limit=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59678 - "GET /api/v1/repositories/c01147bf-637b-4baa-976b-8b2a99806fbd/documents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59678 - "GET /api/v1/repositories/c01147bf-637b-4baa-976b-8b2a99806fbd/documents HTTP/1.1" 200 OK
+2026-10-26 10:39:55,005 [INFO] services.llm_service: Switched to OpenAI provider with model: gpt-5.6-luna
+INFO:     127.0.0.1:55958 - "GET /api/v1/digital-msl/ops/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64122 - "GET /api/v1/digital-msl/cases HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59192 - "GET /api/v1/digital-msl/traces?limit=10 HTTP/1.1" 200 OK
+2026-10-26 10:39:55,166 [INFO] services.llm_service: Switched to OpenAI provider with model: gpt-5.6-luna
+INFO:     127.0.0.1:55958 - "GET /api/v1/digital-msl/ops/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64122 - "GET /api/v1/digital-msl/cases HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59192 - "GET /api/v1/digital-msl/traces?limit=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50091 - "POST /api/v1/digital-msl/portal/login HTTP/1.1" 200 OK
+2026-10-26 10:40:02,475 [INFO] services.llm_service: Switched to OpenAI provider with model: gpt-5.6-luna
+INFO:     127.0.0.1:50091 - "GET /api/v1/digital-msl/ops/status HTTP/1.1" 200 OK
+2026-10-26 10:40:02,607 [INFO] services.llm_service: Switched to OpenAI provider with model: gpt-5.6-luna
+INFO:     127.0.0.1:50091 - "GET /api/v1/digital-msl/ops/status HTTP/1.1" 200 OK
+2026-10-26 10:40:02,619 [INFO] services.llm_service: Switched to OpenAI provider with model: gpt-5.6-luna
+INFO:     127.0.0.1:63710 - "GET /api/v1/digital-msl/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60990 - "GET /api/v1/digital-msl/cases HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59279 - "GET /api/v1/digital-msl/traces?limit=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60990 - "GET /api/v1/digital-msl/cases HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59279 - "GET /api/v1/digital-msl/traces?limit=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54051 - "GET /api/v1/repositories HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54051 - "GET /api/v1/digital-msl/cases?doctor_id=usr_doctor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54051 - "GET /api/v1/digital-msl/cases?doctor_id=usr_doctor HTTP/1.1" 200 OK
+2026-10-26 10:40:10,493 [INFO] services.llm_service: Switched to OpenAI provider with model: gpt-5.6-luna
+INFO:     127.0.0.1:54051 - "GET /api/v1/digital-msl/ops/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53617 - "GET /api/v1/digital-msl/cases HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55427 - "GET /api/v1/digital-msl/traces?limit=10 HTTP/1.1" 200 OK
+2026-10-26 10:40:10,644 [INFO] services.llm_service: Switched to OpenAI provider with model: gpt-5.6-luna
+INFO:     127.0.0.1:54051 - "GET /api/v1/digital-msl/ops/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53617 - "GET /api/v1/digital-msl/cases HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55427 - "GET /api/v1/digital-msl/traces?limit=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55427 - "GET /api/v1/digital-msl/cases?doctor_id=usr_doctor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55427 - "GET /api/v1/digital-msl/cases?doctor_id=usr_doctor HTTP/1.1" 200 OK
+2026-10-26 10:40:15,028 [INFO] services.llm_service: Switched to OpenAI provider with model: gpt-5.6-luna
+INFO:     127.0.0.1:55427 - "GET /api/v1/digital-msl/ops/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53617 - "GET /api/v1/digital-msl/cases HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54051 - "GET /api/v1/digital-msl/traces?limit=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53617 - "GET /api/v1/digital-msl/cases HTTP/1.1" 200 OK
+2026-10-26 10:40:15,187 [INFO] services.llm_service: Switched to OpenAI provider with model: gpt-5.6-luna
+INFO:     127.0.0.1:55427 - "GET /api/v1/digital-msl/ops/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54051 - "GET /api/v1/digital-msl/traces?limit=10 HTTP/1.1" 200 OK
+2026-10-26 10:41:10,061 [INFO] services.llm_service: Switched to OpenAI provider with model: gpt-5.6-luna
+INFO:     127.0.0.1:51515 - "POST /api/v1/digital-msl/channels/web/messages HTTP/1.1" 200 OK
+2026-10-26 10:41:42,421 [INFO] httpx2: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-26 10:41:42,459 [INFO] digital_msl.store: [corr_5b45f1ab1ef44dd1] PRE-VALIDATION JSON (trace_33f233d7e875462d)
+{
+  "correlation_id": "corr_5b45f1ab1ef44dd1",
+  "message_id": "msg_476278d814864d3c",
+  "channel": "web",
+  "repository_id": "c01147bf-637b-4baa-976b-8b2a99806fbd",
+  "user_query": "what BCVA gains were reported  with faricimab in  DME?",
+  "agent": "retina_answer_agent",
+  "scope": {
+    "in_scope": true,
+    "retina_terms": [
+      "dme",
+      "bcva"
+    ],
+    "molecules": [
+      "faricimab"
+    ],
+    "unsupported_molecules": [],
+    "safety_flags": [],
+    "reason": ""
+  },
+  "draft_answer": "The supplied sources do not report BCVA gains with faricimab in diabetic macular edema.",
+  "claims": [],
+  "chunks": [
+    {
+      "chunk_id": "d869108a-ed0d-428f-b7ad-8c6e41141b80",
+      "document_id": "419e6d40-2bea-41d5-85f4-434a7e870cf1",
+      "document_name": "pubmed_42902283_PMC13685146_Fetal cardiac interventions versus expectant management in c.pdf",
+      "document_content": "Open Access Information sources A comprehensive literature search was conducted in PubMed/MEDLINE, Embase, Web of Science, and the Cochrane Library from database inception to 31 Decem­ ber 2025. Two reviewers performed the search indepen­ dently. To ensure completeness, the reference lists of all included studies and of relevant systematic reviews and meta-analyses were also screened manually. Any disagreements were resolved through discussion and consensus. Search strategy The search strategy combined Medical Subject Head­ ings (MeSH), Emtree terms, and free-text keywords. No publication-date or language restrictions were applied. Reviews, editorials, comments, and letters were excluded. The following terms were used: Study selection and data extraction Study selection and data extraction were performed inde­ pendently by two authors using the Rayyan web appli­ cation. Titles and abstracts of all retrieved records were screened initially, and any study considered potentially relevant by either reviewer proceeded to full-text assess­ ment. Full texts were then reviewed to determine eligi­ bility according to the predefined inclusion and exclusion criteria. Any discrepancies between reviewers were resolved by consultation with a third author. (fetal OR fetus) AND (cardiac OR heart) AND (inter­ vention OR procedure OR surgery OR therapy OR \"intrauterine intervention\" OR \"in utero intervention\" OR \"fetal cardiac intervention\" OR FCI) AND (\"aortic valvuloplasty\" OR \"pulmonary valvuloplasty\" OR \"atrial septoplasty\" OR \"balloon valvuloplasty\" OR \"fetal aortic valvuloplasty\" OR \"fetal pulmonary valvuloplasty\" OR FAV OR FPV OR FASI) NOT (review OR editorial OR comment OR letter). For all studies meeting eligibility criteria, data were extracted independently and in duplicate, including study design, population characteristics, type of fetal cardiac intervention, comparator group, and reported clini­ cal outcomes. Extracted outcomes included established measures of gestational and postnatal prognosis relevant to fetal cardiac intervention. Consensus was reached through discussion when differences occurred, ensuring accuracy and completeness of the final dataset. When necessary, authors were contacted to clarify ambiguous reporting or obtain missing information. Cases that did not report outcome data (e.g., BVC, live birth, or post­ natal death) were excluded from analyses of the corre­ sponding endpoint. The detailed search strategies for each database, includ­ ing subject headings (e.g., MeSH and Emtree), are pro­ vided in Appendix S1. Definitions of clinical outcomes and procedural stratification Clinical outcomes were defined prior to analysis to ensure consistency across studies. Technical success was defined according to each original publication; however, in general, it reflected successful balloon inflation across the target valve with improvement in antegrade flow. For FAV, this typically corresponded to balloon inflation across the aortic valve with demonstrable enhancement of antegrade aortic flow. BVC was defined as a post­ natal circulation supported by separate functional left and right ventricles. When multiple time points were reported, outcomes at hospital discharge were priori­ tized. If discharge data were unavailable, the outcome as reported in the study was used. When the timing of BVC assessment was not specified, the reported value was accepted as final. Live birth was defined as an infant alive at the time of delivery. Postnatal death referred to mor­ tality occurring between birth and hospital discharge.",
+      "page_no": 3,
+      "page_end": 3,
+      "paragraph": "Section: RESEARCH | Paragraph 21 | Lines 20-26",
+      "section": "RESEARCH",
+      "line_start": 20,
+      "line_end": 26,
+      "retrieval_score": 0.5,
+      "repository_id": "c01147bf-637b-4baa-976b-8b2a99806fbd",
+      "original_text": "Open Access Information sources A comprehensive literature search was conducted in PubMed/MEDLINE, Embase, Web of Science, and the Cochrane Library from database inception to 31 Decem­ ber 2025."
+    },
+    {
+      "chunk_id": "20eb74cb-dd38-4e49-a299-53dcc6c7557d",
+      "document_id": "0ae5d495-28c3-4396-829d-2ab8107e3c37",
+      "document_name": "pubmed_42898563_PMC13677948_Cognitive frailty and mortality among patients on the heart.pdf",
+      "document_content": "Statistical analysis Given the presence of a competing event (transplantation), a competing risks analysis was performed, considering death as the event of interest and transplantation as the competing event. Associations between covariates and mortality were evaluated using the Fine-Gray subdistribution hazards model, which es­ timates the effect of covariates on the cumulative incidence of the event of interest in the presence of competing risks. Multivariable models were adjusted for age, sex, and IABP use, and were intentionally parsimonious given the limited number of events to avoid overfitting. Results are presented as sub­ distribution hazard ratios (SHR) with 95% confidence intervals. The proportional hazards assumption was assessed by testing interactions between covariates and time; when violations were identified, time-dependent effects were modeled using interac­ tion terms with follow-up time, and results are reported as SHR for the baseline effect and for the time-varying component (TVC SHR). Given the advanced clinical status of the study population, particular attention was paid to avoid overadjustment. Variables included in multivariable models were selected based on clin­ ical relevance and statistical criteria, acknowledging the po­ tential overlap between frailty measures and markers of disease severity, which may share common underlying pathways.",
+      "page_no": 5,
+      "page_end": 5,
+      "paragraph": "Section: Statistical analysis | Paragraph 51 | Lines 50-51",
+      "section": "Statistical analysis",
+      "line_start": 50,
+      "line_end": 51,
+      "retrieval_score": 0.5,
+      "repository_id": "c01147bf-637b-4baa-976b-8b2a99806fbd",
+      "original_text": "Statistical analysis Given the presence of a competing event (transplantation), a competing risks analysis was performed, considering death as the event of interest and transplantation as the competing event."
+    },
+    {
+      "chunk_id": "c5c30c98-9a14-4d3b-862e-7b3d629da755",
+      "document_id": "0ae5d495-28c3-4396-829d-2ab8107e3c37",
+      "document_name": "pubmed_42898563_PMC13677948_Cognitive frailty and mortality among patients on the heart.pdf",
+      "document_content": "General characteristics of the population The study population was predominantly male (70%) with self-reported black race (67.3%). The mean age of participants was 49.8 years ( ± 10.4), and the mean education level was 8.9 years ( ± 4.8). Concerning the etiology of heart failure, Chagas disease was the most prevalent (35%), followed by dilated cardiomyopathy (32%) and ischemic heart disease (12%). In our sample, 56.7% of patients were admitted to the intensive care unit (ICU) and 39.3% to the ward. Many were prioritized for transplantation due to dependence on vasoactive drugs (88.7%) or an intra-aortic balloon pump (31.3%). The re­ maining characteristics are described in Table 1. 84(56) Mild 38(25.3) Moderate 16(10.7) Severe",
+      "page_no": 5,
+      "page_end": 5,
+      "paragraph": "Section: General characteristics of the population | Paragraph 75 | Lines 75-77",
+      "section": "General characteristics of the population",
+      "line_start": 75,
+      "line_end": 77,
+      "retrieval_score": 0.5,
+      "repository_id": "c01147bf-637b-4baa-976b-8b2a99806fbd",
+      "original_text": "General characteristics of the population The study population was predominantly male (70%) with self-reported black race (67.3%)."
+    },
+    {
+      "chunk_id": "da43ef64-eaf7-4dc5-a6d8-cda292192359",
+      "document_id": "038bf6ad-d4bb-4c47-9a01-4a5102d88806",
+      "document_name": "pubmed_42902164_PMC13685291_The CML_esRAGE ratio as a potential biomarker of early diast.pdf",
+      "document_content": "Variables with P < 0.1 in univariate analysis, together with pre-specified clinical covariates (age, sex, HbA1c, disease duration, heart rate), were entered into stepwise multivariable linear regression analysis to identify independent predictors. To mitigate the risk of overfitting, the number of covariates included in the final model was limited following the standard 10:1 events per variable rule, which is widely accepted for exploratory clinical studies. Of note, for multiple com­ parisons, Bonferroni correction was applied to adjust the significance threshold for all correlation and regres­ sion analyses; uncorrected P values were also reported for full transparency, given the exploratory nature of this study. All correlation and regression analyses focused on early myocardial damage were performed exclusively in the type 1 diabetic cohort. This study was designed as an exploratory pilot study on novel biomarkers for diabetic cardiomyopathy; therefore, no a priori power calculation was performed. The sample size was determined with reference to previously published exploratory studies in the same field. For this exploratory research, a two-tailed P value < 0.05 was considered statistically significant, and P values between 0.05 and 0.10 were defined as border­ line significance, which was interpreted as suggestive of potential biological relevance requiring validation in larger cohorts. Comparison of segmental longitudinal strain (LS) and global longitudinal strain (GLS) Seven segmental systolic longitudinal strain (LS) and GLS in the diabetic group were lower than those in the normal group, more details refer to Table 2.",
+      "page_no": 3,
+      "page_end": 3,
+      "paragraph": "Section: Exclusion criteria | Paragraph 27 | Lines 26-26",
+      "section": "Exclusion criteria",
+      "line_start": 26,
+      "line_end": 26,
+      "retrieval_score": 0.5,
+      "repository_id": "c01147bf-637b-4baa-976b-8b2a99806fbd",
+      "original_text": "Variables with P < 0.1 in univariate analysis, together with pre-specified clinical covariates (age, sex, HbA1c, disease duration, heart rate), were entered into stepwise multivariable linear regression analysis to identify independent predictors."
+    },
+    {
+      "chunk_id": "19e16a6e-4449-4707-94a4-480867a04755",
+      "document_id": "419e6d40-2bea-41d5-85f4-434a7e870cf1",
+      "document_name": "pubmed_42902283_PMC13685146_Fetal cardiac interventions versus expectant management in c.pdf",
+      "document_content": "Open Access Postnatal death (FCI vs. Ctrl) 1 Cruz-Lemini (2019) [16] First author (year) Country Total FCI Control Diagnosis & procedure Technical success Biventric­ ular (FCI vs. Ctrl) Live birth (FCI vs. Ctrl) Multinational (Europe) 214 67 147 AS with eHLHS; FAV 59/67 19/67 vs. 60/67 vs. 5/60 vs. 49/147 129/147 16/129 0/14 14/14 3/14 7 Chaturvedi (2013) [4] USA 84 70 14 Severe AS; FAV 52/70 15/70 vs. 63/70 vs. 3/63 vs. USA Outcome availability was assessed separately for each cohort, study arm, and endpoint. The Tulzer 2022 [20] cohort did not contribute to the live-birth or postnatal-death meta-analyses because the corresponding control-arm outcome data were unavailable. For all other cohorts, the live-birth denominators were fetuses with available delivery outcomes, whereas postnatal-death denominators were restricted to live-born infants with known postnatal vital status. Dashes indicate that comparative data were unavailable for the corresponding endpoint. Friedman et al. 2018 [23] lacked an expectant-management arm and was therefore not included in this table; it contributed only to the secondary successful-versus-unsuccessful FAV analyses and did not add an independent study population FCI Fetal Cardiac Intervention, eHLHS evolving hypoplastic left heart syndrome, FAV Fetal Aortic Valvuloplasty, FPV Fetal Pulmonary Valvuloplasty, FASI Fetal Atrial Septal Intervention, PAIVS pulmonary atresia with intact ventricular septum, AS Aortic Stenosis, MR Mitral Regurgitation, CAS critical aortic stenosis, HLHS-IAS Hypoplastic left heart syndrome with intact atrial septum, HLHS-RAS Hypoplastic left heart syndrome with restrictive atrial septum categories: low (ROBINS-I low), medium (ROBINS-I medium), and high (ROBINS-I serious or critical). Discrepancies were resolved through discussion and consensus. of technical success or failure; technical-success analyses were performed separately for FAV when data were avail­ able. A continuity correction of 0.5 was applied when a study contained one or more zero cells. Heterogene­ ity was quantified using I2, and results were presented in forest plots. All analyses were conducted in Stata/ MP 18.0. For overall FCI outcomes reported by at least 10 cohorts, small-study effects were assessed visually using funnel plots and statistically using Egger's regres­ sion test; p < 0.05 was considered evidence of funnel-plot asymmetry. Statistical analysis Demographic and baseline characteristics were summa­ rized descriptively. For postnatal-death analyses, event counts and denominators were extracted exclusively among live-born infants with known postnatal vital sta­ tus. For each outcome, event counts were extracted for the intervention and comparator groups, and ORs with 95% CIs were pooled using random-effects (REML) models. Live birth and postnatal death among live-born infants were analyzed for overall FCI and by procedure type (FAV, FPV, and FASI) versus expectant management. BVC was analyzed separately for FAV and FPV and was not pooled across procedure types because these pro­ cedures address distinct cardiac pathologies and patient populations. Additional pairwise comparisons were per­ formed among technically successful, technically failed, and expectant-management groups for FAV. Overall FCI analyses included all attempted interventions regardless Results Study selection After full-text assessment, 72 reports were excluded. Twelve reports were included in the review, representing 11 independent study populations. Twelve reports were included in the review, representing 11 independent study populations. Eleven comparative reports were included in the primary comparative quan­ titative synthesis, comprising 775 fetuses, including 418 interventions and 357 controls (Fig. 1) [4, 5, 7, 12, 16-22]. Friedman et al. [23], an overlapping report, contributed only to the secondary successful-versus-unsuccessful",
+      "page_no": 4,
+      "page_end": 8,
+      "paragraph": "Section: RESEARCH | Paragraph 31 | Lines 30-46",
+      "section": "RESEARCH",
+      "line_start": 30,
+      "line_end": 46,
+      "retrieval_score": 0.5,
+      "repository_id": "c01147bf-637b-4baa-976b-8b2a99806fbd",
+      "original_text": "Open Access Postnatal death (FCI vs."
+    },
+    {
+      "chunk_id": "9dac0eb9-1614-4214-9c29-503831e71fa4",
+      "document_id": "4143ce87-bdcc-4a4d-99db-0f78ba3aa756",
+      "document_name": "pubmed_42902265_PMC13685328_Integrated proteomics and machine learning reveal AHNAK as a.pdf",
+      "document_content": "Open Access Eluted peptides were analyzed on an Orbitrap Explo­ ris 480 mass spectrometer (Thermo Fisher Scientific) equipped with a nano-electrospray ionization source. The spray voltage was set to 2.3 kV, and high-field asymmetric waveform ion mobility spectrometry was applied using compensation voltages of - 70 V and - 45 V. Full MS scans were acquired in the Orbitrap analyzer at a resolu­ tion of 60,000 across an m/z range of 400-1,200. Tandem MS/MS spectra were acquired at a resolution of 30,000 with the first mass fixed at m/z 110. TurboTMT mode was disabled to maintain compatibility with label-free quantification. The top 15 most intense precursor ions were selected for higher-energy collisional dissociation with a normalized collision energy of 27%, and dynamic exclusion was set to 30 s. The automatic gain control tar­ get was set to 75%, with an intensity threshold of 10,000 ions/s and a maximum injection time of 100 ms. During hospitalization, all participants provided writ­ ten informed consent permitting the use of their blood samples for non-genetic experimental analyses. Compre­ hensive clinical data, including demographic character­ istics, comorbidities, vital signs, laboratory parameters, echocardiographic measurements, and medication use, were systematically collected from electronic medical records. Peripheral venous blood samples were obtained, and plasma was isolated by centrifugation and stored at -80 °C until analysis. Samples were transported on dry ice to Jingjie PTM BioLabs (Hangzhou, China) for label-free quantitative proteomic profiling. To reduce the interference of highly abundant plasma proteins, such as albumin and immunoglobulins, on downstream mass spectrometry-based analyses, plasma samples were depleted using PierceTM Top 14 Abundant Protein Depletion Spin Columns (Thermo Scientific) in strict accordance with the manufacturer's protocol. Briefly, frozen plasma aliquots were thawed on ice and centrifuged at 12,000 × g for 10 min at 4 °C to remove cellular debris. The clarified supernatant was transferred to fresh tubes and subjected to high-abundance protein depletion. Protein concentrations in the depleted frac­ tions were quantified using a bicinchoninic acid (BCA) assay, with all standards and samples measured in techni­ cal triplicates (Additional file 1: Table S1). Equal amounts of total protein were subsequently used for enzymatic digestion to ensure comparability across samples. Deple­ tion efficiency and protein integrity were evaluated by sodium dodecyl sulfate-polyacrylamide gel electropho­ resis (SDS-PAGE) before and after depletion (Additional file 1: Figure S2), and only samples demonstrating satis­ factory depletion efficiency and intact protein profiles were advanced for LC-MS/MS analysis. Samples with visible hemolysis or flagged as having a high risk of pre-analytical bias were excluded. Raw MS/MS data were processed using Proteome Dis­ coverer software (version 2.4.1.15). Spectra were searched against the Homo_sapiens_9606_PR_20201214.fasta database (75,777 entries), concatenated with a reverse decoy database to enable false discovery rate (FDR) esti­ mation. Trypsin was specified as the proteolytic enzyme, allowing up to two missed cleavages. The minimum pep­ tide length was set to six amino acids, and up to three variable modifications per peptide were permitted. Pre­ cursor mass tolerance was set at 10 ppm, and fragment ion tolerance at 0.02 Da.",
+      "page_no": 3,
+      "page_end": 3,
+      "paragraph": "Section: RESEARCH | Paragraph 19 | Lines 18-21",
+      "section": "RESEARCH",
+      "line_start": 18,
+      "line_end": 21,
+      "retrieval_score": 0.5,
+      "repository_id": "c01147bf-637b-4baa-976b-8b2a99806fbd",
+      "original_text": "Open Access Eluted peptides were analyzed on an Orbitrap Explo­ ris 480 mass spectrometer (Thermo Fisher Scientific) equipped with a nano-electrospray ionization source."
+    },
+    {
+      "chunk_id": "5812d982-d341-48cc-8115-ab78757e7a1d",
+      "document_id": "419e6d40-2bea-41d5-85f4-434a7e870cf1",
+      "document_name": "pubmed_42902283_PMC13685146_Fetal cardiac interventions versus expectant management in c.pdf",
+      "document_content": "Open Access populations. Overall FCI was associated with lower post­ natal mortality among live-born infants without a signifi­ cant difference in live birth. The most consistent signals were observed for lower postnatal death among live-born infants after FAV and for improved BVC and live birth after technically successful FAV, whereas FPV and FASI remained less certain because of small numbers and end­ point-specific limitations. BVC is widely recognized as an indicator of favorable long-term prognosis, and individual studies have reported post-FAV BVC rates ranging from 40% to 74% [11, 16, 17, 20, 24-31]. Prior meta-analyses compared intervention and control groups drawn from different studies rather than",
+      "page_no": 8,
+      "page_end": 10,
+      "paragraph": "Section: RESEARCH | Paragraph 65 | Lines 66-67",
+      "section": "RESEARCH",
+      "line_start": 66,
+      "line_end": 67,
+      "retrieval_score": 0.5,
+      "repository_id": "c01147bf-637b-4baa-976b-8b2a99806fbd",
+      "original_text": "Open Access populations."
+    },
+    {
+      "chunk_id": "e7927d1a-da31-4218-af8a-e276590d4784",
+      "document_id": "419e6d40-2bea-41d5-85f4-434a7e870cf1",
+      "document_name": "pubmed_42902283_PMC13685146_Fetal cardiac interventions versus expectant management in c.pdf",
+      "document_content": "Similar uncertainties exist for FASI and FPV in their respective indications [3, 4, 12]. Previous meta-analyses frequently relied on single-arm studies without an internal control group or on non- arm-based comparisons, in which outcomes for FCI and expectant management were extracted from different studies [3, 13-15]. Such approaches are inherently vul­ nerable to confounding and cannot adequately account for differences in baseline disease severity, case selection, and centre-specific practice patterns. To address these gaps, we conducted a primary meta-analysis restricted to cohorts in which FCI and expect­ ant management were compared within the same study population. A separate exploratory technical-success analysis additionally included FAV cohorts with extract­ able successful-versus-unsuccessful outcomes. Outcomes were pooled across independent cohorts to obtain more precise comparative estimates. To our knowledge, this is the first meta-analysis restricted to within-study com­ parisons of FCI and expectant management and the first quantitative synthesis of FAV outcomes according to We excluded case reports, conference abstracts, retracted publications, and studies in which outcome data for the relevant fetal cardiac condition could not be extracted separately. Overlapping reports that did not contribute unique analysis-specific data were excluded. When an overlapping report provided eligible data for a distinct secondary analysis, it was retained as an included report only for that analysis, did not add an independent study population, and was not pooled simultaneously with the overlapping report. stratified by procedure type (FAV, FPV, or FASI). For FAV, pairwise subgroup comparisons were conducted between (i) technical success vs. expectant management, (ii) tech­ nical failure vs. expectant management, and (iii) technical success vs. technical failure, where data were available. For comparative meta-analyses, postnatal death was ana­ lyzed using the number of live-born infants with known postnatal vital status in each study arm as the denomina­ tor. Fetuses that did not result in live birth were excluded from the postnatal-death risk set. Outcome availability was assessed separately for each study arm and endpoint. Studies or study arms lacking extractable comparative data for a given outcome were excluded only from that endpoint-specific meta-analysis. Cohort-level numera­ tors, denominators, and reasons for non-inclusion in individual outcome analyses are reported in Table 1.",
+      "page_no": 2,
+      "page_end": 2,
+      "paragraph": "Section: RESEARCH | Paragraph 17 | Lines 16-19",
+      "section": "RESEARCH",
+      "line_start": 16,
+      "line_end": 19,
+      "retrieval_score": 0.5,
+      "repository_id": "c01147bf-637b-4baa-976b-8b2a99806fbd",
+      "original_text": "Similar uncertainties exist for FASI and FPV in their respective indications [3, 4, 12]."
+    }
+  ],
+  "retrieval": {
+    "user_query": "what BCVA gains were reported  with faricimab in  DME?",
+    "agent": "query_agent",
+    "chunks": [
+      {
+        "chunk_id": "d869108a-ed0d-428f-b7ad-8c6e41141b80",
+        "document_id": "419e6d40-2bea-41d5-85f4-434a7e870cf1",
+        "document_name": "pubmed_42902283_PMC13685146_Fetal cardiac interventions versus expectant management in c.pdf",
+        "document_content": "Open Access Information sources A comprehensive literature search was conducted in PubMed/MEDLINE, Embase, Web of Science, and the Cochrane Library from database inception to 31 Decem­ ber 2025. Two reviewers performed the search indepen­ dently. To ensure completeness, the reference lists of all included studies and of relevant systematic reviews and meta-analyses were also screened manually. Any disagreements were resolved through discussion and consensus. Search strategy The search strategy combined Medical Subject Head­ ings (MeSH), Emtree terms, and free-text keywords. No publication-date or language restrictions were applied. Reviews, editorials, comments, and letters were excluded. The following terms were used: Study selection and data extraction Study selection and data extraction were performed inde­ pendently by two authors using the Rayyan web appli­ cation. Titles and abstracts of all retrieved records were screened initially, and any study considered potentially relevant by either reviewer proceeded to full-text assess­ ment. Full texts were then reviewed to determine eligi­ bility according to the predefined inclusion and exclusion criteria. Any discrepancies between reviewers were resolved by consultation with a third author. (fetal OR fetus) AND (cardiac OR heart) AND (inter­ vention OR procedure OR surgery OR therapy OR \"intrauterine intervention\" OR \"in utero intervention\" OR \"fetal cardiac intervention\" OR FCI) AND (\"aortic valvuloplasty\" OR \"pulmonary valvuloplasty\" OR \"atrial septoplasty\" OR \"balloon valvuloplasty\" OR \"fetal aortic valvuloplasty\" OR \"fetal pulmonary valvuloplasty\" OR FAV OR FPV OR FASI) NOT (review OR editorial OR comment OR letter). For all studies meeting eligibility criteria, data were extracted independently and in duplicate, including study design, population characteristics, type of fetal cardiac intervention, comparator group, and reported clini­ cal outcomes. Extracted outcomes included established measures of gestational and postnatal prognosis relevant to fetal cardiac intervention. Consensus was reached through discussion when differences occurred, ensuring accuracy and completeness of the final dataset. When necessary, authors were contacted to clarify ambiguous reporting or obtain missing information. Cases that did not report outcome data (e.g., BVC, live birth, or post­ natal death) were excluded from analyses of the corre­ sponding endpoint. The detailed search strategies for each database, includ­ ing subject headings (e.g., MeSH and Emtree), are pro­ vided in Appendix S1. Definitions of clinical outcomes and procedural stratification Clinical outcomes were defined prior to analysis to ensure consistency across studies. Technical success was defined according to each original publication; however, in general, it reflected successful balloon inflation across the target valve with improvement in antegrade flow. For FAV, this typically corresponded to balloon inflation across the aortic valve with demonstrable enhancement of antegrade aortic flow. BVC was defined as a post­ natal circulation supported by separate functional left and right ventricles. When multiple time points were reported, outcomes at hospital discharge were priori­ tized. If discharge data were unavailable, the outcome as reported in the study was used. When the timing of BVC assessment was not specified, the reported value was accepted as final. Live birth was defined as an infant alive at the time of delivery. Postnatal death referred to mor­ tality occurring between birth and hospital discharge.",
+        "page_no": 3,
+        "paragraph": "Section: RESEARCH | Paragraph 21 | Lines 20-26",
+        "original_text": "Open Access Information sources A comprehensive literature search was conducted in PubMed/MEDLINE, Embase, Web of Science, and the Cochrane Library from database inception to 31 Decem­ ber 2025."
+      },
+      {
+        "chunk_id": "20eb74cb-dd38-4e49-a299-53dcc6c7557d",
+        "document_id": "0ae5d495-28c3-4396-829d-2ab8107e3c37",
+        "document_name": "pubmed_42898563_PMC13677948_Cognitive frailty and mortality among patients on the heart.pdf",
+        "document_content": "Statistical analysis Given the presence of a competing event (transplantation), a competing risks analysis was performed, considering death as the event of interest and transplantation as the competing event. Associations between covariates and mortality were evaluated using the Fine-Gray subdistribution hazards model, which es­ timates the effect of covariates on the cumulative incidence of the event of interest in the presence of competing risks. Multivariable models were adjusted for age, sex, and IABP use, and were intentionally parsimonious given the limited number of events to avoid overfitting. Results are presented as sub­ distribution hazard ratios (SHR) with 95% confidence intervals. The proportional hazards assumption was assessed by testing interactions between covariates and time; when violations were identified, time-dependent effects were modeled using interac­ tion terms with follow-up time, and results are reported as SHR for the baseline effect and for the time-varying component (TVC SHR). Given the advanced clinical status of the study population, particular attention was paid to avoid overadjustment. Variables included in multivariable models were selected based on clin­ ical relevance and statistical criteria, acknowledging the po­ tential overlap between frailty measures and markers of disease severity, which may share common underlying pathways.",
+        "page_no": 5,
+        "paragraph": "Section: Statistical analysis | Paragraph 51 | Lines 50-51",
+        "original_text": "Statistical analysis Given the presence of a competing event (transplantation), a competing risks analysis was performed, considering death as the event of interest and transplantation as the competing event."
+      },
+      {
+        "chunk_id": "c5c30c98-9a14-4d3b-862e-7b3d629da755",
+        "document_id": "0ae5d495-28c3-4396-829d-2ab8107e3c37",
+        "document_name": "pubmed_42898563_PMC13677948_Cognitive frailty and mortality among patients on the heart.pdf",
+        "document_content": "General characteristics of the population The study population was predominantly male (70%) with self-reported black race (67.3%). The mean age of participants was 49.8 years ( ± 10.4), and the mean education level was 8.9 years ( ± 4.8). Concerning the etiology of heart failure, Chagas disease was the most prevalent (35%), followed by dilated cardiomyopathy (32%) and ischemic heart disease (12%). In our sample, 56.7% of patients were admitted to the intensive care unit (ICU) and 39.3% to the ward. Many were prioritized for transplantation due to dependence on vasoactive drugs (88.7%) or an intra-aortic balloon pump (31.3%). The re­ maining characteristics are described in Table 1. 84(56) Mild 38(25.3) Moderate 16(10.7) Severe",
+        "page_no": 5,
+        "paragraph": "Section: General characteristics of the population | Paragraph 75 | Lines 75-77",
+        "original_text": "General characteristics of the population The study population was predominantly male (70%) with self-reported black race (67.3%)."
+      },
+      {
+        "chunk_id": "da43ef64-eaf7-4dc5-a6d8-cda292192359",
+        "document_id": "038bf6ad-d4bb-4c47-9a01-4a5102d88806",
+        "document_name": "pubmed_42902164_PMC13685291_The CML_esRAGE ratio as a potential biomarker of early diast.pdf",
+        "document_content": "Variables with P < 0.1 in univariate analysis, together with pre-specified clinical covariates (age, sex, HbA1c, disease duration, heart rate), were entered into stepwise multivariable linear regression analysis to identify independent predictors. To mitigate the risk of overfitting, the number of covariates included in the final model was limited following the standard 10:1 events per variable rule, which is widely accepted for exploratory clinical studies. Of note, for multiple com­ parisons, Bonferroni correction was applied to adjust the significance threshold for all correlation and regres­ sion analyses; uncorrected P values were also reported for full transparency, given the exploratory nature of this study. All correlation and regression analyses focused on early myocardial damage were performed exclusively in the type 1 diabetic cohort. This study was designed as an exploratory pilot study on novel biomarkers for diabetic cardiomyopathy; therefore, no a priori power calculation was performed. The sample size was determined with reference to previously published exploratory studies in the same field. For this exploratory research, a two-tailed P value < 0.05 was considered statistically significant, and P values between 0.05 and 0.10 were defined as border­ line significance, which was interpreted as suggestive of potential biological relevance requiring validation in larger cohorts. Comparison of segmental longitudinal strain (LS) and global longitudinal strain (GLS) Seven segmental systolic longitudinal strain (LS) and GLS in the diabetic group were lower than those in the normal group, more details refer to Table 2.",
+        "page_no": 3,
+        "paragraph": "Section: Exclusion criteria | Paragraph 27 | Lines 26-26",
+        "original_text": "Variables with P < 0.1 in univariate analysis, together with pre-specified clinical covariates (age, sex, HbA1c, disease duration, heart rate), were entered into stepwise multivariable linear regression analysis to identify independent predictors."
+      },
+      {
+        "chunk_id": "19e16a6e-4449-4707-94a4-480867a04755",
+        "document_id": "419e6d40-2bea-41d5-85f4-434a7e870cf1",
+        "document_name": "pubmed_42902283_PMC13685146_Fetal cardiac interventions versus expectant management in c.pdf",
+        "document_content": "Open Access Postnatal death (FCI vs. Ctrl) 1 Cruz-Lemini (2019) [16] First author (year) Country Total FCI Control Diagnosis & procedure Technical success Biventric­ ular (FCI vs. Ctrl) Live birth (FCI vs. Ctrl) Multinational (Europe) 214 67 147 AS with eHLHS; FAV 59/67 19/67 vs. 60/67 vs. 5/60 vs. 49/147 129/147 16/129 0/14 14/14 3/14 7 Chaturvedi (2013) [4] USA 84 70 14 Severe AS; FAV 52/70 15/70 vs. 63/70 vs. 3/63 vs. USA Outcome availability was assessed separately for each cohort, study arm, and endpoint. The Tulzer 2022 [20] cohort did not contribute to the live-birth or postnatal-death meta-analyses because the corresponding control-arm outcome data were unavailable. For all other cohorts, the live-birth denominators were fetuses with available delivery outcomes, whereas postnatal-death denominators were restricted to live-born infants with known postnatal vital status. Dashes indicate that comparative data were unavailable for the corresponding endpoint. Friedman et al. 2018 [23] lacked an expectant-management arm and was therefore not included in this table; it contributed only to the secondary successful-versus-unsuccessful FAV analyses and did not add an independent study population FCI Fetal Cardiac Intervention, eHLHS evolving hypoplastic left heart syndrome, FAV Fetal Aortic Valvuloplasty, FPV Fetal Pulmonary Valvuloplasty, FASI Fetal Atrial Septal Intervention, PAIVS pulmonary atresia with intact ventricular septum, AS Aortic Stenosis, MR Mitral Regurgitation, CAS critical aortic stenosis, HLHS-IAS Hypoplastic left heart syndrome with intact atrial septum, HLHS-RAS Hypoplastic left heart syndrome with restrictive atrial septum categories: low (ROBINS-I low), medium (ROBINS-I medium), and high (ROBINS-I serious or critical). Discrepancies were resolved through discussion and consensus. of technical success or failure; technical-success analyses were performed separately for FAV when data were avail­ able. A continuity correction of 0.5 was applied when a study contained one or more zero cells. Heterogene­ ity was quantified using I2, and results were presented in forest plots. All analyses were conducted in Stata/ MP 18.0. For overall FCI outcomes reported by at least 10 cohorts, small-study effects were assessed visually using funnel plots and statistically using Egger's regres­ sion test; p < 0.05 was considered evidence of funnel-plot asymmetry. Statistical analysis Demographic and baseline characteristics were summa­ rized descriptively. For postnatal-death analyses, event counts and denominators were extracted exclusively among live-born infants with known postnatal vital sta­ tus. For each outcome, event counts were extracted for the intervention and comparator groups, and ORs with 95% CIs were pooled using random-effects (REML) models. Live birth and postnatal death among live-born infants were analyzed for overall FCI and by procedure type (FAV, FPV, and FASI) versus expectant management. BVC was analyzed separately for FAV and FPV and was not pooled across procedure types because these pro­ cedures address distinct cardiac pathologies and patient populations. Additional pairwise comparisons were per­ formed among technically successful, technically failed, and expectant-management groups for FAV. Overall FCI analyses included all attempted interventions regardless Results Study selection After full-text assessment, 72 reports were excluded. Twelve reports were included in the review, representing 11 independent study populations. Twelve reports were included in the review, representing 11 independent study populations. Eleven comparative reports were included in the primary comparative quan­ titative synthesis, comprising 775 fetuses, including 418 interventions and 357 controls (Fig. 1) [4, 5, 7, 12, 16-22]. Friedman et al. [23], an overlapping report, contributed only to the secondary successful-versus-unsuccessful",
+        "page_no": 4,
+        "paragraph": "Section: RESEARCH | Paragraph 31 | Lines 30-46",
+        "original_text": "Open Access Postnatal death (FCI vs."
+      },
+      {
+        "chunk_id": "9dac0eb9-1614-4214-9c29-503831e71fa4",
+        "document_id": "4143ce87-bdcc-4a4d-99db-0f78ba3aa756",
+        "document_name": "pubmed_42902265_PMC13685328_Integrated proteomics and machine learning reveal AHNAK as a.pdf",
+        "document_content": "Open Access Eluted peptides were analyzed on an Orbitrap Explo­ ris 480 mass spectrometer (Thermo Fisher Scientific) equipped with a nano-electrospray ionization source. The spray voltage was set to 2.3 kV, and high-field asymmetric waveform ion mobility spectrometry was applied using compensation voltages of - 70 V and - 45 V. Full MS scans were acquired in the Orbitrap analyzer at a resolu­ tion of 60,000 across an m/z range of 400-1,200. Tandem MS/MS spectra were acquired at a resolution of 30,000 with the first mass fixed at m/z 110. TurboTMT mode was disabled to maintain compatibility with label-free quantification. The top 15 most intense precursor ions were selected for higher-energy collisional dissociation with a normalized collision energy of 27%, and dynamic exclusion was set to 30 s. The automatic gain control tar­ get was set to 75%, with an intensity threshold of 10,000 ions/s and a maximum injection time of 100 ms. During hospitalization, all participants provided writ­ ten informed consent permitting the use of their blood samples for non-genetic experimental analyses. Compre­ hensive clinical data, including demographic character­ istics, comorbidities, vital signs, laboratory parameters, echocardiographic measurements, and medication use, were systematically collected from electronic medical records. Peripheral venous blood samples were obtained, and plasma was isolated by centrifugation and stored at -80 °C until analysis. Samples were transported on dry ice to Jingjie PTM BioLabs (Hangzhou, China) for label-free quantitative proteomic profiling. To reduce the interference of highly abundant plasma proteins, such as albumin and immunoglobulins, on downstream mass spectrometry-based analyses, plasma samples were depleted using PierceTM Top 14 Abundant Protein Depletion Spin Columns (Thermo Scientific) in strict accordance with the manufacturer's protocol. Briefly, frozen plasma aliquots were thawed on ice and centrifuged at 12,000 × g for 10 min at 4 °C to remove cellular debris. The clarified supernatant was transferred to fresh tubes and subjected to high-abundance protein depletion. Protein concentrations in the depleted frac­ tions were quantified using a bicinchoninic acid (BCA) assay, with all standards and samples measured in techni­ cal triplicates (Additional file 1: Table S1). Equal amounts of total protein were subsequently used for enzymatic digestion to ensure comparability across samples. Deple­ tion efficiency and protein integrity were evaluated by sodium dodecyl sulfate-polyacrylamide gel electropho­ resis (SDS-PAGE) before and after depletion (Additional file 1: Figure S2), and only samples demonstrating satis­ factory depletion efficiency and intact protein profiles were advanced for LC-MS/MS analysis. Samples with visible hemolysis or flagged as having a high risk of pre-analytical bias were excluded. Raw MS/MS data were processed using Proteome Dis­ coverer software (version 2.4.1.15). Spectra were searched against the Homo_sapiens_9606_PR_20201214.fasta database (75,777 entries), concatenated with a reverse decoy database to enable false discovery rate (FDR) esti­ mation. Trypsin was specified as the proteolytic enzyme, allowing up to two missed cleavages. The minimum pep­ tide length was set to six amino acids, and up to three variable modifications per peptide were permitted. Pre­ cursor mass tolerance was set at 10 ppm, and fragment ion tolerance at 0.02 Da.",
+        "page_no": 3,
+        "paragraph": "Section: RESEARCH | Paragraph 19 | Lines 18-21",
+        "original_text": "Open Access Eluted peptides were analyzed on an Orbitrap Explo­ ris 480 mass spectrometer (Thermo Fisher Scientific) equipped with a nano-electrospray ionization source."
+      },
+      {
+        "chunk_id": "5812d982-d341-48cc-8115-ab78757e7a1d",
+        "document_id": "419e6d40-2bea-41d5-85f4-434a7e870cf1",
+        "document_name": "pubmed_42902283_PMC13685146_Fetal cardiac interventions versus expectant management in c.pdf",
+        "document_content": "Open Access populations. Overall FCI was associated with lower post­ natal mortality among live-born infants without a signifi­ cant difference in live birth. The most consistent signals were observed for lower postnatal death among live-born infants after FAV and for improved BVC and live birth after technically successful FAV, whereas FPV and FASI remained less certain because of small numbers and end­ point-specific limitations. BVC is widely recognized as an indicator of favorable long-term prognosis, and individual studies have reported post-FAV BVC rates ranging from 40% to 74% [11, 16, 17, 20, 24-31]. Prior meta-analyses compared intervention and control groups drawn from different studies rather than",
+        "page_no": 8,
+        "paragraph": "Section: RESEARCH | Paragraph 65 | Lines 66-67",
+        "original_text": "Open Access populations."
+      },
+      {
+        "chunk_id": "e7927d1a-da31-4218-af8a-e276590d4784",
+        "document_id": "419e6d40-2bea-41d5-85f4-434a7e870cf1",
+        "document_name": "pubmed_42902283_PMC13685146_Fetal cardiac interventions versus expectant management in c.pdf",
+        "document_content": "Similar uncertainties exist for FASI and FPV in their respective indications [3, 4, 12]. Previous meta-analyses frequently relied on single-arm studies without an internal control group or on non- arm-based comparisons, in which outcomes for FCI and expectant management were extracted from different studies [3, 13-15]. Such approaches are inherently vul­ nerable to confounding and cannot adequately account for differences in baseline disease severity, case selection, and centre-specific practice patterns. To address these gaps, we conducted a primary meta-analysis restricted to cohorts in which FCI and expect­ ant management were compared within the same study population. A separate exploratory technical-success analysis additionally included FAV cohorts with extract­ able successful-versus-unsuccessful outcomes. Outcomes were pooled across independent cohorts to obtain more precise comparative estimates. To our knowledge, this is the first meta-analysis restricted to within-study com­ parisons of FCI and expectant management and the first quantitative synthesis of FAV outcomes according to We excluded case reports, conference abstracts, retracted publications, and studies in which outcome data for the relevant fetal cardiac condition could not be extracted separately. Overlapping reports that did not contribute unique analysis-specific data were excluded. When an overlapping report provided eligible data for a distinct secondary analysis, it was retained as an included report only for that analysis, did not add an independent study population, and was not pooled simultaneously with the overlapping report. stratified by procedure type (FAV, FPV, or FASI). For FAV, pairwise subgroup comparisons were conducted between (i) technical success vs. expectant management, (ii) tech­ nical failure vs. expectant management, and (iii) technical success vs. technical failure, where data were available. For comparative meta-analyses, postnatal death was ana­ lyzed using the number of live-born infants with known postnatal vital status in each study arm as the denomina­ tor. Fetuses that did not result in live birth were excluded from the postnatal-death risk set. Outcome availability was assessed separately for each study arm and endpoint. Studies or study arms lacking extractable comparative data for a given outcome were excluded only from that endpoint-specific meta-analysis. Cohort-level numera­ tors, denominators, and reasons for non-inclusion in individual outcome analyses are reported in Table 1.",
+        "page_no": 2,
+        "paragraph": "Section: RESEARCH | Paragraph 17 | Lines 16-19",
+        "original_text": "Similar uncertainties exist for FASI and FPV in their respective indications [3, 4, 12]."
+      }
+    ],
+    "created_at": "2026-10-26T05:11:39.889881+00:00"
+  },
+  "generation_error": "",
+  "created_at": "2026-10-26T05:11:39.889881+00:00",
+  "validation": null
+}
+2026-10-26 10:41:42,459 [INFO] digital_msl.store: [corr_5b45f1ab1ef44dd1] POST-VALIDATION JSON (trace_33f233d7e875462d)
+{
+  "correlation_id": "corr_5b45f1ab1ef44dd1",
+  "message_id": "msg_476278d814864d3c",
+  "channel": "web",
+  "repository_id": "c01147bf-637b-4baa-976b-8b2a99806fbd",
+  "user_query": "what BCVA gains were reported  with faricimab in  DME?",
+  "agent": "retina_answer_agent",
+  "scope": {
+    "in_scope": true,
+    "retina_terms": [
+      "dme",
+      "bcva"
+    ],
+    "molecules": [
+      "faricimab"
+    ],
+    "unsupported_molecules": [],
+    "safety_flags": [],
+    "reason": ""
+  },
+  "draft_answer": "The supplied sources do not report BCVA gains with faricimab in diabetic macular edema.",
+  "claims": [],
+  "chunks": [
+    {
+      "chunk_id": "d869108a-ed0d-428f-b7ad-8c6e41141b80",
+      "document_id": "419e6d40-2bea-41d5-85f4-434a7e870cf1",
+      "document_name": "pubmed_42902283_PMC13685146_Fetal cardiac interventions versus expectant management in c.pdf",
+      "document_content": "Open Access Information sources A comprehensive literature search was conducted in PubMed/MEDLINE, Embase, Web of Science, and the Cochrane Library from database inception to 31 Decem­ ber 2025. Two reviewers performed the search indepen­ dently. To ensure completeness, the reference lists of all included studies and of relevant systematic reviews and meta-analyses were also screened manually. Any disagreements were resolved through discussion and consensus. Search strategy The search strategy combined Medical Subject Head­ ings (MeSH), Emtree terms, and free-text keywords. No publication-date or language restrictions were applied. Reviews, editorials, comments, and letters were excluded. The following terms were used: Study selection and data extraction Study selection and data extraction were performed inde­ pendently by two authors using the Rayyan web appli­ cation. Titles and abstracts of all retrieved records were screened initially, and any study considered potentially relevant by either reviewer proceeded to full-text assess­ ment. Full texts were then reviewed to determine eligi­ bility according to the predefined inclusion and exclusion criteria. Any discrepancies between reviewers were resolved by consultation with a third author. (fetal OR fetus) AND (cardiac OR heart) AND (inter­ vention OR procedure OR surgery OR therapy OR \"intrauterine intervention\" OR \"in utero intervention\" OR \"fetal cardiac intervention\" OR FCI) AND (\"aortic valvuloplasty\" OR \"pulmonary valvuloplasty\" OR \"atrial septoplasty\" OR \"balloon valvuloplasty\" OR \"fetal aortic valvuloplasty\" OR \"fetal pulmonary valvuloplasty\" OR FAV OR FPV OR FASI) NOT (review OR editorial OR comment OR letter). For all studies meeting eligibility criteria, data were extracted independently and in duplicate, including study design, population characteristics, type of fetal cardiac intervention, comparator group, and reported clini­ cal outcomes. Extracted outcomes included established measures of gestational and postnatal prognosis relevant to fetal cardiac intervention. Consensus was reached through discussion when differences occurred, ensuring accuracy and completeness of the final dataset. When necessary, authors were contacted to clarify ambiguous reporting or obtain missing information. Cases that did not report outcome data (e.g., BVC, live birth, or post­ natal death) were excluded from analyses of the corre­ sponding endpoint. The detailed search strategies for each database, includ­ ing subject headings (e.g., MeSH and Emtree), are pro­ vided in Appendix S1. Definitions of clinical outcomes and procedural stratification Clinical outcomes were defined prior to analysis to ensure consistency across studies. Technical success was defined according to each original publication; however, in general, it reflected successful balloon inflation across the target valve with improvement in antegrade flow. For FAV, this typically corresponded to balloon inflation across the aortic valve with demonstrable enhancement of antegrade aortic flow. BVC was defined as a post­ natal circulation supported by separate functional left and right ventricles. When multiple time points were reported, outcomes at hospital discharge were priori­ tized. If discharge data were unavailable, the outcome as reported in the study was used. When the timing of BVC assessment was not specified, the reported value was accepted as final. Live birth was defined as an infant alive at the time of delivery. Postnatal death referred to mor­ tality occurring between birth and hospital discharge.",
+      "page_no": 3,
+      "page_end": 3,
+      "paragraph": "Section: RESEARCH | Paragraph 21 | Lines 20-26",
+      "section": "RESEARCH",
+      "line_start": 20,
+      "line_end": 26,
+      "retrieval_score": 0.5,
+      "repository_id": "c01147bf-637b-4baa-976b-8b2a99806fbd",
+      "original_text": "Open Access Information sources A comprehensive literature search was conducted in PubMed/MEDLINE, Embase, Web of Science, and the Cochrane Library from database inception to 31 Decem­ ber 2025."
+    },
+    {
+      "chunk_id": "20eb74cb-dd38-4e49-a299-53dcc6c7557d",
+      "document_id": "0ae5d495-28c3-4396-829d-2ab8107e3c37",
+      "document_name": "pubmed_42898563_PMC13677948_Cognitive frailty and mortality among patients on the heart.pdf",
+      "document_content": "Statistical analysis Given the presence of a competing event (transplantation), a competing risks analysis was performed, considering death as the event of interest and transplantation as the competing event. Associations between covariates and mortality were evaluated using the Fine-Gray subdistribution hazards model, which es­ timates the effect of covariates on the cumulative incidence of the event of interest in the presence of competing risks. Multivariable models were adjusted for age, sex, and IABP use, and were intentionally parsimonious given the limited number of events to avoid overfitting. Results are presented as sub­ distribution hazard ratios (SHR) with 95% confidence intervals. The proportional hazards assumption was assessed by testing interactions between covariates and time; when violations were identified, time-dependent effects were modeled using interac­ tion terms with follow-up time, and results are reported as SHR for the baseline effect and for the time-varying component (TVC SHR). Given the advanced clinical status of the study population, particular attention was paid to avoid overadjustment. Variables included in multivariable models were selected based on clin­ ical relevance and statistical criteria, acknowledging the po­ tential overlap between frailty measures and markers of disease severity, which may share common underlying pathways.",
+      "page_no": 5,
+      "page_end": 5,
+      "paragraph": "Section: Statistical analysis | Paragraph 51 | Lines 50-51",
+      "section": "Statistical analysis",
+      "line_start": 50,
+      "line_end": 51,
+      "retrieval_score": 0.5,
+      "repository_id": "c01147bf-637b-4baa-976b-8b2a99806fbd",
+      "original_text": "Statistical analysis Given the presence of a competing event (transplantation), a competing risks analysis was performed, considering death as the event of interest and transplantation as the competing event."
+    },
+    {
+      "chunk_id": "c5c30c98-9a14-4d3b-862e-7b3d629da755",
+      "document_id": "0ae5d495-28c3-4396-829d-2ab8107e3c37",
+      "document_name": "pubmed_42898563_PMC13677948_Cognitive frailty and mortality among patients on the heart.pdf",
+      "document_content": "General characteristics of the population The study population was predominantly male (70%) with self-reported black race (67.3%). The mean age of participants was 49.8 years ( ± 10.4), and the mean education level was 8.9 years ( ± 4.8). Concerning the etiology of heart failure, Chagas disease was the most prevalent (35%), followed by dilated cardiomyopathy (32%) and ischemic heart disease (12%). In our sample, 56.7% of patients were admitted to the intensive care unit (ICU) and 39.3% to the ward. Many were prioritized for transplantation due to dependence on vasoactive drugs (88.7%) or an intra-aortic balloon pump (31.3%). The re­ maining characteristics are described in Table 1. 84(56) Mild 38(25.3) Moderate 16(10.7) Severe",
+      "page_no": 5,
+      "page_end": 5,
+      "paragraph": "Section: General characteristics of the population | Paragraph 75 | Lines 75-77",
+      "section": "General characteristics of the population",
+      "line_start": 75,
+      "line_end": 77,
+      "retrieval_score": 0.5,
+      "repository_id": "c01147bf-637b-4baa-976b-8b2a99806fbd",
+      "original_text": "General characteristics of the population The study population was predominantly male (70%) with self-reported black race (67.3%)."
+    },
+    {
+      "chunk_id": "da43ef64-eaf7-4dc5-a6d8-cda292192359",
+      "document_id": "038bf6ad-d4bb-4c47-9a01-4a5102d88806",
+      "document_name": "pubmed_42902164_PMC13685291_The CML_esRAGE ratio as a potential biomarker of early diast.pdf",
+      "document_content": "Variables with P < 0.1 in univariate analysis, together with pre-specified clinical covariates (age, sex, HbA1c, disease duration, heart rate), were entered into stepwise multivariable linear regression analysis to identify independent predictors. To mitigate the risk of overfitting, the number of covariates included in the final model was limited following the standard 10:1 events per variable rule, which is widely accepted for exploratory clinical studies. Of note, for multiple com­ parisons, Bonferroni correction was applied to adjust the significance threshold for all correlation and regres­ sion analyses; uncorrected P values were also reported for full transparency, given the exploratory nature of this study. All correlation and regression analyses focused on early myocardial damage were performed exclusively in the type 1 diabetic cohort. This study was designed as an exploratory pilot study on novel biomarkers for diabetic cardiomyopathy; therefore, no a priori power calculation was performed. The sample size was determined with reference to previously published exploratory studies in the same field. For this exploratory research, a two-tailed P value < 0.05 was considered statistically significant, and P values between 0.05 and 0.10 were defined as border­ line significance, which was interpreted as suggestive of potential biological relevance requiring validation in larger cohorts. Comparison of segmental longitudinal strain (LS) and global longitudinal strain (GLS) Seven segmental systolic longitudinal strain (LS) and GLS in the diabetic group were lower than those in the normal group, more details refer to Table 2.",
+      "page_no": 3,
+      "page_end": 3,
+      "paragraph": "Section: Exclusion criteria | Paragraph 27 | Lines 26-26",
+      "section": "Exclusion criteria",
+      "line_start": 26,
+      "line_end": 26,
+      "retrieval_score": 0.5,
+      "repository_id": "c01147bf-637b-4baa-976b-8b2a99806fbd",
+      "original_text": "Variables with P < 0.1 in univariate analysis, together with pre-specified clinical covariates (age, sex, HbA1c, disease duration, heart rate), were entered into stepwise multivariable linear regression analysis to identify independent predictors."
+    },
+    {
+      "chunk_id": "19e16a6e-4449-4707-94a4-480867a04755",
+      "document_id": "419e6d40-2bea-41d5-85f4-434a7e870cf1",
+      "document_name": "pubmed_42902283_PMC13685146_Fetal cardiac interventions versus expectant management in c.pdf",
+      "document_content": "Open Access Postnatal death (FCI vs. Ctrl) 1 Cruz-Lemini (2019) [16] First author (year) Country Total FCI Control Diagnosis & procedure Technical success Biventric­ ular (FCI vs. Ctrl) Live birth (FCI vs. Ctrl) Multinational (Europe) 214 67 147 AS with eHLHS; FAV 59/67 19/67 vs. 60/67 vs. 5/60 vs. 49/147 129/147 16/129 0/14 14/14 3/14 7 Chaturvedi (2013) [4] USA 84 70 14 Severe AS; FAV 52/70 15/70 vs. 63/70 vs. 3/63 vs. USA Outcome availability was assessed separately for each cohort, study arm, and endpoint. The Tulzer 2022 [20] cohort did not contribute to the live-birth or postnatal-death meta-analyses because the corresponding control-arm outcome data were unavailable. For all other cohorts, the live-birth denominators were fetuses with available delivery outcomes, whereas postnatal-death denominators were restricted to live-born infants with known postnatal vital status. Dashes indicate that comparative data were unavailable for the corresponding endpoint. Friedman et al. 2018 [23] lacked an expectant-management arm and was therefore not included in this table; it contributed only to the secondary successful-versus-unsuccessful FAV analyses and did not add an independent study population FCI Fetal Cardiac Intervention, eHLHS evolving hypoplastic left heart syndrome, FAV Fetal Aortic Valvuloplasty, FPV Fetal Pulmonary Valvuloplasty, FASI Fetal Atrial Septal Intervention, PAIVS pulmonary atresia with intact ventricular septum, AS Aortic Stenosis, MR Mitral Regurgitation, CAS critical aortic stenosis, HLHS-IAS Hypoplastic left heart syndrome with intact atrial septum, HLHS-RAS Hypoplastic left heart syndrome with restrictive atrial septum categories: low (ROBINS-I low), medium (ROBINS-I medium), and high (ROBINS-I serious or critical). Discrepancies were resolved through discussion and consensus. of technical success or failure; technical-success analyses were performed separately for FAV when data were avail­ able. A continuity correction of 0.5 was applied when a study contained one or more zero cells. Heterogene­ ity was quantified using I2, and results were presented in forest plots. All analyses were conducted in Stata/ MP 18.0. For overall FCI outcomes reported by at least 10 cohorts, small-study effects were assessed visually using funnel plots and statistically using Egger's regres­ sion test; p < 0.05 was considered evidence of funnel-plot asymmetry. Statistical analysis Demographic and baseline characteristics were summa­ rized descriptively. For postnatal-death analyses, event counts and denominators were extracted exclusively among live-born infants with known postnatal vital sta­ tus. For each outcome, event counts were extracted for the intervention and comparator groups, and ORs with 95% CIs were pooled using random-effects (REML) models. Live birth and postnatal death among live-born infants were analyzed for overall FCI and by procedure type (FAV, FPV, and FASI) versus expectant management. BVC was analyzed separately for FAV and FPV and was not pooled across procedure types because these pro­ cedures address distinct cardiac pathologies and patient populations. Additional pairwise comparisons were per­ formed among technically successful, technically failed, and expectant-management groups for FAV. Overall FCI analyses included all attempted interventions regardless Results Study selection After full-text assessment, 72 reports were excluded. Twelve reports were included in the review, representing 11 independent study populations. Twelve reports were included in the review, representing 11 independent study populations. Eleven comparative reports were included in the primary comparative quan­ titative synthesis, comprising 775 fetuses, including 418 interventions and 357 controls (Fig. 1) [4, 5, 7, 12, 16-22]. Friedman et al. [23], an overlapping report, contributed only to the secondary successful-versus-unsuccessful",
+      "page_no": 4,
+      "page_end": 8,
+      "paragraph": "Section: RESEARCH | Paragraph 31 | Lines 30-46",
+      "section": "RESEARCH",
+      "line_start": 30,
+      "line_end": 46,
+      "retrieval_score": 0.5,
+      "repository_id": "c01147bf-637b-4baa-976b-8b2a99806fbd",
+      "original_text": "Open Access Postnatal death (FCI vs."
+    },
+    {
+      "chunk_id": "9dac0eb9-1614-4214-9c29-503831e71fa4",
+      "document_id": "4143ce87-bdcc-4a4d-99db-0f78ba3aa756",
+      "document_name": "pubmed_42902265_PMC13685328_Integrated proteomics and machine learning reveal AHNAK as a.pdf",
+      "document_content": "Open Access Eluted peptides were analyzed on an Orbitrap Explo­ ris 480 mass spectrometer (Thermo Fisher Scientific) equipped with a nano-electrospray ionization source. The spray voltage was set to 2.3 kV, and high-field asymmetric waveform ion mobility spectrometry was applied using compensation voltages of - 70 V and - 45 V. Full MS scans were acquired in the Orbitrap analyzer at a resolu­ tion of 60,000 across an m/z range of 400-1,200. Tandem MS/MS spectra were acquired at a resolution of 30,000 with the first mass fixed at m/z 110. TurboTMT mode was disabled to maintain compatibility with label-free quantification. The top 15 most intense precursor ions were selected for higher-energy collisional dissociation with a normalized collision energy of 27%, and dynamic exclusion was set to 30 s. The automatic gain control tar­ get was set to 75%, with an intensity threshold of 10,000 ions/s and a maximum injection time of 100 ms. During hospitalization, all participants provided writ­ ten informed consent permitting the use of their blood samples for non-genetic experimental analyses. Compre­ hensive clinical data, including demographic character­ istics, comorbidities, vital signs, laboratory parameters, echocardiographic measurements, and medication use, were systematically collected from electronic medical records. Peripheral venous blood samples were obtained, and plasma was isolated by centrifugation and stored at -80 °C until analysis. Samples were transported on dry ice to Jingjie PTM BioLabs (Hangzhou, China) for label-free quantitative proteomic profiling. To reduce the interference of highly abundant plasma proteins, such as albumin and immunoglobulins, on downstream mass spectrometry-based analyses, plasma samples were depleted using PierceTM Top 14 Abundant Protein Depletion Spin Columns (Thermo Scientific) in strict accordance with the manufacturer's protocol. Briefly, frozen plasma aliquots were thawed on ice and centrifuged at 12,000 × g for 10 min at 4 °C to remove cellular debris. The clarified supernatant was transferred to fresh tubes and subjected to high-abundance protein depletion. Protein concentrations in the depleted frac­ tions were quantified using a bicinchoninic acid (BCA) assay, with all standards and samples measured in techni­ cal triplicates (Additional file 1: Table S1). Equal amounts of total protein were subsequently used for enzymatic digestion to ensure comparability across samples. Deple­ tion efficiency and protein integrity were evaluated by sodium dodecyl sulfate-polyacrylamide gel electropho­ resis (SDS-PAGE) before and after depletion (Additional file 1: Figure S2), and only samples demonstrating satis­ factory depletion efficiency and intact protein profiles were advanced for LC-MS/MS analysis. Samples with visible hemolysis or flagged as having a high risk of pre-analytical bias were excluded. Raw MS/MS data were processed using Proteome Dis­ coverer software (version 2.4.1.15). Spectra were searched against the Homo_sapiens_9606_PR_20201214.fasta database (75,777 entries), concatenated with a reverse decoy database to enable false discovery rate (FDR) esti­ mation. Trypsin was specified as the proteolytic enzyme, allowing up to two missed cleavages. The minimum pep­ tide length was set to six amino acids, and up to three variable modifications per peptide were permitted. Pre­ cursor mass tolerance was set at 10 ppm, and fragment ion tolerance at 0.02 Da.",
+      "page_no": 3,
+      "page_end": 3,
+      "paragraph": "Section: RESEARCH | Paragraph 19 | Lines 18-21",
+      "section": "RESEARCH",
+      "line_start": 18,
+      "line_end": 21,
+      "retrieval_score": 0.5,
+      "repository_id": "c01147bf-637b-4baa-976b-8b2a99806fbd",
+      "original_text": "Open Access Eluted peptides were analyzed on an Orbitrap Explo­ ris 480 mass spectrometer (Thermo Fisher Scientific) equipped with a nano-electrospray ionization source."
+    },
+    {
+      "chunk_id": "5812d982-d341-48cc-8115-ab78757e7a1d",
+      "document_id": "419e6d40-2bea-41d5-85f4-434a7e870cf1",
+      "document_name": "pubmed_42902283_PMC13685146_Fetal cardiac interventions versus expectant management in c.pdf",
+      "document_content": "Open Access populations. Overall FCI was associated with lower post­ natal mortality among live-born infants without a signifi­ cant difference in live birth. The most consistent signals were observed for lower postnatal death among live-born infants after FAV and for improved BVC and live birth after technically successful FAV, whereas FPV and FASI remained less certain because of small numbers and end­ point-specific limitations. BVC is widely recognized as an indicator of favorable long-term prognosis, and individual studies have reported post-FAV BVC rates ranging from 40% to 74% [11, 16, 17, 20, 24-31]. Prior meta-analyses compared intervention and control groups drawn from different studies rather than",
+      "page_no": 8,
+      "page_end": 10,
+      "paragraph": "Section: RESEARCH | Paragraph 65 | Lines 66-67",
+      "section": "RESEARCH",
+      "line_start": 66,
+      "line_end": 67,
+      "retrieval_score": 0.5,
+      "repository_id": "c01147bf-637b-4baa-976b-8b2a99806fbd",
+      "original_text": "Open Access populations."
+    },
+    {
+      "chunk_id": "e7927d1a-da31-4218-af8a-e276590d4784",
+      "document_id": "419e6d40-2bea-41d5-85f4-434a7e870cf1",
+      "document_name": "pubmed_42902283_PMC13685146_Fetal cardiac interventions versus expectant management in c.pdf",
+      "document_content": "Similar uncertainties exist for FASI and FPV in their respective indications [3, 4, 12]. Previous meta-analyses frequently relied on single-arm studies without an internal control group or on non- arm-based comparisons, in which outcomes for FCI and expectant management were extracted from different studies [3, 13-15]. Such approaches are inherently vul­ nerable to confounding and cannot adequately account for differences in baseline disease severity, case selection, and centre-specific practice patterns. To address these gaps, we conducted a primary meta-analysis restricted to cohorts in which FCI and expect­ ant management were compared within the same study population. A separate exploratory technical-success analysis additionally included FAV cohorts with extract­ able successful-versus-unsuccessful outcomes. Outcomes were pooled across independent cohorts to obtain more precise comparative estimates. To our knowledge, this is the first meta-analysis restricted to within-study com­ parisons of FCI and expectant management and the first quantitative synthesis of FAV outcomes according to We excluded case reports, conference abstracts, retracted publications, and studies in which outcome data for the relevant fetal cardiac condition could not be extracted separately. Overlapping reports that did not contribute unique analysis-specific data were excluded. When an overlapping report provided eligible data for a distinct secondary analysis, it was retained as an included report only for that analysis, did not add an independent study population, and was not pooled simultaneously with the overlapping report. stratified by procedure type (FAV, FPV, or FASI). For FAV, pairwise subgroup comparisons were conducted between (i) technical success vs. expectant management, (ii) tech­ nical failure vs. expectant management, and (iii) technical success vs. technical failure, where data were available. For comparative meta-analyses, postnatal death was ana­ lyzed using the number of live-born infants with known postnatal vital status in each study arm as the denomina­ tor. Fetuses that did not result in live birth were excluded from the postnatal-death risk set. Outcome availability was assessed separately for each study arm and endpoint. Studies or study arms lacking extractable comparative data for a given outcome were excluded only from that endpoint-specific meta-analysis. Cohort-level numera­ tors, denominators, and reasons for non-inclusion in individual outcome analyses are reported in Table 1.",
+      "page_no": 2,
+      "page_end": 2,
+      "paragraph": "Section: RESEARCH | Paragraph 17 | Lines 16-19",
+      "section": "RESEARCH",
+      "line_start": 16,
+      "line_end": 19,
+      "retrieval_score": 0.5,
+      "repository_id": "c01147bf-637b-4baa-976b-8b2a99806fbd",
+      "original_text": "Similar uncertainties exist for FASI and FPV in their respective indications [3, 4, 12]."
+    }
+  ],
+  "retrieval": {
+    "user_query": "what BCVA gains were reported  with faricimab in  DME?",
+    "agent": "query_agent",
+    "chunks": [
+      {
+        "chunk_id": "d869108a-ed0d-428f-b7ad-8c6e41141b80",
+        "document_id": "419e6d40-2bea-41d5-85f4-434a7e870cf1",
+        "document_name": "pubmed_42902283_PMC13685146_Fetal cardiac interventions versus expectant management in c.pdf",
+        "document_content": "Open Access Information sources A comprehensive literature search was conducted in PubMed/MEDLINE, Embase, Web of Science, and the Cochrane Library from database inception to 31 Decem­ ber 2025. Two reviewers performed the search indepen­ dently. To ensure completeness, the reference lists of all included studies and of relevant systematic reviews and meta-analyses were also screened manually. Any disagreements were resolved through discussion and consensus. Search strategy The search strategy combined Medical Subject Head­ ings (MeSH), Emtree terms, and free-text keywords. No publication-date or language restrictions were applied. Reviews, editorials, comments, and letters were excluded. The following terms were used: Study selection and data extraction Study selection and data extraction were performed inde­ pendently by two authors using the Rayyan web appli­ cation. Titles and abstracts of all retrieved records were screened initially, and any study considered potentially relevant by either reviewer proceeded to full-text assess­ ment. Full texts were then reviewed to determine eligi­ bility according to the predefined inclusion and exclusion criteria. Any discrepancies between reviewers were resolved by consultation with a third author. (fetal OR fetus) AND (cardiac OR heart) AND (inter­ vention OR procedure OR surgery OR therapy OR \"intrauterine intervention\" OR \"in utero intervention\" OR \"fetal cardiac intervention\" OR FCI) AND (\"aortic valvuloplasty\" OR \"pulmonary valvuloplasty\" OR \"atrial septoplasty\" OR \"balloon valvuloplasty\" OR \"fetal aortic valvuloplasty\" OR \"fetal pulmonary valvuloplasty\" OR FAV OR FPV OR FASI) NOT (review OR editorial OR comment OR letter). For all studies meeting eligibility criteria, data were extracted independently and in duplicate, including study design, population characteristics, type of fetal cardiac intervention, comparator group, and reported clini­ cal outcomes. Extracted outcomes included established measures of gestational and postnatal prognosis relevant to fetal cardiac intervention. Consensus was reached through discussion when differences occurred, ensuring accuracy and completeness of the final dataset. When necessary, authors were contacted to clarify ambiguous reporting or obtain missing information. Cases that did not report outcome data (e.g., BVC, live birth, or post­ natal death) were excluded from analyses of the corre­ sponding endpoint. The detailed search strategies for each database, includ­ ing subject headings (e.g., MeSH and Emtree), are pro­ vided in Appendix S1. Definitions of clinical outcomes and procedural stratification Clinical outcomes were defined prior to analysis to ensure consistency across studies. Technical success was defined according to each original publication; however, in general, it reflected successful balloon inflation across the target valve with improvement in antegrade flow. For FAV, this typically corresponded to balloon inflation across the aortic valve with demonstrable enhancement of antegrade aortic flow. BVC was defined as a post­ natal circulation supported by separate functional left and right ventricles. When multiple time points were reported, outcomes at hospital discharge were priori­ tized. If discharge data were unavailable, the outcome as reported in the study was used. When the timing of BVC assessment was not specified, the reported value was accepted as final. Live birth was defined as an infant alive at the time of delivery. Postnatal death referred to mor­ tality occurring between birth and hospital discharge.",
+        "page_no": 3,
+        "paragraph": "Section: RESEARCH | Paragraph 21 | Lines 20-26",
+        "original_text": "Open Access Information sources A comprehensive literature search was conducted in PubMed/MEDLINE, Embase, Web of Science, and the Cochrane Library from database inception to 31 Decem­ ber 2025."
+      },
+      {
+        "chunk_id": "20eb74cb-dd38-4e49-a299-53dcc6c7557d",
+        "document_id": "0ae5d495-28c3-4396-829d-2ab8107e3c37",
+        "document_name": "pubmed_42898563_PMC13677948_Cognitive frailty and mortality among patients on the heart.pdf",
+        "document_content": "Statistical analysis Given the presence of a competing event (transplantation), a competing risks analysis was performed, considering death as the event of interest and transplantation as the competing event. Associations between covariates and mortality were evaluated using the Fine-Gray subdistribution hazards model, which es­ timates the effect of covariates on the cumulative incidence of the event of interest in the presence of competing risks. Multivariable models were adjusted for age, sex, and IABP use, and were intentionally parsimonious given the limited number of events to avoid overfitting. Results are presented as sub­ distribution hazard ratios (SHR) with 95% confidence intervals. The proportional hazards assumption was assessed by testing interactions between covariates and time; when violations were identified, time-dependent effects were modeled using interac­ tion terms with follow-up time, and results are reported as SHR for the baseline effect and for the time-varying component (TVC SHR). Given the advanced clinical status of the study population, particular attention was paid to avoid overadjustment. Variables included in multivariable models were selected based on clin­ ical relevance and statistical criteria, acknowledging the po­ tential overlap between frailty measures and markers of disease severity, which may share common underlying pathways.",
+        "page_no": 5,
+        "paragraph": "Section: Statistical analysis | Paragraph 51 | Lines 50-51",
+        "original_text": "Statistical analysis Given the presence of a competing event (transplantation), a competing risks analysis was performed, considering death as the event of interest and transplantation as the competing event."
+      },
+      {
+        "chunk_id": "c5c30c98-9a14-4d3b-862e-7b3d629da755",
+        "document_id": "0ae5d495-28c3-4396-829d-2ab8107e3c37",
+        "document_name": "pubmed_42898563_PMC13677948_Cognitive frailty and mortality among patients on the heart.pdf",
+        "document_content": "General characteristics of the population The study population was predominantly male (70%) with self-reported black race (67.3%). The mean age of participants was 49.8 years ( ± 10.4), and the mean education level was 8.9 years ( ± 4.8). Concerning the etiology of heart failure, Chagas disease was the most prevalent (35%), followed by dilated cardiomyopathy (32%) and ischemic heart disease (12%). In our sample, 56.7% of patients were admitted to the intensive care unit (ICU) and 39.3% to the ward. Many were prioritized for transplantation due to dependence on vasoactive drugs (88.7%) or an intra-aortic balloon pump (31.3%). The re­ maining characteristics are described in Table 1. 84(56) Mild 38(25.3) Moderate 16(10.7) Severe",
+        "page_no": 5,
+        "paragraph": "Section: General characteristics of the population | Paragraph 75 | Lines 75-77",
+        "original_text": "General characteristics of the population The study population was predominantly male (70%) with self-reported black race (67.3%)."
+      },
+      {
+        "chunk_id": "da43ef64-eaf7-4dc5-a6d8-cda292192359",
+        "document_id": "038bf6ad-d4bb-4c47-9a01-4a5102d88806",
+        "document_name": "pubmed_42902164_PMC13685291_The CML_esRAGE ratio as a potential biomarker of early diast.pdf",
+        "document_content": "Variables with P < 0.1 in univariate analysis, together with pre-specified clinical covariates (age, sex, HbA1c, disease duration, heart rate), were entered into stepwise multivariable linear regression analysis to identify independent predictors. To mitigate the risk of overfitting, the number of covariates included in the final model was limited following the standard 10:1 events per variable rule, which is widely accepted for exploratory clinical studies. Of note, for multiple com­ parisons, Bonferroni correction was applied to adjust the significance threshold for all correlation and regres­ sion analyses; uncorrected P values were also reported for full transparency, given the exploratory nature of this study. All correlation and regression analyses focused on early myocardial damage were performed exclusively in the type 1 diabetic cohort. This study was designed as an exploratory pilot study on novel biomarkers for diabetic cardiomyopathy; therefore, no a priori power calculation was performed. The sample size was determined with reference to previously published exploratory studies in the same field. For this exploratory research, a two-tailed P value < 0.05 was considered statistically significant, and P values between 0.05 and 0.10 were defined as border­ line significance, which was interpreted as suggestive of potential biological relevance requiring validation in larger cohorts. Comparison of segmental longitudinal strain (LS) and global longitudinal strain (GLS) Seven segmental systolic longitudinal strain (LS) and GLS in the diabetic group were lower than those in the normal group, more details refer to Table 2.",
+        "page_no": 3,
+        "paragraph": "Section: Exclusion criteria | Paragraph 27 | Lines 26-26",
+        "original_text": "Variables with P < 0.1 in univariate analysis, together with pre-specified clinical covariates (age, sex, HbA1c, disease duration, heart rate), were entered into stepwise multivariable linear regression analysis to identify independent predictors."
+      },
+      {
+        "chunk_id": "19e16a6e-4449-4707-94a4-480867a04755",
+        "document_id": "419e6d40-2bea-41d5-85f4-434a7e870cf1",
+        "document_name": "pubmed_42902283_PMC13685146_Fetal cardiac interventions versus expectant management in c.pdf",
+        "document_content": "Open Access Postnatal death (FCI vs. Ctrl) 1 Cruz-Lemini (2019) [16] First author (year) Country Total FCI Control Diagnosis & procedure Technical success Biventric­ ular (FCI vs. Ctrl) Live birth (FCI vs. Ctrl) Multinational (Europe) 214 67 147 AS with eHLHS; FAV 59/67 19/67 vs. 60/67 vs. 5/60 vs. 49/147 129/147 16/129 0/14 14/14 3/14 7 Chaturvedi (2013) [4] USA 84 70 14 Severe AS; FAV 52/70 15/70 vs. 63/70 vs. 3/63 vs. USA Outcome availability was assessed separately for each cohort, study arm, and endpoint. The Tulzer 2022 [20] cohort did not contribute to the live-birth or postnatal-death meta-analyses because the corresponding control-arm outcome data were unavailable. For all other cohorts, the live-birth denominators were fetuses with available delivery outcomes, whereas postnatal-death denominators were restricted to live-born infants with known postnatal vital status. Dashes indicate that comparative data were unavailable for the corresponding endpoint. Friedman et al. 2018 [23] lacked an expectant-management arm and was therefore not included in this table; it contributed only to the secondary successful-versus-unsuccessful FAV analyses and did not add an independent study population FCI Fetal Cardiac Intervention, eHLHS evolving hypoplastic left heart syndrome, FAV Fetal Aortic Valvuloplasty, FPV Fetal Pulmonary Valvuloplasty, FASI Fetal Atrial Septal Intervention, PAIVS pulmonary atresia with intact ventricular septum, AS Aortic Stenosis, MR Mitral Regurgitation, CAS critical aortic stenosis, HLHS-IAS Hypoplastic left heart syndrome with intact atrial septum, HLHS-RAS Hypoplastic left heart syndrome with restrictive atrial septum categories: low (ROBINS-I low), medium (ROBINS-I medium), and high (ROBINS-I serious or critical). Discrepancies were resolved through discussion and consensus. of technical success or failure; technical-success analyses were performed separately for FAV when data were avail­ able. A continuity correction of 0.5 was applied when a study contained one or more zero cells. Heterogene­ ity was quantified using I2, and results were presented in forest plots. All analyses were conducted in Stata/ MP 18.0. For overall FCI outcomes reported by at least 10 cohorts, small-study effects were assessed visually using funnel plots and statistically using Egger's regres­ sion test; p < 0.05 was considered evidence of funnel-plot asymmetry. Statistical analysis Demographic and baseline characteristics were summa­ rized descriptively. For postnatal-death analyses, event counts and denominators were extracted exclusively among live-born infants with known postnatal vital sta­ tus. For each outcome, event counts were extracted for the intervention and comparator groups, and ORs with 95% CIs were pooled using random-effects (REML) models. Live birth and postnatal death among live-born infants were analyzed for overall FCI and by procedure type (FAV, FPV, and FASI) versus expectant management. BVC was analyzed separately for FAV and FPV and was not pooled across procedure types because these pro­ cedures address distinct cardiac pathologies and patient populations. Additional pairwise comparisons were per­ formed among technically successful, technically failed, and expectant-management groups for FAV. Overall FCI analyses included all attempted interventions regardless Results Study selection After full-text assessment, 72 reports were excluded. Twelve reports were included in the review, representing 11 independent study populations. Twelve reports were included in the review, representing 11 independent study populations. Eleven comparative reports were included in the primary comparative quan­ titative synthesis, comprising 775 fetuses, including 418 interventions and 357 controls (Fig. 1) [4, 5, 7, 12, 16-22]. Friedman et al. [23], an overlapping report, contributed only to the secondary successful-versus-unsuccessful",
+        "page_no": 4,
+        "paragraph": "Section: RESEARCH | Paragraph 31 | Lines 30-46",
+        "original_text": "Open Access Postnatal death (FCI vs."
+      },
+      {
+        "chunk_id": "9dac0eb9-1614-4214-9c29-503831e71fa4",
+        "document_id": "4143ce87-bdcc-4a4d-99db-0f78ba3aa756",
+        "document_name": "pubmed_42902265_PMC13685328_Integrated proteomics and machine learning reveal AHNAK as a.pdf",
+        "document_content": "Open Access Eluted peptides were analyzed on an Orbitrap Explo­ ris 480 mass spectrometer (Thermo Fisher Scientific) equipped with a nano-electrospray ionization source. The spray voltage was set to 2.3 kV, and high-field asymmetric waveform ion mobility spectrometry was applied using compensation voltages of - 70 V and - 45 V. Full MS scans were acquired in the Orbitrap analyzer at a resolu­ tion of 60,000 across an m/z range of 400-1,200. Tandem MS/MS spectra were acquired at a resolution of 30,000 with the first mass fixed at m/z 110. TurboTMT mode was disabled to maintain compatibility with label-free quantification. The top 15 most intense precursor ions were selected for higher-energy collisional dissociation with a normalized collision energy of 27%, and dynamic exclusion was set to 30 s. The automatic gain control tar­ get was set to 75%, with an intensity threshold of 10,000 ions/s and a maximum injection time of 100 ms. During hospitalization, all participants provided writ­ ten informed consent permitting the use of their blood samples for non-genetic experimental analyses. Compre­ hensive clinical data, including demographic character­ istics, comorbidities, vital signs, laboratory parameters, echocardiographic measurements, and medication use, were systematically collected from electronic medical records. Peripheral venous blood samples were obtained, and plasma was isolated by centrifugation and stored at -80 °C until analysis. Samples were transported on dry ice to Jingjie PTM BioLabs (Hangzhou, China) for label-free quantitative proteomic profiling. To reduce the interference of highly abundant plasma proteins, such as albumin and immunoglobulins, on downstream mass spectrometry-based analyses, plasma samples were depleted using PierceTM Top 14 Abundant Protein Depletion Spin Columns (Thermo Scientific) in strict accordance with the manufacturer's protocol. Briefly, frozen plasma aliquots were thawed on ice and centrifuged at 12,000 × g for 10 min at 4 °C to remove cellular debris. The clarified supernatant was transferred to fresh tubes and subjected to high-abundance protein depletion. Protein concentrations in the depleted frac­ tions were quantified using a bicinchoninic acid (BCA) assay, with all standards and samples measured in techni­ cal triplicates (Additional file 1: Table S1). Equal amounts of total protein were subsequently used for enzymatic digestion to ensure comparability across samples. Deple­ tion efficiency and protein integrity were evaluated by sodium dodecyl sulfate-polyacrylamide gel electropho­ resis (SDS-PAGE) before and after depletion (Additional file 1: Figure S2), and only samples demonstrating satis­ factory depletion efficiency and intact protein profiles were advanced for LC-MS/MS analysis. Samples with visible hemolysis or flagged as having a high risk of pre-analytical bias were excluded. Raw MS/MS data were processed using Proteome Dis­ coverer software (version 2.4.1.15). Spectra were searched against the Homo_sapiens_9606_PR_20201214.fasta database (75,777 entries), concatenated with a reverse decoy database to enable false discovery rate (FDR) esti­ mation. Trypsin was specified as the proteolytic enzyme, allowing up to two missed cleavages. The minimum pep­ tide length was set to six amino acids, and up to three variable modifications per peptide were permitted. Pre­ cursor mass tolerance was set at 10 ppm, and fragment ion tolerance at 0.02 Da.",
+        "page_no": 3,
+        "paragraph": "Section: RESEARCH | Paragraph 19 | Lines 18-21",
+        "original_text": "Open Access Eluted peptides were analyzed on an Orbitrap Explo­ ris 480 mass spectrometer (Thermo Fisher Scientific) equipped with a nano-electrospray ionization source."
+      },
+      {
+        "chunk_id": "5812d982-d341-48cc-8115-ab78757e7a1d",
+        "document_id": "419e6d40-2bea-41d5-85f4-434a7e870cf1",
+        "document_name": "pubmed_42902283_PMC13685146_Fetal cardiac interventions versus expectant management in c.pdf",
+        "document_content": "Open Access populations. Overall FCI was associated with lower post­ natal mortality among live-born infants without a signifi­ cant difference in live birth. The most consistent signals were observed for lower postnatal death among live-born infants after FAV and for improved BVC and live birth after technically successful FAV, whereas FPV and FASI remained less certain because of small numbers and end­ point-specific limitations. BVC is widely recognized as an indicator of favorable long-term prognosis, and individual studies have reported post-FAV BVC rates ranging from 40% to 74% [11, 16, 17, 20, 24-31]. Prior meta-analyses compared intervention and control groups drawn from different studies rather than",
+        "page_no": 8,
+        "paragraph": "Section: RESEARCH | Paragraph 65 | Lines 66-67",
+        "original_text": "Open Access populations."
+      },
+      {
+        "chunk_id": "e7927d1a-da31-4218-af8a-e276590d4784",
+        "document_id": "419e6d40-2bea-41d5-85f4-434a7e870cf1",
+        "document_name": "pubmed_42902283_PMC13685146_Fetal cardiac interventions versus expectant management in c.pdf",
+        "document_content": "Similar uncertainties exist for FASI and FPV in their respective indications [3, 4, 12]. Previous meta-analyses frequently relied on single-arm studies without an internal control group or on non- arm-based comparisons, in which outcomes for FCI and expectant management were extracted from different studies [3, 13-15]. Such approaches are inherently vul­ nerable to confounding and cannot adequately account for differences in baseline disease severity, case selection, and centre-specific practice patterns. To address these gaps, we conducted a primary meta-analysis restricted to cohorts in which FCI and expect­ ant management were compared within the same study population. A separate exploratory technical-success analysis additionally included FAV cohorts with extract­ able successful-versus-unsuccessful outcomes. Outcomes were pooled across independent cohorts to obtain more precise comparative estimates. To our knowledge, this is the first meta-analysis restricted to within-study com­ parisons of FCI and expectant management and the first quantitative synthesis of FAV outcomes according to We excluded case reports, conference abstracts, retracted publications, and studies in which outcome data for the relevant fetal cardiac condition could not be extracted separately. Overlapping reports that did not contribute unique analysis-specific data were excluded. When an overlapping report provided eligible data for a distinct secondary analysis, it was retained as an included report only for that analysis, did not add an independent study population, and was not pooled simultaneously with the overlapping report. stratified by procedure type (FAV, FPV, or FASI). For FAV, pairwise subgroup comparisons were conducted between (i) technical success vs. expectant management, (ii) tech­ nical failure vs. expectant management, and (iii) technical success vs. technical failure, where data were available. For comparative meta-analyses, postnatal death was ana­ lyzed using the number of live-born infants with known postnatal vital status in each study arm as the denomina­ tor. Fetuses that did not result in live birth were excluded from the postnatal-death risk set. Outcome availability was assessed separately for each study arm and endpoint. Studies or study arms lacking extractable comparative data for a given outcome were excluded only from that endpoint-specific meta-analysis. Cohort-level numera­ tors, denominators, and reasons for non-inclusion in individual outcome analyses are reported in Table 1.",
+        "page_no": 2,
+        "paragraph": "Section: RESEARCH | Paragraph 17 | Lines 16-19",
+        "original_text": "Similar uncertainties exist for FASI and FPV in their respective indications [3, 4, 12]."
+      }
+    ],
+    "created_at": "2026-10-26T05:11:39.889881+00:00"
+  },
+  "generation_error": "",
+  "created_at": "2026-10-26T05:11:39.889881+00:00",
+  "validation": {
+    "overall_score": 0.0,
+    "threshold": 0.9,
+    "claim_min_score": 0.7,
+    "decision": "escalate_to_msl",
+    "reason_codes": [
+      "NO_SUPPORTED_CLAIMS"
+    ],
+    "judge": "deterministic",
+    "validated_at": "2026-10-26T05:11:42.427754+00:00"
+  }
+}
+2026-10-26 10:41:42,474 [INFO] digital_msl.agents.query_agent: [corr_5b45f1ab1ef44dd1] Escalated to Physical MSL: case case_23a5dec8d5a84109 (['NO_SUPPORTED_CLAIMS'])
+INFO:     127.0.0.1:62138 - "GET /api/v1/digital-msl/traces/trace_33f233d7e875462d HTTP/1.1" 200 OK
+2026-10-26 10:42:14,379 [INFO] services.llm_service: Switched to OpenAI provider with model: gpt-5.6-luna
+INFO:     127.0.0.1:58120 - "GET /api/v1/digital-msl/ops/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61101 - "GET /api/v1/digital-msl/cases HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61031 - "GET /api/v1/digital-msl/traces?limit=10 HTTP/1.1" 200 OK
+2026-10-26 10:42:14,693 [INFO] services.llm_service: Switched to OpenAI provider with model: gpt-5.6-luna
+INFO:     127.0.0.1:58120 - "GET /api/v1/digital-msl/ops/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61101 - "GET /api/v1/digital-msl/cases HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61031 - "GET /api/v1/digital-msl/traces?limit=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58305 - "OPTIONS /api/v1/digital-msl/portal/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58305 - "POST /api/v1/digital-msl/portal/login HTTP/1.1" 200 OK
+2026-10-26 13:03:26,128 [INFO] services.llm_service: Switched to OpenAI provider with model: gpt-5.6-luna
+INFO:     127.0.0.1:58305 - "GET /api/v1/digital-msl/ops/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50075 - "GET /api/v1/digital-msl/traces?limit=10 HTTP/1.1" 200 OK
+2026-10-26 13:03:26,312 [INFO] services.llm_service: Switched to OpenAI provider with model: gpt-5.6-luna
+INFO:     127.0.0.1:58305 - "GET /api/v1/digital-msl/ops/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54659 - "GET /api/v1/digital-msl/cases HTTP/1.1" 200 OK
+2026-10-26 13:03:26,323 [INFO] services.llm_service: Switched to OpenAI provider with model: gpt-5.6-luna
+INFO:     127.0.0.1:61845 - "GET /api/v1/digital-msl/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50075 - "GET /api/v1/digital-msl/traces?limit=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58305 - "GET /api/v1/digital-msl/cases HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58110 - "GET /api/v1/repositories HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49810 - "POST /api/v1/digital-msl/portal/login HTTP/1.1" 200 OK
+2026-10-26 13:10:15,732 [INFO] services.llm_service: Switched to OpenAI provider with model: gpt-5.6-luna
+INFO:     127.0.0.1:49810 - "GET /api/v1/digital-msl/ops/status HTTP/1.1" 200 OK
+2026-10-26 13:10:15,857 [INFO] services.llm_service: Switched to OpenAI provider with model: gpt-5.6-luna
+INFO:     127.0.0.1:49810 - "GET /api/v1/digital-msl/ops/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62567 - "GET /api/v1/digital-msl/cases HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60294 - "GET /api/v1/digital-msl/traces?limit=10 HTTP/1.1" 200 OK
+2026-10-26 13:10:15,873 [INFO] services.llm_service: Switched to OpenAI provider with model: gpt-5.6-luna
+INFO:     127.0.0.1:54970 - "GET /api/v1/digital-msl/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60294 - "GET /api/v1/digital-msl/traces?limit=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49810 - "GET /api/v1/digital-msl/cases HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62889 - "GET /api/v1/repositories HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56584 - "OPTIONS /api/v1/digital-msl/portal/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56584 - "POST /api/v1/digital-msl/portal/login HTTP/1.1" 200 OK
+2026-10-26 13:16:09,029 [INFO] services.llm_service: Switched to OpenAI provider with model: gpt-5.6-luna
+INFO:     127.0.0.1:56584 - "GET /api/v1/digital-msl/ops/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65408 - "GET /api/v1/digital-msl/cases HTTP/1.1" 200 OK
+2026-10-26 13:16:09,384 [INFO] services.llm_service: Switched to OpenAI provider with model: gpt-5.6-luna
+INFO:     127.0.0.1:56584 - "GET /api/v1/digital-msl/ops/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65408 - "GET /api/v1/digital-msl/cases HTTP/1.1" 200 OK
+2026-10-26 13:16:09,416 [INFO] services.llm_service: Switched to OpenAI provider with model: gpt-5.6-luna
+INFO:     127.0.0.1:53166 - "GET /api/v1/digital-msl/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51747 - "GET /api/v1/digital-msl/traces?limit=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51747 - "GET /api/v1/digital-msl/traces?limit=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51795 - "GET /api/v1/repositories HTTP/1.1" 200 OK
+WARNING:  StatReload detected changes in 'digital_msl\store.py'. Reloading...
+ INFO:     127.0.0.1:52627 - "GET /api/v1/digital-msl/traces?limit=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63172 - "GET /api/v1/digital-msl/cases HTTP/1.1" 200 OK
+2026-10-26 17:55:23,267 [INFO] services.llm_service: Switched to OpenAI provider with model: gpt-5.6-luna
+INFO:     127.0.0.1:63676 - "GET /api/v1/digital-msl/ops/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63172 - "GET /api/v1/digital-msl/cases HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52627 - "GET /api/v1/digital-msl/traces?limit=10 HTTP/1.1" 200 OK
+2026-10-26 17:55:23,565 [INFO] services.llm_service: Switched to OpenAI provider with model: gpt-5.6-luna
+INFO:     127.0.0.1:63676 - "GET /api/v1/digital-msl/ops/status HTTP/1.1" 200 OK

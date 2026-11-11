@@ -1,0 +1,36 @@
+{
+  "correlation_id": "corr_a81fac0396e34605",
+  "message_id": "msg_a8177078b364402f",
+  "channel": "web",
+  "repository_id": "91192bcc-0e9d-46c9-89f9-f76fac8790c3",
+  "user_query": "What dosing interval did faricimab achieve in the TENAYA trial for nAMD?",
+  "agent": "retina_answer_agent",
+  "scope": {
+    "in_scope": true,
+    "retina_terms": [
+      "namd"
+    ],
+    "molecules": [
+      "faricimab"
+    ],
+    "unsupported_molecules": [],
+    "safety_flags": [],
+    "reason": ""
+  },
+  "draft_answer": "",
+  "claims": [],
+  "chunks": [],
+  "generation_error": "no_evidence",
+  "created_at": "2026-10-23T08:59:39.208121+00:00",
+  "validation": {
+    "overall_score": 0.0,
+    "threshold": 0.9,
+    "claim_min_score": 0.7,
+    "decision": "escalate_to_msl",
+    "reason_codes": [
+      "INSUFFICIENT_EVIDENCE"
+    ],
+    "judge": "deterministic",
+    "validated_at": "2026-10-23T08:59:39.208121+00:00"
+  }
+}

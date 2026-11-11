@@ -1,0 +1,20 @@
+src/components/DocumentPreview.tsx:321  important  !important
+src/index.css:108  fn  rgba(
+src/index.css:112  fn  rgba(
+src/index.css:131  fn  rgba(
+src/index.css:135  fn  rgba(
+src/index.css:139  fn  rgba(
+src/index.css:143  fn  rgba(
+src/index.css:161  fn  rgba(
+src/index.css:162  hex  #05206e
+src/index.css:166  fn  rgba(
+src/index.css:171  fn  rgba(
+src/index.css:172  fn  rgba(
+src/index.css:187  important  !important
+src/index.css:188  important  !important
+src/index.css:193  hex  #05206e
+src/portal/LoginPage.tsx:213  important  !min-h-[42px]
+src/portal/LoginPage.tsx:226  important  !min-h-[42px]
+src/portal/LoginPage.tsx:241  important  !min-h-[42px]
+src/portal/RegisterWizard.tsx:381  important  !w-28
+ui-lint: 19 violation(s) {"important":7,"fn":10,"hex":2}

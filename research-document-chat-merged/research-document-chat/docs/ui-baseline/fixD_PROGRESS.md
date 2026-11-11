@@ -1,0 +1,25 @@
+# Fix D progress
+- [x] step 0: own servers started (backend 8099, vite 5175, throwaway DB C:/Windows/Temp/dmsl_fork2.db)
+- servers: backend 8099 (env vars via PowerShell), vite 5175 with VITE_DEMO_MODE=true VITE_API_BASE_URL=http://127.0.0.1:8099
+- [x] step 1: probe + docs/ui-baseline/fixD_ROOT_CAUSE.md written
+- [x] step 2: ThemeContext preference (light/dark/system) + ui/Toggle, ui/SaveBar, ui/FormField
+- [x] step 3: layout css (container queries) + portal/settings/{SettingsCard,sections,SettingsLayout}
+- [x] step 4: Aside.tsx, ProfileSection.tsx
+- [x] step 5: SecuritySection, PreferencesSection, NotificationsSection, SessionsSection
+- [x] step 6: useDoctorMe + DoctorSections (areas/consent/registration)
+- [x] step 7: MslSections (wording, my areas), ScopeSection
+- [x] step 8: SettingsPage orchestrator; removed old DoctorSettingsPanel.tsx / SecuritySettings.tsx
+- [x] step 9: e2e/settings.spec.ts + playwright.settings.config.ts written; vite restarted with VITE_API_BASE_URL=http://localhost:8099 (same-site cookies)
+- [x] step 10: fixed container max-width 1200 (css) ; backend restarted with AUTH_RATE_LIMIT_PER_MINUTE=2000 (login limiter 10/min broke the suite); layout doctor passes; running full non-screenshot suite
+- [x] step 11: skeleton divs got role=status (axe aria-prohibited-attr)
+- [x] step 12: axe passes (6/6); generating screenshots
+- [x] step 13: updated behaviour.spec toast test for the new consent section; screenshots 184 done and reviewed
+- [x] step 14: ProfileSection no longer overwrites text being edited when the signed-in name refreshes (intermittent save-bar flake)
+- SPEC CHANGE received (account band, nav 240 | content max 880, no aside, expanded admin). [x] step 15: css + SettingsLayout + AccountBand + sections.ts + ui/SaveButton
+- [x] step 16: Profile (more fields), SaveButton everywhere, Sessions->ActivitySection, removed Aside.tsx
+- [x] step 17: AdminSections (users, ikm, notice, integrations, audit, environment), PeoplePage teams view, SettingsPage orchestrator
+- [x] step 18: settings.spec.ts rewritten for the new layout (shell, nav gap, band, save button contrast, admin sections)
+- [x] step 19: shell/band/save/profile/security/preferences/keyboard tests pass; running layout + admin + doctor tests
+- [x] step 20: ROOT_CAUSE section 5 (shell on Settings route)
+- [x] step 21: axe msl hang traced to my admin test resetting the demo MSL password; test now resets its own invitee; throwaway DB reseeded
+- [x] step 22: axe doctor + msl pass in both modes; running axe admin then screenshots (background)

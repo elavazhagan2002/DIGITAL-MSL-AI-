@@ -1,0 +1,63 @@
+{
+  "user_query": "What was the mean change in best-corrected visual acuity at week 52 in DME trials?",
+  "agent": "query_agent",
+  "chunks": [
+    {
+      "chunk_id": "8a908791-8edc-4511-9fa8-64b880e3cbbf",
+      "document_id": "5948ca91-60ef-4075-a6ff-c9aecd0db0ca",
+      "document_name": "clinicaltrials_NCT02818998_Efficacy and Safety of Three Different Aflibercept Regimens.docx",
+      "document_content": "Item 1 measure: Mean Change From Baseline in Best Corrected Visual Acuity (BCVA) at Week 52 Item 1 measure: Mean Change From Baseline in Central Retinal Thickness (CRT) at Week 52 Item 2 measure: Number of Participants With Categorized Changes From Baseline in Best Corrected Visual Acuity (BCVA) at Week 52 description: Best Corrected Visual Acuity (BCVA) was measured in the study eye by the Early Treatment Diabetic Retinopathy Study (ETDRS) letter score starting at 4 meters. The ETDRS chart includes 70 letters in total and the letter score ranges from 0 to 100. More letters read correctly results in a higher letter score, which represents better visual acuity Item 3 measure: Mean Change From Baseline in Best Corrected Visual Acuity (BCVA) at Week 100 timeFrame: From baseline to Week 100",
+      "page_no": 5,
+      "paragraph": "Paragraph 71 | Lines 70-76",
+      "original_text": "Item 1 measure: Mean Change From Baseline in Best Corrected Visual Acuity (BCVA) at Week 52 Item 1 measure: Mean Change From Baseline in Central Retinal Thickness (CRT) at Week 52 Item 2 measure: Number of Participants With Categorized Changes From Baseline in Best Corrected Visual Acuity (BCVA) at Week 52 description: Best Corrected Visual Acuity (BCVA) was measured in the study eye by the Early "
+    },
+    {
+      "chunk_id": "ee6e35fa-2563-4cf7-bc80-affc06206bf7",
+      "document_id": "2cde0886-8824-4d8b-a333-1e0f07a3e1c2",
+      "document_name": "pubmed_31114396_PMC6489583_Early adoption of the fluocinolone acetonide _FAc_ intravitr.pdf",
+      "document_content": "Two 3-year, randomized clinical trials in patients with DME previously treated with laser photocoagulation showed that the FAc implant significantly improved best-corrected visual acuity from as early as 3 weeks after implantation, which was sustained for up to 3 years, and was associated with significantly lower foveal thickness than control.10,11 In the absence of head-to-head studies of the FAc implant and anti-VEGF drugs for the treatment of DME, case reports and case series from clinical practice offer additional evidence for the implant's role in the real-life setting.8,12-17 Such evidence has shown improvements in visual acuity following injection of the FAc implant, com-pared with worsening in fellow eyes,14,15 as well as larger improvements in central foveal thickness,14,15,18 improve-ments in visual acuity in patients with pseudophakia and bilateral persistent or recurrent DME,12 and improvements in visual acuity and foveal thickness in patients with vitrectomized and nonvitrectomized eyes.17,18 Increases with IOP in real-world cases have not been notable or have been significant but small and managed successfully,8,12-18 although tests and risk factors for IOP such as ocular hypertension and glaucoma should be taken into account when deciding whether to use the FAc implant.8 A retrospective cost-analysis study in the UK found that switching to the FAc implant in patients with refractory DME was cost- and time-saving without any reduction in efficacy.19 Effectiveness outcome measures were visual acuity (visual acuity was assessed using a Snellen chart and converted to an Early Treatment Diabetic Retinopathy Study (ETDRS) letter score), macular edema, and retinal thickness. Safety outcomes included IOP changes, IOP drugs used, and any IOP-related surgeries or interventions. Treatment burden was assessed through the number of DME treatments before and after administration of the implant. Statistical analysis As data were not always available at all time points for all eyes, the last observation calculated (LOC; i.e. the last observation post-injecting the FAc implant) was used to maximize the number of eyes included in analyses. Statistical significance was taken as a p-value <0.05. submit your manuscript | www.dovepress.com International Medical Case Reports Journal 2019:12 95 DovePress Characteristic | Number(%)ormean (range) Lensstatus(n,%) Pseudophakic Phakic DurationofDME(years) | 15(83.3) 3(16.7) -2.27(0.14.9) Priortreatments(n,%) Intravitrealdexamethasone Missing | 12(66.7) 6(33.3) Mostrecentintervention(n,%) Anti-VEGF Dexamethasone Focal/gridlaser Panretinalphotocoagulation | 7(38.9) 8(44.4) 2(11.1) 1(5.6) Numberofprevioustreatments(n) Anti-VEGF Dexamethasone Focal/gridlaser Panretinalphotocoagulation Total | -3.0(09) -1.4(04) -0.1(01) -0.1(01) -4.6(210) Patients(n) | 13 Eyes(n) Mean(range)age(years) | 18 67.8(56-85) Male Female | 6(46.2) 7(53.8) Ethnicity(n,%) Caucasian AfricanAmerican | 9(69.2) 4(30.8) Typeofdiabetes(n,%) Type1 Type2 Mean(range)durationofdiabetes(years)(n=8) | 2(15.4) 11(84.6) 26.5(5-72)",
+      "page_no": 3,
+      "paragraph": "Section: Number(%)ormean (range) | Paragraph 32 | Lines 31-35",
+      "original_text": "Two 3-year, randomized clinical trials in patients with DME previously treated with laser photocoagulation showed that the FAc implant significantly improved best-corrected visual acuity from as early as 3 weeks after implantation, which was sustained for up to 3 years, and was associated with significantly lower foveal thickness than control.10,11 In the absence of head-to-head studies of the FAc"
+    },
+    {
+      "chunk_id": "019bf8f4-263e-457c-ac88-fcf6536680b3",
+      "document_id": "bbd85afe-9c46-4ab5-bb79-379ad31cd21a",
+      "document_name": "pubmed_42920147_PMC13693012_Real-world injection burden_ treatment switching_ and visual.pdf",
+      "document_content": "Visual outcomes appear to be more strongly associated with baseline visual acuity than with treatment intensity. Treatment switching was not independently associated with visual acuity change after adjustment, suggesting that it likely reflects underlying disease refractoriness rather than acting as an indepen­ dent factor associated with visual outcomes; however, causal inference cannot be established due to the obser­ vational study design. These findings underscore the importance of individualized treatment strategies in DME.",
+      "page_no": 8,
+      "paragraph": "Section: Consent for publication Not applicable. | Paragraph 85 | Lines 84-84",
+      "original_text": "Visual outcomes appear to be more strongly associated with baseline visual acuity than with treatment intensity."
+    },
+    {
+      "chunk_id": "e8f5fcd0-9cea-49e1-ac38-68f1ecdf8307",
+      "document_id": "d0c0f5f8-2dea-444a-baf8-c7665adcb37c",
+      "document_name": "clinicaltrials_NCT05523869_Intravitreal Topotecan in the Repair of Rhegmatogenous Retin.docx",
+      "document_content": "Item 5 measure: Best corrected visual acuity change from baseline timeFrame: 6 months or last follow-up eligibilityModule eligibilityCriteria: To be enrolled, patients need to meet the following inclusion criteria:",
+      "page_no": 5,
+      "paragraph": "Paragraph 60 | Lines 59-60",
+      "original_text": "Item 5 measure: Best corrected visual acuity change from baseline timeFrame: 6 months or last follow-up eligibilityModule eligibilityCriteria: To be enrolled, patients need to meet the following inclusion criteria:"
+    },
+    {
+      "chunk_id": "dabb5467-f3e3-46ec-8890-252468461b4a",
+      "document_id": "a61a253a-5200-4818-a125-99b18e16dd15",
+      "document_name": "clinicaltrials_NCT00732927_Parnaparin vs Aspirin in the Treatment of Retinal Vein Occlu.docx",
+      "document_content": "Age between 18 and 85 years A body weight of greater than 50 Kg A requirement that no more than 15 days had passed between symptomatic presentation, confirmation of RVO and entry into the study. Exclusion Criteria: Modification of the optic media transparency that could compromise the evaluation of fluorescein angiography, such as cataract or corneal degeneration History of major ocular surgery (with the exclusion of cataract extraction) Previous RVO Other ocular conditions that, in the opinion of the investigator, could have affected macular edema or altered visual acuity during the course of the study - Contraindications to the study drugs (e.g. major bleeding or neurosurgical procedures in the previous 3 months, serum creatinine levels of greater than 2.0 mg/dL, severe liver insufficiency, platelet count \\< 100,000 mm3, known active peptic gastric ulcer)",
+      "page_no": 5,
+      "paragraph": "Section: eligibilityModule eligibilityCriteria: Inclusion Criteria | Paragraph 59 | Lines 58-60",
+      "original_text": "Age between 18 and 85 years A body weight of greater than 50 Kg A requirement that no more than 15 days had passed between symptomatic presentation, confirmation of RVO and entry into the study."
+    },
+    {
+      "chunk_id": "820384f0-04ec-41c5-83b1-2663ccfc0f18",
+      "document_id": "d0c0f5f8-2dea-444a-baf8-c7665adcb37c",
+      "document_name": "clinicaltrials_NCT05523869_Intravitreal Topotecan in the Repair of Rhegmatogenous Retin.docx",
+      "document_content": "timeFrame: 6 months or last follow-up secondaryOutcomes Item 1 measure: Best corrected visual acuity timeFrame: 6 months or last follow-up timeFrame: 6 months or last follow-up timeFrame: 6 months or last follow-up",
+      "page_no": 4,
+      "paragraph": "Paragraph 52 | Lines 51-15",
+      "original_text": "timeFrame: 6 months or last follow-up secondaryOutcomes Item 1 measure: Best corrected visual acuity timeFrame: 6 months or last follow-up timeFrame: 6 months or last follow-up timeFrame: 6 months or last follow-up"
+    }
+  ],
+  "created_at": "2026-10-30T03:51:22.622871+00:00",
+  "search_mode": "vector",
+  "elapsed_ms": 76440
+}

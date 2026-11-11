@@ -1,0 +1,229 @@
+DIGITAL MSL
+Technical Architecture & Component Design
+Reference architecture, integrations, data flow, security, and deployment approach
+1. Purpose and Design Principles
+This document proposes a modular, channel-independent architecture for Digital MSL. Web, email, and WhatsApp are adapters into one receiver/orchestration layer; the same agent workflow then retrieves from AWS-hosted IKM and approved scientific connectors, applies a medical-safety/confidence gate, and either responds or creates a Physical MSL case.
+One canonical inbound-message contract across every channel.
+One orchestration and policy pipeline; do not implement separate medical-answer logic per channel.
+Retrieval-grounded generation with source traceability and explicit abstention/escalation.
+Least-privilege access, tenant/doctor/MSL data scoping, and auditable actions.
+Asynchronous processing for slow connectors and human workflows; idempotency for retries.
+Provider abstraction for LLM, email, WhatsApp, and literature connectors to reduce lock-in.
+2. Proposed High-Level Architecture
+Logical flow:
+Web Portal  |  Email Adapter  |  WhatsApp Adapter                  ↓API Gateway / Webhook Receiver → Identity + Message Normalizer → Queue/Event Bus                  ↓Conversation Orchestrator / Digital MSL Agent  ├─ Scope & Policy Classifier  ├─ Retrieval Router → AWS-hosted IKM Repository/RAG  │                 └→ Scientific Connector Gateway(s)  ├─ Evidence Normalizer / Deduplicator / Reranker  ├─ LLM Answer Composer  └─ Confidence, Grounding & Safety Gate         ├─ PASS → Channel Response Dispatcher         └─ FAIL → MSL Case Service → MSL Work Queue / Notifications                  ↓Identity/RBAC • Conversation DB • Audit Log • Metrics/LLM Usage • Secrets • Monitoring
+This is a logical reference design, not a claim that every named AWS service is already selected. Map the logical components to the organisation’s approved AWS account, IKM APIs, identity provider, and messaging providers.
+3. Technical Components
+Component
+Responsibility
+Interface / notes
+Web Portal / RBAC UI
+Role-specific Admin, Doctor, and Physical MSL experiences.
+HTTPS REST APIs; secure session/OIDC; server-side authorization.
+Channel Adapters
+Receive/send messages for web, corporate email, and WhatsApp.
+Provider webhooks, inbound mail integration, outbound send APIs; verify signatures and normalize payloads.
+API Gateway / Receiver
+Validate request shape, authentication, rate limits, webhook signatures, idempotency.
+Creates canonical inbound event and correlation ID.
+Queue / Event Bus
+Decouple inbound channels from slow retrieval/LLM/provider calls.
+At-least-once delivery assumed; consumers must be idempotent; dead-letter queue for repeated failures.
+Identity & Assignment Service
+Resolve doctor identity, role, tenant/organisation and assigned MSL.
+OIDC/SSO for portal; verified channel-to-user mapping for email/WhatsApp.
+Conversation Orchestrator
+Manage state, call tools in order, apply timeouts/retries, persist trace.
+State machine/workflow; all channels invoke the same service.
+Scope & Policy Service
+Classify retina scope, apply exclusions and medical-content policy.
+Versioned policy rules; fail closed for uncertain/high-risk requests.
+IKM Connector
+Search approved uploaded/repository documents and return passages/metadata/source IDs.
+Use actual IKM API/SDK and auth after vendor details are confirmed.
+Scientific Connector Gateway
+Call each approved literature connector; normalize records and apply licensing/scope filters.
+Adapter interface per provider; rate limit, timeout, cache policy and source provenance.
+Evidence Processor
+Deduplicate, rank, check date/source quality, package evidence for generation.
+Keep source ID, title, publication date, URL/DOI, excerpt and retrieval score.
+LLM Answer Service
+Generate concise response grounded in evidence.
+Provider abstraction; structured output; prompt/version tracking; no unsupported claims.
+Confidence & Safety Gate
+Decide answer vs abstain/escalate.
+Use calibrated signals; threshold is policy config, initially 0.90 as proposed.
+MSL Case Service
+Create, assign, track, and resolve human follow-up.
+Case state machine; SLA timer; notification and originating-channel context.
+Persistence Layer
+Store users, assignments, messages, cases, source references, configs and usage.
+Relational DB for transactional records; object storage for documents/artifacts where approved.
+Audit & Observability
+Capture security events, decisions, errors, latency, token use and connector health.
+Append-only audit storage/central log platform; dashboards and alerts.
+Secrets & Configuration
+Protect connector credentials, API keys, provider secrets and policy settings.
+Managed secrets store, encryption, rotation, no secrets in source code or logs.
+4. Unified Message Contract
+All channels should map into a canonical request. Example fields:
+Field
+Purpose
+message_id / idempotency_key
+Unique provider message and deduplication key.
+correlation_id / conversation_id
+Trace one question across adapter, agent, retrieval, model, response and audit.
+channel
+web, email, or whatsapp.
+external_sender_id / user_id
+Provider sender identity plus resolved internal identity; never trust an unverified sender claim.
+role / organisation_id / assigned_msl_id
+Resolved from server-side identity records, not client-supplied values.
+message_text / attachments
+Normalized question and safe references to any permitted attachments.
+received_at / locale
+Timestamp and language/locale where available.
+consent_and_verification_state
+Whether identity and any required notices/consent are satisfied.
+status
+received, queued, processing, answered, escalated, failed.
+Do not pass raw email headers, WhatsApp payloads, or untrusted attachment text directly into privileged tool instructions. Treat all user and retrieved content as data.
+5. End-to-End Data Flow
+5.1 Inbound request
+Channel provider calls the adapter/webhook or the portal submits a request.
+Verify provider signature/authentication, enforce rate limits, validate payload and resolve sender identity.
+Normalize the message, attach correlation and idempotency keys, persist receipt, and enqueue processing.
+Orchestrator loads the conversation context and applicable policy version; check user role, assigned MSL and therapeutic scope.
+If out of scope or policy-blocked, respond with an approved safe message or route to human review according to policy.
+5.2 Retrieval and response
+Build a retrieval plan from the question and policy: query IKM repositories and enabled literature connectors in parallel where appropriate.
+Apply source allowlists, retina/eye-care relevance filters, document status, freshness and licensing rules.
+Normalize and deduplicate evidence; preserve provenance and rank passages.
+Generate an answer only from the supplied evidence. Require source references in the structured response.
+Run grounding checks and confidence/safety evaluation. A 0.90 threshold alone is insufficient; evidence coverage and safety checks must also pass.
+On pass, dispatch a channel-specific response and persist the answer, evidence references, model/version, gate result and usage metrics.
+On fail, create a case for the assigned MSL, preserve evidence and reason codes, acknowledge the doctor, and notify the MSL.
+5.3 Human response
+MSL queue displays the question, doctor context allowed by policy, bot transcript, reason for escalation, and retrieved evidence.
+MSL performs additional research using approved sources and composes a reviewed response.
+The dispatcher replies through the original channel when supported and verified; otherwise use the configured fallback (for example, verified email or portal notification).
+Record the response, source references, author, timestamps, delivery status and case resolution.
+6. Connector and IKM Integration Pattern
+6.1 IKM repository
+Admin UI calls a Repository Management API; the API creates repository metadata and applies access/scope policy.
+Upload service validates extension, MIME type, size, malware status, and metadata before transfer to IKM/object storage.
+Ingestion worker calls the IKM ingestion/indexing API and stores job ID, status, version, source ID, checksum, and error detail.
+Retrieval adapter queries IKM using the approved repository scope and returns passages plus citation metadata.
+Use callbacks/polling only as supported by IKM; do not assume API names or endpoints before vendor documentation is available.
+6.2 Scientific-literature connectors
+Create a connector registry with provider name, allowed domains/topics, enabled status, auth reference, rate limits, timeout, freshness/cache policy, and data-use terms.
+Each provider adapter implements a common interface such as search(query, filters), fetch_record(record_id), health_check(), and normalize(result). These are proposed internal interfaces, not claims about provider APIs.
+Apply query and result filters for retina/ophthalmology, configured publication types/date range, and source allowlist. Keep the original query and filter decisions in the trace.
+Store only content allowed by the provider’s licence and policy. When full-text storage is not permitted, retain permitted metadata and a link/reference instead.
+If a connector fails, retry transient failures with bounded backoff; return partial evidence only if policy allows, otherwise escalate.
+6.3 Suggested internal adapter contract
+SearchResult: provider, source_id, title, authors, publication_date, doi_or_url, abstract_or_permitted_excerpt, therapeutic_tags, retrieved_at, licence/use flags, retrieval_score.
+The final field list must be aligned with the chosen providers and IKM response schema.
+7. Confidence, Grounding, and Medical Safety
+Treat confidence as a decision policy rather than a single model self-rating. An LLM saying “90% confident” is not a reliable calibrated probability. Use a composite gate and validate it against domain-reviewed examples.
+Signal
+Example evaluation
+Scope
+Is the question within approved retina/eye-care scope and allowed use?
+Evidence sufficiency
+Are there relevant, authoritative passages supporting the main claims?
+Citation integrity
+Does each material scientific claim map to a retrieved source?
+Answer-evidence alignment
+Does the answer avoid unsupported additions or contradictions?
+Ambiguity / risk
+Is the question asking for individual diagnosis, urgent advice, off-label advice, or another restricted topic?
+Calibrated confidence
+Validated score or decision model calibrated on a representative, clinician-reviewed test set.
+Decision: automated response only when all mandatory safety conditions pass and the calibrated score meets the configured threshold. Otherwise abstain/escalate. A safe response may still provide a brief acknowledgement and state that the Physical MSL will follow up.
+Medical/legal/regulatory reviewers must approve the intended use, disclaimers, answer style, prohibited claims, evaluation criteria, and release gates before production.
+8. Suggested Data Model
+Entity
+Key fields / relationships
+User
+user_id, role, status, organisation_id, verified_channel_ids, profile, created_at.
+DoctorMSLAssignment
+doctor_id, msl_id, effective_from/to, assigned_by, status.
+Repository
+repository_id, name, scope, owner, IKM_reference, status, policy_version.
+Document
+document_id, repository_id, source_id, title, version, checksum, status, ingestion_job_id, metadata.
+ConnectorConfig
+connector_id, provider, enabled, scope filters, secret reference, rate limit, last health state.
+Conversation
+conversation_id, user_id, channel, created_at, status, retention class.
+Message
+message_id, conversation_id, direction, content/reference, timestamp, delivery status, correlation_id.
+RetrievalTrace
+trace_id, message_id, provider, source_id, rank, retrieval score, policy decision, permitted metadata.
+AnswerDecision
+decision_id, message_id, model/version, prompt version, score signals, threshold, pass/fail, reason codes.
+MSLCase
+case_id, doctor_id, assigned_msl_id, source_message_id, status, priority, SLA timestamps, resolution.
+AuditEvent
+event_id, actor_id, action, target, timestamp, outcome, correlation_id, before/after summary.
+LLMUsage
+usage_id, message_id, provider/model, input/output tokens, latency, estimated cost, status.
+Template
+template_id, owner/scope, channel, subject/body, variables, version, approval status.
+9. Security, Privacy, and Compliance Controls
+Use enterprise identity/OIDC or approved SSO for portal access, MFA for privileged roles, secure cookies/tokens, session expiry, and account deactivation.
+Enforce RBAC and object-level authorization in every backend handler and database query.
+Verify WhatsApp provider webhook signatures and email sender identity; link channels to doctor accounts through a verified enrollment process.
+Encrypt data in transit and at rest; keep keys and provider credentials in a managed secrets service with rotation.
+Use malware scanning, content-type validation, file size limits, safe OCR/parsing, and quarantine for uploaded files.
+Treat retrieved documents as untrusted content to defend against prompt injection. Retrieved text must never override system policy or tool permissions.
+Minimize personal data in logs; redact sensitive content where possible. Define retention and deletion schedules and restrict transcript exports.
+Maintain append-only audit records for admin changes, access to sensitive records, model decisions, escalations and human replies.
+Apply rate limiting, abuse detection, anti-spam protections, webhook replay protection, and per-user/channel quotas.
+Complete security threat modelling, privacy impact review, and applicable GxP/medical/legal validation before production; do not assume the system is automatically GxP compliant.
+11. Observability and LLM Cost Management
+Metric
+Dimensions / alerting
+Request counts and latency
+Channel, model, route, tenant; p50/p95/p99 and timeout alert.
+Connector health
+Provider, success/error/timeout, rate-limit responses, freshness, last success.
+IKM ingestion
+Queued/running/succeeded/failed, age of pending jobs, retries, document counts.
+Answer quality
+Gate pass/fail, escalation reason, source coverage, reviewer feedback and evaluation score.
+MSL operations
+Open queue, age, SLA breach, reassignment, first response and resolution time.
+LLM usage
+Input/output tokens, model, feature, channel, request ID, estimated cost and budget threshold.
+Delivery
+Email/WhatsApp send success, retries, bounce/failure, webhook lag and duplicate detection.
+Use a single correlation ID across channel ingress, queue, orchestration, retrieval, LLM, case creation, and dispatch so incidents can be diagnosed end to end.
+12. Deployment and Runtime Pattern
+Separate development, test/UAT, and production environments and credentials.
+Deploy stateless APIs/adapters/orchestrator as containerized services or approved managed compute; use a managed queue for asynchronous jobs.
+Use a managed relational database for transactional entities and approved object storage for documents/artifacts; use IKM’s own storage/indexing where applicable.
+Keep connector adapters isolated so one provider failure does not block all retrieval. Set bounded timeouts, concurrency limits and circuit breakers.
+Use infrastructure-as-code, CI/CD, dependency scanning, image scanning, secrets injection, rollback strategy, and configuration versioning.
+Back up databases and configuration, test restore procedures, and define RPO/RTO with stakeholders.
+Run synthetic end-to-end tests for each channel, IKM, connector, answer gate, MSL escalation, and reply delivery.
+13. Failure Modes and Recovery
+Failure
+Expected handling
+IKM unavailable
+Bounded retry/circuit breaker; if approved sources are insufficient, abstain and route to MSL.
+Scientific connector timeout/rate limit
+Retry with backoff; log provider error; use other allowed sources only if policy permits; otherwise escalate.
+LLM unavailable
+Queue/retry within limit; acknowledge receipt; escalate or return safe service-unavailable message.
+Low confidence / unsupported answer
+Do not send substantive bot answer; create MSL case with reason codes and trace.
+Duplicate webhook/event
+Idempotency key prevents duplicate conversation messages/cases/replies.
+Email/WhatsApp delivery failure
+Record failed status, retry safely, alert operations, and use approved fallback if available.
+Unverified sender
+Do not disclose case/history or private medical/scientific correspondence; use account verification flow.
+Malformed or malicious document
+Quarantine, reject or sanitize; never ingest until security checks pass.

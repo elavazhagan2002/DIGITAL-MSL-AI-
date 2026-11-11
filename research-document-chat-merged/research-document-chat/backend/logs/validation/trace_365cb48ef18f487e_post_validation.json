@@ -1,0 +1,258 @@
+{
+  "correlation_id": "corr_af652c11366e41b1",
+  "message_id": "msg_25d3c80134754752",
+  "channel": "email",
+  "repository_id": "5d13d75d-972c-448d-bf72-efa185bc2b15",
+  "user_query": "In the 563-eye diabetic macular edema cohort, what percentage of eyes switched treatment, and what was the mean time to switching to aflibercept?\n\n\n\nThanks & Regards,\n\nSanthosh Kumar S\n\nAI Engineer\n\n+91-7010138776",
+  "agent": "retina_answer_agent",
+  "scope": {
+    "in_scope": true,
+    "retina_terms": [
+      "macular",
+      "diabetic macular edema",
+      "eye",
+      "eyes"
+    ],
+    "molecules": [
+      "aflibercept"
+    ],
+    "unsupported_molecules": [],
+    "safety_flags": [],
+    "reason": ""
+  },
+  "draft_answer": "In the 563-eye diabetic macular edema cohort, 29.7% of eyes switched treatment to aflibercept, and the mean time to switching was 4.5 months [1][3].",
+  "claims": [
+    {
+      "claim_id": "C1",
+      "claim_text": "29.7% of eyes switched treatment to aflibercept.",
+      "evidence": [
+        {
+          "chunk_id": "db6e4360-7298-4a60-b71d-3eaefac83890",
+          "document_id": "bbd85afe-9c46-4ab5-bb79-379ad31cd21a",
+          "document_name": "pubmed_42920147_PMC13693012_Real-world injection burden_ treatment switching_ and visual.pdf",
+          "document_content": "This lower injection frequency reflects real-world practice patterns and is consistent with previous obser­ vational studies reporting reduced treatment intensity compared with clinical trials [8, 12, 13]. In landmark randomized controlled trials such as RISE/RIDE and Protocol T, greater visual gains were achieved with more intensive and protocol-driven treatment regimens. In comparison, the magnitude of visual improvement observed in our cohort was more modest, which may reflect lower injection frequency, variability in follow-up adherence, and differences in retreatment strategies in Mean best-corrected visual acuity (BCVA) improved from 0.75 ± 0.43 logMAR at baseline to 0.59 ± 0.42 log­ MAR at the 12-month assessment, representing a mean change of - 0.16 ± 0.35 logMAR (P < 0.001). Visual improvement was observed in 339 eyes (60.2%), stability in 122 eyes (21.7%), and deterioration in 102 eyes (18.1%) (Table 2). An association was observed between the total number of intravitreal injections and change in BCVA in univari­ ate analysis (Fig. 1). Treatment switching from bevacizumab to aflibercept occurred in 167 of 563 eyes (29.7%). The mean time to switching was 4.5 ± 0.7 months after treatment initiation. The distribution of switching timing is shown in Fig. 2, and additional characteristics, including subgroup analy­ ses, are summarized in Table 3.",
+          "page_no": 4,
+          "paragraph": "Section: Age (years), mean ± SD | Paragraph 46 | Lines 47-48",
+          "section": "Age (years), mean ± SD",
+          "original_text": "Treatment switching from bevacizumab to aflibercept occurred in 167 of 563 eyes (29.7%).",
+          "line_start": 47,
+          "line_end": 48
+        }
+      ],
+      "validation": {
+        "score": 1.0,
+        "verdict": "supported",
+        "signals": {
+          "citation_integrity": true,
+          "quote_match": 1.0,
+          "lexical_support": 1.0,
+          "numeric_consistency": true,
+          "missing_numbers": [],
+          "llm_entailment": "supported",
+          "llm_rationale": "The evidence states that treatment switching from bevacizumab to aflibercept occurred in 167 of 563 eyes, which is 29.7%."
+        },
+        "reasons": []
+      }
+    },
+    {
+      "claim_id": "C2",
+      "claim_text": "The mean time to switching was 4.5 months.",
+      "evidence": [
+        {
+          "chunk_id": "64312947-c77f-4289-889d-ebcca4f12d59",
+          "document_id": "bbd85afe-9c46-4ab5-bb79-379ad31cd21a",
+          "document_name": "pubmed_42920147_PMC13693012_Real-world injection burden_ treatment switching_ and visual.pdf",
+          "document_content": "Table 3 Treatment switching characteristics and subgroup analysis of visual outcomes in diabetic macular edema Parameter Value Eyes with switching, n (%) 167 (29.7%) Time to switching (months), mean ± SD 4.5 ± 0.7 Subgroup analysis according to baseline BCVA Parameter β P-value Better baseline BCVA (≤ 1.0 logMAR) -0.011 0.046 Worse baseline BCVA (> 1.0 logMAR) -0.030 0.002 Subgroup analysis according to baseline BCVA BCVA: best-corrected visual acuity; ΔlogMAR: change in logarithm of the minimum angle of resolution; SD: standard deviation Time to switching was calculated from treatment initiation to the first injection of aflibercept. Subgroup stratification was based on the median baseline BCVA value (1.0 logMAR). β represents the regression coefficient for the association between injection number and change in BCVA within each subgroup associated with visual outcomes in unadjusted analysis, this association was no longer significant after adjust­ ment, suggesting that switching is unlikely to be an independent determinant of visual outcomes. Instead, treatment switching should be interpreted with caution,",
+          "page_no": 6,
+          "paragraph": "Paragraph 59 | Lines 58-14",
+          "section": "",
+          "original_text": "Table 3 Treatment switching characteristics and subgroup analysis of visual outcomes in diabetic macular edema Parameter Value Eyes with switching, n (%) 167 (29.7%) Time to switching (months), mean ± SD 4.5 ± 0.7 Subgroup analysis according to baseline BCVA Parameter β P-value Better baseline BCVA (≤ 1.0 logMAR) -0.011 0.046 Worse baseline BCVA (> 1.0 logMAR) -0.030 0.002 Subgroup analysis according to baseline BCVA BCVA: best-corrected visual acuity; ΔlogMAR: change in logarithm of the minimum angle of resolution; SD: standard deviation Time to switching was calculated from treatment initiation to the first injection of aflibercept.",
+          "line_start": 58,
+          "line_end": 14
+        }
+      ],
+      "validation": {
+        "score": 1.0,
+        "verdict": "supported",
+        "signals": {
+          "citation_integrity": true,
+          "quote_match": 1.0,
+          "lexical_support": 1.0,
+          "numeric_consistency": true,
+          "missing_numbers": [],
+          "llm_entailment": "supported",
+          "llm_rationale": "The evidence specifies that the mean time to switching was 4.5 months with a standard deviation of 0.7 months."
+        },
+        "reasons": []
+      }
+    }
+  ],
+  "chunks": [
+    {
+      "chunk_id": "db6e4360-7298-4a60-b71d-3eaefac83890",
+      "document_id": "bbd85afe-9c46-4ab5-bb79-379ad31cd21a",
+      "document_name": "pubmed_42920147_PMC13693012_Real-world injection burden_ treatment switching_ and visual.pdf",
+      "document_content": "This lower injection frequency reflects real-world practice patterns and is consistent with previous obser­ vational studies reporting reduced treatment intensity compared with clinical trials [8, 12, 13]. In landmark randomized controlled trials such as RISE/RIDE and Protocol T, greater visual gains were achieved with more intensive and protocol-driven treatment regimens. In comparison, the magnitude of visual improvement observed in our cohort was more modest, which may reflect lower injection frequency, variability in follow-up adherence, and differences in retreatment strategies in Mean best-corrected visual acuity (BCVA) improved from 0.75 ± 0.43 logMAR at baseline to 0.59 ± 0.42 log­ MAR at the 12-month assessment, representing a mean change of - 0.16 ± 0.35 logMAR (P < 0.001). Visual improvement was observed in 339 eyes (60.2%), stability in 122 eyes (21.7%), and deterioration in 102 eyes (18.1%) (Table 2). An association was observed between the total number of intravitreal injections and change in BCVA in univari­ ate analysis (Fig. 1). Treatment switching from bevacizumab to aflibercept occurred in 167 of 563 eyes (29.7%). The mean time to switching was 4.5 ± 0.7 months after treatment initiation. The distribution of switching timing is shown in Fig. 2, and additional characteristics, including subgroup analy­ ses, are summarized in Table 3.",
+      "page_no": 4,
+      "page_end": 4,
+      "paragraph": "Section: Age (years), mean ± SD | Paragraph 46 | Lines 45-48",
+      "section": "Age (years), mean ± SD",
+      "line_start": 45,
+      "line_end": 48,
+      "retrieval_score": 0.7307,
+      "repository_id": "5d13d75d-972c-448d-bf72-efa185bc2b15",
+      "original_text": "This lower injection frequency reflects real-world practice patterns and is consistent with previous obser­ vational studies reporting reduced treatment intensity compared with clinical trials [8, 12, 13]."
+    },
+    {
+      "chunk_id": "9d5a095e-aed9-427a-9630-086b767dbd46",
+      "document_id": "bbd85afe-9c46-4ab5-bb79-379ad31cd21a",
+      "document_name": "pubmed_42920147_PMC13693012_Real-world injection burden_ treatment switching_ and visual.pdf",
+      "document_content": "Real-world injection burden, treatment switching, and visual outcomes in diabetic macular edema: a 563-eye cohort study Hasan Öncül1*, Umut Dağ1, Hüseyin Dinç1 and Mehmet Fuat Alakuş1 Abstract Background To evaluate real-world injection burden, treatment switching patterns, and visual outcomes in patients with diabetic macular edema (DME) receiving intravitreal anti-vascular endothelial growth factor (anti-VEGF) therapy. Materials and methods This retrospective observational cohort study included 563 eyes with DME treated with anti-VEGF agents and followed for at least 12 months. All eyes received an initial loading phase of three monthly bevacizumab injections followed by a pro re nata regimen. Primary outcomes were the number of injections and outpatient visits during the first year. Secondary outcomes included change in best-corrected visual acuity (BCVA), distribution of visual outcomes, and treatment switching patterns. Multivariable linear regression and generalized estimating equation (GEE) analyses were performed to identify independent predictors of visual outcomes. Results Eyes received a mean of 5.4 ± 2.4 injections and attended 8.0 ± 2.2 visits during the first year. Mean BCVA improved from 0.75 ± 0.43 to 0.59 ± 0.42 logMAR (mean change - 0.16 ± 0.35; P < 0.001). Visual improvement was observed in 60.2% of eyes, stability in 21.7%, and deterioration in 18.1%. Treatment switching occurred in 29.7% of eyes, typically within the first 4-5 months. In multivariable linear regression analysis, baseline BCVA was associated with visual acuity change (β = -0.33, P < 0.001). Treatment switching was associated with visual outcomes in unadjusted analysis but was not independently associated after adjustment. In the GEE analysis accounting for inter-eye correlation, baseline BCVA remained significantly associated with visual acuity change (P < 0.001), whereas injection number (P = 0.527) and treatment switching (P = 0.976) were not associated. Conclusions In real-world clinical practice, anti-VEGF therapy for DME was associated with meaningful visual improvement despite a moderate injection frequency. Visual outcomes were primarily associated with baseline visual acuity rather than treatment intensity. Treatment switching was not independently associated with visual acuity change after adjustment, suggesting that it likely reflects underlying disease refractoriness rather than acting as an independent factor associated with visual outcomes; however, causal inference cannot be established due to the observational study design. These findings underscore the importance of individualized treatment strategies in DME. Keywords Diabetic macular edema, Anti-VEGF therapy, Intravitreal injections, Real-world outcomes, Treatment switching, Visual acuity, Injection burden ​*​C​o​r​r​e​s​p​o​n​d​e​n​c​e​:​ Hasan Öncül h***@hotmail.com 1Department of Ophthalmology, Diyarbakır Gazi Yaşargil Training and Research Hospital, University of Health Sciences, Diyarbakır, Türkiye • The Author(s) 2026. Open Access This article is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License, which permits any non-commercial use, sharing, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if you modified the licensed material. You do not have permission under this licence to share adapted material derived from this article or parts of it. The images or other third party material in this article are included in the article's Creative Commons licence, unless indicated otherwise in a credit line to the material.",
+      "page_no": 1,
+      "page_end": 1,
+      "paragraph": "Paragraph 6 | Lines 5-9",
+      "section": "",
+      "line_start": 5,
+      "line_end": 9,
+      "retrieval_score": 0.7298,
+      "repository_id": "5d13d75d-972c-448d-bf72-efa185bc2b15",
+      "original_text": "Real-world injection burden, treatment switching, and visual outcomes in diabetic macular edema: a 563-eye cohort study Hasan Öncül1*, Umut Dağ1, Hüseyin Dinç1 and Mehmet Fuat Alakuş1 Abstract Background To evaluate real-world injection burden, treatment switching patterns, and visual outcomes in patients with diabetic macular edema (DME) receiving intravitreal anti-vascular endothelial growth fac"
+    },
+    {
+      "chunk_id": "64312947-c77f-4289-889d-ebcca4f12d59",
+      "document_id": "bbd85afe-9c46-4ab5-bb79-379ad31cd21a",
+      "document_name": "pubmed_42920147_PMC13693012_Real-world injection burden_ treatment switching_ and visual.pdf",
+      "document_content": "Table 3 Treatment switching characteristics and subgroup analysis of visual outcomes in diabetic macular edema Parameter Value Eyes with switching, n (%) 167 (29.7%) Time to switching (months), mean ± SD 4.5 ± 0.7 Subgroup analysis according to baseline BCVA Parameter β P-value Better baseline BCVA (≤ 1.0 logMAR) -0.011 0.046 Worse baseline BCVA (> 1.0 logMAR) -0.030 0.002 Subgroup analysis according to baseline BCVA BCVA: best-corrected visual acuity; ΔlogMAR: change in logarithm of the minimum angle of resolution; SD: standard deviation Time to switching was calculated from treatment initiation to the first injection of aflibercept. Subgroup stratification was based on the median baseline BCVA value (1.0 logMAR). β represents the regression coefficient for the association between injection number and change in BCVA within each subgroup associated with visual outcomes in unadjusted analysis, this association was no longer significant after adjust­ ment, suggesting that switching is unlikely to be an independent determinant of visual outcomes. Instead, treatment switching should be interpreted with caution,",
+      "page_no": 6,
+      "page_end": 7,
+      "paragraph": "Paragraph 59 | Lines 58-14",
+      "section": "",
+      "line_start": 58,
+      "line_end": 14,
+      "retrieval_score": 0.7283,
+      "repository_id": "5d13d75d-972c-448d-bf72-efa185bc2b15",
+      "original_text": "Table 3 Treatment switching characteristics and subgroup analysis of visual outcomes in diabetic macular edema Parameter Value Eyes with switching, n (%) 167 (29.7%) Time to switching (months), mean ± SD 4.5 ± 0.7 Subgroup analysis according to baseline BCVA Parameter β P-value Better baseline BCVA (≤ 1.0 logMAR) -0.011 0.046 Worse baseline BCVA (> 1.0 logMAR) -0.030 0.002 Subgroup analysis accord"
+    },
+    {
+      "chunk_id": "ec920794-6cb1-42d6-826a-3f27b4262553",
+      "document_id": "bbd85afe-9c46-4ab5-bb79-379ad31cd21a",
+      "document_name": "pubmed_42920147_PMC13693012_Real-world injection burden_ treatment switching_ and visual.pdf",
+      "document_content": "Real-world injection burden, treatment switching, and visual outcomes in diabetic macular edema: a 563-eye cohort study Statistical analysis Statistical analyses were performed using SPSS soft­ ware (version 25.0; IBM Corp., Armonk, NY, USA). Continuous variables were presented as mean ± stan­ dard deviation, and categorical variables as frequencies and percentages. Normality of distribution was assessed using the Shapiro-Wilk test. Within-group comparisons of baseline and 12-month BCVA were performed using paired t-tests. Categorical variables were compared using the chi-square test. The association between injection number and visual acuity change was evaluated using Spearman's rank correlation coefficient. Treatment switching Treatment switching from bevacizumab to aflibercept was considered in eyes demonstrating inadequate ana­ tomical or functional response. Inadequate response was defined as persistent retinal fluid, insufficient ana­ tomical improvement on OCT assessment, or lack of satisfactory functional improvement, as judged by the treating physician, despite repeated injections. Because of the retrospective real-world design, no rigid quanti­ tative anatomical or visual acuity thresholds were pre­ defined; treatment switching decisions were based on the treating physician's overall clinical judgment integrat­ ing both anatomical and functional response. For eyes undergoing treatment switching, the timing of switching, BCVA before switching, and BCVA after switching were recorded. Treatment switching was unidirectional from bevacizumab to aflibercept during the 12-month study period; no eyes switched back to bevacizumab or under­ went additional therapeutic modifications. Multivariable linear regression To identify independent predictors of visual outcomes, a multivariable linear regression analysis was per­ formed. The dependent variable was change in BCVA (ΔlogMAR). Independent variables included baseline BCVA, total number of injections during the first year, and treatment switching status. Variables were selected based on clinical relevance and prior literature. Regres­ sion coefficients (β) and corresponding P values were reported. Generalized estimating equation analysis To account for potential inter-eye correlation arising from inclusion of both eyes from some patients, a gener­ alized estimating equation (GEE) model was performed using an exchangeable working correlation structure with robust standard errors. Patient identifier was specified as the clustering variable. The dependent variable was change in BCVA (ΔlogMAR), and independent variables included baseline BCVA, number of injections, treat­ ment switching status, age, and sex. Data collection Demographic and clinical data were extracted from medical records. Variables included age, sex, number of outpatient visits, total number of intravitreal injections, baseline and 12-month BCVA, and treatment switching status. BCVA was measured using Snellen charts and converted to logarithm of the minimum angle of reso­ lution (logMAR) units using standardized conversion methods. Visual acuity change (ΔlogMAR) was calcu­ lated as the difference between 12-month and baseline values, with negative values indicating visual improve­ ment. Visual outcomes were additionally categorized as improvement (decrease in BCVA of ≥ 0.1 logMAR), sta­ bility (change in BCVA between - 0.1 and + 0.1 logMAR), or deterioration (increase in BCVA of ≥ 0.1 logMAR). Sensitivity analysis As a sensitivity analysis, the regression model was repeated after restricting the dataset to one randomly selected eye per patient to assess the robustness of the findings. For subgroup analysis, eyes were stratified according to the median baseline BCVA value (1.0 log­ MAR).",
+      "page_no": 3,
+      "page_end": 3,
+      "paragraph": "Paragraph 20 | Lines 19-24",
+      "section": "",
+      "line_start": 19,
+      "line_end": 24,
+      "retrieval_score": 0.7258,
+      "repository_id": "5d13d75d-972c-448d-bf72-efa185bc2b15",
+      "original_text": "Real-world injection burden, treatment switching, and visual outcomes in diabetic macular edema: a 563-eye cohort study Statistical analysis Statistical analyses were performed using SPSS soft­ ware (version 25.0; IBM Corp., Armonk, NY, USA)."
+    },
+    {
+      "chunk_id": "94ebeee4-31c9-4303-9aa1-7e68b9f6825d",
+      "document_id": "bbd85afe-9c46-4ab5-bb79-379ad31cd21a",
+      "document_name": "pubmed_42920147_PMC13693012_Real-world injection burden_ treatment switching_ and visual.pdf",
+      "document_content": "Real-world injection burden, treatment switching, and visual outcomes in diabetic macular edema: a 563-eye cohort study ​Introduction Diabetic macular edema (DME) is a leading cause of vision loss among individuals with diabetes mellitus and represents a major global health burden. The prevalence of DME continues to rise in parallel with the increasing incidence of diabetes worldwide, particularly in aging populations. Vision impairment due to DME significantly affects patients' quality of life and imposes substantial socioeconomic costs on healthcare systems [1, 2]. associated visual outcomes remains limited and hetero­ geneous [10, 11]. In addition, the treatment burden associated with repeated intravitreal injections and frequent clinical vis­ its represents a major challenge for both patients and healthcare systems. Understanding real-world injection patterns and their relationship with functional outcomes is therefore essential for optimizing long-term manage­ ment strategies in DME [9, 12]. The pathophysiology of DME is primarily driven by dis­ ruption of the blood-retinal barrier and increased vascu­ lar permeability mediated by vascular endothelial growth factor (VEGF). Elevated intraocular VEGF levels lead to retinal thickening, fluid accumulation, and progres­ sive visual decline [3]. As a result, intravitreal anti-VEGF therapy has become the first-line treatment for center-involving DME, largely replacing macular laser photoco­ agulation in routine clinical practice [4]. Given these considerations, real-world data derived from large clinical cohorts are essential to complement findings from randomized trials and to better reflect rou­ tine clinical practice. Therefore, the aim of the present study was to evaluate real-world injection burden, treat­ ment switching patterns, and visual outcomes in a large cohort of patients with DME treated with intravitreal anti-VEGF therapy. Specifically, we sought to determine whether visual outcomes are more strongly associated with treatment intensity or baseline visual acuity. The efficacy of anti-VEGF therapy in DME has been firmly established in multiple randomized controlled trials. The RISE and RIDE studies demonstrated sig­ nificant and sustained visual acuity improvements with ranibizumab compared with sham injections [5], while the VIVID and VISTA trials confirmed the superiority of aflibercept over laser photocoagulation [6]. Further­ more, the DRCR.net Protocol T study showed that treat­ ment response varies according to baseline visual acuity, highlighting the importance of individualized therapeutic approaches [7]. These landmark trials have established anti-VEGF therapy as the standard of care for DME. Despite these favorable outcomes under controlled trial conditions, treatment patterns in real-world clinical practice often differ substantially from protocol-driven regimens. Real-world studies consistently report lower injection frequencies, irregular follow-up intervals, and heterogeneous retreatment strategies compared with randomized trials [8, 9]. Consequently, visual outcomes achieved in routine practice may be less pronounced than those reported in clinical trials, reflecting a gap between efficacy and effectiveness. In real-world clinical practice, additional challenges such as variability in patient adher­ ence, irregular follow-up intervals, differences in retreat­ ment criteria, and healthcare system constraints may further contribute to heterogeneity in treatment delivery and outcomes. Study population Eyes with a diagnosis of diabetic macular edema (DME), a minimum follow-up duration of 12 months, and no prior treatment for DME were included in the analysis. Eyes that had previously received anti-VEGF therapy, intravitreal corticosteroid treatment, or focal/grid laser photocoagulation for DME were excluded.",
+      "page_no": 2,
+      "page_end": 2,
+      "paragraph": "Paragraph 11 | Lines 10-16",
+      "section": "",
+      "line_start": 10,
+      "line_end": 16,
+      "retrieval_score": 0.6387,
+      "repository_id": "5d13d75d-972c-448d-bf72-efa185bc2b15",
+      "original_text": "Real-world injection burden, treatment switching, and visual outcomes in diabetic macular edema: a 563-eye cohort study ​Introduction Diabetic macular edema (DME) is a leading cause of vision loss among individuals with diabetes mellitus and represents a major global health burden."
+    },
+    {
+      "chunk_id": "fb3e94de-5389-41e9-b798-079fdacf820a",
+      "document_id": "5948ca91-60ef-4075-a6ff-c9aecd0db0ca",
+      "document_name": "clinicaltrials_NCT02818998_Efficacy and Safety of Three Different Aflibercept Regimens.docx",
+      "document_content": "eligibilityModule eligibilityCriteria: Inclusion Criteria Total prior treatment duration with aflibercept (i.e. from first aflibercept treatment ever to enrollment into this study) was 1 year or longer. To be met at initiation of pre-study aflibercept treatment: Type 1 or 2 diabetes mellitus (DM) Diagnosis of diabetic macular edema (DME) secondary to DM involving the center of the macula (defined as the area of the center subfield on optical coherence tomography \\[OCT\\]) in the study eye Decrease in vision determined to be primarily the result of DME in the study eye Best corrected visual acuity (BCVA) in the study eye of Early Treatment Diabetic Retinopathy Study (ETDRS) letter score 73 to 24 Exclusion Criteria: At initiation of pre-study aflibercept treatment: \\- Previous treatment with anti-angiogenic drugs in study eye (e.g., pegaptanib sodium, bevacizumab, ranibizumab, or aflibercept) within the last 12 weeks before initiation of aflibercept pre-study treatment At initiation of pre-study aflibercept treatment, screening for this study, and baseline for this study: Prior treatment of the study eye with long acting steroids, either periocular or intraocular, in the preceding 120 days or Iluvien intravitreal implant at any time Active proliferative diabetic retinopathy, current iris neovascularization, vitreous hemorrhage, or tractional retinal detachment in the study eye Cataract surgery or any other intraocular surgery within 90 days of aflibercept treatment in the study eye Ocular inflammation (including trace or above) or history of uveitis in the study eye Structural damage to the center of the macula in the study eye that was likely to preclude improvement in BCVA following the resolution of macular edema including atrophy of the retinal pigment epithelium, subretinal fibrosis or scar, significant macular ischemia or organized hard exudates Concurrent disease in the study eye, other than DME, that could compromise visual acuity, require medical or surgical intervention during the study period, or could confound interpretation of the results (including advanced glaucoma, retinal vascular occlusion, retinal detachment, macular hole, or choroidal neovascularization of any cause) Uncontrolled DM as defined by hemoglobin (Hb) A1c \\> 12.0% at screening and baseline for this study Any ocular or periocular infection in the preceding 4 weeks in either eye History of either cerebral vascular accident and/or myocardial infarction within 180 days before aflibercept treatment eligibilityModule eligibilityCriteria: Inclusion Criteria healthyVolunteers: False sex: ALL minimumAge: 18 Years",
+      "page_no": 7,
+      "page_end": 8,
+      "paragraph": "Section: eligibilityModule eligibilityCriteria: Inclusion Criteria | Paragraph 91 | Lines 90-97",
+      "section": "eligibilityModule eligibilityCriteria: Inclusion Criteria",
+      "line_start": 90,
+      "line_end": 97,
+      "retrieval_score": 0.6067,
+      "repository_id": "5d13d75d-972c-448d-bf72-efa185bc2b15",
+      "original_text": "eligibilityModule eligibilityCriteria: Inclusion Criteria Total prior treatment duration with aflibercept (i.e. from first aflibercept treatment ever to enrollment into this study) was 1 year or longer."
+    }
+  ],
+  "retrieval": {
+    "user_query": "In the 563-eye diabetic macular edema cohort, what percentage of eyes switched treatment, and what was the mean time to switching to aflibercept?\n\n\n\nThanks & Regards,\n\nSanthosh Kumar S\n\nAI Engineer\n\n+91-7010138776",
+    "agent": "query_agent",
+    "chunks": [
+      {
+        "chunk_id": "db6e4360-7298-4a60-b71d-3eaefac83890",
+        "document_id": "bbd85afe-9c46-4ab5-bb79-379ad31cd21a",
+        "document_name": "pubmed_42920147_PMC13693012_Real-world injection burden_ treatment switching_ and visual.pdf",
+        "document_content": "This lower injection frequency reflects real-world practice patterns and is consistent with previous obser­ vational studies reporting reduced treatment intensity compared with clinical trials [8, 12, 13]. In landmark randomized controlled trials such as RISE/RIDE and Protocol T, greater visual gains were achieved with more intensive and protocol-driven treatment regimens. In comparison, the magnitude of visual improvement observed in our cohort was more modest, which may reflect lower injection frequency, variability in follow-up adherence, and differences in retreatment strategies in Mean best-corrected visual acuity (BCVA) improved from 0.75 ± 0.43 logMAR at baseline to 0.59 ± 0.42 log­ MAR at the 12-month assessment, representing a mean change of - 0.16 ± 0.35 logMAR (P < 0.001). Visual improvement was observed in 339 eyes (60.2%), stability in 122 eyes (21.7%), and deterioration in 102 eyes (18.1%) (Table 2). An association was observed between the total number of intravitreal injections and change in BCVA in univari­ ate analysis (Fig. 1). Treatment switching from bevacizumab to aflibercept occurred in 167 of 563 eyes (29.7%). The mean time to switching was 4.5 ± 0.7 months after treatment initiation. The distribution of switching timing is shown in Fig. 2, and additional characteristics, including subgroup analy­ ses, are summarized in Table 3.",
+        "page_no": 4,
+        "paragraph": "Section: Age (years), mean ± SD | Paragraph 46 | Lines 45-48",
+        "original_text": "This lower injection frequency reflects real-world practice patterns and is consistent with previous obser­ vational studies reporting reduced treatment intensity compared with clinical trials [8, 12, 13]."
+      },
+      {
+        "chunk_id": "9d5a095e-aed9-427a-9630-086b767dbd46",
+        "document_id": "bbd85afe-9c46-4ab5-bb79-379ad31cd21a",
+        "document_name": "pubmed_42920147_PMC13693012_Real-world injection burden_ treatment switching_ and visual.pdf",
+        "document_content": "Real-world injection burden, treatment switching, and visual outcomes in diabetic macular edema: a 563-eye cohort study Hasan Öncül1*, Umut Dağ1, Hüseyin Dinç1 and Mehmet Fuat Alakuş1 Abstract Background To evaluate real-world injection burden, treatment switching patterns, and visual outcomes in patients with diabetic macular edema (DME) receiving intravitreal anti-vascular endothelial growth factor (anti-VEGF) therapy. Materials and methods This retrospective observational cohort study included 563 eyes with DME treated with anti-VEGF agents and followed for at least 12 months. All eyes received an initial loading phase of three monthly bevacizumab injections followed by a pro re nata regimen. Primary outcomes were the number of injections and outpatient visits during the first year. Secondary outcomes included change in best-corrected visual acuity (BCVA), distribution of visual outcomes, and treatment switching patterns. Multivariable linear regression and generalized estimating equation (GEE) analyses were performed to identify independent predictors of visual outcomes. Results Eyes received a mean of 5.4 ± 2.4 injections and attended 8.0 ± 2.2 visits during the first year. Mean BCVA improved from 0.75 ± 0.43 to 0.59 ± 0.42 logMAR (mean change - 0.16 ± 0.35; P < 0.001). Visual improvement was observed in 60.2% of eyes, stability in 21.7%, and deterioration in 18.1%. Treatment switching occurred in 29.7% of eyes, typically within the first 4-5 months. In multivariable linear regression analysis, baseline BCVA was associated with visual acuity change (β = -0.33, P < 0.001). Treatment switching was associated with visual outcomes in unadjusted analysis but was not independently associated after adjustment. In the GEE analysis accounting for inter-eye correlation, baseline BCVA remained significantly associated with visual acuity change (P < 0.001), whereas injection number (P = 0.527) and treatment switching (P = 0.976) were not associated. Conclusions In real-world clinical practice, anti-VEGF therapy for DME was associated with meaningful visual improvement despite a moderate injection frequency. Visual outcomes were primarily associated with baseline visual acuity rather than treatment intensity. Treatment switching was not independently associated with visual acuity change after adjustment, suggesting that it likely reflects underlying disease refractoriness rather than acting as an independent factor associated with visual outcomes; however, causal inference cannot be established due to the observational study design. These findings underscore the importance of individualized treatment strategies in DME. Keywords Diabetic macular edema, Anti-VEGF therapy, Intravitreal injections, Real-world outcomes, Treatment switching, Visual acuity, Injection burden ​*​C​o​r​r​e​s​p​o​n​d​e​n​c​e​:​ Hasan Öncül h***@hotmail.com 1Department of Ophthalmology, Diyarbakır Gazi Yaşargil Training and Research Hospital, University of Health Sciences, Diyarbakır, Türkiye • The Author(s) 2026. Open Access This article is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License, which permits any non-commercial use, sharing, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if you modified the licensed material. You do not have permission under this licence to share adapted material derived from this article or parts of it. The images or other third party material in this article are included in the article's Creative Commons licence, unless indicated otherwise in a credit line to the material.",
+        "page_no": 1,
+        "paragraph": "Paragraph 6 | Lines 5-9",
+        "original_text": "Real-world injection burden, treatment switching, and visual outcomes in diabetic macular edema: a 563-eye cohort study Hasan Öncül1*, Umut Dağ1, Hüseyin Dinç1 and Mehmet Fuat Alakuş1 Abstract Background To evaluate real-world injection burden, treatment switching patterns, and visual outcomes in patients with diabetic macular edema (DME) receiving intravitreal anti-vascular endothelial growth fac"
+      },
+      {
+        "chunk_id": "64312947-c77f-4289-889d-ebcca4f12d59",
+        "document_id": "bbd85afe-9c46-4ab5-bb79-379ad31cd21a",
+        "document_name": "pubmed_42920147_PMC13693012_Real-world injection burden_ treatment switching_ and visual.pdf",
+        "document_content": "Table 3 Treatment switching characteristics and subgroup analysis of visual outcomes in diabetic macular edema Parameter Value Eyes with switching, n (%) 167 (29.7%) Time to switching (months), mean ± SD 4.5 ± 0.7 Subgroup analysis according to baseline BCVA Parameter β P-value Better baseline BCVA (≤ 1.0 logMAR) -0.011 0.046 Worse baseline BCVA (> 1.0 logMAR) -0.030 0.002 Subgroup analysis according to baseline BCVA BCVA: best-corrected visual acuity; ΔlogMAR: change in logarithm of the minimum angle of resolution; SD: standard deviation Time to switching was calculated from treatment initiation to the first injection of aflibercept. Subgroup stratification was based on the median baseline BCVA value (1.0 logMAR). β represents the regression coefficient for the association between injection number and change in BCVA within each subgroup associated with visual outcomes in unadjusted analysis, this association was no longer significant after adjust­ ment, suggesting that switching is unlikely to be an independent determinant of visual outcomes. Instead, treatment switching should be interpreted with caution,",
+        "page_no": 6,
+        "paragraph": "Paragraph 59 | Lines 58-14",
+        "original_text": "Table 3 Treatment switching characteristics and subgroup analysis of visual outcomes in diabetic macular edema Parameter Value Eyes with switching, n (%) 167 (29.7%) Time to switching (months), mean ± SD 4.5 ± 0.7 Subgroup analysis according to baseline BCVA Parameter β P-value Better baseline BCVA (≤ 1.0 logMAR) -0.011 0.046 Worse baseline BCVA (> 1.0 logMAR) -0.030 0.002 Subgroup analysis accord"
+      },
+      {
+        "chunk_id": "ec920794-6cb1-42d6-826a-3f27b4262553",
+        "document_id": "bbd85afe-9c46-4ab5-bb79-379ad31cd21a",
+        "document_name": "pubmed_42920147_PMC13693012_Real-world injection burden_ treatment switching_ and visual.pdf",
+        "document_content": "Real-world injection burden, treatment switching, and visual outcomes in diabetic macular edema: a 563-eye cohort study Statistical analysis Statistical analyses were performed using SPSS soft­ ware (version 25.0; IBM Corp., Armonk, NY, USA). Continuous variables were presented as mean ± stan­ dard deviation, and categorical variables as frequencies and percentages. Normality of distribution was assessed using the Shapiro-Wilk test. Within-group comparisons of baseline and 12-month BCVA were performed using paired t-tests. Categorical variables were compared using the chi-square test. The association between injection number and visual acuity change was evaluated using Spearman's rank correlation coefficient. Treatment switching Treatment switching from bevacizumab to aflibercept was considered in eyes demonstrating inadequate ana­ tomical or functional response. Inadequate response was defined as persistent retinal fluid, insufficient ana­ tomical improvement on OCT assessment, or lack of satisfactory functional improvement, as judged by the treating physician, despite repeated injections. Because of the retrospective real-world design, no rigid quanti­ tative anatomical or visual acuity thresholds were pre­ defined; treatment switching decisions were based on the treating physician's overall clinical judgment integrat­ ing both anatomical and functional response. For eyes undergoing treatment switching, the timing of switching, BCVA before switching, and BCVA after switching were recorded. Treatment switching was unidirectional from bevacizumab to aflibercept during the 12-month study period; no eyes switched back to bevacizumab or under­ went additional therapeutic modifications. Multivariable linear regression To identify independent predictors of visual outcomes, a multivariable linear regression analysis was per­ formed. The dependent variable was change in BCVA (ΔlogMAR). Independent variables included baseline BCVA, total number of injections during the first year, and treatment switching status. Variables were selected based on clinical relevance and prior literature. Regres­ sion coefficients (β) and corresponding P values were reported. Generalized estimating equation analysis To account for potential inter-eye correlation arising from inclusion of both eyes from some patients, a gener­ alized estimating equation (GEE) model was performed using an exchangeable working correlation structure with robust standard errors. Patient identifier was specified as the clustering variable. The dependent variable was change in BCVA (ΔlogMAR), and independent variables included baseline BCVA, number of injections, treat­ ment switching status, age, and sex. Data collection Demographic and clinical data were extracted from medical records. Variables included age, sex, number of outpatient visits, total number of intravitreal injections, baseline and 12-month BCVA, and treatment switching status. BCVA was measured using Snellen charts and converted to logarithm of the minimum angle of reso­ lution (logMAR) units using standardized conversion methods. Visual acuity change (ΔlogMAR) was calcu­ lated as the difference between 12-month and baseline values, with negative values indicating visual improve­ ment. Visual outcomes were additionally categorized as improvement (decrease in BCVA of ≥ 0.1 logMAR), sta­ bility (change in BCVA between - 0.1 and + 0.1 logMAR), or deterioration (increase in BCVA of ≥ 0.1 logMAR). Sensitivity analysis As a sensitivity analysis, the regression model was repeated after restricting the dataset to one randomly selected eye per patient to assess the robustness of the findings. For subgroup analysis, eyes were stratified according to the median baseline BCVA value (1.0 log­ MAR).",
+        "page_no": 3,
+        "paragraph": "Paragraph 20 | Lines 19-24",
+        "original_text": "Real-world injection burden, treatment switching, and visual outcomes in diabetic macular edema: a 563-eye cohort study Statistical analysis Statistical analyses were performed using SPSS soft­ ware (version 25.0; IBM Corp., Armonk, NY, USA)."
+      },
+      {
+        "chunk_id": "94ebeee4-31c9-4303-9aa1-7e68b9f6825d",
+        "document_id": "bbd85afe-9c46-4ab5-bb79-379ad31cd21a",
+        "document_name": "pubmed_42920147_PMC13693012_Real-world injection burden_ treatment switching_ and visual.pdf",
+        "document_content": "Real-world injection burden, treatment switching, and visual outcomes in diabetic macular edema: a 563-eye cohort study ​Introduction Diabetic macular edema (DME) is a leading cause of vision loss among individuals with diabetes mellitus and represents a major global health burden. The prevalence of DME continues to rise in parallel with the increasing incidence of diabetes worldwide, particularly in aging populations. Vision impairment due to DME significantly affects patients' quality of life and imposes substantial socioeconomic costs on healthcare systems [1, 2]. associated visual outcomes remains limited and hetero­ geneous [10, 11]. In addition, the treatment burden associated with repeated intravitreal injections and frequent clinical vis­ its represents a major challenge for both patients and healthcare systems. Understanding real-world injection patterns and their relationship with functional outcomes is therefore essential for optimizing long-term manage­ ment strategies in DME [9, 12]. The pathophysiology of DME is primarily driven by dis­ ruption of the blood-retinal barrier and increased vascu­ lar permeability mediated by vascular endothelial growth factor (VEGF). Elevated intraocular VEGF levels lead to retinal thickening, fluid accumulation, and progres­ sive visual decline [3]. As a result, intravitreal anti-VEGF therapy has become the first-line treatment for center-involving DME, largely replacing macular laser photoco­ agulation in routine clinical practice [4]. Given these considerations, real-world data derived from large clinical cohorts are essential to complement findings from randomized trials and to better reflect rou­ tine clinical practice. Therefore, the aim of the present study was to evaluate real-world injection burden, treat­ ment switching patterns, and visual outcomes in a large cohort of patients with DME treated with intravitreal anti-VEGF therapy. Specifically, we sought to determine whether visual outcomes are more strongly associated with treatment intensity or baseline visual acuity. The efficacy of anti-VEGF therapy in DME has been firmly established in multiple randomized controlled trials. The RISE and RIDE studies demonstrated sig­ nificant and sustained visual acuity improvements with ranibizumab compared with sham injections [5], while the VIVID and VISTA trials confirmed the superiority of aflibercept over laser photocoagulation [6]. Further­ more, the DRCR.net Protocol T study showed that treat­ ment response varies according to baseline visual acuity, highlighting the importance of individualized therapeutic approaches [7]. These landmark trials have established anti-VEGF therapy as the standard of care for DME. Despite these favorable outcomes under controlled trial conditions, treatment patterns in real-world clinical practice often differ substantially from protocol-driven regimens. Real-world studies consistently report lower injection frequencies, irregular follow-up intervals, and heterogeneous retreatment strategies compared with randomized trials [8, 9]. Consequently, visual outcomes achieved in routine practice may be less pronounced than those reported in clinical trials, reflecting a gap between efficacy and effectiveness. In real-world clinical practice, additional challenges such as variability in patient adher­ ence, irregular follow-up intervals, differences in retreat­ ment criteria, and healthcare system constraints may further contribute to heterogeneity in treatment delivery and outcomes. Study population Eyes with a diagnosis of diabetic macular edema (DME), a minimum follow-up duration of 12 months, and no prior treatment for DME were included in the analysis. Eyes that had previously received anti-VEGF therapy, intravitreal corticosteroid treatment, or focal/grid laser photocoagulation for DME were excluded.",
+        "page_no": 2,
+        "paragraph": "Paragraph 11 | Lines 10-16",
+        "original_text": "Real-world injection burden, treatment switching, and visual outcomes in diabetic macular edema: a 563-eye cohort study ​Introduction Diabetic macular edema (DME) is a leading cause of vision loss among individuals with diabetes mellitus and represents a major global health burden."
+      },
+      {
+        "chunk_id": "fb3e94de-5389-41e9-b798-079fdacf820a",
+        "document_id": "5948ca91-60ef-4075-a6ff-c9aecd0db0ca",
+        "document_name": "clinicaltrials_NCT02818998_Efficacy and Safety of Three Different Aflibercept Regimens.docx",
+        "document_content": "eligibilityModule eligibilityCriteria: Inclusion Criteria Total prior treatment duration with aflibercept (i.e. from first aflibercept treatment ever to enrollment into this study) was 1 year or longer. To be met at initiation of pre-study aflibercept treatment: Type 1 or 2 diabetes mellitus (DM) Diagnosis of diabetic macular edema (DME) secondary to DM involving the center of the macula (defined as the area of the center subfield on optical coherence tomography \\[OCT\\]) in the study eye Decrease in vision determined to be primarily the result of DME in the study eye Best corrected visual acuity (BCVA) in the study eye of Early Treatment Diabetic Retinopathy Study (ETDRS) letter score 73 to 24 Exclusion Criteria: At initiation of pre-study aflibercept treatment: \\- Previous treatment with anti-angiogenic drugs in study eye (e.g., pegaptanib sodium, bevacizumab, ranibizumab, or aflibercept) within the last 12 weeks before initiation of aflibercept pre-study treatment At initiation of pre-study aflibercept treatment, screening for this study, and baseline for this study: Prior treatment of the study eye with long acting steroids, either periocular or intraocular, in the preceding 120 days or Iluvien intravitreal implant at any time Active proliferative diabetic retinopathy, current iris neovascularization, vitreous hemorrhage, or tractional retinal detachment in the study eye Cataract surgery or any other intraocular surgery within 90 days of aflibercept treatment in the study eye Ocular inflammation (including trace or above) or history of uveitis in the study eye Structural damage to the center of the macula in the study eye that was likely to preclude improvement in BCVA following the resolution of macular edema including atrophy of the retinal pigment epithelium, subretinal fibrosis or scar, significant macular ischemia or organized hard exudates Concurrent disease in the study eye, other than DME, that could compromise visual acuity, require medical or surgical intervention during the study period, or could confound interpretation of the results (including advanced glaucoma, retinal vascular occlusion, retinal detachment, macular hole, or choroidal neovascularization of any cause) Uncontrolled DM as defined by hemoglobin (Hb) A1c \\> 12.0% at screening and baseline for this study Any ocular or periocular infection in the preceding 4 weeks in either eye History of either cerebral vascular accident and/or myocardial infarction within 180 days before aflibercept treatment eligibilityModule eligibilityCriteria: Inclusion Criteria healthyVolunteers: False sex: ALL minimumAge: 18 Years",
+        "page_no": 7,
+        "paragraph": "Section: eligibilityModule eligibilityCriteria: Inclusion Criteria | Paragraph 91 | Lines 90-97",
+        "original_text": "eligibilityModule eligibilityCriteria: Inclusion Criteria Total prior treatment duration with aflibercept (i.e. from first aflibercept treatment ever to enrollment into this study) was 1 year or longer."
+      }
+    ],
+    "created_at": "2026-10-29T10:03:22.421209+00:00",
+    "search_mode": "hybrid",
+    "elapsed_ms": 36845
+  },
+  "generation_error": "",
+  "created_at": "2026-10-29T10:03:22.421209+00:00",
+  "validation": {
+    "overall_score": 1.0,
+    "threshold": 0.9,
+    "claim_min_score": 0.7,
+    "decision": "escalate_to_msl",
+    "reason_codes": [
+      "INCOMPLETE_ANSWER"
+    ],
+    "judge": "llm+deterministic",
+    "validated_at": "2026-10-29T10:03:26.049071+00:00"
+  }
+}

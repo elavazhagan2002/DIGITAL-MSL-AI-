@@ -1,0 +1,193 @@
+{
+  "correlation_id": "corr_77f7d761065d4c58",
+  "message_id": "msg_9cf2cb73fbf64443",
+  "channel": "whatsapp",
+  "repository_id": "5d13d75d-972c-448d-bf72-efa185bc2b15",
+  "user_query": "What visual acuity gain did aflibercept show in diabetic macular edema at week 52?",
+  "agent": "retina_answer_agent",
+  "scope": {
+    "in_scope": true,
+    "retina_terms": [
+      "macular",
+      "diabetic macular edema",
+      "visual acuity"
+    ],
+    "molecules": [
+      "aflibercept"
+    ],
+    "unsupported_molecules": [],
+    "safety_flags": [],
+    "reason": ""
+  },
+  "draft_answer": "The library does not contain information on the visual acuity gain of aflibercept in diabetic macular edema at week 52.",
+  "claims": [],
+  "chunks": [
+    {
+      "chunk_id": "fb3e94de-5389-41e9-b798-079fdacf820a",
+      "document_id": "5948ca91-60ef-4075-a6ff-c9aecd0db0ca",
+      "document_name": "clinicaltrials_NCT02818998_Efficacy and Safety of Three Different Aflibercept Regimens.docx",
+      "document_content": "eligibilityModule eligibilityCriteria: Inclusion Criteria Total prior treatment duration with aflibercept (i.e. from first aflibercept treatment ever to enrollment into this study) was 1 year or longer. To be met at initiation of pre-study aflibercept treatment: Type 1 or 2 diabetes mellitus (DM) Diagnosis of diabetic macular edema (DME) secondary to DM involving the center of the macula (defined as the area of the center subfield on optical coherence tomography \\[OCT\\]) in the study eye Decrease in vision determined to be primarily the result of DME in the study eye Best corrected visual acuity (BCVA) in the study eye of Early Treatment Diabetic Retinopathy Study (ETDRS) letter score 73 to 24 Exclusion Criteria: At initiation of pre-study aflibercept treatment: \\- Previous treatment with anti-angiogenic drugs in study eye (e.g., pegaptanib sodium, bevacizumab, ranibizumab, or aflibercept) within the last 12 weeks before initiation of aflibercept pre-study treatment At initiation of pre-study aflibercept treatment, screening for this study, and baseline for this study: Prior treatment of the study eye with long acting steroids, either periocular or intraocular, in the preceding 120 days or Iluvien intravitreal implant at any time Active proliferative diabetic retinopathy, current iris neovascularization, vitreous hemorrhage, or tractional retinal detachment in the study eye Cataract surgery or any other intraocular surgery within 90 days of aflibercept treatment in the study eye Ocular inflammation (including trace or above) or history of uveitis in the study eye Structural damage to the center of the macula in the study eye that was likely to preclude improvement in BCVA following the resolution of macular edema including atrophy of the retinal pigment epithelium, subretinal fibrosis or scar, significant macular ischemia or organized hard exudates Concurrent disease in the study eye, other than DME, that could compromise visual acuity, require medical or surgical intervention during the study period, or could confound interpretation of the results (including advanced glaucoma, retinal vascular occlusion, retinal detachment, macular hole, or choroidal neovascularization of any cause) Uncontrolled DM as defined by hemoglobin (Hb) A1c \\> 12.0% at screening and baseline for this study Any ocular or periocular infection in the preceding 4 weeks in either eye History of either cerebral vascular accident and/or myocardial infarction within 180 days before aflibercept treatment eligibilityModule eligibilityCriteria: Inclusion Criteria healthyVolunteers: False sex: ALL minimumAge: 18 Years",
+      "page_no": 7,
+      "page_end": 8,
+      "paragraph": "Section: eligibilityModule eligibilityCriteria: Inclusion Criteria | Paragraph 91 | Lines 90-97",
+      "section": "eligibilityModule eligibilityCriteria: Inclusion Criteria",
+      "line_start": 90,
+      "line_end": 97,
+      "retrieval_score": 0.6682,
+      "repository_id": "5d13d75d-972c-448d-bf72-efa185bc2b15",
+      "original_text": "eligibilityModule eligibilityCriteria: Inclusion Criteria Total prior treatment duration with aflibercept (i.e. from first aflibercept treatment ever to enrollment into this study) was 1 year or longer."
+    },
+    {
+      "chunk_id": "42116b35-1ed3-4573-89d2-08082ffbba5f",
+      "document_id": "fdd4ae45-0f27-49d4-b93e-2f70f4818b96",
+      "document_name": "pubmed_36909105_PMC9993440_Determination of Factors Influencing the Health Belief Model.pdf",
+      "document_content": "Background Diabetic macular edema (DME) is becoming one of the leading causes of blindness worldwide with a significant impact on quality of life. The effectiveness of intravitreal (IVT) anti-vascular endothelial growth factor (VEGF) therapy has been established by clinical trials and has become the treatment of choice in the majority of DME patients in reducing macular edema and improving visual acuity. Frequent drop-out and discontinuation of treatment are major issues. Lack of compliance can lead to worsening outcomes and be a burden to patients and the healthcare system.",
+      "page_no": 1,
+      "page_end": 1,
+      "paragraph": "Section: Background | Paragraph 15 | Lines 14-14",
+      "section": "Background",
+      "line_start": 14,
+      "line_end": 14,
+      "retrieval_score": 0.5413,
+      "repository_id": "5d13d75d-972c-448d-bf72-efa185bc2b15",
+      "original_text": "Background Diabetic macular edema (DME) is becoming one of the leading causes of blindness worldwide with a significant impact on quality of life."
+    },
+    {
+      "chunk_id": "ea55c1a3-d4c0-40d9-8868-484b48344c5a",
+      "document_id": "b0fb476d-046d-4b60-90e9-5156bab1100e",
+      "document_name": "pubmed_35239010_PMC9325820_Vitreous cytokine levels following the administration of a s.pdf",
+      "document_content": "Key messages Diabetic macular edema is the leading cause of vision loss in diabetic patients. Options for treatment include intravitreal anti-vascular endothelial growth factor (VEGF) agents (ranibizumab, aflibercept and off-label injections of bevacizumab) and intravitreal corticosteroids (0.2 μg/day fluocinolone acetonide [FAc] implant, dexamethasone implant and off-label injections of triamcinolone acetonide). IL-6, IL-8, IP-10, MCP-1, VEGF, CD54, PIGF, and PEDF were measured in the vitreous of patients suitable for an FAc implant for treatment of chronic diabetic macular edema. Treatment with the FAc implant led to significant changes in inflammatory and angiogenic vitreous cytokine levels in IL-6, IP-10, MCP-1 and CD54. The use of the FAc implant for treatment of diabetic macular edema also improves clinical parameters, as evidenced by the reduction of macular edema on OCT. of corticosteroid over a 3-year period [2], meaning that other preparations have a limited durability of release compared to the FAc implant [9].",
+      "page_no": 2,
+      "page_end": 2,
+      "paragraph": "Section: RETINAL DISORDERS | Paragraph 13 | Lines 12-16",
+      "section": "RETINAL DISORDERS",
+      "line_start": 12,
+      "line_end": 16,
+      "retrieval_score": 0.5321,
+      "repository_id": "5d13d75d-972c-448d-bf72-efa185bc2b15",
+      "original_text": "Key messages Diabetic macular edema is the leading cause of vision loss in diabetic patients."
+    },
+    {
+      "chunk_id": "1ba312c7-f76c-4334-8d33-48ec5cfb4a80",
+      "document_id": "db120133-77ca-4c8a-b74d-51e075a3e467",
+      "document_name": "pubmed_42820799_PMC13648560_Effect of Prematurity on Foveal Development During Infancy_.pdf",
+      "document_content": "icant difference in ORL thickness or growth rate between the two groups.30 They note that because anti-VEGF has been associated with a more rapid outer retinal thickening, studies that included treated infants may interfere with the thickness measurements.30,35 Although we found an asso-ciation between ROP treatment and P/F ratio in univariate analysis, the significance was lost in multivariate analysis (Table 2). prematurity with increased central IRL thickness had worse visual acuity. In contrast, Lee et al.28 found that a thicker ORL and thicker central macular thickness was correlated with better visual acuity in preschool age children with a history of prematurity compared to full-term born chil-dren. In BabySTEPS, we evaluated visual acuity in prema-ture infants at nine months' corrected age and found that retinal nerve fiber layer thinning across the papillomacular bundle and prior ROP treatment are associated with poorer grating visual acuity.41 Increased foveal total retinal thick-ness, but not inner retinal thickness or inner nuclear layer thickness, was associated with poorer nine-month visual acuity, but the association was only significant in univari-able analysis, although outer retinal layer thickness was not assessed.41 In addition, macular edema is a common and often self-resolving finding in preterm infants, found in up to approximately 60% of preterm infants, yet its func-tional significance is not well understood.6,9,21,23,41-43 Prior studies have reported mixed results regarding its impact, with some studies showing reduced visual acuity, poorer neurodevelopmental outcomes and others showing no asso-ciation with visual acuity.40,41,44-46 In our study, we found that infants with a history of macular edema had signifi-cantly thicker ORL compared to infants without a history of macular edema. These findings may suggest that there is likely a complex interplay between prematurity, foveal morphology, macular edema and functional outcomes, high-lighting the need for further research to elucidate these findings.",
+      "page_no": 8,
+      "page_end": 8,
+      "paragraph": "Section: DISCUSSION | Paragraph 199 | Lines 199-199",
+      "section": "DISCUSSION",
+      "line_start": 199,
+      "line_end": 199,
+      "retrieval_score": 0.5054,
+      "repository_id": "91192bcc-0e9d-46c9-89f9-f76fac8790c3",
+      "original_text": "icant difference in ORL thickness or growth rate between the two groups.30 They note that because anti-VEGF has been associated with a more rapid outer retinal thickening, studies that included treated infants may interfere with the thickness measurements.30,35 Although we found an asso-ciation between ROP treatment and P/F ratio in univariate analysis, the significance was lost in multivariate an"
+    },
+    {
+      "chunk_id": "48984f20-5c76-4f95-b935-0be0bf8298b1",
+      "document_id": "db120133-77ca-4c8a-b74d-51e075a3e467",
+      "document_name": "pubmed_42820799_PMC13648560_Effect of Prematurity on Foveal Development During Infancy_.pdf",
+      "document_content": "0.18 41.7 (3.69) Foveal ORL thickness 43.1 (2.45) -4.86 (1.10) 0.003 -4.46 (1.13) 0.002 History of macular edema presence GA (per week increase)",
+      "page_no": 7,
+      "page_end": 7,
+      "paragraph": "Section: DISCUSSION | Paragraph 176 | Lines 176-177",
+      "section": "DISCUSSION",
+      "line_start": 176,
+      "line_end": 177,
+      "retrieval_score": 0.5029,
+      "repository_id": "91192bcc-0e9d-46c9-89f9-f76fac8790c3",
+      "original_text": "0.18 41.7 (3.69) Foveal ORL thickness 43.1 (2.45) -4.86 (1.10) 0.003 -4.46 (1.13) 0.002 History of macular edema presence GA (per week increase)"
+    },
+    {
+      "chunk_id": "676b30c0-b722-4057-ae29-252e33c982ee",
+      "document_id": "db120133-77ca-4c8a-b74d-51e075a3e467",
+      "document_name": "pubmed_42820799_PMC13648560_Effect of Prematurity on Foveal Development During Infancy_.pdf",
+      "document_content": "1.74 (0.57) 0.006 1.37 (0.77) 0.10 History of macular edema presence GA (per week increase) 109.4 (3.22) Parafoveal ORL thickness 113.1 (2.14) -0.84 (0.74) 0.08 (0.76) 0.91 0.28 History of macular edema presence GA (per week increase)",
+      "page_no": 7,
+      "page_end": 7,
+      "paragraph": "Section: DISCUSSION | Paragraph 185 | Lines 185-186",
+      "section": "DISCUSSION",
+      "line_start": 185,
+      "line_end": 186,
+      "retrieval_score": 0.5028,
+      "repository_id": "91192bcc-0e9d-46c9-89f9-f76fac8790c3",
+      "original_text": "1.74 (0.57) 0.006 1.37 (0.77) 0.10 History of macular edema presence GA (per week increase) 109.4 (3.22) Parafoveal ORL thickness 113.1 (2.14) -0.84 (0.74) 0.08 (0.76) 0.91 0.28 History of macular edema presence GA (per week increase)"
+    }
+  ],
+  "retrieval": {
+    "user_query": "What visual acuity gain did aflibercept show in diabetic macular edema at week 52?",
+    "agent": "query_agent",
+    "chunks": [
+      {
+        "chunk_id": "fb3e94de-5389-41e9-b798-079fdacf820a",
+        "document_id": "5948ca91-60ef-4075-a6ff-c9aecd0db0ca",
+        "document_name": "clinicaltrials_NCT02818998_Efficacy and Safety of Three Different Aflibercept Regimens.docx",
+        "document_content": "eligibilityModule eligibilityCriteria: Inclusion Criteria Total prior treatment duration with aflibercept (i.e. from first aflibercept treatment ever to enrollment into this study) was 1 year or longer. To be met at initiation of pre-study aflibercept treatment: Type 1 or 2 diabetes mellitus (DM) Diagnosis of diabetic macular edema (DME) secondary to DM involving the center of the macula (defined as the area of the center subfield on optical coherence tomography \\[OCT\\]) in the study eye Decrease in vision determined to be primarily the result of DME in the study eye Best corrected visual acuity (BCVA) in the study eye of Early Treatment Diabetic Retinopathy Study (ETDRS) letter score 73 to 24 Exclusion Criteria: At initiation of pre-study aflibercept treatment: \\- Previous treatment with anti-angiogenic drugs in study eye (e.g., pegaptanib sodium, bevacizumab, ranibizumab, or aflibercept) within the last 12 weeks before initiation of aflibercept pre-study treatment At initiation of pre-study aflibercept treatment, screening for this study, and baseline for this study: Prior treatment of the study eye with long acting steroids, either periocular or intraocular, in the preceding 120 days or Iluvien intravitreal implant at any time Active proliferative diabetic retinopathy, current iris neovascularization, vitreous hemorrhage, or tractional retinal detachment in the study eye Cataract surgery or any other intraocular surgery within 90 days of aflibercept treatment in the study eye Ocular inflammation (including trace or above) or history of uveitis in the study eye Structural damage to the center of the macula in the study eye that was likely to preclude improvement in BCVA following the resolution of macular edema including atrophy of the retinal pigment epithelium, subretinal fibrosis or scar, significant macular ischemia or organized hard exudates Concurrent disease in the study eye, other than DME, that could compromise visual acuity, require medical or surgical intervention during the study period, or could confound interpretation of the results (including advanced glaucoma, retinal vascular occlusion, retinal detachment, macular hole, or choroidal neovascularization of any cause) Uncontrolled DM as defined by hemoglobin (Hb) A1c \\> 12.0% at screening and baseline for this study Any ocular or periocular infection in the preceding 4 weeks in either eye History of either cerebral vascular accident and/or myocardial infarction within 180 days before aflibercept treatment eligibilityModule eligibilityCriteria: Inclusion Criteria healthyVolunteers: False sex: ALL minimumAge: 18 Years",
+        "page_no": 7,
+        "paragraph": "Section: eligibilityModule eligibilityCriteria: Inclusion Criteria | Paragraph 91 | Lines 90-97",
+        "original_text": "eligibilityModule eligibilityCriteria: Inclusion Criteria Total prior treatment duration with aflibercept (i.e. from first aflibercept treatment ever to enrollment into this study) was 1 year or longer."
+      },
+      {
+        "chunk_id": "42116b35-1ed3-4573-89d2-08082ffbba5f",
+        "document_id": "fdd4ae45-0f27-49d4-b93e-2f70f4818b96",
+        "document_name": "pubmed_36909105_PMC9993440_Determination of Factors Influencing the Health Belief Model.pdf",
+        "document_content": "Background Diabetic macular edema (DME) is becoming one of the leading causes of blindness worldwide with a significant impact on quality of life. The effectiveness of intravitreal (IVT) anti-vascular endothelial growth factor (VEGF) therapy has been established by clinical trials and has become the treatment of choice in the majority of DME patients in reducing macular edema and improving visual acuity. Frequent drop-out and discontinuation of treatment are major issues. Lack of compliance can lead to worsening outcomes and be a burden to patients and the healthcare system.",
+        "page_no": 1,
+        "paragraph": "Section: Background | Paragraph 15 | Lines 14-14",
+        "original_text": "Background Diabetic macular edema (DME) is becoming one of the leading causes of blindness worldwide with a significant impact on quality of life."
+      },
+      {
+        "chunk_id": "ea55c1a3-d4c0-40d9-8868-484b48344c5a",
+        "document_id": "b0fb476d-046d-4b60-90e9-5156bab1100e",
+        "document_name": "pubmed_35239010_PMC9325820_Vitreous cytokine levels following the administration of a s.pdf",
+        "document_content": "Key messages Diabetic macular edema is the leading cause of vision loss in diabetic patients. Options for treatment include intravitreal anti-vascular endothelial growth factor (VEGF) agents (ranibizumab, aflibercept and off-label injections of bevacizumab) and intravitreal corticosteroids (0.2 μg/day fluocinolone acetonide [FAc] implant, dexamethasone implant and off-label injections of triamcinolone acetonide). IL-6, IL-8, IP-10, MCP-1, VEGF, CD54, PIGF, and PEDF were measured in the vitreous of patients suitable for an FAc implant for treatment of chronic diabetic macular edema. Treatment with the FAc implant led to significant changes in inflammatory and angiogenic vitreous cytokine levels in IL-6, IP-10, MCP-1 and CD54. The use of the FAc implant for treatment of diabetic macular edema also improves clinical parameters, as evidenced by the reduction of macular edema on OCT. of corticosteroid over a 3-year period [2], meaning that other preparations have a limited durability of release compared to the FAc implant [9].",
+        "page_no": 2,
+        "paragraph": "Section: RETINAL DISORDERS | Paragraph 13 | Lines 12-16",
+        "original_text": "Key messages Diabetic macular edema is the leading cause of vision loss in diabetic patients."
+      },
+      {
+        "chunk_id": "1ba312c7-f76c-4334-8d33-48ec5cfb4a80",
+        "document_id": "db120133-77ca-4c8a-b74d-51e075a3e467",
+        "document_name": "pubmed_42820799_PMC13648560_Effect of Prematurity on Foveal Development During Infancy_.pdf",
+        "document_content": "icant difference in ORL thickness or growth rate between the two groups.30 They note that because anti-VEGF has been associated with a more rapid outer retinal thickening, studies that included treated infants may interfere with the thickness measurements.30,35 Although we found an asso-ciation between ROP treatment and P/F ratio in univariate analysis, the significance was lost in multivariate analysis (Table 2). prematurity with increased central IRL thickness had worse visual acuity. In contrast, Lee et al.28 found that a thicker ORL and thicker central macular thickness was correlated with better visual acuity in preschool age children with a history of prematurity compared to full-term born chil-dren. In BabySTEPS, we evaluated visual acuity in prema-ture infants at nine months' corrected age and found that retinal nerve fiber layer thinning across the papillomacular bundle and prior ROP treatment are associated with poorer grating visual acuity.41 Increased foveal total retinal thick-ness, but not inner retinal thickness or inner nuclear layer thickness, was associated with poorer nine-month visual acuity, but the association was only significant in univari-able analysis, although outer retinal layer thickness was not assessed.41 In addition, macular edema is a common and often self-resolving finding in preterm infants, found in up to approximately 60% of preterm infants, yet its func-tional significance is not well understood.6,9,21,23,41-43 Prior studies have reported mixed results regarding its impact, with some studies showing reduced visual acuity, poorer neurodevelopmental outcomes and others showing no asso-ciation with visual acuity.40,41,44-46 In our study, we found that infants with a history of macular edema had signifi-cantly thicker ORL compared to infants without a history of macular edema. These findings may suggest that there is likely a complex interplay between prematurity, foveal morphology, macular edema and functional outcomes, high-lighting the need for further research to elucidate these findings.",
+        "page_no": 8,
+        "paragraph": "Section: DISCUSSION | Paragraph 199 | Lines 199-199",
+        "original_text": "icant difference in ORL thickness or growth rate between the two groups.30 They note that because anti-VEGF has been associated with a more rapid outer retinal thickening, studies that included treated infants may interfere with the thickness measurements.30,35 Although we found an asso-ciation between ROP treatment and P/F ratio in univariate analysis, the significance was lost in multivariate an"
+      },
+      {
+        "chunk_id": "48984f20-5c76-4f95-b935-0be0bf8298b1",
+        "document_id": "db120133-77ca-4c8a-b74d-51e075a3e467",
+        "document_name": "pubmed_42820799_PMC13648560_Effect of Prematurity on Foveal Development During Infancy_.pdf",
+        "document_content": "0.18 41.7 (3.69) Foveal ORL thickness 43.1 (2.45) -4.86 (1.10) 0.003 -4.46 (1.13) 0.002 History of macular edema presence GA (per week increase)",
+        "page_no": 7,
+        "paragraph": "Section: DISCUSSION | Paragraph 176 | Lines 176-177",
+        "original_text": "0.18 41.7 (3.69) Foveal ORL thickness 43.1 (2.45) -4.86 (1.10) 0.003 -4.46 (1.13) 0.002 History of macular edema presence GA (per week increase)"
+      },
+      {
+        "chunk_id": "676b30c0-b722-4057-ae29-252e33c982ee",
+        "document_id": "db120133-77ca-4c8a-b74d-51e075a3e467",
+        "document_name": "pubmed_42820799_PMC13648560_Effect of Prematurity on Foveal Development During Infancy_.pdf",
+        "document_content": "1.74 (0.57) 0.006 1.37 (0.77) 0.10 History of macular edema presence GA (per week increase) 109.4 (3.22) Parafoveal ORL thickness 113.1 (2.14) -0.84 (0.74) 0.08 (0.76) 0.91 0.28 History of macular edema presence GA (per week increase)",
+        "page_no": 7,
+        "paragraph": "Section: DISCUSSION | Paragraph 185 | Lines 185-186",
+        "original_text": "1.74 (0.57) 0.006 1.37 (0.77) 0.10 History of macular edema presence GA (per week increase) 109.4 (3.22) Parafoveal ORL thickness 113.1 (2.14) -0.84 (0.74) 0.08 (0.76) 0.91 0.28 History of macular edema presence GA (per week increase)"
+      }
+    ],
+    "created_at": "2026-10-30T04:13:31.299849+00:00",
+    "search_mode": "vector",
+    "elapsed_ms": 108868
+  },
+  "generation_error": "claims_contradict_draft",
+  "created_at": "2026-10-30T04:13:31.301839+00:00",
+  "validation": {
+    "overall_score": 0.0,
+    "threshold": 0.9,
+    "claim_min_score": 0.7,
+    "decision": "escalate_to_msl",
+    "reason_codes": [
+      "NO_SUPPORTED_CLAIMS",
+      "INSUFFICIENT_EVIDENCE"
+    ],
+    "judge": "deterministic",
+    "validated_at": "2026-10-30T04:13:32.875338+00:00"
+  }
+}

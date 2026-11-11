@@ -1,0 +1,6 @@
+{
+  "user_query": "Should I prescribe aflibercept for my patient with DME?",
+  "agent": "query_agent",
+  "chunks": [],
+  "created_at": "2026-10-27T06:16:38.360614+00:00"
+}

@@ -1,0 +1,36 @@
+06:05:59 CALL upload_documents repo=91192bcc-0e9d-46c9-89f9-f76fac8790c3 file=ZZPLANTED_APPROVED.docx (no metadata: the IKM upload form has no metadata field)
+06:06:01   -> response keys=['batch_id', 'documents', 'rejected', 'rejected_count', 'uploaded_count'] document_id=a89e51ea-23fd-4599-88ee-af6f4ff7e6a2
+06:06:01 CALL upload_documents repo=91192bcc-0e9d-46c9-89f9-f76fac8790c3 file=ZZPLANTED_DRAFT.docx (no metadata: the IKM upload form has no metadata field)
+06:06:03   -> response keys=['batch_id', 'documents', 'rejected', 'rejected_count', 'uploaded_count'] document_id=b8c1ca8a-da5f-42f9-8583-d56fa6c71f1d
+06:06:03 CALL upload_documents repo=91192bcc-0e9d-46c9-89f9-f76fac8790c3 file=ZZPLANTED_EXPIRED.docx (no metadata: the IKM upload form has no metadata field)
+06:06:04   -> response keys=['batch_id', 'documents', 'rejected', 'rejected_count', 'uploaded_count'] document_id=3d1e8270-6b25-407b-865b-9aab3fad01e6
+06:06:04 CALL upload_documents repo=91192bcc-0e9d-46c9-89f9-f76fac8790c3 file=ZZPLANTED_SUPERSEDED.docx (no metadata: the IKM upload form has no metadata field)
+06:06:05   -> response keys=['batch_id', 'documents', 'rejected', 'rejected_count', 'uploaded_count'] document_id=be095a85-2659-4b96-b40f-196d3215a7ee
+06:06:18 POLL EXPIRED status=queued
+06:06:18 POLL APPROVED status=processing
+06:06:18 POLL SUPERSEDED status=queued
+06:06:18 POLL DRAFT status=queued
+06:06:31 POLL EXPIRED status=processing
+06:06:31 POLL APPROVED status=completed
+06:06:31 POLL SUPERSEDED status=queued
+06:06:31 POLL DRAFT status=completed
+06:06:43 POLL EXPIRED status=completed
+06:06:43 POLL SUPERSEDED status=processing
+06:06:55 POLL SUPERSEDED status=completed
+06:06:56 REGISTRY set_document_approval repo=91192bcc-0e9d-46c9-89f9-f76fac8790c3 document_id=a89e51ea-23fd-4599-88ee-af6f4ff7e6a2 (APPROVED) -> {"approval_status": "APPROVED", "version": "2.0", "effective_date": "2025-01-01", "expiry_date": "2099-12-31"}
+06:06:56 REGISTRY set_document_approval repo=91192bcc-0e9d-46c9-89f9-f76fac8790c3 document_id=b8c1ca8a-da5f-42f9-8583-d56fa6c71f1d (DRAFT) -> {"approval_status": "DRAFT", "version": "0.3"}
+06:06:56 REGISTRY set_document_approval repo=91192bcc-0e9d-46c9-89f9-f76fac8790c3 document_id=3d1e8270-6b25-407b-865b-9aab3fad01e6 (EXPIRED) -> {"approval_status": "APPROVED", "version": "1.0", "effective_date": "2019-01-01", "expiry_date": "2020-01-01"}
+06:06:56 REGISTRY set_document_approval repo=91192bcc-0e9d-46c9-89f9-f76fac8790c3 document_id=be095a85-2659-4b96-b40f-196d3215a7ee (SUPERSEDED) -> {"approval_status": "SUPERSEDED", "version": "1.0", "superseded_by": "ZZPLANTED_APPROVED@2.0"}
+06:06:58 LISTING APPROVED: approval fields in metadata = {}
+06:06:58 LISTING DRAFT: approval fields in metadata = {}
+06:06:58 LISTING EXPIRED: approval fields in metadata = {}
+06:06:58 LISTING SUPERSEDED: approval fields in metadata = {}
+06:06:58 CALL retrieve repo=91192bcc-0e9d-46c9-89f9-f76fac8790c3 query='What is the planted Zorvantel dosing interval in weeks?' search_mode=hybrid top_k=12
+06:07:03   -> 4 hits; planted documents among them: []
+06:07:09 FILTER survived=['APPROVED'] excluded={'EXPIRED': 'expired', 'SUPERSEDED': 'not_approved:superseded', 'DRAFT': 'not_approved:draft'}
+06:07:09   surviving chunk from APPROVED: version='2.0' status='APPROVED' text='ZZPLANTED APPROVED test sheet SYNTHETIC TEST DOCUMENT. It contains no real clinical content.\nZorvantel is a fictional pr'
+06:07:09 CALL delete_repository_document repo=91192bcc-0e9d-46c9-89f9-f76fac8790c3 document_id=a89e51ea-23fd-4599-88ee-af6f4ff7e6a2 (APPROVED)
+06:07:10 CALL delete_repository_document repo=91192bcc-0e9d-46c9-89f9-f76fac8790c3 document_id=b8c1ca8a-da5f-42f9-8583-d56fa6c71f1d (DRAFT)
+06:07:11 CALL delete_repository_document repo=91192bcc-0e9d-46c9-89f9-f76fac8790c3 document_id=3d1e8270-6b25-407b-865b-9aab3fad01e6 (EXPIRED)
+06:07:13 CALL delete_repository_document repo=91192bcc-0e9d-46c9-89f9-f76fac8790c3 document_id=be095a85-2659-4b96-b40f-196d3215a7ee (SUPERSEDED)
+06:07:16 CLEANUP check: ZZPLANTED documents still in repository = 0

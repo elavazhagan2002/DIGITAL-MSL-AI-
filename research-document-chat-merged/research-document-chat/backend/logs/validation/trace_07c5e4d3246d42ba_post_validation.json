@@ -1,0 +1,191 @@
+{
+  "correlation_id": "corr_ccb15fad50164fef",
+  "message_id": "msg_86542c444c234b8b",
+  "channel": "web",
+  "repository_id": "5d13d75d-972c-448d-bf72-efa185bc2b15",
+  "user_query": "What is faricimab's dual mechanism in retinal vascular disease?",
+  "agent": "retina_answer_agent",
+  "scope": {
+    "in_scope": true,
+    "retina_terms": [
+      "retinal"
+    ],
+    "molecules": [
+      "faricimab"
+    ],
+    "unsupported_molecules": [],
+    "safety_flags": [],
+    "reason": ""
+  },
+  "draft_answer": "The library does not contain information on faricimab's dual mechanism in retinal vascular disease.",
+  "claims": [],
+  "chunks": [
+    {
+      "chunk_id": "fd136c25-29fb-45fb-beb8-b0d58c82e2e0",
+      "document_id": "78f426ab-c5e3-431f-be23-ca2372bea339",
+      "document_name": "pubmed_42897562_PMC13682112_The role of the epidermal growth factor receptor _EGFR_ErbB1.pdf",
+      "document_content": "In vitro: Human retinal microvascular endothelial cells (HRMECs); nor­ mal conditions Finding Relevant to EGFR Ref Several EGFR inhibitors with established clinical pro­ files might represent attractive repurposing candidates for DR. The small-molecule inhibitors gefitinib and erlo­ tinib, FDA-approved for NSCLC since the early 2000s [160, 161], have demonstrated efficacy in preclinical DR models (Table 1, Fig. 4), as has the FDA-approved monoclonal antibody cetuximab [91, 162]. However, repurposing must account for the dual physiological and pathological roles of EGFR in the eye, necessitating temporally and spatially controlled delivery to optimize efficacy and limit systemic exposure. While the known adverse effects of systemic EGFR inhibition, including dermatological toxicity and diarrhea, are generally man­ ageable in oncology, they present meaningful challenges in the setting of chronic ocular disease. a key complementary strand of development alongside mechanistic validation of EGFR as a therapeutic target in a chronic, multifactorial disease such as DR. A further rationale for EGFR-targeted therapy lies in its mechanistic convergence with VEGF signaling. Sub­ stantial crosstalk exists between HB-EGF/EGFR and VEGF pathways, whereby EGFR activation converges on shared downstream effectors to upregulate VEGF expres­ sion, establishing a self-amplifying pro-angiogenic feed-forward loop (Fig. 4). This interdependence suggests that VEGF blockade alone may incompletely suppress angio­ genic signaling, particularly in persistent or recurrent disease. Combined EGFR and VEGF inhibition could therefore modulate a broader network of angiogenic, and inflammatory pathways implicated in DR progression. While dual EGFR/VEGF inhibition is FDA-approved in NSCLC [167], this approval is disease- and mutation-specific and does not constitute evidence of retinal effi­ cacy or safety; independent clinical investigation in the retinal context would therefore be required before con­ clusions regarding therapeutic benefit can be drawn. From a translational perspective, local intravitreal delivery of EGFR-targeted therapies represents a strategi­ cally attractive approach that could circumvent the sys­ temic toxicity associated with oral or intravenous EGFR inhibitors. Preclinical studies have already established the feasibility of this approach, demonstrating that intravit­ real administration of small-molecule EGFR inhibitors [49, 94, 163] and neutralizing antibodies directed against EGFR ligands, including HB-EGF [99], can achieve thera­ peutically relevant target engagement within the retina without systemic exposure. Interestingly, the encapsula­ tion of EGFR inhibitors within sustained-release polymer nanospheres has provided early proof-of-concept for this delivery paradigm, with Robinson et al. demonstrating enhanced optic neuronal regeneration in a nerve-crush injury model [163], findings that underscore the capac­ ity of optimized intraocular pharmacokinetics to enhance therapeutic efficacy while preserving ocular safety. Additional angiogenic pathways also warrant con­ sideration as co-targets. Angiopoietin-2 (Ang-2), a key mediator of vascular destabilization and inflammation, is upregulated in DR and acts permissively to amplify growth factor-driven angiogenesis downstream of both VEGF and EGFR [168]. The recent FDA approval of Faricimab, a bispecific antibody targeting Ang-2 and VEGF-A, establishes a clinical precedent for multi-target approaches in ocular disease [169], and underscores the biological plausibility of next-generation fusion proteins directed against EGFR in combination with VEGF-A and/or Ang-2. By addressing multiple pathological mech­ anisms simultaneously, such strategies could comple­ ment or reduce reliance on adjunctive treatments such as pan-retinal photocoagulation, thereby minimizing asso­ ciated complications including choroidal effusion, retinal detachment, and macular edema [170].",
+      "page_no": 17,
+      "page_end": 17,
+      "paragraph": "Section: Ref In vivo: C57BL/6 mice; OIR model | Paragraph 126 | Lines 125-128",
+      "section": "Ref In vivo: C57BL/6 mice; OIR model",
+      "line_start": 125,
+      "line_end": 128,
+      "retrieval_score": 0.5039,
+      "repository_id": "5d13d75d-972c-448d-bf72-efa185bc2b15",
+      "original_text": "In vitro: Human retinal microvascular endothelial cells (HRMECs); nor­ mal conditions Finding Relevant to EGFR Ref Several EGFR inhibitors with established clinical pro­ files might represent attractive repurposing candidates for DR."
+    },
+    {
+      "chunk_id": "8a9e4ef4-1e3d-42b6-9892-433f91459536",
+      "document_id": "1c4b93ec-7be1-454e-89b8-7b2419fc8d74",
+      "document_name": "clinicaltrials_NCT04310631_Evaluation of Retinal and Vascular Features in Coats Disease.docx",
+      "document_content": "description: The effectiveness of Ranibizumab injections for treating Coats disease using optical coherence tomography (OCT). timeFrame: Three months Item 2 measure: Study of retinal and vascular features in Coats disease after intravitreal injections of Ranibizumab",
+      "page_no": 4,
+      "page_end": 4,
+      "paragraph": "Paragraph 51 | Lines 50-53",
+      "section": "",
+      "line_start": 50,
+      "line_end": 53,
+      "retrieval_score": 0.5027,
+      "repository_id": "91192bcc-0e9d-46c9-89f9-f76fac8790c3",
+      "original_text": "description: The effectiveness of Ranibizumab injections for treating Coats disease using optical coherence tomography (OCT). timeFrame: Three months Item 2 measure: Study of retinal and vascular features in Coats disease after intravitreal injections of Ranibizumab"
+    },
+    {
+      "chunk_id": "a6aca5d7-b359-45fc-82e8-d96616bec7a2",
+      "document_id": "1c4b93ec-7be1-454e-89b8-7b2419fc8d74",
+      "document_name": "clinicaltrials_NCT04310631_Evaluation of Retinal and Vascular Features in Coats Disease.docx",
+      "document_content": "organization fullName: Federico II University class: OTHER briefTitle: Evaluation of Retinal and Vascular Features in Coats Disease After Intravitreal Injections of Ranibizumab",
+      "page_no": 1,
+      "page_end": 1,
+      "paragraph": "Section: organization fullName: Federico II University | Paragraph 7 | Lines 6-7",
+      "section": "organization fullName: Federico II University",
+      "line_start": 6,
+      "line_end": 7,
+      "retrieval_score": 0.5021,
+      "repository_id": "91192bcc-0e9d-46c9-89f9-f76fac8790c3",
+      "original_text": "organization fullName: Federico II University class: OTHER briefTitle: Evaluation of Retinal and Vascular Features in Coats Disease After Intravitreal Injections of Ranibizumab"
+    },
+    {
+      "chunk_id": "20e1f704-98cc-46a9-bb7f-788455938dc4",
+      "document_id": "78f426ab-c5e3-431f-be23-ca2372bea339",
+      "document_name": "pubmed_42897562_PMC13682112_The role of the epidermal growth factor receptor _EGFR_ErbB1.pdf",
+      "document_content": "Study Model Intervention(s) Dose Regimen Finding Relevant to EGFR Ref Diabetic Ocular/Retinal models In vivo: C57BL/6 mice; T1DM (STZ 55 mg/kg × 3 days) Cetuximab (selective monoclonal antibody inhibitor of EGFR) 1 mg/per mouse intraperitoneal (i.p.) once a week for two consecu­ tive weeks, with the first dose being given 3 weeks after the first STZ injection Insulin treatment of STZ-diabetic mice dramatically increased retinal vascular permeability. Systemic administration of cetuximab substantially reduces insulin-induced increase in retinal vascular leakage. [91] In vivo: C57BL/6 mice; T1DM (STZ 80 mg/kg × 3 days) AG1478)selective EGFR tyrosine kinase inhibitor) 20 mg/kg by oral gavage initiated at week 10 post-STZ and continued for 6 months EGFR inhibition reduced retinal vascular permeability and aberrant an­ giogenesis (reduced CD31-positive vessels), and attenuated macrophage infiltration (reduced F4/80 staining). [48] Ex vivo: Sprague-Dawley (SD) rats; T2DM (high-sugar/ high-fat diet + STZ 50 mg/kg) Primary endothelial cells and pericytes iso­ lated from diabetic rats were transfected with miR-199a-3p (indirect EGFR inhibitor) and/or an FGF7 overexpres­ sion vector Not applicable Transfected miR-199a-3p inhibited the proliferation, migration, and invasion of primary endothelial cells and retinal pericytes by regulating FGF7 through the EGFR/PI3K/AKT pathway. [92] In vivo: C57BL/6J mice; T2DM (high-fat diet 12 weeks + STZ 30 mg/kg × 7 days) Infliximab (TNF-α monoclonal antibody) 10 mg/kg/day by oral gavage from day 1 to 7 Diabetic mice showed increased TNF-α and EGFR activation in retinal tissue, with loss of tight junction proteins (claudin-1, claudin-5, occludin, ZO-1). Blocking the TNF-α/EGFR axis in diabetic mice alleviated BRB breakdown, re­ duced vascular leakage, and restored barrier proteins. Combined inhibition showed the greater protective effect. [93] Gefitinib (selective EGFR tyrosine kinase inhibitor)",
+      "page_no": 7,
+      "page_end": 7,
+      "paragraph": "Paragraph 38 | Lines 37-40",
+      "section": "",
+      "line_start": 37,
+      "line_end": 40,
+      "retrieval_score": 0.5018,
+      "repository_id": "5d13d75d-972c-448d-bf72-efa185bc2b15",
+      "original_text": "Study Model Intervention(s) Dose Regimen Finding Relevant to EGFR Ref Diabetic Ocular/Retinal models In vivo: C57BL/6 mice; T1DM (STZ 55 mg/kg × 3 days) Cetuximab (selective monoclonal antibody inhibitor of EGFR) 1 mg/per mouse intraperitoneal (i.p.) once a week for two consecu­ tive weeks, with the first dose being given 3 weeks after the first STZ injection Insulin treatment of STZ-diabetic mice"
+    },
+    {
+      "chunk_id": "8b17e6ac-db11-4a88-adc8-dfa6cdb9ab81",
+      "document_id": "1c4b93ec-7be1-454e-89b8-7b2419fc8d74",
+      "document_name": "clinicaltrials_NCT04310631_Evaluation of Retinal and Vascular Features in Coats Disease.docx",
+      "document_content": "timeFrame: Three months age older than 18 years diagnosis of Coats disease treatment-naïve with Ranibizumab absence of other vitreoretinal and vascular retinal diseases absence of diabetes Exclusion Criteria:",
+      "page_no": 4,
+      "page_end": 4,
+      "paragraph": "Paragraph 49 | Lines 48-53",
+      "section": "",
+      "line_start": 48,
+      "line_end": 53,
+      "retrieval_score": 0.5013,
+      "repository_id": "91192bcc-0e9d-46c9-89f9-f76fac8790c3",
+      "original_text": "timeFrame: Three months age older than 18 years diagnosis of Coats disease treatment-naïve with Ranibizumab absence of other vitreoretinal and vascular retinal diseases absence of diabetes Exclusion Criteria:"
+    },
+    {
+      "chunk_id": "1cf59715-2447-4ca4-9d11-a69dbf2f1264",
+      "document_id": "de951e0c-deca-422e-a806-0ff8f53af641",
+      "document_name": "clinicaltrials_NCT04603937_A Study to Evaluate the Efficacy_ Durability_ and Safety of.docx",
+      "document_content": "conditions Diabetic Macular Edema keywords DME Kodiak Vascular endothelial growth factor Anti-VEGF VEGF Antibody biopolymer conjugate Retinal Degeneration Retinal Diseases Eye Diseases Vision Disorders Vision, low Aflibercept Eylea Diabetes mellitus Diabetes Diabetic retinopathy Diabetic macular edema Macular edema KSI-301 interventionModel: PARALLEL",
+      "page_no": 3,
+      "page_end": 3,
+      "paragraph": "Section: conditions Diabetic Macular Edema | Paragraph 44 | Lines 43-43",
+      "section": "conditions Diabetic Macular Edema",
+      "line_start": 43,
+      "line_end": 43,
+      "retrieval_score": 0.5006,
+      "repository_id": "5d13d75d-972c-448d-bf72-efa185bc2b15",
+      "original_text": "conditions Diabetic Macular Edema keywords DME Kodiak Vascular endothelial growth factor Anti-VEGF VEGF Antibody biopolymer conjugate Retinal Degeneration Retinal Diseases Eye Diseases Vision Disorders Vision, low Aflibercept Eylea Diabetes mellitus Diabetes Diabetic retinopathy Diabetic macular edema Macular edema KSI-301 interventionModel: PARALLEL"
+    }
+  ],
+  "retrieval": {
+    "user_query": "What is faricimab's dual mechanism in retinal vascular disease?",
+    "agent": "query_agent",
+    "chunks": [
+      {
+        "chunk_id": "fd136c25-29fb-45fb-beb8-b0d58c82e2e0",
+        "document_id": "78f426ab-c5e3-431f-be23-ca2372bea339",
+        "document_name": "pubmed_42897562_PMC13682112_The role of the epidermal growth factor receptor _EGFR_ErbB1.pdf",
+        "document_content": "In vitro: Human retinal microvascular endothelial cells (HRMECs); nor­ mal conditions Finding Relevant to EGFR Ref Several EGFR inhibitors with established clinical pro­ files might represent attractive repurposing candidates for DR. The small-molecule inhibitors gefitinib and erlo­ tinib, FDA-approved for NSCLC since the early 2000s [160, 161], have demonstrated efficacy in preclinical DR models (Table 1, Fig. 4), as has the FDA-approved monoclonal antibody cetuximab [91, 162]. However, repurposing must account for the dual physiological and pathological roles of EGFR in the eye, necessitating temporally and spatially controlled delivery to optimize efficacy and limit systemic exposure. While the known adverse effects of systemic EGFR inhibition, including dermatological toxicity and diarrhea, are generally man­ ageable in oncology, they present meaningful challenges in the setting of chronic ocular disease. a key complementary strand of development alongside mechanistic validation of EGFR as a therapeutic target in a chronic, multifactorial disease such as DR. A further rationale for EGFR-targeted therapy lies in its mechanistic convergence with VEGF signaling. Sub­ stantial crosstalk exists between HB-EGF/EGFR and VEGF pathways, whereby EGFR activation converges on shared downstream effectors to upregulate VEGF expres­ sion, establishing a self-amplifying pro-angiogenic feed-forward loop (Fig. 4). This interdependence suggests that VEGF blockade alone may incompletely suppress angio­ genic signaling, particularly in persistent or recurrent disease. Combined EGFR and VEGF inhibition could therefore modulate a broader network of angiogenic, and inflammatory pathways implicated in DR progression. While dual EGFR/VEGF inhibition is FDA-approved in NSCLC [167], this approval is disease- and mutation-specific and does not constitute evidence of retinal effi­ cacy or safety; independent clinical investigation in the retinal context would therefore be required before con­ clusions regarding therapeutic benefit can be drawn. From a translational perspective, local intravitreal delivery of EGFR-targeted therapies represents a strategi­ cally attractive approach that could circumvent the sys­ temic toxicity associated with oral or intravenous EGFR inhibitors. Preclinical studies have already established the feasibility of this approach, demonstrating that intravit­ real administration of small-molecule EGFR inhibitors [49, 94, 163] and neutralizing antibodies directed against EGFR ligands, including HB-EGF [99], can achieve thera­ peutically relevant target engagement within the retina without systemic exposure. Interestingly, the encapsula­ tion of EGFR inhibitors within sustained-release polymer nanospheres has provided early proof-of-concept for this delivery paradigm, with Robinson et al. demonstrating enhanced optic neuronal regeneration in a nerve-crush injury model [163], findings that underscore the capac­ ity of optimized intraocular pharmacokinetics to enhance therapeutic efficacy while preserving ocular safety. Additional angiogenic pathways also warrant con­ sideration as co-targets. Angiopoietin-2 (Ang-2), a key mediator of vascular destabilization and inflammation, is upregulated in DR and acts permissively to amplify growth factor-driven angiogenesis downstream of both VEGF and EGFR [168]. The recent FDA approval of Faricimab, a bispecific antibody targeting Ang-2 and VEGF-A, establishes a clinical precedent for multi-target approaches in ocular disease [169], and underscores the biological plausibility of next-generation fusion proteins directed against EGFR in combination with VEGF-A and/or Ang-2. By addressing multiple pathological mech­ anisms simultaneously, such strategies could comple­ ment or reduce reliance on adjunctive treatments such as pan-retinal photocoagulation, thereby minimizing asso­ ciated complications including choroidal effusion, retinal detachment, and macular edema [170].",
+        "page_no": 17,
+        "paragraph": "Section: Ref In vivo: C57BL/6 mice; OIR model | Paragraph 126 | Lines 125-128",
+        "original_text": "In vitro: Human retinal microvascular endothelial cells (HRMECs); nor­ mal conditions Finding Relevant to EGFR Ref Several EGFR inhibitors with established clinical pro­ files might represent attractive repurposing candidates for DR."
+      },
+      {
+        "chunk_id": "8a9e4ef4-1e3d-42b6-9892-433f91459536",
+        "document_id": "1c4b93ec-7be1-454e-89b8-7b2419fc8d74",
+        "document_name": "clinicaltrials_NCT04310631_Evaluation of Retinal and Vascular Features in Coats Disease.docx",
+        "document_content": "description: The effectiveness of Ranibizumab injections for treating Coats disease using optical coherence tomography (OCT). timeFrame: Three months Item 2 measure: Study of retinal and vascular features in Coats disease after intravitreal injections of Ranibizumab",
+        "page_no": 4,
+        "paragraph": "Paragraph 51 | Lines 50-53",
+        "original_text": "description: The effectiveness of Ranibizumab injections for treating Coats disease using optical coherence tomography (OCT). timeFrame: Three months Item 2 measure: Study of retinal and vascular features in Coats disease after intravitreal injections of Ranibizumab"
+      },
+      {
+        "chunk_id": "a6aca5d7-b359-45fc-82e8-d96616bec7a2",
+        "document_id": "1c4b93ec-7be1-454e-89b8-7b2419fc8d74",
+        "document_name": "clinicaltrials_NCT04310631_Evaluation of Retinal and Vascular Features in Coats Disease.docx",
+        "document_content": "organization fullName: Federico II University class: OTHER briefTitle: Evaluation of Retinal and Vascular Features in Coats Disease After Intravitreal Injections of Ranibizumab",
+        "page_no": 1,
+        "paragraph": "Section: organization fullName: Federico II University | Paragraph 7 | Lines 6-7",
+        "original_text": "organization fullName: Federico II University class: OTHER briefTitle: Evaluation of Retinal and Vascular Features in Coats Disease After Intravitreal Injections of Ranibizumab"
+      },
+      {
+        "chunk_id": "20e1f704-98cc-46a9-bb7f-788455938dc4",
+        "document_id": "78f426ab-c5e3-431f-be23-ca2372bea339",
+        "document_name": "pubmed_42897562_PMC13682112_The role of the epidermal growth factor receptor _EGFR_ErbB1.pdf",
+        "document_content": "Study Model Intervention(s) Dose Regimen Finding Relevant to EGFR Ref Diabetic Ocular/Retinal models In vivo: C57BL/6 mice; T1DM (STZ 55 mg/kg × 3 days) Cetuximab (selective monoclonal antibody inhibitor of EGFR) 1 mg/per mouse intraperitoneal (i.p.) once a week for two consecu­ tive weeks, with the first dose being given 3 weeks after the first STZ injection Insulin treatment of STZ-diabetic mice dramatically increased retinal vascular permeability. Systemic administration of cetuximab substantially reduces insulin-induced increase in retinal vascular leakage. [91] In vivo: C57BL/6 mice; T1DM (STZ 80 mg/kg × 3 days) AG1478)selective EGFR tyrosine kinase inhibitor) 20 mg/kg by oral gavage initiated at week 10 post-STZ and continued for 6 months EGFR inhibition reduced retinal vascular permeability and aberrant an­ giogenesis (reduced CD31-positive vessels), and attenuated macrophage infiltration (reduced F4/80 staining). [48] Ex vivo: Sprague-Dawley (SD) rats; T2DM (high-sugar/ high-fat diet + STZ 50 mg/kg) Primary endothelial cells and pericytes iso­ lated from diabetic rats were transfected with miR-199a-3p (indirect EGFR inhibitor) and/or an FGF7 overexpres­ sion vector Not applicable Transfected miR-199a-3p inhibited the proliferation, migration, and invasion of primary endothelial cells and retinal pericytes by regulating FGF7 through the EGFR/PI3K/AKT pathway. [92] In vivo: C57BL/6J mice; T2DM (high-fat diet 12 weeks + STZ 30 mg/kg × 7 days) Infliximab (TNF-α monoclonal antibody) 10 mg/kg/day by oral gavage from day 1 to 7 Diabetic mice showed increased TNF-α and EGFR activation in retinal tissue, with loss of tight junction proteins (claudin-1, claudin-5, occludin, ZO-1). Blocking the TNF-α/EGFR axis in diabetic mice alleviated BRB breakdown, re­ duced vascular leakage, and restored barrier proteins. Combined inhibition showed the greater protective effect. [93] Gefitinib (selective EGFR tyrosine kinase inhibitor)",
+        "page_no": 7,
+        "paragraph": "Paragraph 38 | Lines 37-40",
+        "original_text": "Study Model Intervention(s) Dose Regimen Finding Relevant to EGFR Ref Diabetic Ocular/Retinal models In vivo: C57BL/6 mice; T1DM (STZ 55 mg/kg × 3 days) Cetuximab (selective monoclonal antibody inhibitor of EGFR) 1 mg/per mouse intraperitoneal (i.p.) once a week for two consecu­ tive weeks, with the first dose being given 3 weeks after the first STZ injection Insulin treatment of STZ-diabetic mice"
+      },
+      {
+        "chunk_id": "8b17e6ac-db11-4a88-adc8-dfa6cdb9ab81",
+        "document_id": "1c4b93ec-7be1-454e-89b8-7b2419fc8d74",
+        "document_name": "clinicaltrials_NCT04310631_Evaluation of Retinal and Vascular Features in Coats Disease.docx",
+        "document_content": "timeFrame: Three months age older than 18 years diagnosis of Coats disease treatment-naïve with Ranibizumab absence of other vitreoretinal and vascular retinal diseases absence of diabetes Exclusion Criteria:",
+        "page_no": 4,
+        "paragraph": "Paragraph 49 | Lines 48-53",
+        "original_text": "timeFrame: Three months age older than 18 years diagnosis of Coats disease treatment-naïve with Ranibizumab absence of other vitreoretinal and vascular retinal diseases absence of diabetes Exclusion Criteria:"
+      },
+      {
+        "chunk_id": "1cf59715-2447-4ca4-9d11-a69dbf2f1264",
+        "document_id": "de951e0c-deca-422e-a806-0ff8f53af641",
+        "document_name": "clinicaltrials_NCT04603937_A Study to Evaluate the Efficacy_ Durability_ and Safety of.docx",
+        "document_content": "conditions Diabetic Macular Edema keywords DME Kodiak Vascular endothelial growth factor Anti-VEGF VEGF Antibody biopolymer conjugate Retinal Degeneration Retinal Diseases Eye Diseases Vision Disorders Vision, low Aflibercept Eylea Diabetes mellitus Diabetes Diabetic retinopathy Diabetic macular edema Macular edema KSI-301 interventionModel: PARALLEL",
+        "page_no": 3,
+        "paragraph": "Section: conditions Diabetic Macular Edema | Paragraph 44 | Lines 43-43",
+        "original_text": "conditions Diabetic Macular Edema keywords DME Kodiak Vascular endothelial growth factor Anti-VEGF VEGF Antibody biopolymer conjugate Retinal Degeneration Retinal Diseases Eye Diseases Vision Disorders Vision, low Aflibercept Eylea Diabetes mellitus Diabetes Diabetic retinopathy Diabetic macular edema Macular edema KSI-301 interventionModel: PARALLEL"
+      }
+    ],
+    "created_at": "2026-10-30T03:52:24.346750+00:00",
+    "search_mode": "vector",
+    "elapsed_ms": 74818
+  },
+  "generation_error": "claims_contradict_draft",
+  "created_at": "2026-10-30T03:52:24.348747+00:00",
+  "validation": {
+    "overall_score": 0.0,
+    "threshold": 0.9,
+    "claim_min_score": 0.7,
+    "decision": "escalate_to_msl",
+    "reason_codes": [
+      "NO_SUPPORTED_CLAIMS",
+      "INSUFFICIENT_EVIDENCE"
+    ],
+    "judge": "deterministic",
+    "validated_at": "2026-10-30T03:52:25.212558+00:00"
+  }
+}

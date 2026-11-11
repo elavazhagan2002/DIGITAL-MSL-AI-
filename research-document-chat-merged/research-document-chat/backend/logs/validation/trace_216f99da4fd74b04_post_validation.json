@@ -1,0 +1,203 @@
+{
+  "correlation_id": "corr_e6c179694f5e48de",
+  "message_id": "msg_cea5d03866124467",
+  "channel": "whatsapp",
+  "repository_id": "5d13d75d-972c-448d-bf72-efa185bc2b15",
+  "user_query": "What factors influence health belief about diabetic macular edema?",
+  "agent": "retina_answer_agent",
+  "scope": {
+    "in_scope": true,
+    "retina_terms": [
+      "macular",
+      "diabetic macular edema"
+    ],
+    "molecules": [],
+    "unsupported_molecules": [],
+    "safety_flags": [],
+    "reason": ""
+  },
+  "draft_answer": "Factors influencing health beliefs about diabetic macular edema include perceived susceptibility to complications from DME, perceived benefits of treatment, and self-efficacy [2].",
+  "claims": [
+    {
+      "claim_id": "C1",
+      "claim_text": "Patients' adherence to IVT anti-VEGF is influenced by perceived susceptibility to complications from DME, perceived benefits to the treatment, and self-efficacy.",
+      "evidence": [
+        {
+          "chunk_id": "14a41424-5a06-46c3-a0c6-89478d66bc33",
+          "document_id": "fdd4ae45-0f27-49d4-b93e-2f70f4818b96",
+          "document_name": "pubmed_36909105_PMC9993440_Determination of Factors Influencing the Health Belief Model.pdf",
+          "document_content": "Conclusion Patients' adherence to IVT anti-VEGF is influenced by perceived susceptibility to complications from DME, perceived benefits to the treatment, and self-efficacy. Categories: Endocrinology/Diabetes/Metabolism, Ophthalmology, Public Health Keywords: dme, diabetic macular edema, hbm, diabetes, anti-vegf, health belief model, intravitreal How to cite this article Ting Yih Ling J, Mohd Zain A, Naffi A, et al. (February 06, 2023) Determination of Factors Influencing the Health Belief Model (HBM) and Adherence to Intravitreal Anti-vascular Endothelial Growth Factor (VEGF) Among Patients With Diabetic Macular Edema (DME). Cureus 15(2): e34669. DOI 10.7759/cureus.34669",
+          "page_no": 1,
+          "paragraph": "Section: Conclusion | Paragraph 23 | Lines 22-23",
+          "section": "Conclusion",
+          "original_text": "Conclusion Patients' adherence to IVT anti-VEGF is influenced by perceived susceptibility to complications from DME, perceived benefits to the treatment, and self-efficacy.",
+          "line_start": 22,
+          "line_end": 23
+        }
+      ],
+      "validation": {
+        "score": 1.0,
+        "verdict": "supported",
+        "signals": {
+          "citation_integrity": true,
+          "quote_match": 1.0,
+          "lexical_support": 1.0,
+          "numeric_consistency": true,
+          "missing_numbers": []
+        },
+        "reasons": []
+      }
+    }
+  ],
+  "chunks": [
+    {
+      "chunk_id": "8ac1d9fe-8cb9-429f-8841-721681bfb10c",
+      "document_id": "fdd4ae45-0f27-49d4-b93e-2f70f4818b96",
+      "document_name": "pubmed_36909105_PMC9993440_Determination of Factors Influencing the Health Belief Model.pdf",
+      "document_content": "Determination of Factors Influencing the Health Belief Model (HBM) and Adherence to Intravitreal Anti-vascular Endothelial Growth Factor (VEGF) Among Patients With Diabetic Macular Edema (DME) Review began 01/22/2023 Review ended 02/01/2023",
+      "page_no": 1,
+      "page_end": 1,
+      "paragraph": "Paragraph 4 | Lines 3-5",
+      "section": "",
+      "line_start": 3,
+      "line_end": 5,
+      "retrieval_score": 0.7307,
+      "repository_id": "5d13d75d-972c-448d-bf72-efa185bc2b15",
+      "original_text": "Determination of Factors Influencing the Health Belief Model (HBM) and Adherence to Intravitreal Anti-vascular Endothelial Growth Factor (VEGF) Among Patients With Diabetic Macular Edema (DME) Review began 01/22/2023 Review ended 02/01/2023"
+    },
+    {
+      "chunk_id": "14a41424-5a06-46c3-a0c6-89478d66bc33",
+      "document_id": "fdd4ae45-0f27-49d4-b93e-2f70f4818b96",
+      "document_name": "pubmed_36909105_PMC9993440_Determination of Factors Influencing the Health Belief Model.pdf",
+      "document_content": "Conclusion Patients' adherence to IVT anti-VEGF is influenced by perceived susceptibility to complications from DME, perceived benefits to the treatment, and self-efficacy. Categories: Endocrinology/Diabetes/Metabolism, Ophthalmology, Public Health Keywords: dme, diabetic macular edema, hbm, diabetes, anti-vegf, health belief model, intravitreal How to cite this article Ting Yih Ling J, Mohd Zain A, Naffi A, et al. (February 06, 2023) Determination of Factors Influencing the Health Belief Model (HBM) and Adherence to Intravitreal Anti-vascular Endothelial Growth Factor (VEGF) Among Patients With Diabetic Macular Edema (DME). Cureus 15(2): e34669. DOI 10.7759/cureus.34669",
+      "page_no": 1,
+      "page_end": 1,
+      "paragraph": "Section: Conclusion | Paragraph 23 | Lines 22-24",
+      "section": "Conclusion",
+      "line_start": 22,
+      "line_end": 24,
+      "retrieval_score": 0.7298,
+      "repository_id": "5d13d75d-972c-448d-bf72-efa185bc2b15",
+      "original_text": "Conclusion Patients' adherence to IVT anti-VEGF is influenced by perceived susceptibility to complications from DME, perceived benefits to the treatment, and self-efficacy."
+    },
+    {
+      "chunk_id": "c0a69d4d-f89a-49e7-b367-7bbcb99205be",
+      "document_id": "78f426ab-c5e3-431f-be23-ca2372bea339",
+      "document_name": "pubmed_42897562_PMC13682112_The role of the epidermal growth factor receptor _EGFR_ErbB1.pdf",
+      "document_content": "The role of the epidermal growth factor receptor (EGFR/ErbB1) in diabetic retinopathy and its therapeutic implications Clinically, DM is classified into at least four categories, namely Type 1 (T1DM), Type 2 (T2DM), gestational diabetes, and other types arising from specific identi­ fiable causes [1]. In T1DM, an autoimmune response destroys insulin-producing β-cells in the pancreas, lead­ ing to an absolute insulin deficiency [1, 2]. In contrast, T2DM begins with insulin resistance of primarily skeletal muscle, adipose tissue, and the liver, followed by a pro­ gressive, nonautoimmune decline in pancreatic β-cell function and insulin secretion [1]. Uncontrolled chronic hyperglycemia in both T1DM and T2DM can lead to a range of macrovascular and microvascular complications including cardiovascular [3], renal [4], neuronal [5], and retinal pathologies [6]. In addition to chronic hyperglyce­ mia, the classical risk factors for diabetes complications include smoking, dyslipidemias and hypertension [7]. to chronic retinal ischemia which results in prolifera­ tive diabetic retinopathy (PDR) [18]. At this stage, visual alterations are significantly more pronounced where damage to the retinal blood vessels is more severe, stimu­ lating the growth of new abnormal blood vessels (neovas­ cularization) through the process of angiogenesis [18]. This occurs through the upregulation of growth factors such as vascular endothelial growth factor (VEGF) and insulin-like growth factor 1 (IGF-1), both of which are expressed in response to hypoxia and are known to pro­ mote neovascularization [19, 20]. Additionally, diabetic macular edema (DME) is a common complication of both NPDR and PDR, where the blood-retinal-barrier (BRB) is compromised with increased vascular permeability cul­ minating in fluid accumulation in the macula, the central region of the retina responsible for sharp, detailed vision [14]. DME is a common cause of visual impairment in DR patients [18]. ​Introduction Diabetes Mellitus (DM) is a group of chronic endocrine diseases characterized by persistent hyperglycemia [1]. The current standard of care for DR centers on intra­ vitreal anti-VEGF therapy, with agents such as bevaci­ zumab, a monoclonal antibody targeting VEGF-A [21]. Among various other inflammatory mediators, VEGF plays a central role in promoting both neovasculariza­ tion and vascular leakage in PDR [20]. Under hyperglyce­ mic and hypoxic conditions, hypoxia-inducible factor-1α (HIF-1α) upregulates VEGF expression which drives angiogenesis via ligand binding and downstream sig­ naling [22]. By sequestering VEGF and/or inhibiting its receptor signaling, these agents decrease fluid extravasa­ tion, resolve edema, and inhibit angiogenesis associated with PDR in the optic disc, retina and iris [23]. This review focuses on diabetic retinopathy (DR), the primary microvascular complication of diabetes and a leading cause of new cases of blindness among adults aged 20-74 years in developed countries [6, 7]. Approxi­ mately one-third of individuals with diabetes develop DR [8]. Its prevalence correlates strongly with both disease duration and glycemic control, as maintaining near-nor­ moglycemia can delay or prevent its onset and progres­ sion [7]. However, recent studies have also suggested that intensive therapies that result in rapid reductions in Hemoglobin A1C (HbA1C), such as with glucagon-like peptide 1 (GLP-1) receptor agonists, can be associated with initial worsening of DR at least in the early stages but may ultimately be protective in late or advanced stages [9-12].",
+      "page_no": 2,
+      "page_end": 2,
+      "paragraph": "Paragraph 14 | Lines 13-15",
+      "section": "",
+      "line_start": 13,
+      "line_end": 15,
+      "retrieval_score": 0.7242,
+      "repository_id": "5d13d75d-972c-448d-bf72-efa185bc2b15",
+      "original_text": "The role of the epidermal growth factor receptor (EGFR/ErbB1) in diabetic retinopathy and its therapeutic implications Clinically, DM is classified into at least four categories, namely Type 1 (T1DM), Type 2 (T2DM), gestational diabetes, and other types arising from specific identi­ fiable causes [1]."
+    },
+    {
+      "chunk_id": "42116b35-1ed3-4573-89d2-08082ffbba5f",
+      "document_id": "fdd4ae45-0f27-49d4-b93e-2f70f4818b96",
+      "document_name": "pubmed_36909105_PMC9993440_Determination of Factors Influencing the Health Belief Model.pdf",
+      "document_content": "Background Diabetic macular edema (DME) is becoming one of the leading causes of blindness worldwide with a significant impact on quality of life. The effectiveness of intravitreal (IVT) anti-vascular endothelial growth factor (VEGF) therapy has been established by clinical trials and has become the treatment of choice in the majority of DME patients in reducing macular edema and improving visual acuity. Frequent drop-out and discontinuation of treatment are major issues. Lack of compliance can lead to worsening outcomes and be a burden to patients and the healthcare system.",
+      "page_no": 1,
+      "page_end": 1,
+      "paragraph": "Section: Background | Paragraph 15 | Lines 14-14",
+      "section": "Background",
+      "line_start": 14,
+      "line_end": 14,
+      "retrieval_score": 0.7023,
+      "repository_id": "5d13d75d-972c-448d-bf72-efa185bc2b15",
+      "original_text": "Background Diabetic macular edema (DME) is becoming one of the leading causes of blindness worldwide with a significant impact on quality of life."
+    },
+    {
+      "chunk_id": "8b39cb3c-7cd5-47c8-91f4-00352b1421ca",
+      "document_id": "fdd4ae45-0f27-49d4-b93e-2f70f4818b96",
+      "document_name": "pubmed_36909105_PMC9993440_Determination of Factors Influencing the Health Belief Model.pdf",
+      "document_content": "Conclusion Diabetes mellitus (DM) is a major public health concern in Malaysia, proven by the increasing prevalence of DM as seen from the National Health and Morbidity (NHMS) survey [1]. The number of diabetic retinopathy (DR) and vision-threatening diabetic macular edema (DME) cases is expected to reach 191.0 million and 56.3 million, respectively, by 2030 worldwide [2]. DR was the cause of blindness in 10.4% of Malaysian elderly citizens, as seen in the National Eye Survey in Malaysia [3]. Furthermore, DME can occur at any stage of DR and is a common cause of vision loss [4]. A Malaysian study found that among diabetes patients who had follow-ups at ophthalmology clinics, 51.6% had DR while 26.7% had DME [4]. Globally, DME is also becoming one of the leading causes of blindness [5]. Increasing loss of visual acuity not only affects the quality of life but also affects work-related productivity and healthcare-related costs [5]. It is estimated that the total annual cost of diabetes in Malaysia is around 600 million USD [6]. The pathogenesis of DME is highly complex and not fully understood. DME is characterized by the accumulation of intraretinal fluid, primarily in the inner and outer plexiform layers and within the central portion of the retina [7]. It is caused by the breakdown of the blood-retinal barrier that results in the leakage of fluid and proteins into the macula, causing the macula to swell, which in turn affects visual function [7,8]. Meanwhile, ischemic drive can cause further upregulation and release of the vascular endothelial growth factor (VEGF) [9]. VEGF is a potent factor in increasing retinal vascular permeability besides promoting angiogenesis. VEGF is a critical player between angiogenesis and inflammation, therefore, reinforcing the use of anti-VEGF agents for the treatment of DME [9]. In the past decade, treatment for DME has evolved extensively. Focal and grid photocoagulation therapy used to be the only option but the introduction of intravitreal (IVT) anti-VEGF has proven to be effective and superior to laser treatment [10,11]. The efficacy and safety profile of anti-VEGF therapy has been established by several large clinical trials and has become the treatment of choice in the majority of DME patients [10,12,13]. Recent studies depicted significantly positive visual and anatomical results regarding the use of anti-VEGF for the treatment of DME [14-16]. Following the Malaysia Diabetic Macular Edema Consensus Guidelines 2021, initiation of anti-VEGF treatment requires a loading phase of three or more consecutive monthly injections [17], followed by a maintenance phase during which intervals between injections are titrated according to the patient's needs, based on clinical signs and optical coherence tomography (OCT) findings [13,18]. Despite knowing the benefits of the treatment and the importance of adherence to IVT anti-VEGF, frequent drop-out and discontinuation of treatment is a major issue globally [19]. Studies have proven that almost half the patients will drop out and a big proportion of patients do not receive the ideal monthly treatment either due to the accessibility of medication or monetary issues [20].",
+      "page_no": 2,
+      "page_end": 2,
+      "paragraph": "Section: Conclusion | Paragraph 1 | Lines 27-30",
+      "section": "Conclusion",
+      "line_start": 27,
+      "line_end": 30,
+      "retrieval_score": 0.6447,
+      "repository_id": "5d13d75d-972c-448d-bf72-efa185bc2b15",
+      "original_text": "Conclusion Diabetes mellitus (DM) is a major public health concern in Malaysia, proven by the increasing prevalence of DM as seen from the National Health and Morbidity (NHMS) survey [1]."
+    }
+  ],
+  "retrieval": {
+    "user_query": "What factors influence health belief about diabetic macular edema?",
+    "agent": "query_agent",
+    "chunks": [
+      {
+        "chunk_id": "8ac1d9fe-8cb9-429f-8841-721681bfb10c",
+        "document_id": "fdd4ae45-0f27-49d4-b93e-2f70f4818b96",
+        "document_name": "pubmed_36909105_PMC9993440_Determination of Factors Influencing the Health Belief Model.pdf",
+        "document_content": "Determination of Factors Influencing the Health Belief Model (HBM) and Adherence to Intravitreal Anti-vascular Endothelial Growth Factor (VEGF) Among Patients With Diabetic Macular Edema (DME) Review began 01/22/2023 Review ended 02/01/2023",
+        "page_no": 1,
+        "paragraph": "Paragraph 4 | Lines 3-5",
+        "original_text": "Determination of Factors Influencing the Health Belief Model (HBM) and Adherence to Intravitreal Anti-vascular Endothelial Growth Factor (VEGF) Among Patients With Diabetic Macular Edema (DME) Review began 01/22/2023 Review ended 02/01/2023"
+      },
+      {
+        "chunk_id": "14a41424-5a06-46c3-a0c6-89478d66bc33",
+        "document_id": "fdd4ae45-0f27-49d4-b93e-2f70f4818b96",
+        "document_name": "pubmed_36909105_PMC9993440_Determination of Factors Influencing the Health Belief Model.pdf",
+        "document_content": "Conclusion Patients' adherence to IVT anti-VEGF is influenced by perceived susceptibility to complications from DME, perceived benefits to the treatment, and self-efficacy. Categories: Endocrinology/Diabetes/Metabolism, Ophthalmology, Public Health Keywords: dme, diabetic macular edema, hbm, diabetes, anti-vegf, health belief model, intravitreal How to cite this article Ting Yih Ling J, Mohd Zain A, Naffi A, et al. (February 06, 2023) Determination of Factors Influencing the Health Belief Model (HBM) and Adherence to Intravitreal Anti-vascular Endothelial Growth Factor (VEGF) Among Patients With Diabetic Macular Edema (DME). Cureus 15(2): e34669. DOI 10.7759/cureus.34669",
+        "page_no": 1,
+        "paragraph": "Section: Conclusion | Paragraph 23 | Lines 22-24",
+        "original_text": "Conclusion Patients' adherence to IVT anti-VEGF is influenced by perceived susceptibility to complications from DME, perceived benefits to the treatment, and self-efficacy."
+      },
+      {
+        "chunk_id": "c0a69d4d-f89a-49e7-b367-7bbcb99205be",
+        "document_id": "78f426ab-c5e3-431f-be23-ca2372bea339",
+        "document_name": "pubmed_42897562_PMC13682112_The role of the epidermal growth factor receptor _EGFR_ErbB1.pdf",
+        "document_content": "The role of the epidermal growth factor receptor (EGFR/ErbB1) in diabetic retinopathy and its therapeutic implications Clinically, DM is classified into at least four categories, namely Type 1 (T1DM), Type 2 (T2DM), gestational diabetes, and other types arising from specific identi­ fiable causes [1]. In T1DM, an autoimmune response destroys insulin-producing β-cells in the pancreas, lead­ ing to an absolute insulin deficiency [1, 2]. In contrast, T2DM begins with insulin resistance of primarily skeletal muscle, adipose tissue, and the liver, followed by a pro­ gressive, nonautoimmune decline in pancreatic β-cell function and insulin secretion [1]. Uncontrolled chronic hyperglycemia in both T1DM and T2DM can lead to a range of macrovascular and microvascular complications including cardiovascular [3], renal [4], neuronal [5], and retinal pathologies [6]. In addition to chronic hyperglyce­ mia, the classical risk factors for diabetes complications include smoking, dyslipidemias and hypertension [7]. to chronic retinal ischemia which results in prolifera­ tive diabetic retinopathy (PDR) [18]. At this stage, visual alterations are significantly more pronounced where damage to the retinal blood vessels is more severe, stimu­ lating the growth of new abnormal blood vessels (neovas­ cularization) through the process of angiogenesis [18]. This occurs through the upregulation of growth factors such as vascular endothelial growth factor (VEGF) and insulin-like growth factor 1 (IGF-1), both of which are expressed in response to hypoxia and are known to pro­ mote neovascularization [19, 20]. Additionally, diabetic macular edema (DME) is a common complication of both NPDR and PDR, where the blood-retinal-barrier (BRB) is compromised with increased vascular permeability cul­ minating in fluid accumulation in the macula, the central region of the retina responsible for sharp, detailed vision [14]. DME is a common cause of visual impairment in DR patients [18]. ​Introduction Diabetes Mellitus (DM) is a group of chronic endocrine diseases characterized by persistent hyperglycemia [1]. The current standard of care for DR centers on intra­ vitreal anti-VEGF therapy, with agents such as bevaci­ zumab, a monoclonal antibody targeting VEGF-A [21]. Among various other inflammatory mediators, VEGF plays a central role in promoting both neovasculariza­ tion and vascular leakage in PDR [20]. Under hyperglyce­ mic and hypoxic conditions, hypoxia-inducible factor-1α (HIF-1α) upregulates VEGF expression which drives angiogenesis via ligand binding and downstream sig­ naling [22]. By sequestering VEGF and/or inhibiting its receptor signaling, these agents decrease fluid extravasa­ tion, resolve edema, and inhibit angiogenesis associated with PDR in the optic disc, retina and iris [23]. This review focuses on diabetic retinopathy (DR), the primary microvascular complication of diabetes and a leading cause of new cases of blindness among adults aged 20-74 years in developed countries [6, 7]. Approxi­ mately one-third of individuals with diabetes develop DR [8]. Its prevalence correlates strongly with both disease duration and glycemic control, as maintaining near-nor­ moglycemia can delay or prevent its onset and progres­ sion [7]. However, recent studies have also suggested that intensive therapies that result in rapid reductions in Hemoglobin A1C (HbA1C), such as with glucagon-like peptide 1 (GLP-1) receptor agonists, can be associated with initial worsening of DR at least in the early stages but may ultimately be protective in late or advanced stages [9-12].",
+        "page_no": 2,
+        "paragraph": "Paragraph 14 | Lines 13-15",
+        "original_text": "The role of the epidermal growth factor receptor (EGFR/ErbB1) in diabetic retinopathy and its therapeutic implications Clinically, DM is classified into at least four categories, namely Type 1 (T1DM), Type 2 (T2DM), gestational diabetes, and other types arising from specific identi­ fiable causes [1]."
+      },
+      {
+        "chunk_id": "42116b35-1ed3-4573-89d2-08082ffbba5f",
+        "document_id": "fdd4ae45-0f27-49d4-b93e-2f70f4818b96",
+        "document_name": "pubmed_36909105_PMC9993440_Determination of Factors Influencing the Health Belief Model.pdf",
+        "document_content": "Background Diabetic macular edema (DME) is becoming one of the leading causes of blindness worldwide with a significant impact on quality of life. The effectiveness of intravitreal (IVT) anti-vascular endothelial growth factor (VEGF) therapy has been established by clinical trials and has become the treatment of choice in the majority of DME patients in reducing macular edema and improving visual acuity. Frequent drop-out and discontinuation of treatment are major issues. Lack of compliance can lead to worsening outcomes and be a burden to patients and the healthcare system.",
+        "page_no": 1,
+        "paragraph": "Section: Background | Paragraph 15 | Lines 14-14",
+        "original_text": "Background Diabetic macular edema (DME) is becoming one of the leading causes of blindness worldwide with a significant impact on quality of life."
+      },
+      {
+        "chunk_id": "8b39cb3c-7cd5-47c8-91f4-00352b1421ca",
+        "document_id": "fdd4ae45-0f27-49d4-b93e-2f70f4818b96",
+        "document_name": "pubmed_36909105_PMC9993440_Determination of Factors Influencing the Health Belief Model.pdf",
+        "document_content": "Conclusion Diabetes mellitus (DM) is a major public health concern in Malaysia, proven by the increasing prevalence of DM as seen from the National Health and Morbidity (NHMS) survey [1]. The number of diabetic retinopathy (DR) and vision-threatening diabetic macular edema (DME) cases is expected to reach 191.0 million and 56.3 million, respectively, by 2030 worldwide [2]. DR was the cause of blindness in 10.4% of Malaysian elderly citizens, as seen in the National Eye Survey in Malaysia [3]. Furthermore, DME can occur at any stage of DR and is a common cause of vision loss [4]. A Malaysian study found that among diabetes patients who had follow-ups at ophthalmology clinics, 51.6% had DR while 26.7% had DME [4]. Globally, DME is also becoming one of the leading causes of blindness [5]. Increasing loss of visual acuity not only affects the quality of life but also affects work-related productivity and healthcare-related costs [5]. It is estimated that the total annual cost of diabetes in Malaysia is around 600 million USD [6]. The pathogenesis of DME is highly complex and not fully understood. DME is characterized by the accumulation of intraretinal fluid, primarily in the inner and outer plexiform layers and within the central portion of the retina [7]. It is caused by the breakdown of the blood-retinal barrier that results in the leakage of fluid and proteins into the macula, causing the macula to swell, which in turn affects visual function [7,8]. Meanwhile, ischemic drive can cause further upregulation and release of the vascular endothelial growth factor (VEGF) [9]. VEGF is a potent factor in increasing retinal vascular permeability besides promoting angiogenesis. VEGF is a critical player between angiogenesis and inflammation, therefore, reinforcing the use of anti-VEGF agents for the treatment of DME [9]. In the past decade, treatment for DME has evolved extensively. Focal and grid photocoagulation therapy used to be the only option but the introduction of intravitreal (IVT) anti-VEGF has proven to be effective and superior to laser treatment [10,11]. The efficacy and safety profile of anti-VEGF therapy has been established by several large clinical trials and has become the treatment of choice in the majority of DME patients [10,12,13]. Recent studies depicted significantly positive visual and anatomical results regarding the use of anti-VEGF for the treatment of DME [14-16]. Following the Malaysia Diabetic Macular Edema Consensus Guidelines 2021, initiation of anti-VEGF treatment requires a loading phase of three or more consecutive monthly injections [17], followed by a maintenance phase during which intervals between injections are titrated according to the patient's needs, based on clinical signs and optical coherence tomography (OCT) findings [13,18]. Despite knowing the benefits of the treatment and the importance of adherence to IVT anti-VEGF, frequent drop-out and discontinuation of treatment is a major issue globally [19]. Studies have proven that almost half the patients will drop out and a big proportion of patients do not receive the ideal monthly treatment either due to the accessibility of medication or monetary issues [20].",
+        "page_no": 2,
+        "paragraph": "Section: Conclusion | Paragraph 1 | Lines 27-30",
+        "original_text": "Conclusion Diabetes mellitus (DM) is a major public health concern in Malaysia, proven by the increasing prevalence of DM as seen from the National Health and Morbidity (NHMS) survey [1]."
+      },
+      {
+        "chunk_id": "0972ef03-61bd-47d9-9a15-d3badd96b937",
+        "document_id": "fdd4ae45-0f27-49d4-b93e-2f70f4818b96",
+        "document_name": "pubmed_36909105_PMC9993440_Determination of Factors Influencing the Health Belief Model.pdf",
+        "document_content": "References Habib AE, Abdel-Kader AA, Eissa IM, Awadein A: Adherence to intravitreal anti-vascular endothelial growth factor (anti-VEGF) drugs in diabetic macular edema in an Egyptian population: a health belief model. Curr Eye Res. 2019, 44:303-10. 10.1080/XXX-XXX-XXXX.1543708 Abu-Yaghi NE, Abed AM, Khlaifat DF, et al.: Factors affecting compliance to anti-vascular endothelial growth factor treatment of diabetic macular edema in a cohort of Jordanian patients. Clin Ophthalmol. 2020, 14:921-9. 10.2147/OPTH.S248661 Angermann R, Hofer M, Huber AL, et al.: The impact of compliance among patients with diabetic macular oedema treated with intravitreal aflibercept: a 48-month follow-up study. Acta Ophthalmol. 2022, 100:e546-52. 10.1111/aos.14946 Grosser LR: Health belief model aids understanding of patient behavior. AORN J. 1982, 35:1056-9. 10.1016/s0001-2092(07)62466-1 Rosenstock IM: Historical origins of the health belief model. Health Educ Monogr. 1974, 2:328-35. 10.1177/XXXX-XXXX-XXXX-0403 Janz NK, Becker MH: The health belief model: a decade later. Health Educ Q. 1984, 11:1-47. 10.1177/109019818401100101 Zampetakis LA, Melas C: The health belief model predicts vaccination intentions against COVID-19: a survey experiment approach. Appl Psychol Health Well Being. 2021, 13:469-84. 10.1111/aphw.12262 Ling JT, Zain AM, Halim WH: Translation and validation of the Malay version health belief model questionnaire (Abstract). Med & Health. 2022, 17:60. Wong YM, Chong EL, Yeo VYL: Non-compliance among diabetic macular oedema patients on antivascular endothelial growth factor therapy in Malaysia. Malays J Ophthal. 2021, 21:91-100. 10.35119/MYJO.V3I2.174 Wong ST, Saddki N, Tin-Oo MM: Readability and suitability of oral health education pamphlets produced by the Ministry of Health Malaysia. Med J Malaysia. 2019, 74:312-9. Reiter PL, Pennell ML, Katz ML: Acceptability of a COVID-19 vaccine among adults in the United States: how many people would get vaccinated?. Vaccine. 2020, 38:6500-7. 10.1016/j.vaccine.2020.08.043 Limbu YB, Gautam RK, Pham L: The health belief model applied to COVID-19 vaccine hesitancy: a systematic review. Vaccines (Basel). 2022, 10:973. 10.3390/vaccines10060973 Müller S, Junker S, Wilke T, et al.: Questionnaire for the assessment of adherence barriers of intravitreal therapy: the ABQ-IVT. Int J Retina Vitreous. 2021, 7:43. 10.1186/s40942-021-00311-x Viswanathan M, Golin CE, Jones CD, et al.: Interventions to improve adherence to self-administered medications for chronic diseases in the United States: a systematic review. Ann Intern Med. 2012, 157:785-10.7326/0003-4819-157-11-201212040-00538 Weiss M, Sim DA, Herold T, et al.: Compliance and adherence of patients with diabetic macular edema to intravitreal anti-vascular endothelial growth factor therapy in daily practice. Retina. 2018, 38:2293-300. 10.1097/IAE.0000000000001892 Brown MT, Bussell JK: Medication adherence: WHO cares?. Mayo Clin Proc. 2011, 86:304-14. 10.4065/mcp.2010.0575",
+        "page_no": 14,
+        "paragraph": "Section: References | Paragraph 416 | Lines 416-416",
+        "original_text": "Habib AE, Abdel-Kader AA, Eissa IM, Awadein A: Adherence to intravitreal anti-vascular endothelial growth factor (anti-VEGF) drugs in diabetic macular edema in an Egyptian population: a health belief model."
+      }
+    ],
+    "created_at": "2026-10-30T04:44:40.727397+00:00",
+    "search_mode": "hybrid",
+    "elapsed_ms": 188914
+  },
+  "generation_error": "",
+  "created_at": "2026-10-30T04:44:40.728299+00:00",
+  "validation": {
+    "overall_score": 1.0,
+    "threshold": 0.9,
+    "claim_min_score": 0.7,
+    "decision": "respond",
+    "reason_codes": [],
+    "judge": "deterministic",
+    "validated_at": "2026-10-30T04:44:42.655875+00:00"
+  }
+}

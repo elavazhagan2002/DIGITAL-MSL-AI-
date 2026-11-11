@@ -1,0 +1,30 @@
+{
+  "correlation_id": "corr_a88e3f2e30cf4127",
+  "message_id": "msg_bd6146085bac4179",
+  "channel": "web",
+  "repository_id": "5d13d75d-972c-448d-bf72-efa185bc2b15",
+  "user_query": "What is the starting dose of metformin for type 2 diabetes?",
+  "agent": "retina_answer_agent",
+  "scope": {
+    "in_scope": false,
+    "retina_terms": [],
+    "molecules": [],
+    "unsupported_molecules": [],
+    "safety_flags": [],
+    "reason": "The question is not about retina / eye-care or the configured molecules."
+  },
+  "draft_answer": "",
+  "claims": [],
+  "chunks": [],
+  "retrieval": {
+    "user_query": "What is the starting dose of metformin for type 2 diabetes?",
+    "agent": "query_agent",
+    "chunks": [],
+    "created_at": "2026-10-28T06:09:48.833286+00:00",
+    "search_mode": "",
+    "elapsed_ms": 0
+  },
+  "generation_error": "",
+  "created_at": "2026-10-28T06:09:48.833286+00:00",
+  "validation": null
+}

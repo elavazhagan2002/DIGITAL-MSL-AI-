@@ -1,0 +1,28 @@
+{
+  "correlation_id": "corr_a70e0dc89c024680",
+  "message_id": "msg_d12ebdedadd7438d",
+  "channel": "web",
+  "repository_id": "repo-demo",
+  "user_query": "best statin for cholesterol",
+  "agent": "retina_answer_agent",
+  "scope": {
+    "in_scope": false,
+    "retina_terms": [],
+    "molecules": [],
+    "unsupported_molecules": [],
+    "safety_flags": [],
+    "reason": "The question is not about retina / eye-care or the configured molecules."
+  },
+  "draft_answer": "",
+  "claims": [],
+  "chunks": [],
+  "retrieval": {
+    "user_query": "best statin for cholesterol",
+    "agent": "query_agent",
+    "chunks": [],
+    "created_at": "2026-10-25T04:38:56.922668+00:00"
+  },
+  "generation_error": "",
+  "created_at": "2026-10-25T04:38:56.922668+00:00",
+  "validation": null
+}
